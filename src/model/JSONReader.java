@@ -14,7 +14,6 @@ public class JSONReader {
     public JSONReader(String JSONFileName) {
         try {
             currentJSONObject = (JSONObject) new JSONParser().parse(new FileReader(JSONFileName));
-            initInstructionObject();
         } catch (IOException | ParseException e) {
             e.printStackTrace();
         }
@@ -24,7 +23,7 @@ public class JSONReader {
         return currentJSONObject.get(key);
     }
 
-    private void initInstructionObject() {
+    public void initInstructionObject() {
         Instruction.getInstance(
                 (Integer) getValueUsingKey("countOfPlayers"),
                 (Integer) getValueUsingKey("startMoney"),
