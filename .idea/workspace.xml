@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dfd4cd54-fa73-4f3b-abf8-245eae6a795f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/model/Instruction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/JSONReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/JSONReader.java" afterDir="false" />
-    </list>
+    <list default="true" id="dfd4cd54-fa73-4f3b-abf8-245eae6a795f" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,9 +28,9 @@
     <property name="last_opened_file_path" value="$USER_HOME$/Documents/Lib/JavaLibs/json-simple-1.1.jar!/" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -101,7 +97,21 @@
       <option name="project" value="LOCAL" />
       <updated>1572975959923</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Instruction class added.(Singleton pattern)">
+      <created>1572976695204</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1572976695204</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Instruction class method name changed.">
+      <created>1572976779674</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1572976779674</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,6 +134,8 @@
     <MESSAGE value="Basic output removed" />
     <MESSAGE value="model, view, controller packages created.&#10;MonopolyGame class created.&#10;MonopolyGame class constructor template created using static factory methods design pattern." />
     <MESSAGE value="JSONReader class added." />
-    <option name="LAST_COMMIT_MESSAGE" value="JSONReader class added." />
+    <MESSAGE value="Instruction class added.(Singleton pattern)" />
+    <MESSAGE value="Instruction class method name changed." />
+    <option name="LAST_COMMIT_MESSAGE" value="Instruction class method name changed." />
   </component>
 </project>
