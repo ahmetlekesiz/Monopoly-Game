@@ -56,4 +56,8 @@ public class BPlayer {
         this.piece_type = piece_type;
     }
 
+    public void deneme(){
+        return;
+    }
+
 }
