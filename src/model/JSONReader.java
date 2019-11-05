@@ -23,7 +23,7 @@ public class JSONReader {
         return currentJSONObject.get(key);
     }
 
-    private Instruction createInstructionObject() {
+    private Instruction initInstructionObject() {
         return Instruction.getInstance();
     }
 }
