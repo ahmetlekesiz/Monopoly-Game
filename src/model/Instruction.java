@@ -29,7 +29,7 @@ public class Instruction {
 
     @Override
     public String toString() {
-        return "countOfPlayers: " + countOfPlayers + "\nstartMoney: " + startMoney + "countOfTaxSquares: "
+        return "countOfPlayers: " + countOfPlayers + "\nstartMoney: " + startMoney + "\ncountOfTaxSquares: "
                 + countOfTaxSquares + "\npriceOfTaxSquares: " + priceOfTaxSquares + "\npriceOfGoSquare: " + priceOfGoSquare;
     }
 }
