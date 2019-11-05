@@ -1,12 +1,13 @@
 package Controller;
 
-import UI.TerminalOutput;
+import DAL.Instruction;
+import DAL.JSONReader;
 
 class CMonopolyGame {
 
     private CMonopolyGame(String JSONInstructionFileName) {
-        TerminalOutput terminalOutput = TerminalOutput.createTerminalOutput(JSONInstructionFileName);
-        terminalOutput.printTerminalOutput();
+        JSONReader objJsonReader = new JSONReader(JSONInstructionFileName);
+        objJsonReader.initInstructionObject();
     }
 
     static CMonopolyGame createMonopolyGameUsingJSONFile(String JSONInstructionFileName) {
