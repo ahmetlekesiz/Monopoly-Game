@@ -1,15 +1,15 @@
 package UI;
 
-import DAL.Instruction;
+import DAL.DInstruction;
 import DAL.JSONReader;
 
 public class TerminalOutput {
-    private Instruction currentInstruction;
+    private DInstruction currentInstruction;
 
     private TerminalOutput(String JSONFileName) {
         JSONReader objJsonReader = new JSONReader(JSONFileName);
         objJsonReader.initInstructionObject();
-        currentInstruction = Instruction.getInstance();
+        currentInstruction = DInstruction.getInstance();
     }
 
     public static TerminalOutput createTerminalOutput(String JSONFileName) {
