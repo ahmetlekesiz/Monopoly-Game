@@ -24,7 +24,7 @@ public class JSONReader {
     }
 
     public void initInstructionObject() {
-        DInstruction.getInstance(
+        Instruction.getInstance(
                 (Long) getValueUsingKey("countOfPlayers"),
                 (Long) getValueUsingKey("startMoney"),
                 (Long) getValueUsingKey("countOfTaxSquare"),

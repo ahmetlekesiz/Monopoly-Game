@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dfd4cd54-fa73-4f3b-abf8-245eae6a795f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/BL/BTaxSquare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BL/BTaxSquare.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/CInstruction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DAL/DInstruction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAL/Instruction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DAL/JSONReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAL/JSONReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/TerminalOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/TerminalOutput.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -195,7 +198,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572993323533</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Instruction Controller and DAL layer added.">
+      <created>1572993633875</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1572993633875</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -231,6 +241,7 @@
     <MESSAGE value="Layers initialised." />
     <MESSAGE value="Controller distilled." />
     <MESSAGE value="BPlayer data constructed." />
-    <option name="LAST_COMMIT_MESSAGE" value="BPlayer data constructed." />
+    <MESSAGE value="Instruction Controller and DAL layer added." />
+    <option name="LAST_COMMIT_MESSAGE" value="Instruction Controller and DAL layer added." />
   </component>
 </project>

@@ -1,12 +1,12 @@
 package DAL;
 
-public class DInstruction {
+public class Instruction {
 
     public long countOfPlayers, startMoney, countOfTaxSquares, priceOfTaxSquares, priceOfGoSquare;
 
-    private static DInstruction instance;
+    private static Instruction instance;
 
-    public DInstruction(long countOfPlayers, long startMoney, long countOfTaxSquares, long priceOfTaxSquares, long priceOfGoSquare) {
+    public Instruction(long countOfPlayers, long startMoney, long countOfTaxSquares, long priceOfTaxSquares, long priceOfGoSquare) {
         this.countOfPlayers = countOfPlayers;
         this.startMoney = startMoney;
         this.countOfTaxSquares = countOfTaxSquares;
@@ -14,14 +14,14 @@ public class DInstruction {
         this.priceOfGoSquare = priceOfGoSquare;
     }
 
-    public static DInstruction getInstance() {
+    public static Instruction getInstance() {
         return instance;
     }
 
-    public static DInstruction getInstance(long countOfPlayers, long startMoney, long countOfTaxSquares,
-                                           long priceOfTaxSquares, long priceOfGoSquare) {
+    public static Instruction getInstance(long countOfPlayers, long startMoney, long countOfTaxSquares,
+                                          long priceOfTaxSquares, long priceOfGoSquare) {
         if (instance == null) {
-            instance = new DInstruction(countOfPlayers, startMoney, countOfTaxSquares,
+            instance = new Instruction(countOfPlayers, startMoney, countOfTaxSquares,
                     priceOfTaxSquares, priceOfGoSquare);
         }
         return instance;
