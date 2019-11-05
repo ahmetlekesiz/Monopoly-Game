@@ -2,7 +2,7 @@ package model;
 
 public class Instruction {
 
-    int countOfPlayers, startMoney, countOfTaxSquares, priceOfTaxSquares, priceOfGoSquare;
+    public int countOfPlayers, startMoney, countOfTaxSquares, priceOfTaxSquares, priceOfGoSquare;
 
     private static Instruction instance;
 

@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dfd4cd54-fa73-4f3b-abf8-245eae6a795f" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/src/model/JSONReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/JSONReader.java" afterDir="false" />
+>>>>>>> origin/master
       <change beforePath="$PROJECT_DIR$/src/view/terminal/TerminalOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/terminal/TerminalOutput.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -140,7 +144,21 @@
       <option name="project" value="LOCAL" />
       <updated>1572979104485</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="JSONReader constructor modified.">
+      <created>1572980876618</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1572980876618</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Piece class enum added.">
+      <created>1572981426519</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1572981426519</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,6 +186,8 @@
     <MESSAGE value="json-simple library added." />
     <MESSAGE value="TerminalOutput class created." />
     <MESSAGE value="JSON file data transferred into Instruction object." />
-    <option name="LAST_COMMIT_MESSAGE" value="JSON file data transferred into Instruction object." />
+    <MESSAGE value="JSONReader constructor modified." />
+    <MESSAGE value="Piece class enum added." />
+    <option name="LAST_COMMIT_MESSAGE" value="Piece class enum added." />
   </component>
 </project>

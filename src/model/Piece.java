@@ -1,6 +1,18 @@
 package model;
 
 public class Piece {
+
+    private enum PIECE_TYPE {
+        DOG,
+        TOP_HAT,
+        BOOT,
+        CAT,
+        WHEELBARROW,
+        RACING_CAR,
+        BATTLESHIP,
+        THIMBLE
+    }
+
     private String type;
 
     public Piece(String type) {

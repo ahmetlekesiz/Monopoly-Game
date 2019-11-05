@@ -8,7 +8,16 @@ public class TerminalOutput {
 
     private TerminalOutput() {
         JSONReader objJsonReader = new JSONReader("game.json");
+        objJsonReader.initInstructionObject();
         currentInstruction = Instruction.getInstance();
+    }
+
+    private static TerminalOutput createTerminalOutput() {
+        return new TerminalOutput();
+    }
+
+    public void printTerminalOutput() {
+
     }
 
 }
