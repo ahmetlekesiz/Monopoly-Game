@@ -3,9 +3,9 @@ package DAL;
 public class DPlayer {
     private String name;
     private int balance;
-    private DPiece piece;
+    private Piece piece;
 
-    public DPlayer(String name, int balance, DPiece piece) {
+    public DPlayer(String name, int balance, Piece piece) {
         this.name = name;
         this.balance = balance;
         this.piece = piece;
@@ -27,11 +27,11 @@ public class DPlayer {
         this.balance = balance;
     }
 
-    public DPiece getPiece() {
+    public Piece getPiece() {
         return piece;
     }
 
-    public void setPiece(DPiece piece) {
+    public void setPiece(Piece piece) {
         this.piece = piece;
     }
 }
