@@ -2,7 +2,7 @@ package BL;
 
 public abstract class BSquare {
 
-    public void performOnLand() {
+    private final String SQUARE_TYPE = "NONE";
 
-    }
+    public abstract void performOnLand(BPlayer player);
 }

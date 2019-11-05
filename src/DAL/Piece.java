@@ -2,7 +2,7 @@ package DAL;
 
 public class Piece {
 
-    private enum PIECE_TYPE {
+    public enum PIECE_TYPE {
         DOG,
         TOP_HAT,
         BOOT,

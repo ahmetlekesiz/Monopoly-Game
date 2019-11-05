@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dfd4cd54-fa73-4f3b-abf8-245eae6a795f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BL/BSquare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BL/BSquare.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/CBoard.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/CDice.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/CGoSquare.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/CObserver.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/CPlayer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/CRegularSquare.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/CSquare.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/CTaxSquare.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DAL/DPiece.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAL/Piece.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DAL/DPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAL/DPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BL/BTaxSquare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BL/BTaxSquare.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -192,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572991999722</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Controller distilled.">
+      <created>1572992860296</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1572992860296</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,6 +223,7 @@
     <MESSAGE value="Instruction toString method added." />
     <MESSAGE value="Integer cast changed to Long." />
     <MESSAGE value="Layers initialised." />
-    <option name="LAST_COMMIT_MESSAGE" value="Layers initialised." />
+    <MESSAGE value="Controller distilled." />
+    <option name="LAST_COMMIT_MESSAGE" value="Controller distilled." />
   </component>
 </project>
