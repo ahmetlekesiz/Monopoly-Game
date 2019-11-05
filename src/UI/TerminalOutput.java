@@ -1,7 +1,7 @@
-package view.terminal;
+package UI;
 
-import model.Instruction;
-import model.JSONReader;
+import DAL.Instruction;
+import DAL.JSONReader;
 
 public class TerminalOutput {
     private Instruction currentInstruction;
