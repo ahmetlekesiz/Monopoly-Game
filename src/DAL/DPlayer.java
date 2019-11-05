@@ -1,11 +1,11 @@
-package model;
+package DAL;
 
-public class Player {
+public class DPlayer {
     private String name;
     private int balance;
-    private Piece piece;
+    private DPiece piece;
 
-    public Player(String name, int balance, Piece piece) {
+    public DPlayer(String name, int balance, DPiece piece) {
         this.name = name;
         this.balance = balance;
         this.piece = piece;
@@ -27,11 +27,11 @@ public class Player {
         this.balance = balance;
     }
 
-    public Piece getPiece() {
+    public DPiece getPiece() {
         return piece;
     }
 
-    public void setPiece(Piece piece) {
+    public void setPiece(DPiece piece) {
         this.piece = piece;
     }
 }

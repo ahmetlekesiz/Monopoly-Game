@@ -1,6 +1,6 @@
-package model;
+package DAL;
 
-public class Piece {
+public class DPiece {
 
     private enum PIECE_TYPE {
         DOG,
@@ -15,7 +15,7 @@ public class Piece {
 
     private String type;
 
-    public Piece(String type) {
+    public DPiece(String type) {
         this.type = type;
     }
 
