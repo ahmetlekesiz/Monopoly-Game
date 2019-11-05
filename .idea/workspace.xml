@@ -2,29 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dfd4cd54-fa73-4f3b-abf8-245eae6a795f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/BL/BBoard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BL/BDice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BL/BGoSquare.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BL/BPlayer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BL/BRegularSquare.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BL/BSquare.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BL/BTaxSquare.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/CBoard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/CDice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/CGoSquare.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/CPlayer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/CRegularSquare.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/CSquare.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/CTaxSquare.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/MonopolyGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MonopolyGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Instruction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAL/Instruction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/JSONReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAL/JSONReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Piece.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAL/DPiece.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAL/DPlayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/terminal/TerminalOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/TerminalOutput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BL/BTaxSquare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BL/BTaxSquare.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/CMonopolyGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/CMonopolyGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/TerminalOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/TerminalOutput.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,6 +15,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -195,7 +176,42 @@
       <option name="project" value="LOCAL" />
       <updated>1572985112677</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Layers initialised.">
+      <created>1572991999722</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1572991999722</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Controller distilled.">
+      <created>1572992860296</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1572992860296</updated>
+    </task>
+    <task id="LOCAL-00015" summary="BPlayer data constructed.">
+      <created>1572993323533</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1572993323533</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Instruction Controller and DAL layer added.">
+      <created>1572993633875</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1572993633875</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Instruction Controller and DAL layer removed.">
+      <created>1572993937899</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1572993937899</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -228,6 +244,11 @@
     <MESSAGE value="JSONReader init made public." />
     <MESSAGE value="Instruction toString method added." />
     <MESSAGE value="Integer cast changed to Long." />
-    <option name="LAST_COMMIT_MESSAGE" value="Integer cast changed to Long." />
+    <MESSAGE value="Layers initialised." />
+    <MESSAGE value="Controller distilled." />
+    <MESSAGE value="BPlayer data constructed." />
+    <MESSAGE value="Instruction Controller and DAL layer added." />
+    <MESSAGE value="Instruction Controller and DAL layer removed." />
+    <option name="LAST_COMMIT_MESSAGE" value="Instruction Controller and DAL layer removed." />
   </component>
 </project>
