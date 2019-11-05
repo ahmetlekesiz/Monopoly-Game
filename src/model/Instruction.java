@@ -2,7 +2,7 @@ package model;
 
 public class Instruction {
 
-    int countOfPlayers, startMoney, countOfTaxSquares, priceOfTaxSquares, priceOfGoSquare;
+    public int countOfPlayers, startMoney, countOfTaxSquares, priceOfTaxSquares, priceOfGoSquare;
 
     private static Instruction instance;
 
@@ -25,5 +25,11 @@ public class Instruction {
                     priceOfTaxSquares, priceOfGoSquare);
         }
         return instance;
+    }
+
+    @Override
+    public String toString() {
+        return "countOfPlayers: " + countOfPlayers + "\nstartMoney: " + startMoney + "countOfTaxSquares: "
+                + countOfTaxSquares + "\npriceOfTaxSquares: " + priceOfTaxSquares + "\npriceOfGoSquare: " + priceOfGoSquare;
     }
 }
