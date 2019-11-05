@@ -24,6 +24,12 @@ public class BPlayer {
         balance = balance - amount;
     }
 
+    public void updateCycleCounter(int totalDiceValue){
+        if ((int)((totalDiceValue/40) - cycleCounter) >= 1){
+            cycleCounter++;
+        }
+    }
+
     public int getBalance() {
         return balance;
     }
