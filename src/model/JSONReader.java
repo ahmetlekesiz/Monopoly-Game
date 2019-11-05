@@ -22,4 +22,8 @@ public class JSONReader {
     private Object getValueUsingKey(String key) {
         return currentJSONObject.get(key);
     }
+
+    private Instruction createInstructionObject() {
+        return Instruction.getInstance();
+    }
 }
