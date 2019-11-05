@@ -6,18 +6,18 @@ import model.JSONReader;
 public class TerminalOutput {
     private Instruction currentInstruction;
 
-    private TerminalOutput() {
-        JSONReader objJsonReader = new JSONReader("game.json");
+    private TerminalOutput(String JSONFileName) {
+        JSONReader objJsonReader = new JSONReader(JSONFileName);
         objJsonReader.initInstructionObject();
         currentInstruction = Instruction.getInstance();
     }
 
-    private static TerminalOutput createTerminalOutput() {
-        return new TerminalOutput();
+    public static TerminalOutput createTerminalOutput(String JSONFileName) {
+        return new TerminalOutput(JSONFileName);
     }
 
     public void printTerminalOutput() {
-
+        System.out.println(currentInstruction.toString());
     }
 
 }

@@ -25,11 +25,11 @@ public class JSONReader {
 
     public void initInstructionObject() {
         Instruction.getInstance(
-                (Integer) getValueUsingKey("countOfPlayers"),
-                (Integer) getValueUsingKey("startMoney"),
-                (Integer) getValueUsingKey("countOfTaxSquare"),
-                (Integer) getValueUsingKey("priceOfTaxSquare"),
-                (Integer) getValueUsingKey("priceOfGoSquare")
+                (Long) getValueUsingKey("countOfPlayers"),
+                (Long) getValueUsingKey("startMoney"),
+                (Long) getValueUsingKey("countOfTaxSquare"),
+                (Long) getValueUsingKey("priceOfTaxSquare"),
+                (Long) getValueUsingKey("priceOfGoSquare")
         );
     }
 }

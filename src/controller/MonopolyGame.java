@@ -1,9 +1,12 @@
 package controller;
 
+import view.terminal.TerminalOutput;
+
 class MonopolyGame {
 
     private MonopolyGame(String JSONInstructionFileName) {
-        System.out.printf("Monopoly game created according to [%s].\n", JSONInstructionFileName);
+        TerminalOutput terminalOutput = TerminalOutput.createTerminalOutput(JSONInstructionFileName);
+        terminalOutput.printTerminalOutput();
     }
 
     static MonopolyGame createMonopolyGameUsingJSONFile(String JSONInstructionFileName) {
