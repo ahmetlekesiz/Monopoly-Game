@@ -2,29 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dfd4cd54-fa73-4f3b-abf8-245eae6a795f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/BL/BBoard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BL/BDice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BL/BGoSquare.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BL/BPlayer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BL/BRegularSquare.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BL/BSquare.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BL/BTaxSquare.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/CBoard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/CDice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/CGoSquare.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/CPlayer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/CRegularSquare.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/CSquare.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/CTaxSquare.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/MonopolyGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MonopolyGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Instruction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAL/Instruction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/JSONReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAL/JSONReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Piece.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAL/DPiece.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAL/DPlayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/terminal/TerminalOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/TerminalOutput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/CDice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/CDice.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -59,6 +38,9 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/libs" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -72,7 +54,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main (1)">
+  <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Monopoly" />
@@ -95,7 +77,6 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
