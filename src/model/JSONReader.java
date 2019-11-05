@@ -24,6 +24,12 @@ public class JSONReader {
     }
 
     private Instruction initInstructionObject() {
-        return Instruction.getInstance();
+        return Instruction.getInstance(
+                (Integer) getValueUsingKey("countOfPlayers"),
+                (Integer) getValueUsingKey("startMoney"),
+                (Integer) getValueUsingKey("countOfTaxSquare"),
+                (Integer) getValueUsingKey("priceOfTaxSquare"),
+                (Integer) getValueUsingKey("priceOfGoSquare")
+        );
     }
 }
