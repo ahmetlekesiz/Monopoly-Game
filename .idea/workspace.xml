@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dfd4cd54-fa73-4f3b-abf8-245eae6a795f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Instruction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Instruction.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -132,35 +132,7 @@
       <option name="project" value="LOCAL" />
       <updated>1572977918987</updated>
     </task>
-    <task id="LOCAL-00007" summary="JSON file data transferred into Instruction object.">
-      <created>1572979104485</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1572979104485</updated>
-    </task>
-    <task id="LOCAL-00008" summary="JSONReader constructor modified.">
-      <created>1572980876618</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1572980876618</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Piece class enum added.">
-      <created>1572981426519</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1572981426519</updated>
-    </task>
-    <task id="LOCAL-00010" summary="JSONReader init made public.">
-      <created>1572981882167</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1572981882167</updated>
-    </task>
-    <option name="localTasksCounter" value="11" />
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -187,10 +159,6 @@
     <MESSAGE value="Instruction class method name changed." />
     <MESSAGE value="json-simple library added." />
     <MESSAGE value="TerminalOutput class created." />
-    <MESSAGE value="JSON file data transferred into Instruction object." />
-    <MESSAGE value="JSONReader constructor modified." />
-    <MESSAGE value="Piece class enum added." />
-    <MESSAGE value="JSONReader init made public." />
-    <option name="LAST_COMMIT_MESSAGE" value="JSONReader init made public." />
+    <option name="LAST_COMMIT_MESSAGE" value="TerminalOutput class created." />
   </component>
 </project>
