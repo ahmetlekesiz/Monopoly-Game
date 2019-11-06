@@ -19,6 +19,7 @@ class CMonopolyGame {
     }
     static void start(){
         System.out.println("Try It");
+        System.out.println("Try It");
         new BMonopolyGame().startGame(DInstruction.getInstance());
     }
 
