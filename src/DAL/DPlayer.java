@@ -1,37 +1,55 @@
 package DAL;
 
 public class DPlayer {
-    private String name;
-    private int balance;
-    private Piece piece;
+    private int balance, cycleCounter, totalDiceValue, roundValue;
+    private boolean bankruptFlag;
+    private Piece.PIECE_TYPE piece_type;
 
-    public DPlayer(String name, int balance, Piece piece) {
-        this.name = name;
-        this.balance = balance;
-        this.piece = piece;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
+    public DPlayer(Piece.PIECE_TYPE piece_type) {
+        this.piece_type = piece_type;
     }
 
     public int getBalance() {
         return balance;
     }
 
+    public int getCycleCounter() {
+        return cycleCounter;
+    }
+
+    public int getTotalDiceValue() {
+        return totalDiceValue;
+    }
+
+    public int getRoundValue() {
+        return roundValue;
+    }
+
+    public boolean isBankruptFlag() {
+        return bankruptFlag;
+    }
+
+    public Piece.PIECE_TYPE getPiece_type() {
+        return piece_type;
+    }
+
     public void setBalance(int balance) {
         this.balance = balance;
     }
 
-    public Piece getPiece() {
-        return piece;
+    public void setCycleCounter(int cycleCounter) {
+        this.cycleCounter = cycleCounter;
     }
 
-    public void setPiece(Piece piece) {
-        this.piece = piece;
+    public void setTotalDiceValue(int totalDiceValue) {
+        this.totalDiceValue = totalDiceValue;
+    }
+
+    public void setBankruptFlag(boolean bankruptFlag) {
+        this.bankruptFlag = bankruptFlag;
+    }
+
+    public void setRoundValue(int roundValue) {
+        this.roundValue = roundValue;
     }
 }

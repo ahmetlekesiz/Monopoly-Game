@@ -1,77 +1,34 @@
 package BL;
 
-import DAL.Piece;
+import DAL.DPlayer;
 
-public class BPlayer {
+public class BPlayer implements BPlayerObserver {
 
-    private int balance, cycleCounter, totalDiceValue;
-    private boolean bankruptFlag;
-    private Piece.PIECE_TYPE piece_type;
+    private DPlayer dPlayer;
 
-    public BPlayer(int balance, int cycleCounter, int totalDiceValue, boolean bankruptFlag, Piece.PIECE_TYPE piece_type) {
-        this.balance = balance;
-        this.cycleCounter = cycleCounter;
-        this.totalDiceValue = totalDiceValue;
-        this.bankruptFlag = bankruptFlag;
-        this.piece_type = piece_type;
+    public BPlayer(DPlayer dPlayer) {
+        this.dPlayer = dPlayer;
     }
 
-    public void incrementBalance(int amount){
-        balance = balance + amount;
-    }
-
-    public void decrementBalance(int amount){
-        balance = balance - amount;
-    }
-
-    public void updateCycleCounter(int totalDiceValue){
-        if ((int)((totalDiceValue/40) - cycleCounter) >= 1){
-            cycleCounter++;
+    @Override
+    public void checkPlayer(int currentDiceValue, BSquare currentSquare) {
+        dPlayer.setTotalDiceValue(dPlayer.getTotalDiceValue() + currentDiceValue);
+        if (isPlayerCrossTheGoSquare()) {
+            dPlayer.setRoundValue(dPlayer.getRoundValue() + 1);
+            new BGoSquare().performOnLand(dPlayer);
+        }
+        switch (currentSquare.getSQUARE_TYPE()) {
+            // For further implementation
+            case "REGULAR_SQUARE": break;
+            case "TAX_SQUARE": new BTaxSquare().performOnLand(dPlayer);
         }
     }
 
-    public int getBalance() {
-        return balance;
+    private boolean isPlayerCrossTheGoSquare() {
+        return (int) Math.floor(dPlayer.getTotalDiceValue() / 40f) != dPlayer.getRoundValue();
     }
 
-    public void setBalance(int balance) {
-        this.balance = balance;
+    public DPlayer getDPlayer() {
+        return dPlayer;
     }
-
-    public int getCycleCounter() {
-        return cycleCounter;
-    }
-
-    public void setCycleCounter(int cycleCounter) {
-        this.cycleCounter = cycleCounter;
-    }
-
-    public int getTotalDiceValue() {
-        return totalDiceValue;
-    }
-
-    public void setTotalDiceValue(int totalDiceValue) {
-        this.totalDiceValue = totalDiceValue;
-    }
-
-    public boolean isBankruptFlag() {
-        return bankruptFlag;
-    }
-
-    public void setBankruptFlag(boolean bankruptFlag) {
-        this.bankruptFlag = bankruptFlag;
-    }
-
-    public Piece.PIECE_TYPE getPiece_type() {
-        return piece_type;
-    }
-
-    public void setPiece_type(Piece.PIECE_TYPE piece_type) {
-        this.piece_type = piece_type;
-    }
-
-    public void deneme(){
-        return;
-    }
-
 }
