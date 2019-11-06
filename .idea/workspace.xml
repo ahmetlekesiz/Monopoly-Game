@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="dfd4cd54-fa73-4f3b-abf8-245eae6a795f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BL/BMonopolyGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BL/BMonopolyGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BL/BPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BL/BPlayer.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -121,7 +123,7 @@
       <updated>1572971130194</updated>
       <workItem from="1573036744792" duration="3967000" />
       <workItem from="1573050815173" duration="4201000" />
-      <workItem from="1573068748936" duration="4379000" />
+      <workItem from="1573068748936" duration="4987000" />
     </task>
     <task id="LOCAL-00001" summary="model, view, controller packages created.&#10;MonopolyGame class created.&#10;MonopolyGame class constructor template created using static factory methods design pattern.">
       <created>1572975097652</created>
@@ -284,7 +286,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573072872228</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="BMonopolyGame fixed.">
+      <created>1573073323729</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1573073323729</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -328,6 +337,7 @@
     <MESSAGE value="BBoard TODO added." />
     <MESSAGE value="Main method modified." />
     <MESSAGE value="Project modified and optimised." />
-    <option name="LAST_COMMIT_MESSAGE" value="Project modified and optimised." />
+    <MESSAGE value="BMonopolyGame fixed." />
+    <option name="LAST_COMMIT_MESSAGE" value="BMonopolyGame fixed." />
   </component>
 </project>
