@@ -12,6 +12,7 @@ public class BMonopolyGame implements BGameObserver {
     private static BMonopolyGame monopolyGameInstance = new BMonopolyGame();
     private ArrayList<BPlayer> players;
     private BBoard boardInstance;
+    private UI.UITerminal uiTerminal = new UI.UITerminal();
     private boolean isFirstRound;
 
     private BMonopolyGame() {
@@ -56,8 +57,9 @@ public class BMonopolyGame implements BGameObserver {
     @Override
     public void listen() {
         isFirstRound = true;
-        while (players.size() != 1) {
+        if (players.size() != 1) {
             startTurn();
+            if (isFirstRound) isFirstRound = false;
         }
     }
 
@@ -65,16 +67,15 @@ public class BMonopolyGame implements BGameObserver {
         for (Iterator<BPlayer> iterator = players.iterator(); iterator.hasNext();) {
             BPlayer currentPlayer = iterator.next();
             if (!currentPlayer.getDPlayer().isBankrupted()) {
+                uiTerminal.printBeforeRollDİce(currentPlayer.getDPlayer());
                 currentPlayer.rollDice();
-                System.out.println(currentPlayer.getDPlayer().getBalance());
-                System.out.println(currentPlayer.getDPlayer().getCurrentDiceVal());
                 currentPlayer.checkPlayer(currentPlayer.getDPlayer().getCurrentDiceVal(),
                         boardInstance.getSquares()[currentPlayer.getDPlayer().getLocation()], isFirstRound);
-                if (isFirstRound) isFirstRound = false;
+                uiTerminal.printAfterRollDice(currentPlayer.getDPlayer());
                 if (currentPlayer.getDPlayer().isBankrupted()) {
                     iterator.remove();
                 }
-                printDetails(currentPlayer);
+                //printDetails(currentPlayer);
             }
         }
     }

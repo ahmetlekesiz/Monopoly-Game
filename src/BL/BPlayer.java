@@ -6,6 +6,10 @@ public class BPlayer implements BPlayerObserver {
 
     private DPlayer dPlayer;
 
+    public BPlayer() {
+
+    }
+
     public BPlayer(DPlayer dPlayer) {
         this.dPlayer = dPlayer;
     }
@@ -29,6 +33,7 @@ public class BPlayer implements BPlayerObserver {
         int[] diceValues;
         diceValues = this.getDPlayer().getPlayerDice().rollDice();
         this.getDPlayer().setCurrentDiceVal(diceValues[0] + diceValues[1]);
+        System.out.println("Rolling Dices : "+diceValues[0]+"+"+diceValues[1]+"="+(diceValues[0]+diceValues[1]));
         return diceValues[0] + diceValues[1];
     }
 
@@ -43,6 +48,4 @@ public class BPlayer implements BPlayerObserver {
     public DPlayer getDPlayer() {
         return dPlayer;
     }
-
-
 }
