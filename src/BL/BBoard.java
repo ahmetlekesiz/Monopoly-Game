@@ -9,7 +9,7 @@ public class BBoard {
     private BSquare[] squares;
     private static BBoard boardInstance;
     private DInstruction instructionInstance;
-    private int turnCounter, countOfTaxSquares;
+    private int countOfTaxSquares;
 
     private BBoard() {
         instructionInstance = DInstruction.getInstance();
@@ -27,10 +27,10 @@ public class BBoard {
             taxSquareLocations[i] = temp;
         }
         for (int i = 0; i < SQUARE_NUMBER; ++i) {
-            squares[i] = new BRegularSquare(i);
+            squares[i] = new BRegularSquare();
         }
         for(int i = 0; i < countOfTaxSquares; i++) {
-            squares[taxSquareLocations[i]] = new BTaxSquare(i);
+            squares[taxSquareLocations[i]] = new BTaxSquare();
         }
         squares[0] = new BGoSquare();
     }
