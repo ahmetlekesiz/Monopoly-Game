@@ -21,6 +21,7 @@ public class BBoard {
     private void initSquares() {
         int[] taxSquareLocations = new int[countOfTaxSquares];
         int temp;
+        // TODO May return same number optimise
         for(int i = 0; i < countOfTaxSquares; i++){
             temp = (int) (Math.random() * SQUARE_NUMBER);
             taxSquareLocations[i] = temp;

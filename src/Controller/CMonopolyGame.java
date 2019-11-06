@@ -17,8 +17,8 @@ class CMonopolyGame {
     static CMonopolyGame createMonopolyGameUsingJSONFile(String JSONInstructionFileName) {
         return new CMonopolyGame(JSONInstructionFileName);
     }
-    static void start(){
 
+    void start() {
         new BMonopolyGame().startGame(DInstruction.getInstance());
     }
 
