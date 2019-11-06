@@ -17,11 +17,7 @@ public class BPlayer implements BPlayerObserver {
             dPlayer.setRoundValue(dPlayer.getRoundValue() + 1);
             new BGoSquare().performOnLand(dPlayer);
         }
-        switch (currentSquare.getSQUARE_TYPE()) {
-            // For further implementation
-            case "REGULAR_SQUARE": break;
-            case "TAX_SQUARE": new BTaxSquare().performOnLand(dPlayer);
-        }
+        currentSquare.performOnLand(dPlayer);
     }
 
     private boolean isPlayerCrossTheGoSquare() {
