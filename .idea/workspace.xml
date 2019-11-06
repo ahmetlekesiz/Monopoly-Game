@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dfd4cd54-fa73-4f3b-abf8-245eae6a795f" name="Default Changelist" comment="" />
+    <list default="true" id="dfd4cd54-fa73-4f3b-abf8-245eae6a795f" name="Default Changelist" comment="BPlayer modified.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BL/BDice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BL/BDice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BL/BMonopolyGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BL/BMonopolyGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/CMonopolyGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/CMonopolyGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DAL/DPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAL/DPlayer.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +109,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1572971130194</updated>
-      <workItem from="1573036744792" duration="2666000" />
+      <workItem from="1573036744792" duration="3967000" />
+      <workItem from="1573050815173" duration="1963000" />
     </task>
     <task id="LOCAL-00001" summary="model, view, controller packages created.&#10;MonopolyGame class created.&#10;MonopolyGame class constructor template created using static factory methods design pattern.">
       <created>1572975097652</created>
@@ -210,7 +217,21 @@
       <option name="project" value="LOCAL" />
       <updated>1573039511301</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="PlayerObserver modified.">
+      <created>1573039612677</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1573039612677</updated>
+    </task>
+    <task id="LOCAL-00017" summary="BPlayer modified.">
+      <created>1573050854326</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1573050854326</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -246,6 +267,8 @@
     <MESSAGE value="performOnLand method modified." />
     <MESSAGE value="BRegularSquare implemented." />
     <MESSAGE value="BPlayer class BPlayerObserver interface implemented." />
-    <option name="LAST_COMMIT_MESSAGE" value="BPlayer class BPlayerObserver interface implemented." />
+    <MESSAGE value="PlayerObserver modified." />
+    <MESSAGE value="BPlayer modified." />
+    <option name="LAST_COMMIT_MESSAGE" value="BPlayer modified." />
   </component>
 </project>

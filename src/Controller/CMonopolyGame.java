@@ -1,6 +1,5 @@
 package Controller;
 
-import DAL.Instruction;
 import DAL.JSONReader;
 
 class CMonopolyGame {
