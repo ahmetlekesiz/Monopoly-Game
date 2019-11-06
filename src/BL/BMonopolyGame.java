@@ -1,6 +1,7 @@
 package BL;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 import DAL.DPlayer;
 import DAL.DInstruction;
@@ -23,7 +24,8 @@ public class BMonopolyGame implements BGameObserver {
         initPlayersByLettingThemRollingDiceandPutInList(gameInstructions);
         boardInstance=BBoard.getInstance();
         int counter = 0;
-        while(counter < 20){
+
+        while(true){
             listen();
             counter++;
         }
@@ -61,11 +63,16 @@ public class BMonopolyGame implements BGameObserver {
     }
 
     private void startTurn() {
-        for (BPlayer currentPlayer : players) {
+        for (Iterator<BPlayer> it = players.iterator(); it.hasNext();) {
+            BPlayer currentPlayer = it.next();
             if (!currentPlayer.getDPlayer().isBankrupted()) {
                 currentPlayer.rollDice();
                 performActions(boardInstance,currentPlayer);
                 currentPlayer.checkPlayer(currentPlayer.getDPlayer().getCurrentDiceVal(),boardInstance.getSquares()[currentPlayer.getDPlayer().getLocation()]);
+                //printDeatailes(currentPlayer);
+                if(currentPlayer.getDPlayer().isBankrupted())
+                    it.remove();
+                printDeatailes(currentPlayer);
             }
         }
     }
@@ -73,5 +80,7 @@ public class BMonopolyGame implements BGameObserver {
     private void performActions(BBoard instance,BPlayer player){
         instance.getSquares()[player.getDPlayer().getLocation()].performOnLand(player.getDPlayer());
     }
-
+    private void printDeatailes(BPlayer player){
+        System.out.println(player.getDPlayer().getPiece_type()+":\nBalance: "+player.getDPlayer().getBalance()+"\n Location: "+player.getDPlayer().getLocation()+"\nCurrent Dice Value: "+player.getDPlayer().getCurrentDiceVal());
+    }
 }

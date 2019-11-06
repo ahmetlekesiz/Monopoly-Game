@@ -9,6 +9,7 @@ public class BGoSquare extends BSquare {
 
     @Override
     public void performOnLand(DPlayer player) {
+        player.setLocation(player.getTotalDiceValue()%40);
         player.setBalance(player.getBalance() + (int) DInstructionInstance.priceOfGoSquare);
     }
 }
