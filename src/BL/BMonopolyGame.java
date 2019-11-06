@@ -21,7 +21,7 @@ public class BMonopolyGame implements BGameObserver {
     }
     public void startGame(DInstruction gameInstructions){
         initPlayersByLettingThemRollingDiceandPutInList(gameInstructions);
-        boardInstance=BBoard.getInstance((int)gameInstructions.countOfTaxSquares);
+        boardInstance=BBoard.getInstance();
         int counter = 0;
         while(counter < 20){
             listen();

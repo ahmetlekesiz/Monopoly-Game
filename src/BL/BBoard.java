@@ -9,40 +9,38 @@ public class BBoard {
     private BSquare[] squares;
     private static BBoard boardInstance;
     private DInstruction instructionInstance;
-    private int turnCounter;
+    private int turnCounter, countOfTaxSquares;
 
-    private BBoard(int numOfTaxSquares) {
+    private BBoard() {
         instructionInstance = DInstruction.getInstance();
         squares = new BSquare[SQUARE_NUMBER];
-        initSquares(numOfTaxSquares);
+        countOfTaxSquares = (int) instructionInstance.countOfTaxSquares;
+        initSquares();
     }
 
-    private void initSquares(int numOfTaxSquares) {
-        int[] taxSquereLocations = new int[numOfTaxSquares];
+    private void initSquares() {
+        int[] taxSquareLocations = new int[countOfTaxSquares];
         int temp;
-        //crating random locations
-        for(int i = 0; i < numOfTaxSquares; i++){
-            temp =(int) ((Math.random() * SQUARE_NUMBER-1) + 2);
-            taxSquereLocations[i] = temp;
+        for(int i = 0; i < countOfTaxSquares; i++){
+            temp = (int) (Math.random() * SQUARE_NUMBER);
+            taxSquareLocations[i] = temp;
         }
-
-        //intilazing with regular  squeres
         for (int i = 0; i < SQUARE_NUMBER; ++i) {
             squares[i] = new BRegularSquare(i);
         }
-
-        for(int i = 0; i < numOfTaxSquares; i++)
-            squares[taxSquereLocations[i]] = new BTaxSquare(i);
-
+        for(int i = 0; i < countOfTaxSquares; i++) {
+            squares[taxSquareLocations[i]] = new BTaxSquare(i);
+        }
+        squares[0] = new BGoSquare();
     }
 
     public BSquare[] getSquares() {
         return squares;
     }
 
-    public static BBoard getInstance(int numOfTaxSquares) {
+    public static BBoard getInstance() {
         if(boardInstance == null){
-            boardInstance = new BBoard(numOfTaxSquares);
+            boardInstance = new BBoard();
         }
         return boardInstance;
     }
