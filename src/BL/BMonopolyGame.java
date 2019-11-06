@@ -1,12 +1,10 @@
 package BL;
 
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
 
 import DAL.DPlayer;
-import DAL.Instruction;
-import DAL.Piece;
+import DAL.DInstruction;
+import DAL.DPiece;
 
 public class BMonopolyGame implements BGameObserver {
 
@@ -22,15 +20,15 @@ public class BMonopolyGame implements BGameObserver {
     public static BMonopolyGame getInstance() {
         return monopolyGameInstance;
     }
-    public void startGame(Instruction gameInstructions){
+    public void startGame(DInstruction gameInstructions){
         initPlayersByLettingThemRollingDiceandPutInList(gameInstructions);
     }
 
-    private void initPlayersByLettingThemRollingDiceandPutInList(Instruction gameInstructions) {
+    private void initPlayersByLettingThemRollingDiceandPutInList(DInstruction gameInstructions) {
         int counter = (int)gameInstructions.countOfPlayers;
 
         while(counter != 0){
-            players.add(new BPlayer(new DPlayer(Piece.PIECE_TYPE.BATTLESHIP,(int)gameInstructions.startMoney)));
+            players.add(new BPlayer(new DPlayer(DPiece.PIECE_TYPE.BATTLESHIP,(int)gameInstructions.startMoney)));
             counter--;
         }
 
@@ -46,12 +44,9 @@ public class BMonopolyGame implements BGameObserver {
         });
         //After sorting players the piece types are setting.
         for(int i=0;i<players.size();i++){
-            players.get(i).getDPlayer().setPiece_type(Piece.PIECE_TYPE.values()[i]);
+            players.get(i).getDPlayer().setPiece_type(DPiece.PIECE_TYPE.values()[i]);
         }
-
-
     }
-
 
     @Override
     public void listen() {

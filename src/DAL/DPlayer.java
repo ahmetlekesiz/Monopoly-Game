@@ -6,9 +6,9 @@ public class DPlayer {
     private int balance, cycleCounter, totalDiceValue, roundValue, currentDiceVal;
     private boolean bankruptFlag;
     private BDice playerDice;
-    private Piece.PIECE_TYPE piece_type;
+    private DPiece.PIECE_TYPE piece_type;
 
-    public DPlayer(Piece.PIECE_TYPE piece_type,int balance) {
+    public DPlayer(DPiece.PIECE_TYPE piece_type, int balance) {
         playerDice = new BDice();
         this.piece_type = piece_type;
         this.balance = balance;
@@ -21,7 +21,7 @@ public class DPlayer {
 
     public void setCurrentDiceVal(int currentDiceVal) { this.currentDiceVal = currentDiceVal; }
 
-    public void setPiece_type(Piece.PIECE_TYPE piece_type) {this.piece_type = piece_type;}
+    public void setPiece_type(DPiece.PIECE_TYPE piece_type) {this.piece_type = piece_type;}
 
     public int getBalance() {
         return balance;
@@ -45,7 +45,7 @@ public class DPlayer {
         return bankruptFlag;
     }
 
-    public Piece.PIECE_TYPE getPiece_type() {
+    public DPiece.PIECE_TYPE getPiece_type() {
         return piece_type;
     }
 

@@ -1,15 +1,15 @@
 package BL;
 
 import DAL.DPlayer;
-import DAL.Instruction;
+import DAL.DInstruction;
 
 public class BTaxSquare extends BSquare {
 
     private final String SQUARE_TYPE = "TAX_SQUARE";
-    private final Instruction instructionInstance = Instruction.getInstance();
+    private final DInstruction DInstructionInstance = DInstruction.getInstance();
 
     @Override
     public void performOnLand(DPlayer player) {
-        player.setBalance(player.getBalance() - (int) instructionInstance.priceOfTaxSquares);
+        player.setBalance(player.getBalance() - (int) DInstructionInstance.priceOfTaxSquares);
     }
 }

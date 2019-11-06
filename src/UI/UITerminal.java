@@ -1,14 +1,14 @@
 package UI;
 
 
-import DAL.Instruction;
+import DAL.DInstruction;
 
-public class TerminalOutput {
+public class UITerminal {
 
     public void printCurrentJSONFile() {
         System.out.println("---------------------------------------------------------------------");
         System.out.println("PROPERTIES OF THE GAME");
-        System.out.println(Instruction.getInstance());
+        System.out.println(DInstruction.getInstance());
         System.out.println("---------------------------------------------------------------------");
         System.out.println("MONOPOLY GAME");
     }
