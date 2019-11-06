@@ -3,9 +3,17 @@ package Controller;
 import BL.BMonopolyGame;
 import DAL.DInstruction;
 import DAL.DJSONReader;
+import DAL.DPlayer;
 import UI.UITerminal;
 
-class CMonopolyGame {
+public class CMonopolyGame {
+
+    UITerminal uiTerminal = new UITerminal();
+
+    public CMonopolyGame(DPlayer dPlayer){
+        uiTerminal.printBeforeRollDİce(dPlayer);
+        uiTerminal.printAfterRollDice(dPlayer);
+    }
 
     private UITerminal UITerminal;
 

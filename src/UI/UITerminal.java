@@ -1,12 +1,9 @@
 package UI;
 
-
-import Controller.CMonopolyGame;
 import DAL.DInstruction;
+import DAL.DPlayer;
 
 public class UITerminal {
-
-    CMonopolyGame cMonopolyGame = new CMonopolyGame();
 
     public void printCurrentJSONFile() {
         System.out.println("---------------------------------------------------------------------");
@@ -16,11 +13,18 @@ public class UITerminal {
         System.out.println("MONOPOLY GAME");
     }
 
-    public void printBeforeRollDİce() {
-
+    public void printBeforeRollDİce(DPlayer dPlayer) {
+        System.out.println("---------------------------------------------------------------------");
+        System.out.println("Player Type:"+dPlayer.getPiece_type());
+        System.out.println("Player Round Value:"+dPlayer.getRoundValue());
+        System.out.println("Player Location:"+dPlayer.getLocation());
+        System.out.println("---------------------------------------------------------------------");
     }
 
-    public void printAfterRollDice(){
-
+    public void printAfterRollDice(DPlayer dPlayer){
+        System.out.println("---------------------------------------------------------------------");
+        System.out.println("Player Location:"+dPlayer.getLocation());
+        System.out.println("Player Balance:"+dPlayer.getBalance());
+        System.out.println("---------------------------------------------------------------------");
     }
 }
