@@ -23,6 +23,16 @@ public class BPlayer implements BPlayerObserver {
         currentSquare.performOnLand(dPlayer);
     }
 
+    public int rollDice(){
+        int[] diceVal;
+        int dice1Val,dice2Val;
+
+        diceVal = this.getDPlayer().getPlayerDice().rollDice();
+        dice1Val = diceVal[0];
+        dice2Val = diceVal[1];
+        this.getDPlayer().setCurrentDiceVal(dice1Val+dice2Val);
+        return dice1Val + dice2Val;
+    }
     private boolean isPlayerCrossTheGoSquare() {
         return (int) Math.floor(dPlayer.getTotalDiceValue() / 40f) != dPlayer.getRoundValue();
     }
@@ -34,4 +44,6 @@ public class BPlayer implements BPlayerObserver {
     public DPlayer getDPlayer() {
         return dPlayer;
     }
+
+
 }

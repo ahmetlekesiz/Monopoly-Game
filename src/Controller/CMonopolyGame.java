@@ -1,5 +1,7 @@
 package Controller;
 
+import BL.BMonopolyGame;
+import DAL.Instruction;
 import DAL.JSONReader;
 import UI.TerminalOutput;
 
@@ -15,6 +17,9 @@ class CMonopolyGame {
     static CMonopolyGame createMonopolyGameUsingJSONFile(String JSONInstructionFileName) {
         return new CMonopolyGame(JSONInstructionFileName);
     }
+    static void start(){
 
+        new BMonopolyGame().startGame(Instruction.getInstance());
+    }
 
 }
