@@ -58,8 +58,8 @@ public class BMonopolyGame implements BGameObserver {
         isFirstRound = true;
         while (players.size() != 1) {
             startTurn();
+            if (isFirstRound) isFirstRound = false;
         }
-        if (isFirstRound) isFirstRound = false;
     }
 
     private void startTurn() {
