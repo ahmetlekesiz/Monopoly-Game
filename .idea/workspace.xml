@@ -1,16 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dfd4cd54-fa73-4f3b-abf8-245eae6a795f" name="Default Changelist" comment="">
+    <list default="true" id="dfd4cd54-fa73-4f3b-abf8-245eae6a795f" name="Default Changelist" comment="First round problem solved.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BL/BBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BL/BBoard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BL/BMonopolyGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BL/BMonopolyGame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BL/BPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BL/BPlayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BL/BRegularSquare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BL/BRegularSquare.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BL/BSquare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BL/BSquare.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BL/BTaxSquare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BL/BTaxSquare.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/CMonopolyGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/CMonopolyGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DAL/DPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAL/DPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BL/BPlayerObserver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BL/BPlayerObserver.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -129,7 +124,7 @@
       <updated>1572971130194</updated>
       <workItem from="1573036744792" duration="3967000" />
       <workItem from="1573050815173" duration="4201000" />
-      <workItem from="1573068748936" duration="4044000" />
+      <workItem from="1573068748936" duration="6692000" />
     </task>
     <task id="LOCAL-00001" summary="model, view, controller packages created.&#10;MonopolyGame class created.&#10;MonopolyGame class constructor template created using static factory methods design pattern.">
       <created>1572975097652</created>
@@ -285,7 +280,42 @@
       <option name="project" value="LOCAL" />
       <updated>1573070278160</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Project modified and optimised.">
+      <created>1573072872228</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1573072872228</updated>
+    </task>
+    <task id="LOCAL-00024" summary="BMonopolyGame fixed.">
+      <created>1573073323729</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1573073323729</updated>
+    </task>
+    <task id="LOCAL-00025" summary="BMonopolyGame fixed.">
+      <created>1573073987854</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1573073987854</updated>
+    </task>
+    <task id="LOCAL-00026" summary="First round problem.">
+      <created>1573074057790</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1573074057790</updated>
+    </task>
+    <task id="LOCAL-00027" summary="First round problem solved.">
+      <created>1573074373081</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1573074373081</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -305,8 +335,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Basic output removed" />
-    <MESSAGE value="model, view, controller packages created.&#10;MonopolyGame class created.&#10;MonopolyGame class constructor template created using static factory methods design pattern." />
     <MESSAGE value="JSONReader class added." />
     <MESSAGE value="Instruction class added.(Singleton pattern)" />
     <MESSAGE value="Instruction class method name changed." />
@@ -328,6 +356,10 @@
     <MESSAGE value="BBoard modified." />
     <MESSAGE value="BBoard TODO added." />
     <MESSAGE value="Main method modified." />
-    <option name="LAST_COMMIT_MESSAGE" value="Main method modified." />
+    <MESSAGE value="Project modified and optimised." />
+    <MESSAGE value="BMonopolyGame fixed." />
+    <MESSAGE value="First round problem." />
+    <MESSAGE value="First round problem solved." />
+    <option name="LAST_COMMIT_MESSAGE" value="First round problem solved." />
   </component>
 </project>
