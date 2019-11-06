@@ -7,10 +7,12 @@ import UI.UITerminal;
 
 class CMonopolyGame {
 
+    private UITerminal UITerminal;
+
     private CMonopolyGame(String JSONInstructionFileName) {
         DJSONReader objDJSONReader = new DJSONReader(JSONInstructionFileName);
         objDJSONReader.initInstructionObject();
-        UITerminal UITerminal = new UITerminal();
+        UITerminal = new UITerminal();
         UITerminal.printCurrentJSONFile();
     }
 
@@ -19,7 +21,7 @@ class CMonopolyGame {
     }
 
     void start() {
-        new BMonopolyGame().startGame(DInstruction.getInstance());
+        BMonopolyGame.getInstance().startGame(DInstruction.getInstance());
     }
 
 }
