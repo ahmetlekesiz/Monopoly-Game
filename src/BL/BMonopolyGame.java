@@ -22,6 +22,7 @@ public class BMonopolyGame implements BGameObserver {
     }
     public void startGame(DInstruction gameInstructions){
         initPlayersByLettingThemRollingDiceandPutInList(gameInstructions);
+
     }
 
     private void initPlayersByLettingThemRollingDiceandPutInList(DInstruction gameInstructions) {
