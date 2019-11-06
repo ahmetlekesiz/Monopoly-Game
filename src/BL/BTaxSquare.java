@@ -1,14 +1,19 @@
 package BL;
 
-import DAL.Instruction;
+import DAL.DPlayer;
+import DAL.DInstruction;
 
 public class BTaxSquare extends BSquare {
 
-    private final String SQUARE_TYPE = "B_TAX_SQUARE";
-    private final Instruction instance = Instruction.getInstance();
+    private final String SQUARE_TYPE = "TAX_SQUARE";
+    private final DInstruction DInstructionInstance = DInstruction.getInstance();
 
+    public BTaxSquare(int id){
+        this.setId(id);
+    }
     @Override
-    public void performOnLand(BPlayer player) {
-        player.balance -= instance.priceOfTaxSquares;
+    public void performOnLand(DPlayer player) {
+        player.setLocation(player.getTotalDiceValue()%40);
+        player.setBalance(player.getBalance() - (int) DInstructionInstance.priceOfTaxSquares);
     }
 }

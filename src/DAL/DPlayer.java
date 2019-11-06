@@ -1,37 +1,79 @@
 package DAL;
 
+import BL.BDice;
+
 public class DPlayer {
-    private String name;
-    private int balance;
-    private Piece piece;
-
-    public DPlayer(String name, int balance, Piece piece) {
-        this.name = name;
+    private int balance, cycleCounter, totalDiceValue, roundValue, currentDiceVal;
+    private boolean bankruptFlag;
+    private BDice playerDice;
+    private DPiece.PIECE_TYPE piece_type;
+    private int location;
+    public DPlayer(DPiece.PIECE_TYPE piece_type, int balance) {
+        playerDice = new BDice();
+        this.piece_type = piece_type;
         this.balance = balance;
-        this.piece = piece;
+        this.cycleCounter=0;
+        this.roundValue = 0;
+        this.currentDiceVal = 0;
     }
 
-    public String getName() {
-        return name;
+    public int getCurrentDiceVal() { return currentDiceVal; }
+
+    public void setCurrentDiceVal(int currentDiceVal) { this.currentDiceVal = currentDiceVal; }
+
+    public void setPiece_type(DPiece.PIECE_TYPE piece_type) {this.piece_type = piece_type;}
+
+    public int getLocation() {
+        return location;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setLocation(int location) {
+        this.location = location;
     }
 
     public int getBalance() {
         return balance;
     }
 
+    public int getCycleCounter() {
+        return cycleCounter;
+    }
+
+    public int getTotalDiceValue() {
+        return totalDiceValue;
+    }
+
+    public int getRoundValue() {
+        return roundValue;
+    }
+
+    public BDice getPlayerDice() {return playerDice; }
+
+    public boolean isBankrupted() {
+        return bankruptFlag;
+    }
+
+    public DPiece.PIECE_TYPE getPiece_type() {
+        return piece_type;
+    }
+
     public void setBalance(int balance) {
         this.balance = balance;
     }
 
-    public Piece getPiece() {
-        return piece;
+    public void setCycleCounter(int cycleCounter) {
+        this.cycleCounter = cycleCounter;
     }
 
-    public void setPiece(Piece piece) {
-        this.piece = piece;
+    public void setTotalDiceValue(int totalDiceValue) {
+        this.totalDiceValue = totalDiceValue;
+    }
+
+    public void setBankruptFlag(boolean bankruptFlag) {
+        this.bankruptFlag = bankruptFlag;
+    }
+
+    public void setRoundValue(int roundValue) {
+        this.roundValue = roundValue;
     }
 }

@@ -7,11 +7,11 @@ import org.json.simple.parser.ParseException;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class JSONReader {
+public class DJSONReader {
 
     private JSONObject currentJSONObject;
 
-    public JSONReader(String JSONFileName) {
+    public DJSONReader(String JSONFileName) {
         try {
             currentJSONObject = (JSONObject) new JSONParser().parse(new FileReader(JSONFileName));
         } catch (IOException | ParseException e) {
@@ -24,7 +24,7 @@ public class JSONReader {
     }
 
     public void initInstructionObject() {
-        Instruction.getInstance(
+        DInstruction.getInstance(
                 (Long) getValueUsingKey("countOfPlayers"),
                 (Long) getValueUsingKey("startMoney"),
                 (Long) getValueUsingKey("countOfTaxSquare"),
