@@ -12,6 +12,9 @@ public class BPlayer implements BPlayerObserver {
 
     @Override
     public void checkPlayer(int currentDiceValue, BSquare currentSquare) {
+        if (isPlayerBankrupted()) {
+            dPlayer.setBankruptFlag(true);
+        }
         dPlayer.setTotalDiceValue(dPlayer.getTotalDiceValue() + currentDiceValue);
         if (isPlayerCrossTheGoSquare()) {
             dPlayer.setRoundValue(dPlayer.getRoundValue() + 1);
@@ -22,6 +25,10 @@ public class BPlayer implements BPlayerObserver {
 
     private boolean isPlayerCrossTheGoSquare() {
         return (int) Math.floor(dPlayer.getTotalDiceValue() / 40f) != dPlayer.getRoundValue();
+    }
+
+    private boolean isPlayerBankrupted() {
+        return dPlayer.getBalance() <= 0;
     }
 
     public DPlayer getDPlayer() {
