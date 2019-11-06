@@ -13,6 +13,14 @@ public class BBoard {
     private BBoard() {
         instructionInstance = Instruction.getInstance();
         squares = new BSquare[SQUARE_NUMBER];
+        initSquares();
+    }
+
+    private void initSquares() {
+        for (int i = 0; i < SQUARE_NUMBER; ++i) {
+            squares[i] = new BRegularSquare();
+        }
+
     }
 
     public static BBoard getInstance() {

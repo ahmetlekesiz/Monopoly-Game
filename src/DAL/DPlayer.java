@@ -29,12 +29,16 @@ public class DPlayer {
         return roundValue;
     }
 
-    public boolean isBankruptFlag() {
+    public boolean isBankrupted() {
         return bankruptFlag;
     }
 
     public Piece.PIECE_TYPE getPiece_type() {
         return piece_type;
+    }
+
+    public BDice getPlayerDice() {
+        return playerDice;
     }
 
     public void setBalance(int balance) {
