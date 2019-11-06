@@ -7,7 +7,7 @@ public class DPlayer {
     private boolean bankruptFlag;
     private BDice playerDice;
     private DPiece.PIECE_TYPE piece_type;
-
+    private int location;
     public DPlayer(DPiece.PIECE_TYPE piece_type, int balance) {
         playerDice = new BDice();
         this.piece_type = piece_type;
@@ -22,6 +22,14 @@ public class DPlayer {
     public void setCurrentDiceVal(int currentDiceVal) { this.currentDiceVal = currentDiceVal; }
 
     public void setPiece_type(DPiece.PIECE_TYPE piece_type) {this.piece_type = piece_type;}
+
+    public int getLocation() {
+        return location;
+    }
+
+    public void setLocation(int location) {
+        this.location = location;
+    }
 
     public int getBalance() {
         return balance;

@@ -28,11 +28,11 @@ public class BBoard {
 
         //intilazing with regular  squeres
         for (int i = 0; i < SQUARE_NUMBER; ++i) {
-            squares[i] = new BRegularSquare();
+            squares[i] = new BRegularSquare(i);
         }
 
         for(int i = 0; i < numOfTaxSquares; i++)
-            squares[taxSquereLocations[i]] = new BTaxSquare();
+            squares[taxSquereLocations[i]] = new BTaxSquare(i);
 
 
 
