@@ -36,6 +36,10 @@ public class BBoard {
 
     }
 
+    public BSquare[] getSquares() {
+        return squares;
+    }
+
     public static BBoard getInstance(int numOfTaxSquares) {
         if(boardInstance == null){
             boardInstance = new BBoard(numOfTaxSquares);

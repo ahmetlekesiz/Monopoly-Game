@@ -11,7 +11,7 @@ public class BRegularSquare extends BSquare {
     }
     @Override
     public void performOnLand(DPlayer player) {
-
+        player.setLocation(this.getId());
     }
 
 }

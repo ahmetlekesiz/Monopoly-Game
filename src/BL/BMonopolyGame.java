@@ -21,10 +21,10 @@ public class BMonopolyGame implements BGameObserver {
     }
     public void startGame(DInstruction gameInstructions){
         initPlayersByLettingThemRollingDiceandPutInList(gameInstructions);
-        BBoard.getInstance((int)gameInstructions.countOfTaxSquares);
+        boardInstance=BBoard.getInstance((int)gameInstructions.countOfTaxSquares);
         int counter = 0;
         while(counter < 20){
-
+            listen();
             counter++;
         }
     }
@@ -63,9 +63,15 @@ public class BMonopolyGame implements BGameObserver {
     private void startTurn() {
         for (BPlayer currentPlayer : players) {
             if (!currentPlayer.getDPlayer().isBankrupted()) {
-                currentPlayer.getDPlayer().getPlayerDice().rollDice();
+                currentPlayer.rollDice();
+                performActions(boardInstance,currentPlayer);
+                currentPlayer.checkPlayer(currentPlayer.getDPlayer().getCurrentDiceVal(),boardInstance.getSquares()[currentPlayer.getDPlayer().getLocation()]);
             }
         }
+    }
+
+    private void performActions(BBoard instance,BPlayer player){
+        instance.getSquares()[player.getDPlayer().getLocation()].performOnLand(player.getDPlayer());
     }
 
 }
