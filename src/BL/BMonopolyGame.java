@@ -56,7 +56,7 @@ public class BMonopolyGame implements BGameObserver {
     @Override
     public void listen() {
         isFirstRound = true;
-        while (players.size() != 1) {
+        if (players.size() != 1) {
             startTurn();
             if (isFirstRound) isFirstRound = false;
         }
