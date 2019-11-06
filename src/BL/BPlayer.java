@@ -16,7 +16,10 @@ public class BPlayer implements BPlayerObserver {
             dPlayer.setBankruptFlag(true);
         }
         dPlayer.setTotalDiceValue(dPlayer.getTotalDiceValue() + currentDiceValue);
-        if (isPlayerCrossTheGoSquare() && dPlayer.getTotalDiceValue() != 0) {
+        if (dPlayer.getTotalDiceValue() == 0) {
+            return;
+        }
+        if (isPlayerCrossTheGoSquare()) {
             dPlayer.setRoundValue(dPlayer.getRoundValue() + 1);
             new BGoSquare().performOnLand(dPlayer);
             return;
