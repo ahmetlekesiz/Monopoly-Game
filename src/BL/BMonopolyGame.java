@@ -12,6 +12,7 @@ public class BMonopolyGame implements BGameObserver {
     private static BMonopolyGame monopolyGameInstance = new BMonopolyGame();
     private ArrayList<BPlayer> players;
     private BBoard boardInstance;
+    private boolean isFirstRound;
 
     private BMonopolyGame() {
         players = new ArrayList<>();
@@ -25,7 +26,7 @@ public class BMonopolyGame implements BGameObserver {
     public void startGame(DInstruction gameInstructions){
         initPlayersByLettingThemRollingDiceAndPutInList(gameInstructions);
         int counter = 0;
-        while(counter < 20){
+        while(counter < 20) {
             listen();
             counter++;
         }
@@ -54,7 +55,8 @@ public class BMonopolyGame implements BGameObserver {
 
     @Override
     public void listen() {
-        if (players.size() != 1) {
+        isFirstRound = true;
+        while (players.size() != 1) {
             startTurn();
         }
     }
@@ -64,8 +66,11 @@ public class BMonopolyGame implements BGameObserver {
             BPlayer currentPlayer = iterator.next();
             if (!currentPlayer.getDPlayer().isBankrupted()) {
                 currentPlayer.rollDice();
+                System.out.println(currentPlayer.getDPlayer().getBalance());
+                System.out.println(currentPlayer.getDPlayer().getCurrentDiceVal());
                 currentPlayer.checkPlayer(currentPlayer.getDPlayer().getCurrentDiceVal(),
-                        boardInstance.getSquares()[currentPlayer.getDPlayer().getLocation()]);
+                        boardInstance.getSquares()[currentPlayer.getDPlayer().getLocation()], isFirstRound);
+                if (isFirstRound) isFirstRound = false;
                 if (currentPlayer.getDPlayer().isBankrupted()) {
                     iterator.remove();
                 }
