@@ -72,7 +72,6 @@ public class BMonopolyGame implements BGameObserver {
                 currentPlayer.checkPlayer(currentPlayer.getDPlayer().getCurrentDiceVal(),
                         boardInstance.getSquares()[currentPlayer.getDPlayer().getLocation()], isFirstRound);
                 uiTerminal.printAfterRollDice(currentPlayer.getDPlayer());
-                if (isFirstRound) isFirstRound = false;
                 if (currentPlayer.getDPlayer().isBankrupted()) {
                     iterator.remove();
                 }
