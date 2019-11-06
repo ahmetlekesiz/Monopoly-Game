@@ -7,26 +7,34 @@ import java.util.Comparator;
 import DAL.DPlayer;
 import DAL.Instruction;
 import DAL.Piece;
+import org.jetbrains.annotations.Contract;
+import org.jetbrains.annotations.NotNull;
 
 public class BMonopolyGame implements BGameObserver {
 
     private static BMonopolyGame monopolyGameInstance = new BMonopolyGame();
     private ArrayList<BPlayer> players;
     private BBoard boardInstance;
-
+    private boolean flag =true;
     public BMonopolyGame() {
         players = new ArrayList<>();
         boardInstance = BBoard.getInstance();
     }
 
+    @Contract(pure = true)
     public static BMonopolyGame getInstance() {
         return monopolyGameInstance;
     }
     public void startGame(Instruction gameInstructions){
         initPlayersByLettingThemRollingDiceandPutInList(gameInstructions);
+
+        while(flag){
+            listen();
+
+        }
     }
 
-    private void initPlayersByLettingThemRollingDiceandPutInList(Instruction gameInstructions) {
+    private void initPlayersByLettingThemRollingDiceandPutInList(@NotNull Instruction gameInstructions) {
         int counter = (int)gameInstructions.countOfPlayers;
 
         while(counter != 0){

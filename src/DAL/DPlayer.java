@@ -1,13 +1,14 @@
 package DAL;
 
 import BL.BDice;
+import BL.BSquare;
 
 public class DPlayer {
     private int balance, cycleCounter, totalDiceValue, roundValue, currentDiceVal;
     private boolean bankruptFlag;
     private BDice playerDice;
     private Piece.PIECE_TYPE piece_type;
-
+    private BSquare location;
     public DPlayer(Piece.PIECE_TYPE piece_type,int balance) {
         playerDice = new BDice();
         this.piece_type = piece_type;
