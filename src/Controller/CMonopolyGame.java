@@ -18,7 +18,7 @@ class CMonopolyGame {
         return new CMonopolyGame(JSONInstructionFileName);
     }
     static void start(){
-
+        System.out.println("Try It");
         new BMonopolyGame().startGame(DInstruction.getInstance());
     }
 
