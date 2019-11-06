@@ -6,6 +6,10 @@ public class BPlayer implements BPlayerObserver {
 
     private DPlayer dPlayer;
 
+    public BPlayer() {
+
+    }
+
     public BPlayer(DPlayer dPlayer) {
         this.dPlayer = dPlayer;
     }
@@ -45,5 +49,9 @@ public class BPlayer implements BPlayerObserver {
         return dPlayer;
     }
 
+    public void printBeforeRollDice() {
+        String name = dPlayer.getPiece_type().toString();
+
+    }
 
 }

@@ -1,11 +1,17 @@
 package Controller;
 
 import BL.BMonopolyGame;
+import BL.BPlayer;
 import DAL.DInstruction;
 import DAL.DJSONReader;
 import UI.UITerminal;
 
-class CMonopolyGame {
+public class CMonopolyGame {
+
+    public CMonopolyGame(){
+        BPlayer bPlayer = new BPlayer();
+
+    }
 
     private CMonopolyGame(String JSONInstructionFileName) {
         DJSONReader objDJSONReader = new DJSONReader(JSONInstructionFileName);
@@ -18,7 +24,6 @@ class CMonopolyGame {
         return new CMonopolyGame(JSONInstructionFileName);
     }
     static void start(){
-
         new BMonopolyGame().startGame(DInstruction.getInstance());
     }
 
