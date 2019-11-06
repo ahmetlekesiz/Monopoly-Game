@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dfd4cd54-fa73-4f3b-abf8-245eae6a795f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/BL/BGameObserver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BL/BBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BL/BBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BL/BMonopolyGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BL/BMonopolyGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/CMonopolyGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/CMonopolyGame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DAL/DPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAL/DPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/TerminalOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/TerminalOutput.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,18 +17,15 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
-  </component>
-  <component name="Git.Rebase.Settings">
-    <option name="ONTO" value="refs/remotes/origin/master" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="f001" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -41,21 +37,15 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/libs" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/libs" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -72,11 +62,11 @@
   </component>
   <component name="RunManager" selected="Application.Main (1)">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="controller.Main" />
+      <option name="MAIN_CLASS_NAME" value="Controller.Main" />
       <module name="Monopoly" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="controller.*" />
+          <option name="PATTERN" value="Controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -91,13 +81,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Controller.Main" />
+      <module name="Monopoly" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Main (1)" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Main (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -111,8 +111,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1572971130194</updated>
-      <workItem from="1573036744792" duration="3967000" />
-      <workItem from="1573050815173" duration="3816000" />
+      <workItem from="1573050801099" duration="3307000" />
     </task>
     <task id="LOCAL-00001" summary="model, view, controller packages created.&#10;MonopolyGame class created.&#10;MonopolyGame class constructor template created using static factory methods design pattern.">
       <created>1572975097652</created>
@@ -184,63 +183,77 @@
       <option name="project" value="LOCAL" />
       <updated>1572981882167</updated>
     </task>
-    <task id="LOCAL-00011" summary="JSON file is printed.">
-      <created>1572985444766</created>
+    <task id="LOCAL-00011" summary="Instruction toString method added.">
+      <created>1572984300192</created>
       <option name="number" value="00011" />
       <option name="presentableId" value="LOCAL-00011" />
       <option name="project" value="LOCAL" />
-      <updated>1572985444766</updated>
+      <updated>1572984300192</updated>
     </task>
-    <task id="LOCAL-00012" summary="Board class implemented.">
-      <created>1572997769220</created>
+    <task id="LOCAL-00012" summary="Integer cast changed to Long.">
+      <created>1572985112677</created>
       <option name="number" value="00012" />
       <option name="presentableId" value="LOCAL-00012" />
       <option name="project" value="LOCAL" />
-      <updated>1572997769220</updated>
+      <updated>1572985112677</updated>
     </task>
-    <task id="LOCAL-00013" summary="performOnLand method modified.">
-      <created>1573037617751</created>
+    <task id="LOCAL-00013" summary="Layers initialised.">
+      <created>1572991999722</created>
       <option name="number" value="00013" />
       <option name="presentableId" value="LOCAL-00013" />
       <option name="project" value="LOCAL" />
-      <updated>1573037617751</updated>
+      <updated>1572991999722</updated>
     </task>
-    <task id="LOCAL-00014" summary="BRegularSquare implemented.">
-      <created>1573037751899</created>
+    <task id="LOCAL-00014" summary="Controller distilled.">
+      <created>1572992860296</created>
       <option name="number" value="00014" />
       <option name="presentableId" value="LOCAL-00014" />
       <option name="project" value="LOCAL" />
-      <updated>1573037751899</updated>
+      <updated>1572992860296</updated>
     </task>
-    <task id="LOCAL-00015" summary="BPlayer class BPlayerObserver interface implemented.">
-      <created>1573039511301</created>
+    <task id="LOCAL-00015" summary="BPlayer data constructed.">
+      <created>1572993323533</created>
       <option name="number" value="00015" />
       <option name="presentableId" value="LOCAL-00015" />
       <option name="project" value="LOCAL" />
-      <updated>1573039511301</updated>
+      <updated>1572993323533</updated>
     </task>
-    <task id="LOCAL-00016" summary="PlayerObserver modified.">
-      <created>1573039612677</created>
+    <task id="LOCAL-00016" summary="Instruction Controller and DAL layer added.">
+      <created>1572993633875</created>
       <option name="number" value="00016" />
       <option name="presentableId" value="LOCAL-00016" />
       <option name="project" value="LOCAL" />
-      <updated>1573039612677</updated>
+      <updated>1572993633875</updated>
     </task>
-    <task id="LOCAL-00017" summary="BPlayer modified.">
-      <created>1573050854326</created>
+    <task id="LOCAL-00017" summary="Instruction Controller and DAL layer removed.">
+      <created>1572993937899</created>
       <option name="number" value="00017" />
       <option name="presentableId" value="LOCAL-00017" />
       <option name="project" value="LOCAL" />
-      <updated>1573050854326</updated>
+      <updated>1572993937899</updated>
     </task>
-    <task id="LOCAL-00018" summary="BMonopolyGame class created.">
-      <created>1573052800999</created>
+    <task id="LOCAL-00018" summary="BTaxSquare implemented.">
+      <created>1572994267126</created>
       <option name="number" value="00018" />
       <option name="presentableId" value="LOCAL-00018" />
       <option name="project" value="LOCAL" />
-      <updated>1573052800999</updated>
+      <updated>1572994267126</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="BRegularSquare implemented.">
+      <created>1572994381095</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1572994381095</updated>
+    </task>
+    <task id="LOCAL-00020" summary="BRegularSquare is modified.">
+      <created>1573037879927</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1573037879927</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -271,14 +284,16 @@
     <MESSAGE value="JSONReader constructor modified." />
     <MESSAGE value="Piece class enum added." />
     <MESSAGE value="JSONReader init made public." />
-    <MESSAGE value="JSON file is printed." />
-    <MESSAGE value="Board class implemented." />
-    <MESSAGE value="performOnLand method modified." />
+    <MESSAGE value="Instruction toString method added." />
+    <MESSAGE value="Integer cast changed to Long." />
+    <MESSAGE value="Layers initialised." />
+    <MESSAGE value="Controller distilled." />
+    <MESSAGE value="BPlayer data constructed." />
+    <MESSAGE value="Instruction Controller and DAL layer added." />
+    <MESSAGE value="Instruction Controller and DAL layer removed." />
+    <MESSAGE value="BTaxSquare implemented." />
     <MESSAGE value="BRegularSquare implemented." />
-    <MESSAGE value="BPlayer class BPlayerObserver interface implemented." />
-    <MESSAGE value="PlayerObserver modified." />
-    <MESSAGE value="BPlayer modified." />
-    <MESSAGE value="BMonopolyGame class created." />
-    <option name="LAST_COMMIT_MESSAGE" value="BMonopolyGame class created." />
+    <MESSAGE value="BRegularSquare is modified." />
+    <option name="LAST_COMMIT_MESSAGE" value="BRegularSquare is modified." />
   </component>
 </project>
