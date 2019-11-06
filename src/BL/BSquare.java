@@ -2,13 +2,11 @@ package BL;
 
 import DAL.DPlayer;
 
-public class BSquare {
+public abstract class BSquare {
     private int Id;
     private final String SQUARE_TYPE = "NONE";
 
-    public void performOnLand(DPlayer player){
-        player.setLocation(this.Id);
-    };
+    public abstract void performOnLand(DPlayer player);
 
     public String getSQUARE_TYPE() {
         return SQUARE_TYPE;
