@@ -34,11 +34,12 @@ public class BBoard {
         for(int i = 0; i < numOfTaxSquares; i++)
             squares[taxSquereLocations[i]] = new BTaxSquare(i);
 
-
-
     }
 
-    public static BBoard getInstance() {
+    public static BBoard getInstance(int numOfTaxSquares) {
+        if(boardInstance == null){
+            boardInstance = new BBoard(numOfTaxSquares);
+        }
         return boardInstance;
     }
 }

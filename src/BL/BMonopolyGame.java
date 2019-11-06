@@ -14,7 +14,6 @@ public class BMonopolyGame implements BGameObserver {
 
     public BMonopolyGame() {
         players = new ArrayList<>();
-        boardInstance = BBoard.getInstance();
     }
 
     public static BMonopolyGame getInstance() {
@@ -22,7 +21,12 @@ public class BMonopolyGame implements BGameObserver {
     }
     public void startGame(DInstruction gameInstructions){
         initPlayersByLettingThemRollingDiceandPutInList(gameInstructions);
+        BBoard.getInstance((int)gameInstructions.countOfTaxSquares);
+        int counter = 0;
+        while(counter < 20){
 
+            counter++;
+        }
     }
 
     private void initPlayersByLettingThemRollingDiceandPutInList(DInstruction gameInstructions) {
