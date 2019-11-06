@@ -1,25 +1,40 @@
 package BL;
 
 import DAL.DInstruction;
+import com.sun.org.apache.bcel.internal.generic.Instruction;
 
 public class BBoard {
 
     private static final int SQUARE_NUMBER = 40;
     private BSquare[] squares;
     private static BBoard boardInstance;
-    private DInstruction DInstructionInstance;
+    private DInstruction instructionInstance;
     private int turnCounter;
 
-    private BBoard() {
-        DInstructionInstance = DInstruction.getInstance();
+    private BBoard(int numOfTaxSquares) {
+        instructionInstance = DInstruction.getInstance();
         squares = new BSquare[SQUARE_NUMBER];
-        initSquares();
+        initSquares(numOfTaxSquares);
     }
 
-    private void initSquares() {
+    private void initSquares(int numOfTaxSquares) {
+        int[] taxSquereLocations = new int[numOfTaxSquares];
+        int temp;
+        //crating random locations
+        for(int i = 0; i < numOfTaxSquares; i++){
+            temp =(int) ((Math.random() * SQUARE_NUMBER-1) + 2);
+            taxSquereLocations[i] = temp;
+        }
+
+        //intilazing with regular  squeres
         for (int i = 0; i < SQUARE_NUMBER; ++i) {
             squares[i] = new BRegularSquare();
         }
+
+        for(int i = 0; i < numOfTaxSquares; i++)
+            squares[taxSquereLocations[i]] = new BTaxSquare();
+
+
 
     }
 

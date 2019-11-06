@@ -10,4 +10,5 @@ public class BDice {
         diceArray[1] = (int) randomDouble;
         return diceArray;
     }
+
 }
