@@ -16,6 +16,20 @@ public class BPlayer {
         this.piece_type = piece_type;
     }
 
+    public void incrementBalance(int amount){
+        balance = balance + amount;
+    }
+
+    public void decrementBalance(int amount){
+        balance = balance - amount;
+    }
+
+    public void updateCycleCounter(int totalDiceValue){
+        if ((int)((totalDiceValue/40) - cycleCounter) >= 1){
+            cycleCounter++;
+        }
+    }
+
     public int getBalance() {
         return balance;
     }
