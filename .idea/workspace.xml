@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dfd4cd54-fa73-4f3b-abf8-245eae6a795f" name="Default Changelist" comment="First round problem solved.">
+    <list default="true" id="dfd4cd54-fa73-4f3b-abf8-245eae6a795f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BL/BMonopolyGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BL/BMonopolyGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BL/BPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BL/BPlayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BL/BPlayerObserver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BL/BPlayerObserver.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -124,7 +121,8 @@
       <updated>1572971130194</updated>
       <workItem from="1573036744792" duration="3967000" />
       <workItem from="1573050815173" duration="4201000" />
-      <workItem from="1573068748936" duration="6692000" />
+      <workItem from="1573068748936" duration="6809000" />
+      <workItem from="1573075728747" duration="116000" />
     </task>
     <task id="LOCAL-00001" summary="model, view, controller packages created.&#10;MonopolyGame class created.&#10;MonopolyGame class constructor template created using static factory methods design pattern.">
       <created>1572975097652</created>
@@ -315,7 +313,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573074373081</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Project solid commit.">
+      <created>1573075478501</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1573075478501</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -335,7 +340,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="JSONReader class added." />
     <MESSAGE value="Instruction class added.(Singleton pattern)" />
     <MESSAGE value="Instruction class method name changed." />
     <MESSAGE value="json-simple library added." />
@@ -360,6 +364,7 @@
     <MESSAGE value="BMonopolyGame fixed." />
     <MESSAGE value="First round problem." />
     <MESSAGE value="First round problem solved." />
-    <option name="LAST_COMMIT_MESSAGE" value="First round problem solved." />
+    <MESSAGE value="Project solid commit." />
+    <option name="LAST_COMMIT_MESSAGE" value="Project solid commit." />
   </component>
 </project>

@@ -58,6 +58,7 @@ public class BMonopolyGame implements BGameObserver {
         isFirstRound = true;
         while (players.size() != 1) {
             startTurn();
+            if (isFirstRound) isFirstRound = false;
         }
     }
 
@@ -66,11 +67,8 @@ public class BMonopolyGame implements BGameObserver {
             BPlayer currentPlayer = iterator.next();
             if (!currentPlayer.getDPlayer().isBankrupted()) {
                 currentPlayer.rollDice();
-                System.out.println(currentPlayer.getDPlayer().getBalance());
-                System.out.println(currentPlayer.getDPlayer().getCurrentDiceVal());
                 currentPlayer.checkPlayer(currentPlayer.getDPlayer().getCurrentDiceVal(),
                         boardInstance.getSquares()[currentPlayer.getDPlayer().getLocation()], isFirstRound);
-                if (isFirstRound) isFirstRound = false;
                 if (currentPlayer.getDPlayer().isBankrupted()) {
                     iterator.remove();
                 }
