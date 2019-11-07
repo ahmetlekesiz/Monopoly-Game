@@ -46,9 +46,9 @@ public class BMonopolyGame implements BGameObserver {
         initPlayersByLettingThemRollingDiceAndPutInList(gameInstructions);
 
         int counter = 0;
-        while(true) {
+        while(counter<30) {
             listen();
-
+            counter++;
         }
     }
 
