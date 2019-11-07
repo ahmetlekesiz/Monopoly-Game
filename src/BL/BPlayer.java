@@ -5,6 +5,7 @@ import DAL.DPlayer;
 public class BPlayer implements BPlayerObserver {
 
     private DPlayer dPlayer;
+    private BTerminal bTerminal = new BTerminal();
 
     public BPlayer() {
     }
@@ -30,7 +31,7 @@ public class BPlayer implements BPlayerObserver {
         int[] diceValues;
         diceValues = this.getDPlayer().getPlayerDice().rollDice();
         this.getDPlayer().setCurrentDiceVal(diceValues[0] + diceValues[1]);
-        System.out.println("Rolling Dices : "+diceValues[0]+"+"+diceValues[1]+"="+(diceValues[0]+diceValues[1]));
+        bTerminal.printDicesFaces(diceValues);
         return diceValues[0] + diceValues[1];
     }
 
