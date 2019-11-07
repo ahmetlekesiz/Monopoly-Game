@@ -30,8 +30,7 @@ public class BMonopolyGame implements BGameObserver {
     }
 
     /**
-     * Starting the game by
-     * for giving the output.
+     *
      * @return void
      */
     public void startGame(DInstruction gameInstructions){
