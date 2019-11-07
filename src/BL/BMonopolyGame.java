@@ -44,12 +44,7 @@ public class BMonopolyGame implements BGameObserver {
      */
     public void startGame(DInstruction gameInstructions){
         initPlayersByLettingThemRollingDiceAndPutInList(gameInstructions);
-
-        int counter = 0;
-        while(counter<30) {
-            listen();
-            counter++;
-        }
+        listen();
     }
 
     private void initPlayersByLettingThemRollingDiceAndPutInList(DInstruction gameInstructions) {
@@ -102,9 +97,10 @@ public class BMonopolyGame implements BGameObserver {
 
     @Override
     public void listen() {
-        if (players.size() != 1) {
+        while (players.size() != 1) {
             startTurn();
         }
+        System.out.println("Game Over!\nPlayer: " + players.get(0).getDPlayer().getPiece_type());
     }
 
     private void startTurn() {
