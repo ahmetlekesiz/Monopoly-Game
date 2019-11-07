@@ -45,8 +45,6 @@ public class BBoard {
         squares[0] = new BGoSquare();
     }
 
-
-
     public BSquare[] getSquares() {
         return squares;
     }
