@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dfd4cd54-fa73-4f3b-abf8-245eae6a795f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BL/BMonopolyGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BL/BMonopolyGame.java" afterDir="false" />
-    </list>
+    <list default="true" id="dfd4cd54-fa73-4f3b-abf8-245eae6a795f" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,7 +179,7 @@
       <updated>1572971130194</updated>
       <workItem from="1573125672941" duration="371000" />
       <workItem from="1573126084085" duration="8293000" />
-      <workItem from="1573135725021" duration="392000" />
+      <workItem from="1573135725021" duration="677000" />
     </task>
     <task id="LOCAL-00001" summary="model, view, controller packages created.&#10;MonopolyGame class created.&#10;MonopolyGame class constructor template created using static factory methods design pattern.">
       <created>1572975097652</created>
@@ -331,7 +328,21 @@
       <option name="project" value="LOCAL" />
       <updated>1573134277136</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Eliminated players added.">
+      <created>1573136131450</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1573136131450</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Eliminated players added.">
+      <created>1573136200631</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1573136200631</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -372,6 +383,7 @@
     <MESSAGE value="Square fixed." />
     <MESSAGE value="BMonopolyGameModified." />
     <MESSAGE value="Project running state created." />
-    <option name="LAST_COMMIT_MESSAGE" value="Project running state created." />
+    <MESSAGE value="Eliminated players added." />
+    <option name="LAST_COMMIT_MESSAGE" value="Eliminated players added." />
   </component>
 </project>
