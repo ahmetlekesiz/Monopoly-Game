@@ -11,4 +11,8 @@ public class BRegularSquare extends BSquare {
 
     }
 
+    @Override
+    public String getSQUARE_TYPE() {
+        return this.SQUARE_TYPE;
+    }
 }

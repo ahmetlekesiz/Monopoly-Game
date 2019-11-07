@@ -1,8 +1,8 @@
 {
-  "countOfPlayers": 8,
+  "countOfPlayers": 2,
   "startMoney": 2000,
   "countOfTaxSquare": 30,
-  "priceOfTaxSquare": 100,
-  "priceOfGoSquare": 200
+  "priceOfTaxSquare": 50,
+  "priceOfGoSquare": 100
 }
 

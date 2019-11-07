@@ -102,26 +102,21 @@ public class BMonopolyGame implements BGameObserver {
 
     @Override
     public void listen() {
-        isFirstRound = true;
         if (players.size() != 1) {
             startTurn();
-            if (isFirstRound) isFirstRound = false;
         }
     }
 
     private void startTurn() {
         for (Iterator<BPlayer> iterator = players.iterator(); iterator.hasNext();) {
             BPlayer currentPlayer = iterator.next();
-
             if (!currentPlayer.getDPlayer().isBankrupted()) {
                 bTerminal.printBeforeRollDice(currentPlayer.getDPlayer());
-
                 currentPlayer.rollDice();
+                currentPlayer.getDPlayer().setTotalDiceValue(currentPlayer.getDPlayer().getTotalDiceValue() +
+                        currentPlayer.getDPlayer().getCurrentDiceVal());
                 currentPlayer.checkAndUpdatePlayer(currentPlayer.getDPlayer().getCurrentDiceVal(),
-                        boardInstance.getSquares()[currentPlayer.getDPlayer().getLocation()], isFirstRound);
-
-               //printDetails(currentPlayer);
-
+                        boardInstance.getSquares()[currentPlayer.getDPlayer().getLocation()]);
                 bTerminal.printLocationType(boardInstance.getSquares()[currentPlayer.getDPlayer().getLocation()].getSQUARE_TYPE());
                 bTerminal.printAfterRollDice(currentPlayer.getDPlayer());
 
