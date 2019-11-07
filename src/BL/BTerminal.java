@@ -4,6 +4,8 @@ import Controller.CTerminal;
 import DAL.DInstruction;
 import DAL.DPlayer;
 
+import java.util.ArrayList;
+
 public class BTerminal {
 
     private CTerminal cTerminal = new CTerminal();
@@ -22,6 +24,14 @@ public class BTerminal {
 
     public void printAfterRollDice(DPlayer dPlayer){
         cTerminal.printAfterRollDice(dPlayer);
+    }
+
+    public void printWinnerPlayer(DPlayer dPlayer){
+        cTerminal.printWinnerPlayer(dPlayer);
+    }
+
+    public void printGameOver(ArrayList eliminatedList){
+        cTerminal.printGameOver(eliminatedList);
     }
 }
 

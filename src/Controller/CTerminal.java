@@ -4,6 +4,9 @@ package Controller;
 import BL.BTerminal;
 import DAL.DPlayer;
 import UI.UITerminal;
+
+import java.util.ArrayList;
+
 public class CTerminal {
 
     private UITerminal uiTerminal = new UITerminal();
@@ -24,5 +27,12 @@ public class CTerminal {
         uiTerminal.printAfterRollDice(dPlayer);
     }
 
+    public void printWinnerPlayer(DPlayer dPlayer){
+        uiTerminal.printWinnerPlayer(dPlayer);
+    }
+
+    public void printGameOver(ArrayList eliminatedList){
+        uiTerminal.printGameOver(eliminatedList);
+    }
 
 }
