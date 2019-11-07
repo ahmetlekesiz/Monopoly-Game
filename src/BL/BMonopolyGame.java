@@ -48,11 +48,10 @@ public class BMonopolyGame implements BGameObserver {
         for (BPlayer player : players) {
             diceSum = player.rollDice();
             //Checking if the diceSum same with other players.
-            if(!checkIfDiceSumExist(diceSumOfPlayers, diceSum)){
-                player.rollDice();
-            }else{
-                diceSumOfPlayers.add(diceSum);
+            while(checkIfDiceSumExist(diceSumOfPlayers, diceSum)){
+                diceSum = player.rollDice();
             }
+            diceSumOfPlayers.add(diceSum);
         }
 
         //Sorting player list by theirs currentDiceVal properties by decrementing order.
@@ -70,10 +69,10 @@ public class BMonopolyGame implements BGameObserver {
     private boolean checkIfDiceSumExist(ArrayList<Integer> diceSumOfPlayers, int diceSum){
         for (int i = 0; i < diceSumOfPlayers.size() ; i++) {
             if(diceSumOfPlayers.get(i).equals(diceSum)){
-                return false;
+                return true;
             }
         }
-        return true;
+        return false;
     }
 
     @Override
