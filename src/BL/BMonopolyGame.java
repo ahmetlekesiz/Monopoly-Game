@@ -7,6 +7,10 @@ import DAL.DPlayer;
 import DAL.DInstruction;
 import DAL.DPiece;
 
+/***
+ *
+ * @author Ahmet Lekesiz
+ */
 public class BMonopolyGame implements BGameObserver {
 
     private static BMonopolyGame monopolyGameInstance = new BMonopolyGame();
@@ -25,6 +29,11 @@ public class BMonopolyGame implements BGameObserver {
         return monopolyGameInstance;
     }
 
+    /**
+     * Starting the game by
+     * for giving the output.
+     * @return void
+     */
     public void startGame(DInstruction gameInstructions){
         initPlayersByLettingThemRollingDiceAndPutInList(gameInstructions);
 
