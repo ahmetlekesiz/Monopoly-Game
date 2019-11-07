@@ -18,14 +18,13 @@ import DAL.DPiece;
 public class BMonopolyGame implements BGameObserver {
 
     private static BMonopolyGame monopolyGameInstance = new BMonopolyGame();
-    private ArrayList<BPlayer> players;
+    private ArrayList<BPlayer> currentPlayers, eliminatedPlayers;
     private BBoard boardInstance;
     private BTerminal bTerminal = new BTerminal();
-    private boolean isFirstRound;
-    private ArrayList<Integer> diceSumOfPlayers = new ArrayList<Integer>();
+    private ArrayList<Integer> diceSumOfPlayers = new ArrayList<>();
 
     private BMonopolyGame() {
-        players = new ArrayList<>();
+        currentPlayers = new ArrayList<>();
         boardInstance = BBoard.getInstance();
     }
 
@@ -52,12 +51,12 @@ public class BMonopolyGame implements BGameObserver {
         int diceSum;
 
         while(counter != 0){
-            players.add(new BPlayer(new DPlayer(DPiece.PIECE_TYPE.BATTLESHIP, (int) gameInstructions.startMoney)));
+            currentPlayers.add(new BPlayer(new DPlayer(DPiece.PIECE_TYPE.BATTLESHIP, (int) gameInstructions.startMoney)));
             counter--;
         }
 
         //Rolling dice for each players.
-        for (BPlayer player : players) {
+        for (BPlayer player : currentPlayers) {
             diceSum = player.rollDice();
             //Checking if the diceSum same with other players.
             while(checkIfDiceSumExist(diceSumOfPlayers, diceSum)){
@@ -67,14 +66,14 @@ public class BMonopolyGame implements BGameObserver {
         }
 
         //Sorting player list by theirs currentDiceVal properties by decrementing order.
-        players.sort((firstPlayer, secondPlayer) -> {
+        currentPlayers.sort((firstPlayer, secondPlayer) -> {
             if (firstPlayer.getDPlayer().getCurrentDiceVal() == secondPlayer.getDPlayer().getCurrentDiceVal())
                 return 0;
             return firstPlayer.getDPlayer().getCurrentDiceVal() > secondPlayer.getDPlayer().getCurrentDiceVal() ? -1 : 1;
         });
         //After sorting players the piece types are setting.
-        for(int i = 0; i < players.size(); i++){
-            players.get(i).getDPlayer().setPiece_type(DPiece.PIECE_TYPE.values()[i]);
+        for(int i = 0; i < currentPlayers.size(); i++){
+            currentPlayers.get(i).getDPlayer().setPiece_type(DPiece.PIECE_TYPE.values()[i]);
         }
     }
 
@@ -97,14 +96,14 @@ public class BMonopolyGame implements BGameObserver {
 
     @Override
     public void listen() {
-        while (players.size() != 1) {
+        while (currentPlayers.size() != 1) {
             startTurn();
         }
-        System.out.println("Game Over!\nPlayer: " + players.get(0).getDPlayer().getPiece_type());
+        System.out.println("Game Over!\nPlayer: " + currentPlayers.get(0).getDPlayer().getPiece_type());
     }
 
     private void startTurn() {
-        for (Iterator<BPlayer> iterator = players.iterator(); iterator.hasNext();) {
+        for (Iterator<BPlayer> iterator = currentPlayers.iterator(); iterator.hasNext();) {
             BPlayer currentPlayer = iterator.next();
             if (!currentPlayer.getDPlayer().isBankrupted()) {
                 bTerminal.printBeforeRollDice(currentPlayer.getDPlayer());
@@ -117,6 +116,7 @@ public class BMonopolyGame implements BGameObserver {
                 bTerminal.printAfterRollDice(currentPlayer.getDPlayer());
 
                 if (currentPlayer.getDPlayer().isBankrupted()) {
+                    eliminatedPlayers.add(currentPlayer);
                     iterator.remove();
                 }
             }
