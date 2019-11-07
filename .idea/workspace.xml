@@ -1,18 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dfd4cd54-fa73-4f3b-abf8-245eae6a795f" name="Default Changelist" comment="Project solid commit.">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/json_simple_1_1__3_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/BL/BBoardTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/BL/BGoSquareTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/DAL/DPlayerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="dfd4cd54-fa73-4f3b-abf8-245eae6a795f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Monopoly.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Monopoly.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game.json" beforeDir="false" afterPath="$PROJECT_DIR$/game.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DAL/DPiece.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAL/DPiece.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/BL/BDiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BL/BSquare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BL/BSquare.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BL/BTaxSquare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BL/BTaxSquare.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -84,7 +76,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BTaxSquareTest.performOnLand">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Controller.Main" />
+      <module name="Monopoly" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BGoSquareTest.performOnLand" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Monopoly" />
       <extension name="coverage">
@@ -133,22 +138,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DPlayerTest.getPlayerDice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Monopoly" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="DAL.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="DAL" />
-      <option name="MAIN_CLASS_NAME" value="DAL.DPlayerTest" />
-      <option name="METHOD_NAME" value="getPlayerDice" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="DPlayerTest.isBankrupted" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Monopoly" />
       <extension name="coverage">
@@ -166,19 +155,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.DPlayerTest.getPlayerDice" />
       <item itemvalue="JUnit.DPlayerTest.isBankrupted" />
       <item itemvalue="JUnit.DPlayerTest.getPiece_type" />
       <item itemvalue="JUnit.BGoSquareTest.performOnLand" />
       <item itemvalue="JUnit.BTaxSquareTest.performOnLand" />
+      <item itemvalue="Application.Main" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.BTaxSquareTest.performOnLand" />
         <item itemvalue="JUnit.BGoSquareTest.performOnLand" />
         <item itemvalue="JUnit.DPlayerTest.getPiece_type" />
         <item itemvalue="JUnit.DPlayerTest.isBankrupted" />
-        <item itemvalue="JUnit.DPlayerTest.getPlayerDice" />
       </list>
     </recent_temporary>
   </component>
@@ -193,7 +182,7 @@
       <option name="presentableId" value="Default" />
       <updated>1572971130194</updated>
       <workItem from="1573125672941" duration="371000" />
-      <workItem from="1573126084085" duration="5245000" />
+      <workItem from="1573126084085" duration="5532000" />
     </task>
     <task id="LOCAL-00001" summary="model, view, controller packages created.&#10;MonopolyGame class created.&#10;MonopolyGame class constructor template created using static factory methods design pattern.">
       <created>1572975097652</created>
@@ -307,7 +296,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573123745336</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Test classes added.">
+      <created>1573131458770</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1573131458770</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -344,17 +340,7 @@
     <MESSAGE value="control added to checkAndUpdatePlayer method." />
     <MESSAGE value="CInstruction updated." />
     <MESSAGE value="CTerminal and BTerminal classes implemented." />
-    <option name="LAST_COMMIT_MESSAGE" value="CTerminal and BTerminal classes implemented." />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/BL/BTaxSquare.java</url>
-          <line>12</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Test classes added." />
+    <option name="LAST_COMMIT_MESSAGE" value="Test classes added." />
   </component>
 </project>

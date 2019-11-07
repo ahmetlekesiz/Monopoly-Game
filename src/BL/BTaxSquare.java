@@ -12,4 +12,9 @@ public class BTaxSquare extends BSquare {
     public void performOnLand(DPlayer player) {
         player.setBalance(player.getBalance() - (int) DInstructionInstance.priceOfTaxSquares);
     }
+
+    @Override
+    public String getSQUARE_TYPE() {
+        return this.SQUARE_TYPE;
+    }
 }

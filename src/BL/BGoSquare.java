@@ -11,4 +11,9 @@ public class BGoSquare extends BSquare {
     public void performOnLand(DPlayer player) {
         player.setBalance(player.getBalance() + (int) DInstructionInstance.priceOfGoSquare);
     }
+
+    @Override
+    public String getSQUARE_TYPE() {
+        return this.SQUARE_TYPE;
+    }
 }
