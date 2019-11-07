@@ -2,24 +2,18 @@ package Controller;
 
 import BL.BTerminal;
 import DAL.DPlayer;
+import UI.UITerminal;
 
 public class CTerminal {
 
-    BTerminal bTerminal = new BTerminal();
-
-    public CTerminal(){
-    }
-
-    public void printCurrentJSONFile(){
-        bTerminal.printCurrentJSONFile();
-    }
+    private UITerminal uiTerminal = new UITerminal();
 
     public void printBeforeRollDice(DPlayer dPlayer) {
-        bTerminal.printBeforeRollDice(dPlayer);
+        uiTerminal.printBeforeRollDice(dPlayer);
     }
 
     public void printAfterRollDice(DPlayer dPlayer){
-        bTerminal.printAfterRollDice(dPlayer);
+        uiTerminal.printAfterRollDice(dPlayer);
     }
 
 }
