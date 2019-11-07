@@ -1,14 +1,17 @@
 package UI;
 
+import Controller.CInstruction;
 import DAL.DInstruction;
 import DAL.DPlayer;
 
 public class UITerminal {
 
+    CInstruction cInstruction = new CInstruction();
+
     public void printCurrentJSONFile() {
         System.out.println("---------------------------------------------------------------------");
         System.out.println("PROPERTIES OF THE GAME");
-        System.out.println(DInstruction.getInstance());
+        cInstruction.getDInstruction();
         System.out.println("---------------------------------------------------------------------");
         System.out.println("MONOPOLY GAME");
     }
