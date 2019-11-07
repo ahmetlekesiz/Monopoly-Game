@@ -14,6 +14,7 @@ public class BMonopolyGame implements BGameObserver {
     private BBoard boardInstance;
     private BTerminal bTerminal = new BTerminal();
     private boolean isFirstRound;
+    private ArrayList<Integer> diceSumOfPlayers;
 
     private BMonopolyGame() {
         players = new ArrayList<>();
@@ -36,13 +37,24 @@ public class BMonopolyGame implements BGameObserver {
 
     private void initPlayersByLettingThemRollingDiceAndPutInList(DInstruction gameInstructions) {
         int counter = (int) gameInstructions.countOfPlayers;
+        int diceSum;
+
         while(counter != 0){
             players.add(new BPlayer(new DPlayer(DPiece.PIECE_TYPE.BATTLESHIP, (int) gameInstructions.startMoney)));
             counter--;
         }
+
+        //Rolling dice for each players.
         for (BPlayer player : players) {
-            player.rollDice();
+            diceSum = player.rollDice();
+            //Checking if the diceSum same with other players.
+/*            if(diceSumOfPlayers.contains(diceSum)){
+                player.rollDice();
+            }else{
+                diceSumOfPlayers.add(diceSum);
+            }*/
         }
+
         //Sorting player list by theirs currentDiceVal properties by decrementing order.
         players.sort((firstPlayer, secondPlayer) -> {
             if (firstPlayer.getDPlayer().getCurrentDiceVal() == secondPlayer.getDPlayer().getCurrentDiceVal())
