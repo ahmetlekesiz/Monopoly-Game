@@ -12,11 +12,4 @@ public class CInstruction {
         return DInstruction.getInstance();
     }
 
-    public static CInstruction getInstance() {
-        if(instance == null){
-            instance = new CInstruction();
-        }
-        return instance;
-    }
-
 }
