@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dfd4cd54-fa73-4f3b-abf8-245eae6a795f" name="Default Changelist" comment="BMonopolyGameModified.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="dfd4cd54-fa73-4f3b-abf8-245eae6a795f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/BL/BBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BL/BBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BL/BMonopolyGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BL/BMonopolyGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/BL/BBoardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/BL/BBoardTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -183,7 +180,7 @@
       <option name="presentableId" value="Default" />
       <updated>1572971130194</updated>
       <workItem from="1573125672941" duration="371000" />
-      <workItem from="1573126084085" duration="7882000" />
+      <workItem from="1573126084085" duration="8178000" />
     </task>
     <task id="LOCAL-00001" summary="model, view, controller packages created.&#10;MonopolyGame class created.&#10;MonopolyGame class constructor template created using static factory methods design pattern.">
       <created>1572975097652</created>
@@ -318,7 +315,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573133291011</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Project running state created.">
+      <created>1573134137196</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1573134137196</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -358,19 +362,20 @@
     <MESSAGE value="Test classes added." />
     <MESSAGE value="Square fixed." />
     <MESSAGE value="BMonopolyGameModified." />
-    <option name="LAST_COMMIT_MESSAGE" value="BMonopolyGameModified." />
+    <MESSAGE value="Project running state created." />
+    <option name="LAST_COMMIT_MESSAGE" value="Project running state created." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/BL/BMonopolyGame.java</url>
-          <line>115</line>
+          <line>116</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/BL/BMonopolyGame.java</url>
-          <line>108</line>
+          <line>109</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
