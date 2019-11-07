@@ -26,6 +26,7 @@ public class BMonopolyGame implements BGameObserver {
     private BMonopolyGame() {
         currentPlayers = new ArrayList<>();
         boardInstance = BBoard.getInstance();
+        eliminatedPlayers = new ArrayList<>();
     }
 
     public static BMonopolyGame getInstance() {
@@ -99,7 +100,12 @@ public class BMonopolyGame implements BGameObserver {
         while (currentPlayers.size() != 1) {
             startTurn();
         }
-        System.out.println("Game Over!\nPlayer: " + currentPlayers.get(0).getDPlayer().getPiece_type());
+        eliminatedPlayers.sort((firstPlayer, secondPlayer) -> {
+            if(firstPlayer.getDPlayer().getBalance() == secondPlayer.getDPlayer().getBalance()) return 0;
+            return firstPlayer.getDPlayer().getBalance() > secondPlayer.getDPlayer().getBalance() ? -1 : 1;
+        });
+        bTerminal.printWinnerPlayer(currentPlayers.get(0).getDPlayer());
+        bTerminal.printGameOver(eliminatedPlayers);
     }
 
     private void startTurn() {
@@ -121,10 +127,5 @@ public class BMonopolyGame implements BGameObserver {
                 }
             }
         }
-    }
-
-    private void printDetails(BPlayer player){
-        System.out.println(player.getDPlayer().getPiece_type()+":\nBalance: "+player.getDPlayer().getBalance()+"\n" +
-                " Location: "+player.getDPlayer().getLocation()+"\nCurrent Dice Value: "+player.getDPlayer().getCurrentDiceVal());
     }
 }
