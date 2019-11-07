@@ -6,7 +6,7 @@ public class DInstruction {
 
     private static DInstruction instance;
 
-    public DInstruction(long countOfPlayers, long startMoney, long countOfTaxSquares, long priceOfTaxSquares, long priceOfGoSquare) {
+    private DInstruction(long countOfPlayers, long startMoney, long countOfTaxSquares, long priceOfTaxSquares, long priceOfGoSquare) {
         this.countOfPlayers = countOfPlayers;
         this.startMoney = startMoney;
         this.countOfTaxSquares = countOfTaxSquares;
