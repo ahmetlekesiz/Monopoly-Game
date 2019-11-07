@@ -8,8 +8,12 @@ import DAL.DInstruction;
 import DAL.DPiece;
 
 /***
+ *BMonopolyGame is MonopolyGame class in Business Layer. Main rules
+ * of the game implemented in this class.
  *
  * @author Ahmet Lekesiz
+ * @version 1.0
+ * @since 11.
  */
 public class BMonopolyGame implements BGameObserver {
 
@@ -30,7 +34,12 @@ public class BMonopolyGame implements BGameObserver {
     }
 
     /**
+     *<p>Takes initial data of the game and passing it into initPlayersByLettingThemRollingDiceAndPutInList method
+     *for creating players and putting them into a list.</p>
+     * <p>Listen method runs to watch the player.
+     * This method runs until just one player left.</p>
      *
+     * @param gameInstructions A DInstruction object which is contain initial data for game.
      * @return void
      */
     public void startGame(DInstruction gameInstructions){
@@ -74,6 +83,14 @@ public class BMonopolyGame implements BGameObserver {
         }
     }
 
+    /**
+     *<p>Returns true if diceSum exist before, returns false if diceSum
+     * does not exist in the list.</p>
+     *
+     * @param diceSumOfPlayers list of diceSum for each players in the game.
+     * @param diceSum integer value of dice sum of current player.
+     * @return boolean
+     */
     private boolean checkIfDiceSumExist(ArrayList<Integer> diceSumOfPlayers, int diceSum){
         for (int i = 0; i < diceSumOfPlayers.size() ; i++) {
             if(diceSumOfPlayers.get(i).equals(diceSum)){
