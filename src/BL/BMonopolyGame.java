@@ -46,9 +46,9 @@ public class BMonopolyGame implements BGameObserver {
         initPlayersByLettingThemRollingDiceAndPutInList(gameInstructions);
 
         int counter = 0;
-        while(counter < 20) {
+        while(true) {
             listen();
-            counter++;
+
         }
     }
 
@@ -120,6 +120,9 @@ public class BMonopolyGame implements BGameObserver {
                 currentPlayer.checkAndUpdatePlayer(currentPlayer.getDPlayer().getCurrentDiceVal(),
                         boardInstance.getSquares()[currentPlayer.getDPlayer().getLocation()], isFirstRound);
 
+               //printDetails(currentPlayer);
+
+                bTerminal.printLocationType(boardInstance.getSquares()[currentPlayer.getDPlayer().getLocation()].getSQUARE_TYPE());
                 bTerminal.printAfterRollDice(currentPlayer.getDPlayer());
 
                 if (currentPlayer.getDPlayer().isBankrupted()) {
