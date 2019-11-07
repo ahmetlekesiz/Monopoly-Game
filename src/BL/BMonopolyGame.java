@@ -29,6 +29,7 @@ public class BMonopolyGame implements BGameObserver {
 
     public void startGame(DInstruction gameInstructions){
         initPlayersByLettingThemRollingDiceAndPutInList(gameInstructions);
+
         int counter = 0;
         while(counter < 20) {
             listen();
@@ -69,12 +70,16 @@ public class BMonopolyGame implements BGameObserver {
     private void startTurn() {
         for (Iterator<BPlayer> iterator = players.iterator(); iterator.hasNext();) {
             BPlayer currentPlayer = iterator.next();
+
             if (!currentPlayer.getDPlayer().isBankrupted()) {
                 UITerminalInstance.printBeforeRollDice(currentPlayer.getDPlayer());
+
                 currentPlayer.rollDice();
-                currentPlayer.checkPlayer(currentPlayer.getDPlayer().getCurrentDiceVal(),
+                currentPlayer.checkAndUpdatePlayer(currentPlayer.getDPlayer().getCurrentDiceVal(),
                         boardInstance.getSquares()[currentPlayer.getDPlayer().getLocation()], isFirstRound);
+
                 UITerminalInstance.printAfterRollDice(currentPlayer.getDPlayer());
+
                 if (currentPlayer.getDPlayer().isBankrupted()) {
                     iterator.remove();
                 }

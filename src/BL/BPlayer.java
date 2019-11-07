@@ -15,18 +15,20 @@ public class BPlayer implements BPlayerObserver {
     }
 
     @Override
-    public void checkPlayer(int currentDiceValue, BSquare currentSquare, boolean isFirstRound) {
+    public void checkAndUpdatePlayer(int currentDiceValue, BSquare currentSquare, boolean isFirstRound) {
         if (isPlayerBankrupted()) {
             dPlayer.setBankruptFlag(true);
         }
         dPlayer.setTotalDiceValue(dPlayer.getTotalDiceValue() + currentDiceValue);
-        if (isFirstRound) return;
-        if (isPlayerCrossTheGoSquare()) {
-            dPlayer.setRoundValue(dPlayer.getRoundValue() + 1);
-            new BGoSquare().performOnLand(dPlayer);
-            return;
-        }
-        currentSquare.performOnLand(dPlayer);
+
+        if (isFirstRound && !(currentSquare instanceof BTaxSquare)) return;
+            if (isPlayerCrossTheGoSquare()) {
+                dPlayer.setRoundValue(dPlayer.getRoundValue() + 1);
+                new BGoSquare().performOnLand(dPlayer);
+                return;
+            }
+            currentSquare.performOnLand(dPlayer);
+
     }
 
     public int rollDice(){
