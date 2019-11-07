@@ -8,14 +8,8 @@ import UI.UITerminal;
 
 public class CMonopolyGame {
 
-    UITerminal uiTerminal = new UITerminal();
-
-    public CMonopolyGame(DPlayer dPlayer){
-        uiTerminal.printBeforeRollDİce(dPlayer);
-        uiTerminal.printAfterRollDice(dPlayer);
-    }
-
-    private UITerminal UITerminal;
+    public UITerminal UITerminal;
+    private static CMonopolyGame instance;
 
     private CMonopolyGame(String JSONInstructionFileName) {
         DJSONReader objDJSONReader = new DJSONReader(JSONInstructionFileName);
@@ -24,8 +18,15 @@ public class CMonopolyGame {
         UITerminal.printCurrentJSONFile();
     }
 
-    static CMonopolyGame createMonopolyGameUsingJSONFile(String JSONInstructionFileName) {
-        return new CMonopolyGame(JSONInstructionFileName);
+    public static CMonopolyGame getInstance() {
+        return instance;
+    }
+
+    public static CMonopolyGame getInstance(String JSONInstructionFileName) {
+        if (instance == null) {
+            instance = new CMonopolyGame(JSONInstructionFileName);
+        }
+        return instance;
     }
 
     void start() {

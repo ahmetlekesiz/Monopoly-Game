@@ -3,21 +3,24 @@ package BL;
 import java.util.ArrayList;
 import java.util.Iterator;
 
+import Controller.CMonopolyGame;
 import DAL.DPlayer;
 import DAL.DInstruction;
 import DAL.DPiece;
+import UI.UITerminal;
 
 public class BMonopolyGame implements BGameObserver {
 
     private static BMonopolyGame monopolyGameInstance = new BMonopolyGame();
     private ArrayList<BPlayer> players;
     private BBoard boardInstance;
-    private UI.UITerminal uiTerminal = new UI.UITerminal();
+    private UITerminal UITerminalInstance;
     private boolean isFirstRound;
 
     private BMonopolyGame() {
         players = new ArrayList<>();
         boardInstance = BBoard.getInstance();
+        UITerminalInstance = CMonopolyGame.getInstance().UITerminal;
     }
 
     public static BMonopolyGame getInstance() {
@@ -67,11 +70,11 @@ public class BMonopolyGame implements BGameObserver {
         for (Iterator<BPlayer> iterator = players.iterator(); iterator.hasNext();) {
             BPlayer currentPlayer = iterator.next();
             if (!currentPlayer.getDPlayer().isBankrupted()) {
-                uiTerminal.printBeforeRollDİce(currentPlayer.getDPlayer());
+                UITerminalInstance.printBeforeRollDice(currentPlayer.getDPlayer());
                 currentPlayer.rollDice();
                 currentPlayer.checkPlayer(currentPlayer.getDPlayer().getCurrentDiceVal(),
                         boardInstance.getSquares()[currentPlayer.getDPlayer().getLocation()], isFirstRound);
-                uiTerminal.printAfterRollDice(currentPlayer.getDPlayer());
+                UITerminalInstance.printAfterRollDice(currentPlayer.getDPlayer());
                 if (currentPlayer.getDPlayer().isBankrupted()) {
                     iterator.remove();
                 }
