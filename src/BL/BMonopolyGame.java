@@ -7,6 +7,14 @@ import DAL.DPlayer;
 import DAL.DInstruction;
 import DAL.DPiece;
 
+/***
+ *BMonopolyGame is MonopolyGame class in Business Layer. Main rules
+ * of the game implemented in this class.
+ *
+ * @author Ahmet Lekesiz
+ * @version 1.0
+ * @since 11.
+ */
 public class BMonopolyGame implements BGameObserver {
 
     private static BMonopolyGame monopolyGameInstance = new BMonopolyGame();
@@ -25,13 +33,22 @@ public class BMonopolyGame implements BGameObserver {
         return monopolyGameInstance;
     }
 
+    /**
+     *<p>Takes initial data of the game and passing it into initPlayersByLettingThemRollingDiceAndPutInList method
+     *for creating players and putting them into a list.</p>
+     * <p>Listen method runs to watch the player.
+     * This method runs until just one player left.</p>
+     *
+     * @param gameInstructions A DInstruction object which is contain initial data for game.
+     * @return void
+     */
     public void startGame(DInstruction gameInstructions){
         initPlayersByLettingThemRollingDiceAndPutInList(gameInstructions);
 
         int counter = 0;
-        while(counter < 20) {
+        while(true) {
             listen();
-            counter++;
+
         }
     }
 
@@ -48,11 +65,10 @@ public class BMonopolyGame implements BGameObserver {
         for (BPlayer player : players) {
             diceSum = player.rollDice();
             //Checking if the diceSum same with other players.
-            if(!checkIfDiceSumExist(diceSumOfPlayers, diceSum)){
-                player.rollDice();
-            }else{
-                diceSumOfPlayers.add(diceSum);
+            while(checkIfDiceSumExist(diceSumOfPlayers, diceSum)){
+                diceSum = player.rollDice();
             }
+            diceSumOfPlayers.add(diceSum);
         }
 
         //Sorting player list by theirs currentDiceVal properties by decrementing order.
@@ -67,13 +83,21 @@ public class BMonopolyGame implements BGameObserver {
         }
     }
 
+    /**
+     *<p>Returns true if diceSum exist before, returns false if diceSum
+     * does not exist in the list.</p>
+     *
+     * @param diceSumOfPlayers list of diceSum for each players in the game.
+     * @param diceSum integer value of dice sum of current player.
+     * @return boolean
+     */
     private boolean checkIfDiceSumExist(ArrayList<Integer> diceSumOfPlayers, int diceSum){
         for (int i = 0; i < diceSumOfPlayers.size() ; i++) {
             if(diceSumOfPlayers.get(i).equals(diceSum)){
-                return false;
+                return true;
             }
         }
-        return true;
+        return false;
     }
 
     @Override
@@ -96,6 +120,9 @@ public class BMonopolyGame implements BGameObserver {
                 currentPlayer.checkAndUpdatePlayer(currentPlayer.getDPlayer().getCurrentDiceVal(),
                         boardInstance.getSquares()[currentPlayer.getDPlayer().getLocation()], isFirstRound);
 
+               //printDetails(currentPlayer);
+
+                bTerminal.printLocationType(boardInstance.getSquares()[currentPlayer.getDPlayer().getLocation()].getSQUARE_TYPE());
                 bTerminal.printAfterRollDice(currentPlayer.getDPlayer());
 
                 if (currentPlayer.getDPlayer().isBankrupted()) {
