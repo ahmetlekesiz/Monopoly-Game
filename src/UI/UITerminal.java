@@ -1,30 +1,23 @@
 package UI;
 
+import Controller.CInstruction;
+import Controller.CTerminal;
 import DAL.DInstruction;
 import DAL.DPlayer;
 
 public class UITerminal {
 
+    CTerminal cTerminal = new CTerminal();
+
     public void printCurrentJSONFile() {
-        System.out.println("---------------------------------------------------------------------");
-        System.out.println("PROPERTIES OF THE GAME");
-        System.out.println(DInstruction.getInstance());
-        System.out.println("---------------------------------------------------------------------");
-        System.out.println("MONOPOLY GAME");
+        cTerminal.printCurrentJSONFile();
     }
 
     public void printBeforeRollDice(DPlayer dPlayer) {
-        System.out.println("---------------------------------------------------------------------");
-        System.out.println("Player Type:" + dPlayer.getPiece_type());
-        System.out.println("Player Round Value:" + dPlayer.getRoundValue());
-        System.out.println("Player Location:" + dPlayer.getLocation());
-        System.out.println("---------------------------------------------------------------------");
+        cTerminal.printBeforeRollDice(dPlayer);
     }
 
     public void printAfterRollDice(DPlayer dPlayer){
-        System.out.println("---------------------------------------------------------------------");
-        System.out.println("Player Location:" + dPlayer.getLocation());
-        System.out.println("Player Balance:" + dPlayer.getBalance());
-        System.out.println("---------------------------------------------------------------------");
+        cTerminal.printAfterRollDice(dPlayer);
     }
 }

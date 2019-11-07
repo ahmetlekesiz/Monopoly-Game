@@ -7,7 +7,6 @@ public class BPlayer implements BPlayerObserver {
     private DPlayer dPlayer;
 
     public BPlayer() {
-
     }
 
     public BPlayer(DPlayer dPlayer) {

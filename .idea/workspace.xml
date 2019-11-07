@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="dfd4cd54-fa73-4f3b-abf8-245eae6a795f" name="Default Changelist" comment="Project solid commit.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BL/BMonopolyGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BL/BMonopolyGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/CMonopolyGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/CMonopolyGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/UITerminal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/UITerminal.java" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Rebase.Settings">
+    <option name="ONTO" value="refs/remotes/origin/master" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="f001" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1TCjmQt7DHPINjXu3YQ0g6XfuV4" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/libs" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/libs" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.Main (2)">
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="controller.Main" />
+      <module name="Monopoly" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Controller.Main" />
+      <module name="Monopoly" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Monopoly" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main (2)" />
+        <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dfd4cd54-fa73-4f3b-abf8-245eae6a795f" name="Default Changelist" comment="" />
+      <created>1572971130194</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1572971130194</updated>
+      <workItem from="1573036744792" duration="3967000" />
+      <workItem from="1573050815173" duration="4201000" />
+      <workItem from="1573068748936" duration="6809000" />
+      <workItem from="1573075728747" duration="116000" />
+      <workItem from="1573076033524" duration="687000" />
+      <workItem from="1573109531164" duration="686000" />
+    </task>
+    <task id="LOCAL-00001" summary="model, view, controller packages created.&#10;MonopolyGame class created.&#10;MonopolyGame class constructor template created using static factory methods design pattern.">
+      <created>1572975097652</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1572975097652</updated>
+    </task>
+    <task id="LOCAL-00002" summary="JSONReader class added.">
+      <created>1572975959923</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1572975959923</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Instruction class added.(Singleton pattern)">
+      <created>1572976695204</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1572976695204</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Instruction class method name changed.">
+      <created>1572976779674</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1572976779674</updated>
+    </task>
+    <task id="LOCAL-00005" summary="json-simple library added.">
+      <created>1572977085822</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1572977085822</updated>
+    </task>
+    <task id="LOCAL-00006" summary="TerminalOutput class created.">
+      <created>1572977918987</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1572977918987</updated>
+    </task>
+    <task id="LOCAL-00007" summary="JSON file data transferred into Instruction object.">
+      <created>1572979104485</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1572979104485</updated>
+    </task>
+    <task id="LOCAL-00008" summary="JSONReader constructor modified.">
+      <created>1572980876618</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1572980876618</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Piece class enum added.">
+      <created>1572981426519</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1572981426519</updated>
+    </task>
+    <task id="LOCAL-00010" summary="JSONReader init made public.">
+      <created>1572981882167</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1572981882167</updated>
+    </task>
+    <task id="LOCAL-00011" summary="JSON file is printed.">
+      <created>1572985444766</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1572985444766</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Board class implemented.">
+      <created>1572997769220</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1572997769220</updated>
+    </task>
+    <task id="LOCAL-00013" summary="performOnLand method modified.">
+      <created>1573037617751</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1573037617751</updated>
+    </task>
+    <task id="LOCAL-00014" summary="BRegularSquare implemented.">
+      <created>1573037751899</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1573037751899</updated>
+    </task>
+    <task id="LOCAL-00015" summary="BPlayer class BPlayerObserver interface implemented.">
+      <created>1573039511301</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1573039511301</updated>
+    </task>
+    <task id="LOCAL-00016" summary="PlayerObserver modified.">
+      <created>1573039612677</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1573039612677</updated>
+    </task>
+    <task id="LOCAL-00017" summary="BPlayer modified.">
+      <created>1573050854326</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1573050854326</updated>
+    </task>
+    <task id="LOCAL-00018" summary="BMonopolyGame class created.">
+      <created>1573052800999</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1573052800999</updated>
+    </task>
+    <task id="LOCAL-00019" summary="BMonopolyGame listener added.">
+      <created>1573054824168</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1573054824168</updated>
+    </task>
+    <task id="LOCAL-00020" summary="BBoard modified.">
+      <created>1573069818615</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1573069818615</updated>
+    </task>
+    <task id="LOCAL-00021" summary="BBoard TODO added.">
+      <created>1573070038783</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1573070038783</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Main method modified.">
+      <created>1573070278160</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1573070278160</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Project modified and optimised.">
+      <created>1573072872228</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1573072872228</updated>
+    </task>
+    <task id="LOCAL-00024" summary="BMonopolyGame fixed.">
+      <created>1573073323729</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1573073323729</updated>
+    </task>
+    <task id="LOCAL-00025" summary="BMonopolyGame fixed.">
+      <created>1573073987854</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1573073987854</updated>
+    </task>
+    <task id="LOCAL-00026" summary="First round problem.">
+      <created>1573074057790</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1573074057790</updated>
+    </task>
+    <task id="LOCAL-00027" summary="First round problem solved.">
+      <created>1573074373081</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1573074373081</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Project solid commit.">
+      <created>1573075478501</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1573075478501</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Project solid commit.">
+      <created>1573076182478</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1573076182478</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Project solid commit.">
+      <created>1573076209149</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1573076209149</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Project solid commit.">
+      <created>1573076308970</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1573076308970</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Project solid commit.">
+      <created>1573076585712</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1573076585712</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Instruction class added.(Singleton pattern)" />
+    <MESSAGE value="Instruction class method name changed." />
+    <MESSAGE value="json-simple library added." />
+    <MESSAGE value="TerminalOutput class created." />
+    <MESSAGE value="JSON file data transferred into Instruction object." />
+    <MESSAGE value="JSONReader constructor modified." />
+    <MESSAGE value="Piece class enum added." />
+    <MESSAGE value="JSONReader init made public." />
+    <MESSAGE value="JSON file is printed." />
+    <MESSAGE value="Board class implemented." />
+    <MESSAGE value="performOnLand method modified." />
+    <MESSAGE value="BRegularSquare implemented." />
+    <MESSAGE value="BPlayer class BPlayerObserver interface implemented." />
+    <MESSAGE value="PlayerObserver modified." />
+    <MESSAGE value="BPlayer modified." />
+    <MESSAGE value="BMonopolyGame class created." />
+    <MESSAGE value="BMonopolyGame listener added." />
+    <MESSAGE value="BBoard modified." />
+    <MESSAGE value="BBoard TODO added." />
+    <MESSAGE value="Main method modified." />
+    <MESSAGE value="Project modified and optimised." />
+    <MESSAGE value="BMonopolyGame fixed." />
+    <MESSAGE value="First round problem." />
+    <MESSAGE value="First round problem solved." />
+    <MESSAGE value="Project solid commit." />
+    <option name="LAST_COMMIT_MESSAGE" value="Project solid commit." />
+  </component>
+</project>
