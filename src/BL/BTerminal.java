@@ -1,11 +1,17 @@
 package BL;
 
 import Controller.CTerminal;
-import DAL.DInstruction;
-import DAL.DPlayer;
 
 import java.util.ArrayList;
 
+/**
+ * <h>BTerminal</h>
+ *
+ * <p>We use the class to transfer CTerminal print values.</p>
+ *
+ * @author Salih ÖZYURT
+ * @version 1.0
+ */
 public class BTerminal {
 
     private CTerminal cTerminal = new CTerminal();
