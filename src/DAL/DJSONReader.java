@@ -19,7 +19,7 @@ public class DJSONReader {
         }
     }
 
-    private Object getValueUsingKey(String key) {
+    public Object getValueUsingKey(String key) {
         return currentJSONObject.get(key);
     }
 

@@ -11,5 +11,4 @@ public class CInstruction {
     public DInstruction getDInstruction(){
         return DInstruction.getInstance();
     }
-
 }

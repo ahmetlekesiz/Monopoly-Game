@@ -1,7 +1,6 @@
 package BL;
 
 import DAL.DInstruction;
-import com.sun.org.apache.bcel.internal.generic.Instruction;
 
 import java.util.ArrayList;
 
@@ -30,7 +29,7 @@ public class BBoard {
         int temp;
         for(int i = 0; i < countOfTaxSquares; i++){
             temp = (int) (Math.random() * SQUARE_NUMBER);
-            while(taxSquareLocations.contains(temp)){
+            while(taxSquareLocations.contains(temp) ){
                 temp = (int) (Math.random() * SQUARE_NUMBER);
             }
             taxSquareLocations.add(temp);
@@ -44,6 +43,8 @@ public class BBoard {
         }
         squares[0] = new BGoSquare();
     }
+
+
 
     public BSquare[] getSquares() {
         return squares;

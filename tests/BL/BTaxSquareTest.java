@@ -29,4 +29,10 @@ class BTaxSquareTest {
         assertEquals(1000 - instruction.priceOfTaxSquares, dPlayer.getBalance());
     }
 
+    @Test
+    void getSQUARE_TYPE() {
+        BTaxSquare bTaxSquare = new BTaxSquare();
+        assertEquals("TAX_SQUARE", bTaxSquare.getSQUARE_TYPE());
+    }
+
 }

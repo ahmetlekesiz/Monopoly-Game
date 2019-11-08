@@ -5,6 +5,7 @@ import DAL.DPlayer;
 public class BPlayer implements BPlayerObserver {
 
     private DPlayer dPlayer;
+    private BTerminal bTerminal = new BTerminal();
 
     public BPlayer() {
     }
@@ -15,22 +16,22 @@ public class BPlayer implements BPlayerObserver {
 
     @Override
     public void checkAndUpdatePlayer(int currentDiceValue, BSquare currentSquare) {
-        if (isPlayerBankrupted()) {
-            dPlayer.setBankruptFlag(true);
-        }
         if (isPlayerCrossTheGoSquare()) {
             dPlayer.setRoundValue(dPlayer.getRoundValue() + 1);
             new BGoSquare().performOnLand(dPlayer);
             return;
         }
         currentSquare.performOnLand(dPlayer);
+        if (isPlayerBankrupted()) {
+            dPlayer.setBankruptFlag(true);
+        }
     }
 
     public int rollDice(){
         int[] diceValues;
         diceValues = this.getDPlayer().getPlayerDice().rollDice();
         this.getDPlayer().setCurrentDiceVal(diceValues[0] + diceValues[1]);
-        System.out.println("Rolling Dices : "+diceValues[0]+"+"+diceValues[1]+"="+(diceValues[0]+diceValues[1]));
+        bTerminal.printDicesFaces(diceValues);
         return diceValues[0] + diceValues[1];
     }
 
@@ -39,7 +40,7 @@ public class BPlayer implements BPlayerObserver {
     }
 
     private boolean isPlayerBankrupted() {
-        return dPlayer.getBalance() <= 0;
+        return dPlayer.getBalance() < 0;
     }
 
     public DPlayer getDPlayer() {

@@ -28,4 +28,10 @@ class BGoSquareTest {
         bGoSquare.performOnLand(dPlayer);
         assertEquals(1000 + instruction.priceOfGoSquare, dPlayer.getBalance());
     }
+
+    @Test
+    void getSQUARE_TYPE() {
+        BGoSquare bGoSquare = new BGoSquare();
+        assertEquals("GO_SQUARE", bGoSquare.getSQUARE_TYPE());
+    }
 }
