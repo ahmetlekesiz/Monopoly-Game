@@ -10,7 +10,7 @@ class DPieceTest {
     @Test
     @DisplayName("PIECE_TYPE Test")
     void getValue() {
-        assertEquals(2, DPiece.PIECE_TYPE.BOOT.getValue());
+        assertEquals(2, DPiece.PieceType.BOOT.getValue());
     }
 
 }

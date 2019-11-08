@@ -1,10 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dfd4cd54-fa73-4f3b-abf8-245eae6a795f" name="Default Changelist" comment="">
+    <list default="true" id="dfd4cd54-fa73-4f3b-abf8-245eae6a795f" name="Default Changelist" comment="Uml and sequence diagram added.">
+      <change afterPath="$PROJECT_DIR$/out/production/Monopoly/DAL/DInstruction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game.json" beforeDir="false" afterPath="$PROJECT_DIR$/game.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BL/BPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BL/BPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/BL/BBoard.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Monopoly/BL/BBoard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/BL/BDice.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Monopoly/BL/BDice.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/BL/BGameObserver.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Monopoly/BL/BGameObserver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/BL/BRegularSquare.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Monopoly/BL/BRegularSquare.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/BL/BSquare.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Monopoly/BL/BSquare.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/BL/BTaxSquare.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Monopoly/BL/BTaxSquare.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/Controller/CMonopolyGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Monopoly/Controller/CMonopolyGame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/Controller/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Monopoly/Controller/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/DAL/DJSONReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Monopoly/DAL/DJSONReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/DAL/DPiece$PIECE_TYPE.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/DAL/DPiece.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Monopoly/DAL/DPiece.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/DAL/DPlayer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Monopoly/DAL/DPlayer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/META-INF/Monopoly.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Prototype/BL/BBoard.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Prototype/BL/BDice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Prototype/BL/BGameObserver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Prototype/BL/BGoSquare.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Prototype/BL/BMonopolyGame.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Prototype/BL/BPlayer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Prototype/BL/BPlayerObserver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Prototype/BL/BRegularSquare.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Prototype/BL/BSquare.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Prototype/BL/BTaxSquare.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Prototype/Controller/CInstruction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Prototype/Controller/CMonopolyGame.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Prototype/Controller/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Prototype/DAL/DInstruction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Prototype/DAL/DJSONReader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Prototype/DAL/DPiece$PIECE_TYPE.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Prototype/DAL/DPiece.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Prototype/DAL/DPlayer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Prototype/META-INF/Prototype.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Prototype/UI/UITerminal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/Monopoly/BL/BBoardTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/Monopoly/BL/BBoardTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/Monopoly/BL/BGoSquareTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/Monopoly/BL/BGoSquareTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/Monopoly/BL/BTaxSquareTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/Monopoly/BL/BTaxSquareTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/Monopoly/DAL/DPlayerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/Monopoly/DAL/DPlayerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/Monopoly/META-INF/Monopoly.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BL/BMonopolyGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BL/BMonopolyGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DAL/DInstruction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAL/DInstruction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DAL/DJSONReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAL/DJSONReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DAL/DPiece.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAL/DPiece.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DAL/DPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAL/DPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/UITerminal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/UITerminal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/BL/BGoSquareTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/BL/BGoSquareTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/BL/BPlayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/BL/BPlayerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/BL/BTaxSquareTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/BL/BTaxSquareTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/DAL/DPieceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/DAL/DPieceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/DAL/DPlayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/DAL/DPlayerTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,14 +81,17 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1TCjmQt7DHPINjXu3YQ0g6XfuV4" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/libs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/models" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
@@ -48,20 +100,22 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
       <recent name="DAL" />
       <recent name="BL" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/models" />
+      <recent name="$PROJECT_DIR$/libs" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/libs" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -187,7 +241,8 @@
       <workItem from="1573153339642" duration="1957000" />
       <workItem from="1573155437238" duration="808000" />
       <workItem from="1573204063098" duration="71000" />
-      <workItem from="1573213764836" duration="293000" />
+      <workItem from="1573213764836" duration="1038000" />
+      <workItem from="1573214841471" duration="6646000" />
     </task>
     <task id="LOCAL-00001" summary="model, view, controller packages created.&#10;MonopolyGame class created.&#10;MonopolyGame class constructor template created using static factory methods design pattern.">
       <created>1572975097652</created>
@@ -378,7 +433,21 @@
       <option name="project" value="LOCAL" />
       <updated>1573213939130</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="BPlayer modified.">
+      <created>1573214249684</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1573214249684</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Uml and sequence diagram added.">
+      <created>1573218147498</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1573218147498</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -398,8 +467,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Basic output removed" />
-    <MESSAGE value="model, view, controller packages created.&#10;MonopolyGame class created.&#10;MonopolyGame class constructor template created using static factory methods design pattern." />
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="JSONReader class added." />
     <MESSAGE value="Instruction class added.(Singleton pattern)" />
     <MESSAGE value="Instruction class method name changed." />
@@ -423,6 +491,8 @@
     <MESSAGE value="PIECE_TYPE getValue created." />
     <MESSAGE value="JUnit tests added for classes." />
     <MESSAGE value="Game is stabilised." />
-    <option name="LAST_COMMIT_MESSAGE" value="Game is stabilised." />
+    <MESSAGE value="BPlayer modified." />
+    <MESSAGE value="Uml and sequence diagram added." />
+    <option name="LAST_COMMIT_MESSAGE" value="Uml and sequence diagram added." />
   </component>
 </project>

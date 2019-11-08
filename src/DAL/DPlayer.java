@@ -2,16 +2,22 @@ package DAL;
 
 import BL.BDice;
 
+/**
+ * DPlayer class is data layer for Player concept. It contains data fields and get-set methods
+ * to use those values in specific classes in project.
+ * @author Muhammed Bera Koç
+ * @version 1.0
+ */
 public class DPlayer {
 
     private int balance, cycleCounter, totalDiceValue, roundValue, currentDiceVal;
     private boolean bankruptFlag;
     private BDice playerDice;
-    private DPiece.PIECE_TYPE piece_type;
+    private DPiece.PieceType pieceType;
 
-    public DPlayer(DPiece.PIECE_TYPE piece_type, int balance) {
+    public DPlayer(DPiece.PieceType pieceType, int balance) {
         playerDice = new BDice();
-        this.piece_type = piece_type;
+        this.pieceType = pieceType;
         this.balance = balance;
         this.cycleCounter=0;
         this.roundValue = 0;
@@ -22,7 +28,7 @@ public class DPlayer {
 
     public void setCurrentDiceVal(int currentDiceVal) { this.currentDiceVal = currentDiceVal; }
 
-    public void setPiece_type(DPiece.PIECE_TYPE piece_type) {this.piece_type = piece_type;}
+    public void setPieceType(DPiece.PieceType pieceType) {this.pieceType = pieceType;}
 
     public int getLocation() {
         return totalDiceValue % 40;
@@ -50,8 +56,8 @@ public class DPlayer {
         return bankruptFlag;
     }
 
-    public DPiece.PIECE_TYPE getPiece_type() {
-        return piece_type;
+    public DPiece.PieceType getPieceType() {
+        return pieceType;
     }
 
     public void setBalance(int balance) {

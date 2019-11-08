@@ -1,8 +1,6 @@
 package DAL;
 
-import BL.BDice;
 import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -13,7 +11,7 @@ class DPlayerTest {
 
     @BeforeAll
     static void beforeAllTestMethod() {
-        dPlayer = new DPlayer(DPiece.PIECE_TYPE.values()[(int) (Math.random() * 8)], 1000);
+        dPlayer = new DPlayer(DPiece.PieceType.values()[(int) (Math.random() * 8)], 1000);
     }
 
     @Test
@@ -58,7 +56,7 @@ class DPlayerTest {
 
     @Test
     void getPiece_type() {
-        dPlayer.setPiece_type(DPiece.PIECE_TYPE.RACING_CAR);
-        assertEquals(DPiece.PIECE_TYPE.RACING_CAR, dPlayer.getPiece_type());
+        dPlayer.setPieceType(DPiece.PieceType.RACING_CAR);
+        assertEquals(DPiece.PieceType.RACING_CAR, dPlayer.getPieceType());
     }
 }

@@ -61,7 +61,7 @@ public class BMonopolyGame implements BGameObserver {
         int diceSum;
 
         while(counter != 0){
-            currentPlayers.add(new BPlayer(new DPlayer(DPiece.PIECE_TYPE.BATTLESHIP, (int) gameInstructions.startMoney)));
+            currentPlayers.add(new BPlayer(new DPlayer(DPiece.PieceType.BATTLESHIP, (int) gameInstructions.startMoney)));
             counter--;
         }
 
@@ -83,7 +83,7 @@ public class BMonopolyGame implements BGameObserver {
         });
         //After sorting players the piece types are setting.
         for(int i = 0; i < currentPlayers.size(); i++){
-            currentPlayers.get(i).getDPlayer().setPiece_type(DPiece.PIECE_TYPE.values()[i]);
+            currentPlayers.get(i).getDPlayer().setPieceType(DPiece.PieceType.values()[i]);
         }
     }
 

@@ -20,8 +20,8 @@ public class UITerminal {
 
     public void printBeforeRollDice(BPlayer bPlayer) {
         System.out.println("---------------------------------------------------------------------");
-        System.out.println("Player Type :" + bPlayer.getDPlayer().getPiece_type());
-        System.out.println("Player Turn Counter :" + bPlayer.getDPlayer().getPiece_type().getValue());
+        System.out.println("Player Type :" + bPlayer.getDPlayer().getPieceType());
+        System.out.println("Player Turn Counter :" + bPlayer.getDPlayer().getPieceType().getValue());
         System.out.println("Player Cycle Counter :" + bPlayer.getDPlayer().getCycleCounter());
         System.out.println("Location Square :" + bPlayer.getDPlayer().getLocation());
         System.out.println("Player Current Balance :" + bPlayer.getDPlayer().getBalance());
@@ -49,7 +49,7 @@ public class UITerminal {
         System.out.println("*************************************************************************");
         System.out.println("WINNER PLAYER!!!");
         System.out.println("*************************************************************************");
-        System.out.println("Player Name :" + bPlayer.getDPlayer().getPiece_type());
+        System.out.println("Player Name :" + bPlayer.getDPlayer().getPieceType());
         System.out.println("Player Location :" + bPlayer.getDPlayer().getLocation());
         System.out.println("Player Balance :" + bPlayer.getDPlayer().getBalance());
         System.out.println("*************************************************************************");
@@ -60,7 +60,7 @@ public class UITerminal {
         System.out.println("*************************************************************************");
         for (Iterator<BPlayer> iterator = eliminatedList.iterator(); iterator.hasNext();) {
             BPlayer eliminatedPlayer = iterator.next();
-            System.out.println("Player Name :" + eliminatedPlayer.getDPlayer().getPiece_type());
+            System.out.println("Player Name :" + eliminatedPlayer.getDPlayer().getPieceType());
             System.out.println("Player Location :" + eliminatedPlayer.getDPlayer().getLocation());
             System.out.println("Player Balance :" + eliminatedPlayer.getDPlayer().getBalance());
             System.out.println("*************************************************************************");

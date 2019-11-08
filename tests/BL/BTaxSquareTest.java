@@ -16,7 +16,7 @@ class BTaxSquareTest {
 
     @BeforeAll
     static void beforeAllTestMethod() {
-        dPlayer = new DPlayer(DPiece.PIECE_TYPE.values()[(int) (Math.random() * 8)], 1000);
+        dPlayer = new DPlayer(DPiece.PieceType.values()[(int) (Math.random() * 8)], 1000);
     }
 
     @Test
