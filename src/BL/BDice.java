@@ -1,5 +1,13 @@
 package BL;
 
+/**
+ * <h>BDice</h>
+ *
+ * <p>Dice class in Business Layer. Include method for rolling dice which is used several times in the game.</p>
+ *
+ * @author Ahmet LEKESİZ
+ * @version 1.0
+ */
 public class BDice {
 
     public int[] rollDice() {

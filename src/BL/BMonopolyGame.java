@@ -7,13 +7,12 @@ import DAL.DPlayer;
 import DAL.DInstruction;
 import DAL.DPiece;
 
-/***
- *BMonopolyGame is MonopolyGame class in Business Layer. Main rules
- * of the game implemented in this class.
+/**
+ * <p>BMonopolyGame is MonopolyGame class in Business Layer. Main rules
+ * of the game implemented in this class.</p>
  *
  * @author Mücahit Tanacıoğlu
  * @version 1.0
- * @since 11.
  */
 public class BMonopolyGame implements BGameObserver {
 

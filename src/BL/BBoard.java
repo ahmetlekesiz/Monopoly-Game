@@ -4,6 +4,15 @@ import DAL.DInstruction;
 
 import java.util.ArrayList;
 
+/**
+ * <h>BBoard</h>
+ *
+ * <p>Board class in Business Layer. Creating squares by getting the number of them from Instruction. Then creating an Array List
+ * of Squares and filling it. </p>
+ *
+ * @author Ahmet LEKESİZ
+ * @version 1.0
+ */
 public class BBoard {
 
     private static final int SQUARE_NUMBER = 40;
@@ -43,8 +52,6 @@ public class BBoard {
         }
         squares[0] = new BGoSquare();
     }
-
-
 
     public BSquare[] getSquares() {
         return squares;
