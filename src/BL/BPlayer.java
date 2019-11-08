@@ -16,16 +16,15 @@ public class BPlayer implements BPlayerObserver {
 
     @Override
     public void checkAndUpdatePlayer(int currentDiceValue, BSquare currentSquare) {
-        if (isPlayerBankrupted()) {
-            dPlayer.setBankruptFlag(true);
-            return;
-        }
         if (isPlayerCrossTheGoSquare()) {
             dPlayer.setRoundValue(dPlayer.getRoundValue() + 1);
             new BGoSquare().performOnLand(dPlayer);
             return;
         }
         currentSquare.performOnLand(dPlayer);
+        if (isPlayerBankrupted()) {
+            dPlayer.setBankruptFlag(true);
+        }
     }
 
     public int rollDice(){

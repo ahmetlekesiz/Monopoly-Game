@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="dfd4cd54-fa73-4f3b-abf8-245eae6a795f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller.uml" beforeDir="false" afterPath="$PROJECT_DIR$/Controller.uml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/DAL/DJSONReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Monopoly/DAL/DJSONReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game.json" beforeDir="false" afterPath="$PROJECT_DIR$/game.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BL/BPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BL/BPlayer.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -188,6 +187,7 @@
       <workItem from="1573153339642" duration="1957000" />
       <workItem from="1573155437238" duration="808000" />
       <workItem from="1573204063098" duration="71000" />
+      <workItem from="1573213764836" duration="293000" />
     </task>
     <task id="LOCAL-00001" summary="model, view, controller packages created.&#10;MonopolyGame class created.&#10;MonopolyGame class constructor template created using static factory methods design pattern.">
       <created>1572975097652</created>
@@ -364,7 +364,21 @@
       <option name="project" value="LOCAL" />
       <updated>1573156173245</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Game is stabilised.">
+      <created>1573213843498</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1573213843498</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Game is stabilised.">
+      <created>1573213939130</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1573213939130</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -408,6 +422,7 @@
     <MESSAGE value="Eliminated players added." />
     <MESSAGE value="PIECE_TYPE getValue created." />
     <MESSAGE value="JUnit tests added for classes." />
-    <option name="LAST_COMMIT_MESSAGE" value="JUnit tests added for classes." />
+    <MESSAGE value="Game is stabilised." />
+    <option name="LAST_COMMIT_MESSAGE" value="Game is stabilised." />
   </component>
 </project>
