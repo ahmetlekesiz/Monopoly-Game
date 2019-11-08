@@ -104,7 +104,7 @@ public class BMonopolyGame implements BGameObserver {
             if(firstPlayer.getDPlayer().getBalance() == secondPlayer.getDPlayer().getBalance()) return 0;
             return firstPlayer.getDPlayer().getBalance() > secondPlayer.getDPlayer().getBalance() ? -1 : 1;
         });
-        bTerminal.printWinnerPlayer(currentPlayers.get(0).getDPlayer());
+        bTerminal.printWinnerPlayer(currentPlayers.get(0));
         bTerminal.printGameOver(eliminatedPlayers);
     }
 
@@ -112,14 +112,14 @@ public class BMonopolyGame implements BGameObserver {
         for (Iterator<BPlayer> iterator = currentPlayers.iterator(); iterator.hasNext();) {
             BPlayer currentPlayer = iterator.next();
             if (!currentPlayer.getDPlayer().isBankrupted()) {
-                bTerminal.printBeforeRollDice(currentPlayer.getDPlayer());
+                bTerminal.printBeforeRollDice(currentPlayer);
                 currentPlayer.rollDice();
                 currentPlayer.getDPlayer().setTotalDiceValue(currentPlayer.getDPlayer().getTotalDiceValue() +
                         currentPlayer.getDPlayer().getCurrentDiceVal());
                 currentPlayer.checkAndUpdatePlayer(currentPlayer.getDPlayer().getCurrentDiceVal(),
                         boardInstance.getSquares()[currentPlayer.getDPlayer().getLocation()]);
                 bTerminal.printLocationType(boardInstance.getSquares()[currentPlayer.getDPlayer().getLocation()].getSQUARE_TYPE());
-                bTerminal.printAfterRollDice(currentPlayer.getDPlayer());
+                bTerminal.printAfterRollDice(currentPlayer);
 
                 if (currentPlayer.getDPlayer().isBankrupted()) {
                     eliminatedPlayers.add(currentPlayer);

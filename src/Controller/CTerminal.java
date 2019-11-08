@@ -1,7 +1,7 @@
 package Controller;
 
 
-import BL.BTerminal;
+import BL.BPlayer;
 import DAL.DPlayer;
 import UI.UITerminal;
 
@@ -11,8 +11,8 @@ public class CTerminal {
 
     private UITerminal uiTerminal = new UITerminal();
 
-    public void printBeforeRollDice(DPlayer dPlayer) {
-        uiTerminal.printBeforeRollDice(dPlayer);
+    public void printBeforeRollDice(BPlayer bPlayer) {
+        uiTerminal.printBeforeRollDice(bPlayer);
     }
 
     public void printDicesFaces(int[] diceValues){
@@ -23,12 +23,12 @@ public class CTerminal {
         uiTerminal.printLocationType(squareLocation);
     }
 
-    public void printAfterRollDice(DPlayer dPlayer){
-        uiTerminal.printAfterRollDice(dPlayer);
+    public void printAfterRollDice(BPlayer bPlayer){
+        uiTerminal.printAfterRollDice(bPlayer);
     }
 
-    public void printWinnerPlayer(DPlayer dPlayer){
-        uiTerminal.printWinnerPlayer(dPlayer);
+    public void printWinnerPlayer(BPlayer bPlayer){
+        uiTerminal.printWinnerPlayer(bPlayer);
     }
 
     public void printGameOver(ArrayList eliminatedList){
