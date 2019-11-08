@@ -18,6 +18,7 @@ public class BPlayer implements BPlayerObserver {
     public void checkAndUpdatePlayer(int currentDiceValue, BSquare currentSquare) {
         if (isPlayerBankrupted()) {
             dPlayer.setBankruptFlag(true);
+            return;
         }
         if (isPlayerCrossTheGoSquare()) {
             dPlayer.setRoundValue(dPlayer.getRoundValue() + 1);
