@@ -11,7 +11,7 @@ import DAL.DPiece;
  *BMonopolyGame is MonopolyGame class in Business Layer. Main rules
  * of the game implemented in this class.
  *
- * @author Ahmet Lekesiz
+ * @author Mücahit Tanacıoğlu
  * @version 1.0
  * @since 11.
  */
@@ -46,6 +46,15 @@ public class BMonopolyGame implements BGameObserver {
         initPlayersByLettingThemRollingDiceAndPutInList(gameInstructions);
         listen();
     }
+
+    /**
+     *<p>Takes initial data of the game and create players, after that to arrange order of players, makes them roll dice</p>
+     * <p>Listen method runs to watch the player.
+     * This method runs until just one player left.</p>
+     *
+     * @param gameInstructions A DInstruction object which is contain initial data for game.
+     * @return void
+     */
 
     private void initPlayersByLettingThemRollingDiceAndPutInList(DInstruction gameInstructions) {
         int counter = (int) gameInstructions.countOfPlayers;
@@ -94,7 +103,12 @@ public class BMonopolyGame implements BGameObserver {
         }
         return false;
     }
-
+    /**
+     *<p>Starts game turn and if a player eliminated ,stores them.</p>
+     * <p>Listen method runs to watch the player.
+     * This method runs until just one player left.</p>
+     *@return void
+     */
     @Override
     public void listen() {
         while (currentPlayers.size() != 1) {
@@ -107,17 +121,26 @@ public class BMonopolyGame implements BGameObserver {
         bTerminal.printWinnerPlayer(currentPlayers.get(0).getDPlayer());
         bTerminal.printGameOver(eliminatedPlayers);
     }
-
+    /**
+     *<p>Each player plays their turn by their order, if player get bankrupt removes from list.</p>
+     * <p>Listen method runs to watch the player.
+     * This method runs until just one player left.</p>
+     *@return void
+     */
     private void startTurn() {
         for (Iterator<BPlayer> iterator = currentPlayers.iterator(); iterator.hasNext();) {
             BPlayer currentPlayer = iterator.next();
             if (!currentPlayer.getDPlayer().isBankrupted()) {
                 bTerminal.printBeforeRollDice(currentPlayer.getDPlayer());
+
                 currentPlayer.rollDice();
+
                 currentPlayer.getDPlayer().setTotalDiceValue(currentPlayer.getDPlayer().getTotalDiceValue() +
                         currentPlayer.getDPlayer().getCurrentDiceVal());
+
                 currentPlayer.checkAndUpdatePlayer(currentPlayer.getDPlayer().getCurrentDiceVal(),
                         boardInstance.getSquares()[currentPlayer.getDPlayer().getLocation()]);
+
                 bTerminal.printLocationType(boardInstance.getSquares()[currentPlayer.getDPlayer().getLocation()].getSQUARE_TYPE());
                 bTerminal.printAfterRollDice(currentPlayer.getDPlayer());
 
