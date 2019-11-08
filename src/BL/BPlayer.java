@@ -17,6 +17,7 @@ public class BPlayer implements BPlayerObserver {
     private BTerminal bTerminal = new BTerminal();
 
     public BPlayer() {
+
     }
 
     public BPlayer(DPlayer dPlayer) {
