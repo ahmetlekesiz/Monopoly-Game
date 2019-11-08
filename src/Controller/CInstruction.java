@@ -8,7 +8,7 @@ public class CInstruction {
 
     private static CInstruction instance;
 
-    public DInstruction getDInstruction(){
+    public static DInstruction getDInstruction(){
         return DInstruction.getInstance();
     }
 }

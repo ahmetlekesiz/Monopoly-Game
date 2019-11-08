@@ -10,8 +10,8 @@ public class BTerminal {
 
     private CTerminal cTerminal = new CTerminal();
 
-    public void printBeforeRollDice(DPlayer dPlayer) {
-        cTerminal.printBeforeRollDice(dPlayer);
+    public void printBeforeRollDice(BPlayer bPlayer) {
+        cTerminal.printBeforeRollDice(bPlayer);
     }
 
     public void printDicesFaces(int[] diceValues){
@@ -22,13 +22,11 @@ public class BTerminal {
         cTerminal.printLocationType(squareLocation);
     }
 
-    public void printAfterRollDice(DPlayer dPlayer){
-        cTerminal.printAfterRollDice(dPlayer);
+    public void printAfterRollDice(BPlayer bPlayer){
+        cTerminal.printAfterRollDice(bPlayer);
     }
 
-    public void printWinnerPlayer(DPlayer dPlayer){
-        cTerminal.printWinnerPlayer(dPlayer);
-    }
+    public void printWinnerPlayer(BPlayer bPlayer){ cTerminal.printWinnerPlayer(bPlayer); }
 
     public void printGameOver(ArrayList eliminatedList){
         cTerminal.printGameOver(eliminatedList);
