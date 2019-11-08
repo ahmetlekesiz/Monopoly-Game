@@ -2,22 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dfd4cd54-fa73-4f3b-abf8-245eae6a795f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tests/BL/BPlayerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/BL/BRegularSquareTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/DAL/DInstructionTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/DAL/DJSONReaderTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/DAL/DPieceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/BL/BMonopolyGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Monopoly/BL/BMonopolyGame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/DAL/DInstruction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Monopoly/DAL/DInstruction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/DAL/DPiece$PIECE_TYPE.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Monopoly/DAL/DPiece$PIECE_TYPE.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/Monopoly/BL/BGoSquareTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/Monopoly/BL/BGoSquareTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/Monopoly/BL/BTaxSquareTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/Monopoly/BL/BTaxSquareTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/CInstruction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/CInstruction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DAL/DInstruction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAL/DInstruction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DAL/DJSONReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAL/DJSONReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/BL/BGoSquareTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/BL/BGoSquareTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/BL/BTaxSquareTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/BL/BTaxSquareTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller.uml" beforeDir="false" afterPath="$PROJECT_DIR$/Controller.uml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/DAL/DJSONReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Monopoly/DAL/DJSONReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BL/BPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BL/BPlayer.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -89,19 +77,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.DJSONReaderTest.getValueUsingKey">
-    <configuration name="BGoSquareTest.getSQUARE_TYPE" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Controller.Main" />
       <module name="Monopoly" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="BL.*" />
+          <option name="PATTERN" value="Controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="BL" />
-      <option name="MAIN_CLASS_NAME" value="BL.BGoSquareTest" />
-      <option name="METHOD_NAME" value="getSQUARE_TYPE" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -171,7 +156,7 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.BGoSquareTest.getSQUARE_TYPE" />
+      <item itemvalue="Application.Main" />
       <item itemvalue="JUnit.BTaxSquareTest.getSQUARE_TYPE" />
       <item itemvalue="JUnit.DInstructionTest.testToString" />
       <item itemvalue="JUnit.DPieceTest.getValue" />
@@ -179,11 +164,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.DJSONReaderTest.getValueUsingKey" />
         <item itemvalue="JUnit.DPieceTest.getValue" />
         <item itemvalue="JUnit.DInstructionTest.testToString" />
         <item itemvalue="JUnit.BTaxSquareTest.getSQUARE_TYPE" />
-        <item itemvalue="JUnit.BGoSquareTest.getSQUARE_TYPE" />
       </list>
     </recent_temporary>
   </component>
@@ -201,7 +186,8 @@
       <workItem from="1573126084085" duration="8293000" />
       <workItem from="1573135725021" duration="2090000" />
       <workItem from="1573153339642" duration="1957000" />
-      <workItem from="1573155437238" duration="483000" />
+      <workItem from="1573155437238" duration="808000" />
+      <workItem from="1573204063098" duration="71000" />
     </task>
     <task id="LOCAL-00001" summary="model, view, controller packages created.&#10;MonopolyGame class created.&#10;MonopolyGame class constructor template created using static factory methods design pattern.">
       <created>1572975097652</created>
@@ -371,7 +357,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573136544234</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="JUnit tests added for classes.">
+      <created>1573156173245</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1573156173245</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -414,6 +407,7 @@
     <MESSAGE value="Project running state created." />
     <MESSAGE value="Eliminated players added." />
     <MESSAGE value="PIECE_TYPE getValue created." />
-    <option name="LAST_COMMIT_MESSAGE" value="PIECE_TYPE getValue created." />
+    <MESSAGE value="JUnit tests added for classes." />
+    <option name="LAST_COMMIT_MESSAGE" value="JUnit tests added for classes." />
   </component>
 </project>
