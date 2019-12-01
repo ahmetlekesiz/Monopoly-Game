@@ -1,5 +1,9 @@
 package BL;
 
+import BL.squares.BGoSquare;
+import BL.squares.BRegularSquare;
+import BL.squares.BSquare;
+import BL.squares.BTaxSquare;
 import DAL.DInstruction;
 
 import java.util.ArrayList;

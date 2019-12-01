@@ -1,5 +1,6 @@
 package BL;
 
+import BL.squares.BTaxSquare;
 import Controller.Main;
 import DAL.DInstruction;
 import DAL.DJSONReader;
