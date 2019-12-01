@@ -12,6 +12,10 @@ import DAL.DPlayer;
  */
 public class BRegularSquare extends BSquare {
 
+    public BRegularSquare(PropertyType type){
+        this.pType = type;
+    }
+
     private final String SQUARE_TYPE = "REGULAR_SQUARE";
 
     /**

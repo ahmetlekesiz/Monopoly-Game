@@ -17,6 +17,9 @@ public class BTaxSquare extends BSquare {
     private final String SQUARE_TYPE = "TAX_SQUARE";
     private final DInstruction DInstructionInstance = DInstruction.getInstance();
 
+    public BTaxSquare(PropertyType type){
+        this.pType = type;
+    }
     /**
      * <p>We use the method to set current player balance. Because, player balance decreases in tax square.</p>
      *
@@ -26,6 +29,7 @@ public class BTaxSquare extends BSquare {
     @Override
     public void performOnLand(DPlayer player) {
         player.setBalance(player.getBalance() - (int) DInstructionInstance.priceOfTaxSquares);
+
     }
 
     /**
