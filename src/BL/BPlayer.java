@@ -1,5 +1,7 @@
 package BL;
 
+import BL.squares.BGoSquare;
+import BL.squares.BSquare;
 import DAL.DPlayer;
 
 /***

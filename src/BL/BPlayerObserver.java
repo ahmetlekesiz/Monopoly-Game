@@ -1,5 +1,7 @@
 package BL;
 
+import BL.squares.BSquare;
+
 /***
  *BPlayerObserver interface to make actions on players.
  *
