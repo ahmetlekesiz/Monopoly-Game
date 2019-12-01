@@ -74,6 +74,16 @@ public class BPlayer implements BPlayerObserver {
         return dPlayer.getBalance() < 0;
     }
 
+    private boolean buy(int price,boolean isBuyable){
+        if(isBuyable){
+            if(this.getDPlayer().getBalance() < price)
+                return false;
+            this.getDPlayer().setBalance(this.getDPlayer().getBalance() - price);
+            return true;
+        }else
+            return  false;
+    }
+
     public DPlayer getDPlayer() {
         return dPlayer;
     }
