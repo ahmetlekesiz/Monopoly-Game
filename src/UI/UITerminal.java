@@ -30,6 +30,7 @@ public class UITerminal {
         System.out.println("---------------------------------------------------------------------");
         System.out.println("MONOPOLY GAME");
         System.out.println("---------------------------------------------------------------------");
+        System.out.println("git deneme");
     }
 
     /**
