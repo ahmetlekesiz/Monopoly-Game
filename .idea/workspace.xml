@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dfd4cd54-fa73-4f3b-abf8-245eae6a795f" name="Default Changelist" comment="Javadoc created for DAL." />
+    <list default="true" id="dfd4cd54-fa73-4f3b-abf8-245eae6a795f" name="Default Changelist" comment="Javadoc created for DAL.">
+      <change afterPath="$PROJECT_DIR$/src/BL/squares/BLuckSquare.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BL/squares/luckcards/BLuckCardOne.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BL/squares/luckcards/BLuckCardTwo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BL/squares/luckcards/BLuckCards.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/BL/BBoard.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Monopoly/BL/BBoard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/BL/BDice.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Monopoly/BL/BDice.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/BL/BRegularSquare.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/BL/BSquare.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/BL/BTaxSquare.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/Controller/CMonopolyGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Monopoly/Controller/CMonopolyGame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/Controller/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Monopoly/Controller/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/DAL/DPlayer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Monopoly/DAL/DPlayer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/Monopoly/BL/BGoSquareTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/Monopoly/BL/BGoSquareTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/Monopoly/BL/BTaxSquareTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/Monopoly/BL/BTaxSquareTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BL/BBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BL/BBoard.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,8 +28,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -48,6 +65,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -190,6 +208,7 @@
       <workItem from="1573204063098" duration="71000" />
       <workItem from="1573213764836" duration="1038000" />
       <workItem from="1573214841471" duration="13801000" />
+      <workItem from="1575293905196" duration="6036000" />
     </task>
     <task id="LOCAL-00001" summary="model, view, controller packages created.&#10;MonopolyGame class created.&#10;MonopolyGame class constructor template created using static factory methods design pattern.">
       <created>1572975097652</created>
