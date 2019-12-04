@@ -1,9 +1,6 @@
 package BL;
 
-import BL.squares.BGoSquare;
-import BL.squares.BRegularSquare;
-import BL.squares.BSquare;
-import BL.squares.BTaxSquare;
+import BL.squares.*;
 import DAL.DInstruction;
 
 import java.util.ArrayList;
@@ -49,12 +46,12 @@ public class BBoard {
         }
 
         for (int i = 0; i < SQUARE_NUMBER; ++i) {
-            squares[i] = new BRegularSquare();
+            squares[i] = new BRegularSquare(PropertyType.NOCOLOR);
         }
         for(int i = 0; i < countOfTaxSquares; i++) {
-            squares[taxSquareLocations.get(i)] = new BTaxSquare();
+            squares[taxSquareLocations.get(i)] = new BTaxSquare(PropertyType.BLUE);
         }
-        squares[0] = new BGoSquare();
+        squares[0] = new BGoSquare(PropertyType.BROWN);
     }
 
     public BSquare[] getSquares() {

@@ -2,48 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dfd4cd54-fa73-4f3b-abf8-245eae6a795f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Monopoly/BL/BGoSquare.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Monopoly/BL/BJailSquare.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Monopoly/BL/BMonopolyGame.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Monopoly/BL/BPlayer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Monopoly/BL/BPlayerObserver.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Monopoly/BL/BTerminal.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Monopoly/Controller/CInstruction.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Monopoly/Controller/CTerminal.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Monopoly/DAL/DPiece$PieceType.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Monopoly/UI/UITerminal.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/Monopoly/BL/BJailSquareTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/Monopoly/BL/BPlayerTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/Monopoly/BL/BRegularSquareTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/Monopoly/DAL/DInstructionTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/Monopoly/DAL/DJSONReaderTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/Monopoly/DAL/DPieceTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BL/BJailSquare.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/BL/BJailSquareTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game.json" beforeDir="false" afterPath="$PROJECT_DIR$/game.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/BL/BBoard.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Monopoly/BL/BBoard.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/BL/BDice.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Monopoly/BL/BDice.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/BL/BRegularSquare.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Monopoly/BL/BRegularSquare.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/BL/BSquare.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Monopoly/BL/BSquare.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/BL/BTaxSquare.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Monopoly/BL/BTaxSquare.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/Controller/CMonopolyGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Monopoly/Controller/CMonopolyGame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/Controller/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Monopoly/Controller/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/DAL/DInstruction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Monopoly/DAL/DInstruction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/DAL/DJSONReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Monopoly/DAL/DJSONReader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/DAL/DPlayer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Monopoly/DAL/DPlayer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BL/BMonopolyGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BL/BMonopolyGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BL/BPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BL/BPlayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/CMonopolyGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/CMonopolyGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/CTerminal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/CTerminal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DAL/DInstruction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAL/DInstruction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DAL/DJSONReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAL/DJSONReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DAL/DPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAL/DPlayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/BL/BPlayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/BL/BPlayerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/DAL/DInstructionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/DAL/DInstructionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BL/BBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BL/BBoard.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -121,7 +81,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BJailSquareTest.performOnLand">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Controller.Main" />
       <module name="Monopoly" />
@@ -207,9 +167,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.BJailSquareTest.performOnLand" />
         <item itemvalue="JUnit.BJailSquareTest" />
-        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.DJSONReaderTest.getValueUsingKey" />
         <item itemvalue="JUnit.DPieceTest.getValue" />
       </list>
@@ -236,6 +196,7 @@
       <workItem from="1573837608098" duration="65000" />
       <workItem from="1575209547868" duration="4952000" />
       <workItem from="1575478957888" duration="3316000" />
+      <workItem from="1575491678320" duration="235000" />
     </task>
     <task id="LOCAL-00001" summary="model, view, controller packages created.&#10;MonopolyGame class created.&#10;MonopolyGame class constructor template created using static factory methods design pattern.">
       <created>1572975097652</created>
