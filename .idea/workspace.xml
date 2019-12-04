@@ -1,23 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dfd4cd54-fa73-4f3b-abf8-245eae6a795f" name="Default Changelist" comment="Javadoc created for DAL.">
-      <change afterPath="$PROJECT_DIR$/src/BL/squares/BLuckSquare.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BL/squares/luckcards/BLuckCardOne.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BL/squares/luckcards/BLuckCardTwo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BL/squares/luckcards/BLuckCards.java" afterDir="false" />
+    <list default="true" id="dfd4cd54-fa73-4f3b-abf8-245eae6a795f" name="Default Changelist" comment="Luck cards are modified.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/BL/BBoard.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Monopoly/BL/BBoard.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/BL/BDice.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Monopoly/BL/BDice.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/BL/BRegularSquare.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/BL/BSquare.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/BL/BTaxSquare.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/Controller/CMonopolyGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Monopoly/Controller/CMonopolyGame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/Controller/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Monopoly/Controller/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/DAL/DPlayer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Monopoly/DAL/DPlayer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/Monopoly/BL/BGoSquareTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/Monopoly/BL/BGoSquareTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/Monopoly/BL/BTaxSquareTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/Monopoly/BL/BTaxSquareTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BL/BBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BL/BBoard.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -64,7 +49,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.externalDependencies" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
@@ -191,7 +176,7 @@
     </recent_temporary>
   </component>
   <component name="SvnConfiguration">
-    <configuration />
+    <configuration>C:\Users\Salih\AppData\Roaming\Subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -208,7 +193,8 @@
       <workItem from="1573204063098" duration="71000" />
       <workItem from="1573213764836" duration="1038000" />
       <workItem from="1573214841471" duration="13801000" />
-      <workItem from="1575293905196" duration="6036000" />
+      <workItem from="1575293905196" duration="6252000" />
+      <workItem from="1575462076054" duration="11744000" />
     </task>
     <task id="LOCAL-00001" summary="model, view, controller packages created.&#10;MonopolyGame class created.&#10;MonopolyGame class constructor template created using static factory methods design pattern.">
       <created>1572975097652</created>
@@ -427,7 +413,28 @@
       <option name="project" value="LOCAL" />
       <updated>1575204827442</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Luck cards are added.">
+      <created>1575406916335</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1575406916335</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Luck cards are added.">
+      <created>1575469411248</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1575469411248</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Luck cards are modified.">
+      <created>1575493297995</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1575493297995</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -448,8 +455,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Instruction class method name changed." />
-    <MESSAGE value="json-simple library added." />
     <MESSAGE value="TerminalOutput class created." />
     <MESSAGE value="JSON file data transferred into Instruction object." />
     <MESSAGE value="JSONReader constructor modified." />
@@ -473,6 +478,8 @@
     <MESSAGE value="Uml and sequence diagram added." />
     <MESSAGE value="Javadoc created for DAL." />
     <MESSAGE value="deneme commit." />
-    <option name="LAST_COMMIT_MESSAGE" value="deneme commit." />
+    <MESSAGE value="Luck cards are added." />
+    <MESSAGE value="Luck cards are modified." />
+    <option name="LAST_COMMIT_MESSAGE" value="Luck cards are modified." />
   </component>
 </project>
