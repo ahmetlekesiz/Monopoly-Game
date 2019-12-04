@@ -1,4 +1,4 @@
-package BL;
+package BL.squares;
 
 import DAL.DInstruction;
 import DAL.DPlayer;
@@ -17,8 +17,9 @@ public class BJailSquare extends BSquare {
 
     private HashMap<DPlayer, Integer> jailRecords;
 
-    public BJailSquare() {
+    public BJailSquare(PropertyType type) {
         jailRecords = new HashMap<>();
+        this.pType=type;
     }
 
     /**

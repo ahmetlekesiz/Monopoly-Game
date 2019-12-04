@@ -13,7 +13,7 @@ import DAL.DInstruction;
 public class BGoSquare extends BSquare {
     private final String SQUARE_TYPE = "GO_SQUARE";
     private final DInstruction DInstructionInstance = DInstruction.getInstance();
-
+    public BGoSquare(PropertyType type){this.pType=type;}
     /**
      *<p>Perform on land function inherited from BSquare which is generic type for squares.
      * For Go square its add amount of priceOfGoSquare to players balance </p>
