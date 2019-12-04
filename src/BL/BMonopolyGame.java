@@ -138,7 +138,7 @@ public class BMonopolyGame implements BGameObserver {
 
                 currentPlayer.checkAndUpdatePlayer(currentPlayer.getDPlayer().getCurrentDiceVal(),
                         boardInstance.getSquares()[currentPlayer.getDPlayer().getLocation()]);
-
+                //player decide to buy or not
                 bTerminal.printLocationType(boardInstance.getSquares()[currentPlayer.getDPlayer().getLocation()].getSQUARE_TYPE());
                 bTerminal.printAfterRollDice(currentPlayer);
 

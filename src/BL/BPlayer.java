@@ -2,6 +2,7 @@ package BL;
 
 import BL.squares.BGoSquare;
 import BL.squares.BSquare;
+import BL.squares.PropertyType;
 import DAL.DPlayer;
 
 /***
@@ -39,7 +40,7 @@ public class BPlayer implements BPlayerObserver {
     public void checkAndUpdatePlayer(int currentDiceValue, BSquare currentSquare) {
         if (isPlayerCrossTheGoSquare()) {
             dPlayer.setRoundValue(dPlayer.getRoundValue() + 1);
-            new BGoSquare().performOnLand(getDPlayer());
+            new BGoSquare(PropertyType.NOCOLOR).performOnLand(getDPlayer());
             return;
         }
         currentSquare.performOnLand(getDPlayer());
