@@ -17,7 +17,7 @@ import DAL.DPiece;
 public class BMonopolyGame implements BGameObserver {
 
     private static BMonopolyGame monopolyGameInstance = new BMonopolyGame();
-    private ArrayList<BPlayer> currentPlayers, eliminatedPlayers;
+    private ArrayList<BL.BPlayer> currentPlayers, eliminatedPlayers;
     private BBoard boardInstance;
     private BTerminal bTerminal = new BTerminal();
     private ArrayList<Integer> diceSumOfPlayers = new ArrayList<>();
@@ -60,12 +60,12 @@ public class BMonopolyGame implements BGameObserver {
         int diceSum;
 
         while(counter != 0){
-            currentPlayers.add(new BPlayer(new DPlayer(DPiece.PieceType.BATTLESHIP, (int) gameInstructions.startMoney)));
+            currentPlayers.add(new BL.BPlayer(new DPlayer(DPiece.PieceType.BATTLESHIP, (int) gameInstructions.startMoney)));
             counter--;
         }
 
         //Rolling dice for each players.
-        for (BPlayer player : currentPlayers) {
+        for (BL.BPlayer player : currentPlayers) {
             diceSum = player.rollDice();
             //Checking if the diceSum same with other players.
             while(checkIfDiceSumExist(diceSumOfPlayers, diceSum)){
@@ -127,8 +127,8 @@ public class BMonopolyGame implements BGameObserver {
      *@return void
      */
     private void startTurn() {
-        for (Iterator<BPlayer> iterator = currentPlayers.iterator(); iterator.hasNext();) {
-            BPlayer currentPlayer = iterator.next();
+        for (Iterator<BL.BPlayer> iterator = currentPlayers.iterator(); iterator.hasNext();) {
+            BL.BPlayer currentPlayer = iterator.next();
             if (!currentPlayer.getDPlayer().isBankrupted()) {
                 bTerminal.printBeforeRollDice(currentPlayer);
                 currentPlayer.rollDice();

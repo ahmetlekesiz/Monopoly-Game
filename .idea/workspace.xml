@@ -1,103 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dfd4cd54-fa73-4f3b-abf8-245eae6a795f" name="Default Changelist" comment="Javadoc created for DAL.">
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/BL/BBoard.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/BL/BDice.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/BL/BGameObserver.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/BL/BGoSquare.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/BL/BMonopolyGame.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/BL/BPlayer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/BL/BPlayerObserver.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/BL/BRegularSquare.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/BL/BSquare.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/BL/BTaxSquare.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/BL/BTerminal.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/BL/package-summary.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/BL/package-tree.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/Controller/CInstruction.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/Controller/CMonopolyGame.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/Controller/CTerminal.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/Controller/Main.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/Controller/package-summary.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/Controller/package-tree.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/DAL/DInstruction.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/DAL/DJSONReader.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/DAL/DPiece.PieceType.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/DAL/DPiece.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/DAL/DPlayer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/DAL/package-summary.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/DAL/package-tree.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/UI/UITerminal.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/UI/package-summary.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/UI/package-tree.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/allclasses-index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/allclasses.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/allpackages-index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/constant-values.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/deprecated-list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/element-list" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/help-doc.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/index-files/index-1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/index-files/index-10.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/index-files/index-11.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/index-files/index-12.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/index-files/index-13.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/index-files/index-14.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/index-files/index-2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/index-files/index-3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/index-files/index-4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/index-files/index-5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/index-files/index-6.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/index-files/index-7.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/index-files/index-8.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/index-files/index-9.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/jquery/external/jquery/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/jquery/images/ui-bg_glass_55_fbf9ee_1x400.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/jquery/images/ui-bg_glass_65_dadada_1x400.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/jquery/images/ui-bg_glass_75_dadada_1x400.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/jquery/images/ui-bg_glass_75_e6e6e6_1x400.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/jquery/images/ui-bg_glass_95_fef1ec_1x400.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/jquery/images/ui-bg_highlight-soft_75_cccccc_1x100.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/jquery/images/ui-icons_222222_256x240.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/jquery/images/ui-icons_2e83ff_256x240.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/jquery/images/ui-icons_454545_256x240.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/jquery/images/ui-icons_888888_256x240.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/jquery/images/ui-icons_cd0a0a_256x240.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/jquery/jquery-3.3.1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/jquery/jquery-migrate-3.0.1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/jquery/jquery-ui.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/jquery/jquery-ui.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/jquery/jquery-ui.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/jquery/jquery-ui.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/jquery/jquery-ui.structure.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/jquery/jquery-ui.structure.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/jquery/jszip-utils/dist/jszip-utils-ie.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/jquery/jszip-utils/dist/jszip-utils-ie.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/jquery/jszip-utils/dist/jszip-utils.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/jquery/jszip-utils/dist/jszip-utils.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/jquery/jszip/dist/jszip.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/jquery/jszip/dist/jszip.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/member-search-index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/member-search-index.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/overview-summary.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/overview-tree.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/package-search-index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/package-search-index.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/resources/glass.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/resources/x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/search.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/stylesheet.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/type-search-index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documents/JDocs/type-search-index.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="dfd4cd54-fa73-4f3b-abf8-245eae6a795f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Monopoly/BL/BGoSquare.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Monopoly/BL/BJailSquare.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Monopoly/BL/BMonopolyGame.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Monopoly/BL/BPlayer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Monopoly/BL/BPlayerObserver.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Monopoly/BL/BTerminal.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Monopoly/Controller/CInstruction.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Monopoly/Controller/CTerminal.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Monopoly/DAL/DPiece$PieceType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Monopoly/UI/UITerminal.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/Monopoly/BL/BJailSquareTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/Monopoly/BL/BPlayerTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/Monopoly/BL/BRegularSquareTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/Monopoly/DAL/DInstructionTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/Monopoly/DAL/DJSONReaderTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/Monopoly/DAL/DPieceTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BL/BJailSquare.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/BL/BJailSquareTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documents/CSE3063F19P1_DCD_alekesiz_mtanacioglu_mbkoc_sozyurt_iteration1.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/documents/CSE3063F19P1_DCD_alekesiz_mtanacioglu_mbkoc_sozyurt_iteration1.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documents/CSE3063F19P1_DOMAINMODEL_alekesiz_mtanacioglu_mbkoc_sozyurt_iteration1.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/documents/CSE3063F19P1_DOMAINMODEL_alekesiz_mtanacioglu_mbkoc_sozyurt_iteration1.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documents/CSE3063F19P1_DSD_alekesiz_mtanacioglu_mbkoc_sozyurt_iteration1.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/documents/CSE3063F19P1_DSD_alekesiz_mtanacioglu_mbkoc_sozyurt_iteration1.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game.json" beforeDir="false" afterPath="$PROJECT_DIR$/game.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/BL/BBoard.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Monopoly/BL/BBoard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/BL/BDice.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Monopoly/BL/BDice.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/BL/BRegularSquare.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Monopoly/BL/BRegularSquare.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/BL/BSquare.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Monopoly/BL/BSquare.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/BL/BTaxSquare.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Monopoly/BL/BTaxSquare.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/Controller/CMonopolyGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Monopoly/Controller/CMonopolyGame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/Controller/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Monopoly/Controller/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/DAL/DInstruction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Monopoly/DAL/DInstruction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/DAL/DJSONReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Monopoly/DAL/DJSONReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/DAL/DPlayer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Monopoly/DAL/DPlayer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BL/BMonopolyGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BL/BMonopolyGame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BL/BPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BL/BPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/CMonopolyGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/CMonopolyGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/CTerminal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/CTerminal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DAL/DInstruction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAL/DInstruction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DAL/DJSONReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAL/DJSONReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DAL/DPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAL/DPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/BL/BPlayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/BL/BPlayerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/DAL/DInstructionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/DAL/DInstructionTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -144,14 +90,15 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="terminal" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="DAL" />
       <recent name="BL" />
+      <recent name="DAL" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/documents" />
       <recent name="$PROJECT_DIR$/models" />
       <recent name="$PROJECT_DIR$/libs" />
     </key>
@@ -174,7 +121,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.BJailSquareTest.performOnLand">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Controller.Main" />
       <module name="Monopoly" />
@@ -188,7 +135,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BTaxSquareTest.getSQUARE_TYPE" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BJailSquareTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Monopoly" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="BL.squares.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="BL" />
+      <option name="MAIN_CLASS_NAME" value="BL.BJailSquareTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BJailSquareTest.performOnLand" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Monopoly" />
       <extension name="coverage">
         <pattern>
@@ -197,24 +159,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="BL" />
-      <option name="MAIN_CLASS_NAME" value="BL.BTaxSquareTest" />
-      <option name="METHOD_NAME" value="getSQUARE_TYPE" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DInstructionTest.testToString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Monopoly" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="DAL.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="DAL" />
-      <option name="MAIN_CLASS_NAME" value="DAL.DInstructionTest" />
-      <option name="METHOD_NAME" value="testToString" />
+      <option name="MAIN_CLASS_NAME" value="BL.BJailSquareTest" />
+      <option name="METHOD_NAME" value="performOnLand" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -224,7 +170,7 @@
       <module name="Monopoly" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="DAL.*" />
+          <option name="PATTERN" value="DAL.DPlayer" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -240,7 +186,7 @@
       <module name="Monopoly" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="DAL.*" />
+          <option name="PATTERN" value="DAL.DPlayer" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -254,18 +200,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
-      <item itemvalue="JUnit.BTaxSquareTest.getSQUARE_TYPE" />
-      <item itemvalue="JUnit.DInstructionTest.testToString" />
       <item itemvalue="JUnit.DPieceTest.getValue" />
       <item itemvalue="JUnit.DJSONReaderTest.getValueUsingKey" />
+      <item itemvalue="JUnit.BJailSquareTest" />
+      <item itemvalue="JUnit.BJailSquareTest.performOnLand" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BJailSquareTest.performOnLand" />
+        <item itemvalue="JUnit.BJailSquareTest" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.DJSONReaderTest.getValueUsingKey" />
         <item itemvalue="JUnit.DPieceTest.getValue" />
-        <item itemvalue="JUnit.DInstructionTest.testToString" />
-        <item itemvalue="JUnit.BTaxSquareTest.getSQUARE_TYPE" />
       </list>
     </recent_temporary>
   </component>
@@ -286,7 +232,10 @@
       <workItem from="1573155437238" duration="808000" />
       <workItem from="1573204063098" duration="71000" />
       <workItem from="1573213764836" duration="1038000" />
-      <workItem from="1573214841471" duration="13801000" />
+      <workItem from="1573214841471" duration="14275000" />
+      <workItem from="1573837608098" duration="65000" />
+      <workItem from="1575209547868" duration="4952000" />
+      <workItem from="1575478957888" duration="3316000" />
     </task>
     <task id="LOCAL-00001" summary="model, view, controller packages created.&#10;MonopolyGame class created.&#10;MonopolyGame class constructor template created using static factory methods design pattern.">
       <created>1572975097652</created>
@@ -498,7 +447,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573221564490</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="JDoc and RAD added.">
+      <created>1573232528707</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1573232528707</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -519,7 +475,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Instruction class added.(Singleton pattern)" />
     <MESSAGE value="Instruction class method name changed." />
     <MESSAGE value="json-simple library added." />
     <MESSAGE value="TerminalOutput class created." />
@@ -544,6 +499,7 @@
     <MESSAGE value="BPlayer modified." />
     <MESSAGE value="Uml and sequence diagram added." />
     <MESSAGE value="Javadoc created for DAL." />
-    <option name="LAST_COMMIT_MESSAGE" value="Javadoc created for DAL." />
+    <MESSAGE value="JDoc and RAD added." />
+    <option name="LAST_COMMIT_MESSAGE" value="JDoc and RAD added." />
   </component>
 </project>

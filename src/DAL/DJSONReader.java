@@ -51,7 +51,8 @@ public class DJSONReader {
                 (Long) getValueUsingKey("startMoney"),
                 (Long) getValueUsingKey("countOfTaxSquare"),
                 (Long) getValueUsingKey("priceOfTaxSquare"),
-                (Long) getValueUsingKey("priceOfGoSquare")
+                (Long) getValueUsingKey("priceOfGoSquare"),
+                (Long) getValueUsingKey("priceOfJailSquare")
         );
     }
 }

@@ -3,6 +3,7 @@
   "startMoney": 2000,
   "countOfTaxSquare": 30,
   "priceOfTaxSquare": 50,
-  "priceOfGoSquare": 100
+  "priceOfGoSquare": 100,
+  "priceOfJailSquare": 25
 }
 

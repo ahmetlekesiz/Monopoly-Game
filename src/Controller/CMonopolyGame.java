@@ -3,7 +3,6 @@ package Controller;
 import BL.BMonopolyGame;
 import DAL.DInstruction;
 import DAL.DJSONReader;
-import DAL.DPlayer;
 import UI.UITerminal;
 
 /**
