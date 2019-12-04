@@ -1,5 +1,15 @@
 package DAL;
 
+import Controller.Main;
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
+
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+
 /**
  * DInstruction Singleton class represents a data block for instructions of the game given in JSON File.
  * @author Muhammed Bera Koç
@@ -8,6 +18,8 @@ package DAL;
 public class DInstruction {
 
     public long countOfPlayers, startMoney, countOfTaxSquares, priceOfTaxSquares, priceOfGoSquare, priceOfJailSquare;
+    public String mapFilename;
+    public ArrayList[] places;
 
     private static DInstruction instance;
 
@@ -20,14 +32,32 @@ public class DInstruction {
      * @param priceOfTaxSquares
      * @param priceOfGoSquare
      * @param priceOfJailSquare
+     * @param mapFilename
      */
-    private DInstruction(long countOfPlayers, long startMoney, long countOfTaxSquares, long priceOfTaxSquares, long priceOfGoSquare, long priceOfJailSquare) {
+    private DInstruction(long countOfPlayers, long startMoney, long countOfTaxSquares, long priceOfTaxSquares,
+                         long priceOfGoSquare, long priceOfJailSquare, String mapFilename) {
         this.countOfPlayers = countOfPlayers;
         this.startMoney = startMoney;
         this.countOfTaxSquares = countOfTaxSquares;
         this.priceOfTaxSquares = priceOfTaxSquares;
         this.priceOfGoSquare = priceOfGoSquare;
         this.priceOfJailSquare = priceOfJailSquare;
+        this.mapFilename = mapFilename;
+        JSONObject mapObject = null;
+        try {
+            mapObject = (JSONObject) new JSONParser().parse(new FileReader(mapFilename));
+        } catch (IOException | ParseException e) {
+            e.printStackTrace();
+        }
+        places = new ArrayList[Main.PLACE_NUMBER];
+        for (int i = 0; i < Main.PLACE_NUMBER; ++i) {
+            places[i] = new ArrayList<String>();
+            assert mapObject != null;
+            JSONArray currentPlaceArray = (JSONArray) mapObject.get(String.valueOf(i));
+            for (Object node: currentPlaceArray) {
+                places[i].add(node);
+            }
+        }
     }
 
     /**
@@ -40,10 +70,11 @@ public class DInstruction {
     }
 
     public static DInstruction getInstance(long countOfPlayers, long startMoney, long countOfTaxSquares,
-                                           long priceOfTaxSquares, long priceOfGoSquare, long priceOfJailSquare) {
+                                           long priceOfTaxSquares, long priceOfGoSquare, long priceOfJailSquare,
+                                           String mapFilename) {
         if (instance == null) {
             instance = new DInstruction(countOfPlayers, startMoney, countOfTaxSquares,
-                    priceOfTaxSquares, priceOfGoSquare, priceOfJailSquare);
+                    priceOfTaxSquares, priceOfGoSquare, priceOfJailSquare, mapFilename);
         }
         return instance;
     }
@@ -52,6 +83,6 @@ public class DInstruction {
     public String toString() {
         return "countOfPlayers: " + countOfPlayers + "\nstartMoney: " + startMoney + "\ncountOfTaxSquares: "
                 + countOfTaxSquares + "\npriceOfTaxSquares: " + priceOfTaxSquares + "\npriceOfGoSquare: " + priceOfGoSquare
-                + "\npriceOfJailSquare:" + priceOfJailSquare;
+                + "\npriceOfJailSquare: " + priceOfJailSquare + "\nmapFilename: " + mapFilename;
     }
 }

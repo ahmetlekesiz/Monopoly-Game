@@ -9,9 +9,9 @@ class DInstructionTest {
     @Test
     void testToString() {
         DInstruction dInstruction = DInstruction.getInstance(2,
-                1000, 4, 40, 50, 25);
+                1000, 4, 40, 50, 25, "map.json");
         String string = "countOfPlayers: 2\nstartMoney: 1000\ncountOfTaxSquares: 4\npriceOfTaxSquares: 40\n" +
-                "priceOfGoSquare: 50\npriceOfJailSquare: 25";
+                "priceOfGoSquare: 50\npriceOfJailSquare: 25\nmapFilename: map.json";
         assertEquals(string, dInstruction.toString());
     }
 }
