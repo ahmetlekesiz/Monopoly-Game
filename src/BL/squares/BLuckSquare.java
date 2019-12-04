@@ -13,9 +13,6 @@ public class BLuckSquare extends BSquare{
     private int totalNumberCard = 2;
 
     public BLuckSquare(){
-        System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++++++");
-        System.out.println("LUCK CARD");
-        System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++++++");
         initLuckCards();
     }
 
