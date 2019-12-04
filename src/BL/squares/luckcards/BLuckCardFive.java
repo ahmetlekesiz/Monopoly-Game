@@ -8,11 +8,11 @@ public class BLuckCardFive extends BLuckCards {
 
     @Override
     public void performForCard(DPlayer dPlayer) {
-
+        //Utility square ye ve sahibi var veya yoksa ya göre ayarlanacak
     }
 
     @Override
     public String getCARD_INFO() {
-        return null;
+        return this.CARD_INFO;
     }
 }

@@ -7,7 +7,7 @@ public class BLuckCardSixteen extends BLuckCards {
 
     @Override
     public void performForCard(DPlayer dPlayer) {
-
+        dPlayer.setBalance(dPlayer.getBalance() + 150);
     }
 
     @Override

@@ -1,5 +1,6 @@
 package BL.squares.luckcards;
 
+import DAL.DInstruction;
 import DAL.DPlayer;
 
 public class BLuckCardTen extends BLuckCards {
@@ -7,11 +8,16 @@ public class BLuckCardTen extends BLuckCards {
 
     @Override
     public void performForCard(DPlayer dPlayer) {
-
+        // Illinois Jail square ye göre location ayarlanacak
+        if(dPlayer.getLocation() > 13){
+            dPlayer.setTotalDiceValue(dPlayer.getTotalDiceValue() - (dPlayer.getLocation() - 13));
+        }else {
+            dPlayer.setTotalDiceValue(13 - dPlayer.getLocation() + dPlayer.getTotalDiceValue());
+        }
     }
 
     @Override
     public String getCARD_INFO() {
-        return null;
+        return this.CARD_INFO;
     }
 }

@@ -7,11 +7,11 @@ public class BLuckCardEleven extends BLuckCards {
 
     @Override
     public void performForCard(DPlayer dPlayer) {
-
+        // Oyuncuların sahiplik durumuna göre değişiklik gösterecek
     }
 
     @Override
     public String getCARD_INFO() {
-        return null;
+        return this.CARD_INFO;
     }
 }

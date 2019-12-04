@@ -7,11 +7,11 @@ public class BLuckCardSeven extends BLuckCards {
 
     @Override
     public void performForCard(DPlayer dPlayer) {
-
+        dPlayer.setBalance( dPlayer.getBalance() + 50);
     }
 
     @Override
     public String getCARD_INFO() {
-        return null;
+        return this.CARD_INFO;
     }
 }
