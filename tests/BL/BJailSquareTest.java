@@ -1,6 +1,7 @@
 package BL;
 
 import BL.squares.BJailSquare;
+import BL.squares.PropertyType;
 import Controller.Main;
 import DAL.DInstruction;
 import DAL.DJSONReader;
@@ -24,7 +25,7 @@ class BJailSquareTest {
     void performOnLand() {
         DJSONReader djsonReader = new DJSONReader(Main.INSTRUCTION_FILENAME);
         djsonReader.initInstructionObject();
-        BJailSquare bJailSquare = new BJailSquare();
+        BJailSquare bJailSquare = new BJailSquare(PropertyType.BLUE);
         bJailSquare.performOnLand(dPlayer);
         assertTrue(dPlayer.isArrested());
         assertEquals(bJailSquare.getJailRecords().get(dPlayer), 0);
