@@ -1,25 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dfd4cd54-fa73-4f3b-abf8-245eae6a795f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/BL/BJailSquareTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game.json" beforeDir="false" afterPath="$PROJECT_DIR$/game.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/BL/BPlayer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Monopoly/BL/BPlayer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/Controller/CMonopolyGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Monopoly/Controller/CMonopolyGame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/Controller/CTerminal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Monopoly/Controller/CTerminal.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/Controller/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Monopoly/Controller/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/DAL/DInstruction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Monopoly/DAL/DInstruction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/DAL/DJSONReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Monopoly/DAL/DJSONReader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/DAL/DPlayer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Monopoly/DAL/DPlayer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/Monopoly/DAL/DInstructionTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/Monopoly/DAL/DInstructionTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BL/BJailSquare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BL/BJailSquare.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DAL/DInstruction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAL/DInstruction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DAL/DJSONReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAL/DJSONReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/DAL/DInstructionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/DAL/DInstructionTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="dfd4cd54-fa73-4f3b-abf8-245eae6a795f" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -210,7 +192,7 @@
       <workItem from="1573214841471" duration="14275000" />
       <workItem from="1573837608098" duration="65000" />
       <workItem from="1575209547868" duration="4952000" />
-      <workItem from="1575478957888" duration="3038000" />
+      <workItem from="1575478957888" duration="3316000" />
     </task>
     <task id="LOCAL-00001" summary="model, view, controller packages created.&#10;MonopolyGame class created.&#10;MonopolyGame class constructor template created using static factory methods design pattern.">
       <created>1572975097652</created>
