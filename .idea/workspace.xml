@@ -2,15 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dfd4cd54-fa73-4f3b-abf8-245eae6a795f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/BL/BJailSquare.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/BL/BBoard.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Monopoly/BL/BBoard.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/BL/BDice.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Monopoly/BL/BDice.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/BL/BRegularSquare.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Monopoly/BL/BRegularSquare.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/BL/BSquare.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Monopoly/BL/BSquare.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/BL/BTaxSquare.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Monopoly/BL/BTaxSquare.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/Controller/CMonopolyGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Monopoly/Controller/CMonopolyGame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/Controller/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Monopoly/Controller/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/DAL/DPlayer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Monopoly/DAL/DPlayer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BL/BMonopolyGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BL/BMonopolyGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BL/BPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BL/BPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/CMonopolyGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/CMonopolyGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/CTerminal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/CTerminal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DAL/DPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAL/DPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/BL/BPlayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/BL/BPlayerTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,8 +20,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -122,7 +121,7 @@
       <module name="Monopoly" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="DAL.*" />
+          <option name="PATTERN" value="DAL.DPlayer" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -138,7 +137,7 @@
       <module name="Monopoly" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="DAL.*" />
+          <option name="PATTERN" value="DAL.DPlayer" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -154,7 +153,7 @@
       <module name="Monopoly" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="DAL.*" />
+          <option name="PATTERN" value="DAL.DPlayer" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -202,7 +201,7 @@
       <workItem from="1573213764836" duration="1038000" />
       <workItem from="1573214841471" duration="14275000" />
       <workItem from="1573837608098" duration="65000" />
-      <workItem from="1575209547868" duration="979000" />
+      <workItem from="1575209547868" duration="4952000" />
     </task>
     <task id="LOCAL-00001" summary="model, view, controller packages created.&#10;MonopolyGame class created.&#10;MonopolyGame class constructor template created using static factory methods design pattern.">
       <created>1572975097652</created>

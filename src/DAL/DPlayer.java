@@ -11,7 +11,7 @@ import BL.BDice;
 public class DPlayer {
 
     private int balance, cycleCounter, totalDiceValue, roundValue, currentDiceVal;
-    private boolean bankruptFlag;
+    private boolean bankruptFlag, isArrested;
     private BDice playerDice;
     private DPiece.PieceType pieceType;
 
@@ -78,5 +78,13 @@ public class DPlayer {
 
     public void setRoundValue(int roundValue) {
         this.roundValue = roundValue;
+    }
+
+    public boolean isArrested() {
+        return isArrested;
+    }
+
+    public void setArrested(boolean arrested) {
+        isArrested = arrested;
     }
 }
