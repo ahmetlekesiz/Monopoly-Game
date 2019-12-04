@@ -1,7 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dfd4cd54-fa73-4f3b-abf8-245eae6a795f" name="Default Changelist" comment="Javadoc created for DAL." />
+    <list default="true" id="dfd4cd54-fa73-4f3b-abf8-245eae6a795f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Monopoly/BL/BGoSquare.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Monopoly/BL/BJailSquare.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Monopoly/BL/BMonopolyGame.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Monopoly/BL/BPlayer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Monopoly/BL/BPlayerObserver.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Monopoly/BL/BTerminal.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Monopoly/Controller/CInstruction.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Monopoly/Controller/CTerminal.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Monopoly/DAL/DPiece$PieceType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Monopoly/UI/UITerminal.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/Monopoly/BL/BJailSquareTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/Monopoly/BL/BPlayerTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/Monopoly/BL/BRegularSquareTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/Monopoly/DAL/DInstructionTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/Monopoly/DAL/DJSONReaderTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/Monopoly/DAL/DPieceTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BL/BJailSquare.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/BL/BJailSquareTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game.json" beforeDir="false" afterPath="$PROJECT_DIR$/game.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/BL/BBoard.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Monopoly/BL/BBoard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/BL/BDice.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Monopoly/BL/BDice.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/BL/BRegularSquare.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Monopoly/BL/BRegularSquare.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/BL/BSquare.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Monopoly/BL/BSquare.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/BL/BTaxSquare.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Monopoly/BL/BTaxSquare.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/Controller/CMonopolyGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Monopoly/Controller/CMonopolyGame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/Controller/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Monopoly/Controller/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/DAL/DInstruction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Monopoly/DAL/DInstruction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/DAL/DJSONReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Monopoly/DAL/DJSONReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/DAL/DPlayer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Monopoly/DAL/DPlayer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BL/BMonopolyGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BL/BMonopolyGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BL/BPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BL/BPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/CMonopolyGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/CMonopolyGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/CTerminal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/CTerminal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DAL/DInstruction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAL/DInstruction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DAL/DJSONReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAL/DJSONReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DAL/DPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAL/DPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/BL/BPlayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/BL/BPlayerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/DAL/DInstructionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/DAL/DInstructionTest.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,14 +90,15 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="terminal" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="DAL" />
       <recent name="BL" />
+      <recent name="DAL" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/documents" />
       <recent name="$PROJECT_DIR$/models" />
       <recent name="$PROJECT_DIR$/libs" />
     </key>
@@ -77,7 +121,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.BJailSquareTest.performOnLand">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Controller.Main" />
       <module name="Monopoly" />
@@ -91,7 +135,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BTaxSquareTest.getSQUARE_TYPE" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BJailSquareTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Monopoly" />
       <extension name="coverage">
         <pattern>
@@ -100,24 +144,23 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="BL" />
-      <option name="MAIN_CLASS_NAME" value="BL.BTaxSquareTest" />
-      <option name="METHOD_NAME" value="getSQUARE_TYPE" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="BL.BJailSquareTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DInstructionTest.testToString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BJailSquareTest.performOnLand" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Monopoly" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="DAL.*" />
+          <option name="PATTERN" value="BL.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="DAL" />
-      <option name="MAIN_CLASS_NAME" value="DAL.DInstructionTest" />
-      <option name="METHOD_NAME" value="testToString" />
+      <option name="PACKAGE_NAME" value="BL" />
+      <option name="MAIN_CLASS_NAME" value="BL.BJailSquareTest" />
+      <option name="METHOD_NAME" value="performOnLand" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -127,7 +170,7 @@
       <module name="Monopoly" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="DAL.*" />
+          <option name="PATTERN" value="DAL.DPlayer" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -143,7 +186,7 @@
       <module name="Monopoly" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="DAL.*" />
+          <option name="PATTERN" value="DAL.DPlayer" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -157,18 +200,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
-      <item itemvalue="JUnit.BTaxSquareTest.getSQUARE_TYPE" />
-      <item itemvalue="JUnit.DInstructionTest.testToString" />
       <item itemvalue="JUnit.DPieceTest.getValue" />
       <item itemvalue="JUnit.DJSONReaderTest.getValueUsingKey" />
+      <item itemvalue="JUnit.BJailSquareTest" />
+      <item itemvalue="JUnit.BJailSquareTest.performOnLand" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BJailSquareTest.performOnLand" />
+        <item itemvalue="JUnit.BJailSquareTest" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.DJSONReaderTest.getValueUsingKey" />
         <item itemvalue="JUnit.DPieceTest.getValue" />
-        <item itemvalue="JUnit.DInstructionTest.testToString" />
-        <item itemvalue="JUnit.BTaxSquareTest.getSQUARE_TYPE" />
       </list>
     </recent_temporary>
   </component>
@@ -189,7 +232,10 @@
       <workItem from="1573155437238" duration="808000" />
       <workItem from="1573204063098" duration="71000" />
       <workItem from="1573213764836" duration="1038000" />
-      <workItem from="1573214841471" duration="13801000" />
+      <workItem from="1573214841471" duration="14275000" />
+      <workItem from="1573837608098" duration="65000" />
+      <workItem from="1575209547868" duration="4952000" />
+      <workItem from="1575478957888" duration="3316000" />
     </task>
     <task id="LOCAL-00001" summary="model, view, controller packages created.&#10;MonopolyGame class created.&#10;MonopolyGame class constructor template created using static factory methods design pattern.">
       <created>1572975097652</created>
@@ -401,12 +447,12 @@
       <option name="project" value="LOCAL" />
       <updated>1573221564490</updated>
     </task>
-    <task id="LOCAL-00031" summary="deneme commit.">
-      <created>1575204827442</created>
+    <task id="LOCAL-00031" summary="JDoc and RAD added.">
+      <created>1573232528707</created>
       <option name="number" value="00031" />
       <option name="presentableId" value="LOCAL-00031" />
       <option name="project" value="LOCAL" />
-      <updated>1575204827442</updated>
+      <updated>1573232528707</updated>
     </task>
     <option name="localTasksCounter" value="32" />
     <servers />
@@ -453,7 +499,7 @@
     <MESSAGE value="BPlayer modified." />
     <MESSAGE value="Uml and sequence diagram added." />
     <MESSAGE value="Javadoc created for DAL." />
-    <MESSAGE value="deneme commit." />
-    <option name="LAST_COMMIT_MESSAGE" value="deneme commit." />
+    <MESSAGE value="JDoc and RAD added." />
+    <option name="LAST_COMMIT_MESSAGE" value="JDoc and RAD added." />
   </component>
 </project>

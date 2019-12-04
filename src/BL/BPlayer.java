@@ -39,27 +39,27 @@ public class BPlayer implements BPlayerObserver {
     public void checkAndUpdatePlayer(int currentDiceValue, BSquare currentSquare) {
         if (isPlayerCrossTheGoSquare()) {
             dPlayer.setRoundValue(dPlayer.getRoundValue() + 1);
-            new BGoSquare().performOnLand(dPlayer);
+            new BGoSquare().performOnLand(getDPlayer());
             return;
         }
-        currentSquare.performOnLand(dPlayer);
+        currentSquare.performOnLand(getDPlayer());
         if (isPlayerBankrupted()) {
             dPlayer.setBankruptFlag(true);
         }
     }
 
     /**
-     *
+     * Rolls a dice. Faces cannot be the same.
      * @return int
      */
     public int rollDice(){
         int[] diceValues;
         diceValues = this.getDPlayer().getPlayerDice().rollDice();
         this.getDPlayer().setCurrentDiceVal(diceValues[0] + diceValues[1]);
-
         bTerminal.printDicesFaces(diceValues);
         return diceValues[0] + diceValues[1];
     }
+
     /**
      *<p>Checks whether player pass the start square.</p>
      * @return boolean

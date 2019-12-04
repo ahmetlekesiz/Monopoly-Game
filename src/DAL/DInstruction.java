@@ -7,7 +7,7 @@ package DAL;
  */
 public class DInstruction {
 
-    public long countOfPlayers, startMoney, countOfTaxSquares, priceOfTaxSquares, priceOfGoSquare;
+    public long countOfPlayers, startMoney, countOfTaxSquares, priceOfTaxSquares, priceOfGoSquare, priceOfJailSquare;
 
     private static DInstruction instance;
 
@@ -19,13 +19,15 @@ public class DInstruction {
      * @param countOfTaxSquares
      * @param priceOfTaxSquares
      * @param priceOfGoSquare
+     * @param priceOfJailSquare
      */
-    private DInstruction(long countOfPlayers, long startMoney, long countOfTaxSquares, long priceOfTaxSquares, long priceOfGoSquare) {
+    private DInstruction(long countOfPlayers, long startMoney, long countOfTaxSquares, long priceOfTaxSquares, long priceOfGoSquare, long priceOfJailSquare) {
         this.countOfPlayers = countOfPlayers;
         this.startMoney = startMoney;
         this.countOfTaxSquares = countOfTaxSquares;
         this.priceOfTaxSquares = priceOfTaxSquares;
         this.priceOfGoSquare = priceOfGoSquare;
+        this.priceOfJailSquare = priceOfJailSquare;
     }
 
     /**
@@ -38,10 +40,10 @@ public class DInstruction {
     }
 
     public static DInstruction getInstance(long countOfPlayers, long startMoney, long countOfTaxSquares,
-                                           long priceOfTaxSquares, long priceOfGoSquare) {
+                                           long priceOfTaxSquares, long priceOfGoSquare, long priceOfJailSquare) {
         if (instance == null) {
             instance = new DInstruction(countOfPlayers, startMoney, countOfTaxSquares,
-                    priceOfTaxSquares, priceOfGoSquare);
+                    priceOfTaxSquares, priceOfGoSquare, priceOfJailSquare);
         }
         return instance;
     }
@@ -49,6 +51,7 @@ public class DInstruction {
     @Override
     public String toString() {
         return "countOfPlayers: " + countOfPlayers + "\nstartMoney: " + startMoney + "\ncountOfTaxSquares: "
-                + countOfTaxSquares + "\npriceOfTaxSquares: " + priceOfTaxSquares + "\npriceOfGoSquare: " + priceOfGoSquare;
+                + countOfTaxSquares + "\npriceOfTaxSquares: " + priceOfTaxSquares + "\npriceOfGoSquare: " + priceOfGoSquare
+                + "\npriceOfJailSquare:" + priceOfJailSquare;
     }
 }
