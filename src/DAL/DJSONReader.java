@@ -49,7 +49,6 @@ public class DJSONReader {
         DInstruction.getInstance(
                 (Long) getValueUsingKey("countOfPlayers"),
                 (Long) getValueUsingKey("startMoney"),
-                (Long) getValueUsingKey("countOfTaxSquare"),
                 (Long) getValueUsingKey("priceOfTaxSquare"),
                 (Long) getValueUsingKey("priceOfGoSquare"),
                 (Long) getValueUsingKey("priceOfJailSquare"),

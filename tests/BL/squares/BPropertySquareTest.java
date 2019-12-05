@@ -20,7 +20,6 @@ class BPropertySquareTest {
 
     @Test
     void getRentTest() {
-        BPropertySquare currentSquare = new BPropertySquare(PropertyType.BLUE);
-        currentSquare.getRent(owner, renter);
+
     }
 }

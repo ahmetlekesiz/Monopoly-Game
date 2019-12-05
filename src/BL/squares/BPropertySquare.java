@@ -4,10 +4,14 @@ import BL.BPlayer;
 import DAL.DPlayer;
 
 public class BPropertySquare extends BSquare {
+    private String name;
     private final String SQUARE_TYPE = "PROPERTY_SQUARE";
 
-    public BPropertySquare(PropertyType type){
+    public BPropertySquare(String name, PropertyType type, int rent, int price){
         this.pType = type;
+        this.name = name;
+        this.rent = rent;
+        this.price = price;
     }
 
     @Override
@@ -25,6 +29,10 @@ public class BPropertySquare extends BSquare {
         }else{
             owner.setBalance(owner.getBalance() + this.getRent());
         }
+    }
+
+    public String getName() {
+        return name;
     }
 
     @Override

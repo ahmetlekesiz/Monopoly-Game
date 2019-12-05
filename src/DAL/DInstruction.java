@@ -17,7 +17,7 @@ import java.util.ArrayList;
  */
 public class DInstruction {
 
-    public long countOfPlayers, startMoney, countOfTaxSquares, priceOfTaxSquares, priceOfGoSquare, priceOfJailSquare;
+    public long countOfPlayers, startMoney, priceOfTaxSquares, priceOfGoSquare, priceOfJailSquare;
     public String mapFilename;
     public ArrayList[] places;
 
@@ -28,17 +28,15 @@ public class DInstruction {
      *
      * @param countOfPlayers
      * @param startMoney
-     * @param countOfTaxSquares
      * @param priceOfTaxSquares
      * @param priceOfGoSquare
      * @param priceOfJailSquare
      * @param mapFilename
      */
-    private DInstruction(long countOfPlayers, long startMoney, long countOfTaxSquares, long priceOfTaxSquares,
+    private DInstruction(long countOfPlayers, long startMoney, long priceOfTaxSquares,
                          long priceOfGoSquare, long priceOfJailSquare, String mapFilename) {
         this.countOfPlayers = countOfPlayers;
         this.startMoney = startMoney;
-        this.countOfTaxSquares = countOfTaxSquares;
         this.priceOfTaxSquares = priceOfTaxSquares;
         this.priceOfGoSquare = priceOfGoSquare;
         this.priceOfJailSquare = priceOfJailSquare;
@@ -69,11 +67,11 @@ public class DInstruction {
         return instance;
     }
 
-    public static DInstruction getInstance(long countOfPlayers, long startMoney, long countOfTaxSquares,
+    public static DInstruction getInstance(long countOfPlayers, long startMoney,
                                            long priceOfTaxSquares, long priceOfGoSquare, long priceOfJailSquare,
                                            String mapFilename) {
         if (instance == null) {
-            instance = new DInstruction(countOfPlayers, startMoney, countOfTaxSquares,
+            instance = new DInstruction(countOfPlayers, startMoney,
                     priceOfTaxSquares, priceOfGoSquare, priceOfJailSquare, mapFilename);
         }
         return instance;
@@ -81,8 +79,8 @@ public class DInstruction {
 
     @Override
     public String toString() {
-        return "countOfPlayers: " + countOfPlayers + "\nstartMoney: " + startMoney + "\ncountOfTaxSquares: "
-                + countOfTaxSquares + "\npriceOfTaxSquares: " + priceOfTaxSquares + "\npriceOfGoSquare: " + priceOfGoSquare
+        return "countOfPlayers: " + countOfPlayers + "\nstartMoney: " + startMoney
+                + "\npriceOfTaxSquares: " + priceOfTaxSquares + "\npriceOfGoSquare: " + priceOfGoSquare
                 + "\npriceOfJailSquare: " + priceOfJailSquare + "\nmapFilename: " + mapFilename;
     }
 }

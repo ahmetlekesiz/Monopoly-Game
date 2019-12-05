@@ -5,12 +5,13 @@ import DAL.DPlayer;
 
 import java.util.ArrayList;
 
-public class BLuckSquare extends BSquare{
+public class BLuckSquare extends BSquare {
     private final String SQUARE_TYPE = "LUCK_SQUARE";
     private ArrayList<BLuckCards> luckCards = new ArrayList<>();
     private int totalNumberCard = 16;
 
-    public BLuckSquare(){
+    public BLuckSquare(PropertyType propertyType) {
+        this.pType = propertyType;
         initLuckCards();
     }
 

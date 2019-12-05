@@ -1,6 +1,7 @@
 package BL;
 
 import BL.squares.*;
+import Controller.Main;
 import DAL.DInstruction;
 
 import java.util.ArrayList;
@@ -20,12 +21,10 @@ public class BBoard {
     private BSquare[] squares;
     private static BBoard boardInstance;
     private DInstruction instructionInstance;
-    private int countOfTaxSquares;
 
     private BBoard() {
         instructionInstance = DInstruction.getInstance();
         squares = new BSquare[SQUARE_NUMBER];
-        countOfTaxSquares = (int) instructionInstance.countOfTaxSquares;
         initSquares();
     }
     /**
@@ -35,24 +34,33 @@ public class BBoard {
      * @return void
      */
     private void initSquares() {
-        ArrayList<Integer> taxSquareLocations = new ArrayList<>();
-        int temp;
-        for(int i = 0; i < countOfTaxSquares; i++){
-            temp = (int) (Math.random() * SQUARE_NUMBER);
-            while(taxSquareLocations.contains(temp) ){
-                temp = (int) (Math.random() * SQUARE_NUMBER);
+        ArrayList<String>[] map = DInstruction.getInstance().places;
+        for (int i = 0; i < Main.PLACE_NUMBER; ++i) {
+            if (map[i].size() == 2) {
+                switch (map[i].get(0)) {
+                    case "Go": {
+                        squares[i] = new BGoSquare(PropertyType.values()[Integer.parseInt(map[i].get(1))]);
+                        break;
+                    }
+                    case "Luck": {
+                        squares[i] = new BLuckSquare(PropertyType.values()[Integer.parseInt(map[i].get(1))]);
+                        break;
+                    }
+                    case "Jail": {
+                        squares[i] = new BJailSquare(PropertyType.values()[Integer.parseInt(map[i].get(1))]);
+                        break;
+                    }
+                    case "Tax": {
+                        squares[i] = new BTaxSquare(PropertyType.values()[Integer.parseInt(map[i].get(1))]);
+                        break;
+                    }
+                    case "Ferry": squares[i] = new BRegularSquare(PropertyType.values()[Integer.parseInt(map[i].get(1))]);
+                }
+            } else {
+                squares[i] = new BPropertySquare(map[i].get(0), PropertyType.values()[Integer.parseInt(map[i].get(1))],
+                        Integer.parseInt(map[i].get(2)), Integer.parseInt(map[i].get(3)));
             }
-            taxSquareLocations.add(temp);
         }
-
-        for (int i = 0; i < SQUARE_NUMBER; ++i) {
-            squares[i] = new BRegularSquare(PropertyType.NOCOLOR);
-        }
-        for(int i = 0; i < countOfTaxSquares; i++) {
-            squares[taxSquareLocations.get(i)] = new BTaxSquare(PropertyType.BLUE);
-        }
-        squares[0] = new BGoSquare(PropertyType.BROWN);
-        squares[1] = new BLuckSquare();
     }
 
     public BSquare[] getSquares() {
