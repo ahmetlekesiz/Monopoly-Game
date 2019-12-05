@@ -24,11 +24,17 @@ public class DPlayer {
         this.currentDiceVal = 0;
     }
 
-    public int getCurrentDiceVal() { return currentDiceVal; }
+    public int getCurrentDiceVal() {
+        return currentDiceVal;
+    }
 
-    public void setCurrentDiceVal(int currentDiceVal) { this.currentDiceVal = currentDiceVal; }
+    public void setCurrentDiceVal(int currentDiceVal) {
+        this.currentDiceVal = currentDiceVal;
+    }
 
-    public void setPieceType(DPiece.PieceType pieceType) {this.pieceType = pieceType;}
+    public void setPieceType(DPiece.PieceType pieceType) {
+        this.pieceType = pieceType;
+    }
 
     public int getLocation() {
         return totalDiceValue % 40;
