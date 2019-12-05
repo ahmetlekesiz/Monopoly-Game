@@ -45,6 +45,7 @@ public class BPlayer implements BPlayerObserver {
         }
         currentSquare.performOnLand(getDPlayer());
         if (isPlayerBankrupted()) {
+            //Check if the player has something to sell.
             dPlayer.setBankruptFlag(true);
         }
     }
