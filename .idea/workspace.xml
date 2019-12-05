@@ -2,17 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dfd4cd54-fa73-4f3b-abf8-245eae6a795f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/map.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/DAL/DInstruction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Monopoly/DAL/DInstruction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/Monopoly/DAL/DInstructionTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/Monopoly/DAL/DInstructionTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game.json" beforeDir="false" afterPath="$PROJECT_DIR$/game.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BL/BBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BL/BBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BL/squares/BJailSquare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BL/squares/BJailSquare.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BL/squares/BLuckSquare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BL/squares/BLuckSquare.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BL/squares/BPropertySquare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BL/squares/BPropertySquare.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DAL/DInstruction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAL/DInstruction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DAL/DJSONReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAL/DJSONReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/BL/squares/BPropertySquareTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/BL/squares/BPropertySquareTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/DAL/DInstructionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/DAL/DInstructionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BL/squares/BTaxSquare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BL/squares/BTaxSquare.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BL/squares/luckcards/BLuckCardFifteen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BL/squares/luckcards/BLuckCardFifteen.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

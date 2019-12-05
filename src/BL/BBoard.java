@@ -54,6 +54,12 @@ public class BBoard {
                         squares[i] = new BTaxSquare(PropertyType.values()[Integer.parseInt(map[i].get(1))]);
                         break;
                     }
+                    case "Regular":
+                    case "Water Works":
+                    case "Electric Company": {
+                        squares[i] = new BRegularSquare(PropertyType.values()[Integer.parseInt(map[i].get(1))]);
+                        break;
+                    }
                     case "Ferry": squares[i] = new BRegularSquare(PropertyType.values()[Integer.parseInt(map[i].get(1))]);
                 }
             } else {

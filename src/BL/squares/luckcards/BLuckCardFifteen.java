@@ -25,7 +25,7 @@ public class BLuckCardFifteen extends BLuckCards {
         }
         referanceToGetPlayers = new BMonopolyGame();
         otherPlayer = referanceToGetPlayers.getPlayers();
-        int counter = (int) DInstruction.getInstance().countOfPlayers;
+        int counter = referanceToGetPlayers.getPlayers().size();
         while (counter != 0){
             tempDPlayer = otherPlayer.get(counter).getDPlayer();
             if (tempDPlayer != dPlayer){

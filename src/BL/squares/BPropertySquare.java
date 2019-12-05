@@ -32,6 +32,6 @@ public class BPropertySquare extends BSquare {
 
     @Override
     public String getSQUARE_TYPE() {
-        return this.getSQUARE_TYPE();
+        return this.SQUARE_TYPE;
     }
 }

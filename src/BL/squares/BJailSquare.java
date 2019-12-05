@@ -60,7 +60,7 @@ public class BJailSquare extends BSquare {
 
     @Override
     public String getSQUARE_TYPE() {
-        return null;
+        return "JAIL_SQUARE";
     }
 
     public HashMap<DPlayer, Integer> getJailRecords() {
