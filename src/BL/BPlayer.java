@@ -42,16 +42,34 @@ public class BPlayer implements BPlayerObserver {
         if (isPlayerCrossTheGoSquare()) {
             dPlayer.setRoundValue(dPlayer.getRoundValue() + 1);
             new BGoSquare(PropertyType.NOCOLOR).performOnLand(getDPlayer());
-            return;
+            if (currentSquare instanceof BGoSquare) return;
         }
         currentSquare.performOnLand(getDPlayer());
+
         if (isPlayerBankrupted()) {
-            if(!this.getDPlayer().getPropertySquares().isEmpty()){
-                //try to sell property squares.
-            }else{
+            if(!tryToSellProperty(currentSquare)){
                 dPlayer.setBankruptFlag(true);
             }
         }
+    }
+
+    boolean tryToSellProperty(BSquare currentSquare) {
+        if (!dPlayer.getPropertySquares().isEmpty()) {
+            int debt = currentSquare.rent;
+            int currentPrice = this.getDPlayer().getBalance();
+            for (int i = 0; i < dPlayer.getPropertySquares().size() && currentPrice < debt; ++i) {
+                currentPrice += dPlayer.getPropertySquares().get(i).price;
+                sellSquare(dPlayer.getPropertySquares().get(i));
+            }
+            return currentPrice >= debt;
+        } else {
+            return false;
+        }
+    }
+
+    private void sellSquare(BSquare square) {
+        square.setOwnerOfSquare(null);
+        this.getDPlayer().setBalance(this.getDPlayer().getBalance() + square.price);
     }
 
     /**

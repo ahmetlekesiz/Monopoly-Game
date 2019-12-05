@@ -22,13 +22,8 @@ public class BPropertySquare extends BSquare {
     }
 
     public void getRent(DPlayer owner, DPlayer renter){
-        int initialBalance = renter.getBalance();
-        renter.setBalance(renter.getBalance() - this.getRent());
-        if(renter.getBalance() < 0){
-            owner.setBalance(owner.getBalance() + initialBalance);
-        }else{
-            owner.setBalance(owner.getBalance() + this.getRent());
-        }
+        renter.setBalance(renter.getBalance() - this.rent);
+        owner.setBalance(owner.getBalance() + this.rent);
     }
 
     public String getName() {
