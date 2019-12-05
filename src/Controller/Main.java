@@ -1,5 +1,7 @@
 package Controller;
 
+import BL.BBoard;
+import BL.squares.BSquare;
 import DAL.DInstruction;
 import DAL.DJSONReader;
 import org.json.simple.JSONArray;
