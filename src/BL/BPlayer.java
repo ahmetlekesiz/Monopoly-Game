@@ -1,6 +1,7 @@
 package BL;
 
 import BL.squares.BGoSquare;
+import BL.squares.BPropertySquare;
 import BL.squares.BSquare;
 import BL.squares.PropertyType;
 import DAL.DPlayer;
@@ -45,8 +46,11 @@ public class BPlayer implements BPlayerObserver {
         }
         currentSquare.performOnLand(getDPlayer());
         if (isPlayerBankrupted()) {
-            //Check if the player has something to sell.
-            dPlayer.setBankruptFlag(true);
+            if(!this.getDPlayer().getPropertySquares().isEmpty()){
+                //try to sell property squares.
+            }else{
+                dPlayer.setBankruptFlag(true);
+            }
         }
     }
 
@@ -78,15 +82,29 @@ public class BPlayer implements BPlayerObserver {
         return dPlayer.getBalance() < 0;
     }
 
-    public boolean buy(int price, boolean isBuyable){
-        if(isBuyable){
-            if(this.getDPlayer().getBalance() < 2*price){
-                return false;
-            }
+    public boolean buy(BPropertySquare currentSquare){
+            int price = currentSquare.getPrice();
             this.getDPlayer().setBalance(this.getDPlayer().getBalance() - price);
+            this.getDPlayer().addPropertySquares(currentSquare);
+            this.sortSquares();
             return true;
-        }else
-            return  false;
+    }
+
+    public boolean isAbleToBuy(BPropertySquare currentSquare){
+        int price = currentSquare.getPrice();
+        if(this.getDPlayer().getBalance() < 2*price){
+            return false;
+        }else{
+            return true;
+        }
+    }
+
+    public void sortSquares(){
+        this.getDPlayer().getPropertySquares().sort((firstSquare, secondSquare) -> {
+            if (firstSquare.getPrice() == secondSquare.getPrice())
+                return 0;
+            return firstSquare.getPrice() > secondSquare.getPrice() ? -1 : 1;
+        });
     }
 
     public DPlayer getDPlayer() {

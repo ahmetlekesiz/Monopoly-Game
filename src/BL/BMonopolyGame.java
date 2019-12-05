@@ -3,6 +3,7 @@ package BL;
 import java.util.ArrayList;
 import java.util.Iterator;
 
+import BL.squares.BPropertySquare;
 import DAL.DPlayer;
 import DAL.DInstruction;
 import DAL.DPiece;
@@ -141,8 +142,10 @@ public class BMonopolyGame implements BGameObserver {
                         currentSquare);
                 //Calling buying function.
                 if(currentSquare.getOwnerOfSquare() == null &&
-                        currentPlayer.buy(currentSquare.price, currentSquare.pType.getValue() != 8))
+                        currentSquare.getSQUARE_TYPE().equals("PROPERTY_SQUARE") &&
+                        currentPlayer.isAbleToBuy((BPropertySquare) currentSquare) == true)
                 {
+                    currentPlayer.buy((BPropertySquare) currentSquare);
                     currentSquare.setOwnerOfSquare(currentPlayer);
                 }
 
