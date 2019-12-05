@@ -52,6 +52,7 @@ public class BBoard {
             squares[taxSquareLocations.get(i)] = new BTaxSquare(PropertyType.BLUE);
         }
         squares[0] = new BGoSquare(PropertyType.BROWN);
+        squares[1] = new BLuckSquare();
     }
 
     public BSquare[] getSquares() {
