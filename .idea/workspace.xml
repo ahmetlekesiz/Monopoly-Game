@@ -2,8 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dfd4cd54-fa73-4f3b-abf8-245eae6a795f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/map.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/DAL/DInstruction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Monopoly/DAL/DInstruction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/Monopoly/DAL/DInstructionTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/Monopoly/DAL/DInstructionTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BL/BBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BL/BBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BL/squares/BLuckSquare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BL/squares/BLuckSquare.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BL/squares/BPropertySquare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BL/squares/BPropertySquare.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DAL/DInstruction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAL/DInstruction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DAL/DJSONReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAL/DJSONReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/BL/squares/BPropertySquareTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/BL/squares/BPropertySquareTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/DAL/DInstructionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/DAL/DInstructionTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -50,23 +59,23 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="terminal" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
       <recent name="BL" />
       <recent name="DAL" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/documents" />
-      <recent name="$PROJECT_DIR$/models" />
-      <recent name="$PROJECT_DIR$/libs" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/documents" />
+      <recent name="$PROJECT_DIR$/models" />
+      <recent name="$PROJECT_DIR$/libs" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -196,7 +205,7 @@
       <workItem from="1573837608098" duration="65000" />
       <workItem from="1575209547868" duration="4952000" />
       <workItem from="1575478957888" duration="3316000" />
-      <workItem from="1575491678320" duration="235000" />
+      <workItem from="1575491678320" duration="7248000" />
     </task>
     <task id="LOCAL-00001" summary="model, view, controller packages created.&#10;MonopolyGame class created.&#10;MonopolyGame class constructor template created using static factory methods design pattern.">
       <created>1572975097652</created>
@@ -420,6 +429,16 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

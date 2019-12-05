@@ -1,6 +1,9 @@
 package DAL;
 
 import BL.BDice;
+import BL.squares.BPropertySquare;
+
+import java.util.ArrayList;
 
 /**
  * DPlayer class is data layer for Player concept. It contains data fields and get-set methods
@@ -14,6 +17,7 @@ public class DPlayer {
     private boolean bankruptFlag, isArrested;
     private BDice playerDice;
     private DPiece.PieceType pieceType;
+    private ArrayList<BPropertySquare> propertySquares = new ArrayList<>();
 
     public DPlayer(DPiece.PieceType pieceType, int balance) {
         playerDice = new BDice();
@@ -93,4 +97,17 @@ public class DPlayer {
     public void setArrested(boolean arrested) {
         isArrested = arrested;
     }
+
+    public ArrayList<BPropertySquare> getPropertySquares() {
+        return propertySquares;
+    }
+
+    public void setPropertySquares(ArrayList<BPropertySquare> propertySquares) {
+        this.propertySquares = propertySquares;
+    }
+
+    public void addPropertySquares(BPropertySquare square){
+        getPropertySquares().add(square);
+    }
+
 }

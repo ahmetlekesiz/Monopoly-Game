@@ -3,6 +3,7 @@ package BL;
 import java.util.ArrayList;
 import java.util.Iterator;
 
+import BL.squares.BPropertySquare;
 import DAL.DPlayer;
 import DAL.DInstruction;
 import DAL.DPiece;
@@ -130,6 +131,7 @@ public class BMonopolyGame implements BGameObserver {
         for (Iterator<BL.BPlayer> iterator = currentPlayers.iterator(); iterator.hasNext();) {
             BL.BPlayer currentPlayer = iterator.next();
             if (!currentPlayer.getDPlayer().isBankrupted()) {
+                BL.squares.BSquare currentSquare = boardInstance.getSquares()[currentPlayer.getDPlayer().getLocation()];
                 bTerminal.printBeforeRollDice(currentPlayer);
                 currentPlayer.rollDice();
 
@@ -137,9 +139,17 @@ public class BMonopolyGame implements BGameObserver {
                         currentPlayer.getDPlayer().getCurrentDiceVal());
 
                 currentPlayer.checkAndUpdatePlayer(currentPlayer.getDPlayer().getCurrentDiceVal(),
-                        boardInstance.getSquares()[currentPlayer.getDPlayer().getLocation()]);
-                //player decide to buy or not
-                bTerminal.printLocationType(boardInstance.getSquares()[currentPlayer.getDPlayer().getLocation()].getSQUARE_TYPE());
+                        currentSquare);
+                //Calling buying function.
+                if(currentSquare.getOwnerOfSquare() == null &&
+                        currentSquare.getSQUARE_TYPE().equals("PROPERTY_SQUARE") &&
+                        currentPlayer.isAbleToBuy((BPropertySquare) currentSquare) == true)
+                {
+                    currentPlayer.buy((BPropertySquare) currentSquare);
+                    currentSquare.setOwnerOfSquare(currentPlayer);
+                }
+
+                bTerminal.printLocationType(currentSquare.getSQUARE_TYPE());
                 bTerminal.printAfterRollDice(currentPlayer);
 
                 if (currentPlayer.getDPlayer().isBankrupted()) {

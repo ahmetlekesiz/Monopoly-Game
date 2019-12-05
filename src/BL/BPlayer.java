@@ -1,6 +1,7 @@
 package BL;
 
 import BL.squares.BGoSquare;
+import BL.squares.BPropertySquare;
 import BL.squares.BSquare;
 import BL.squares.PropertyType;
 import DAL.DPlayer;
@@ -41,12 +42,34 @@ public class BPlayer implements BPlayerObserver {
         if (isPlayerCrossTheGoSquare()) {
             dPlayer.setRoundValue(dPlayer.getRoundValue() + 1);
             new BGoSquare(PropertyType.NOCOLOR).performOnLand(getDPlayer());
-            return;
+            if (currentSquare instanceof BGoSquare) return;
         }
         currentSquare.performOnLand(getDPlayer());
+
         if (isPlayerBankrupted()) {
-            dPlayer.setBankruptFlag(true);
+            if(!tryToSellProperty(currentSquare)){
+                dPlayer.setBankruptFlag(true);
+            }
         }
+    }
+
+    boolean tryToSellProperty(BSquare currentSquare) {
+        if (!dPlayer.getPropertySquares().isEmpty()) {
+            int debt = currentSquare.rent;
+            int currentPrice = this.getDPlayer().getBalance();
+            for (int i = 0; i < dPlayer.getPropertySquares().size() && currentPrice < debt; ++i) {
+                currentPrice += dPlayer.getPropertySquares().get(i).price;
+                sellSquare(dPlayer.getPropertySquares().get(i));
+            }
+            return currentPrice >= debt;
+        } else {
+            return false;
+        }
+    }
+
+    private void sellSquare(BSquare square) {
+        square.setOwnerOfSquare(null);
+        this.getDPlayer().setBalance(this.getDPlayer().getBalance() + square.price);
     }
 
     /**
@@ -77,15 +100,29 @@ public class BPlayer implements BPlayerObserver {
         return dPlayer.getBalance() < 0;
     }
 
-    private boolean buy(int price,boolean isBuyable){
-        if(isBuyable){
-            if(this.getDPlayer().getBalance() < 2*price){
-                return false;
-            }
+    public boolean buy(BPropertySquare currentSquare){
+            int price = currentSquare.getPrice();
             this.getDPlayer().setBalance(this.getDPlayer().getBalance() - price);
+            this.getDPlayer().addPropertySquares(currentSquare);
+            this.sortSquares();
             return true;
-        }else
-            return  false;
+    }
+
+    public boolean isAbleToBuy(BPropertySquare currentSquare){
+        int price = currentSquare.getPrice();
+        if(this.getDPlayer().getBalance() < 2*price){
+            return false;
+        }else{
+            return true;
+        }
+    }
+
+    public void sortSquares(){
+        this.getDPlayer().getPropertySquares().sort((firstSquare, secondSquare) -> {
+            if (firstSquare.getPrice() == secondSquare.getPrice())
+                return 0;
+            return firstSquare.getPrice() > secondSquare.getPrice() ? -1 : 1;
+        });
     }
 
     public DPlayer getDPlayer() {
