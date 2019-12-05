@@ -4,7 +4,11 @@ import DAL.DInstruction;
 import DAL.DPlayer;
 
 public class BLuckCardFour extends BLuckCards {
-    private final String CARD_INFO = "Advance to St. Charles Place. If you pass Go, collect $200. ";
+
+    public BLuckCardFour() {
+        setCARD_INFO("Advance to St. Charles Place. If you pass Go, collect $200. ");
+        setCardID(4);
+    }
 
     @Override
     public void performForCard(DPlayer dPlayer) {
@@ -15,10 +19,5 @@ public class BLuckCardFour extends BLuckCards {
         }else {
             dPlayer.setTotalDiceValue(13 - dPlayer.getLocation() + dPlayer.getTotalDiceValue());
         }
-    }
-
-    @Override
-    public String getCARD_INFO() {
-        return this.CARD_INFO;
     }
 }

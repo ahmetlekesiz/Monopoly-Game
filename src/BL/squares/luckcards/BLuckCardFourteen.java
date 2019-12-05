@@ -3,7 +3,11 @@ package BL.squares.luckcards;
 import DAL.DPlayer;
 
 public class BLuckCardFourteen extends BLuckCards {
-    private final String CARD_INFO = "Take a walk on the Boardwalk. ";
+
+    public BLuckCardFourteen() {
+        setCARD_INFO("Take a walk on the Boardwalk. ");
+        setCardID(14);
+    }
 
     @Override
     public void performForCard(DPlayer dPlayer) {
@@ -13,10 +17,5 @@ public class BLuckCardFourteen extends BLuckCards {
         }else {
             dPlayer.setTotalDiceValue(13 - dPlayer.getLocation() + dPlayer.getTotalDiceValue());
         }
-    }
-
-    @Override
-    public String getCARD_INFO() {
-        return this.CARD_INFO;
     }
 }

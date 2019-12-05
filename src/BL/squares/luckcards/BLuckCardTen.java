@@ -4,7 +4,11 @@ import DAL.DInstruction;
 import DAL.DPlayer;
 
 public class BLuckCardTen extends BLuckCards {
-    private final String CARD_INFO = "Go to Jail. Go directly to Jail. Do not pass GO, do not collect $200. ";
+
+    public BLuckCardTen() {
+        setCARD_INFO("Go to Jail. Go directly to Jail. Do not pass GO, do not collect $200. ");
+        setCardID(10);
+    }
 
     @Override
     public void performForCard(DPlayer dPlayer) {
@@ -14,10 +18,5 @@ public class BLuckCardTen extends BLuckCards {
         }else {
             dPlayer.setTotalDiceValue(13 - dPlayer.getLocation() + dPlayer.getTotalDiceValue());
         }
-    }
-
-    @Override
-    public String getCARD_INFO() {
-        return this.CARD_INFO;
     }
 }

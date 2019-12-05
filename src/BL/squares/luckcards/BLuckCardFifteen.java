@@ -8,15 +8,23 @@ import DAL.DPlayer;
 import java.util.ArrayList;
 
 public class BLuckCardFifteen extends BLuckCards {
-    private final String CARD_INFO = "You have been elected Chairman of the Board. Pay each player $50. ";
     private ArrayList<BPlayer> otherPlayer;
-    private BMonopolyGame playerArray;
+    private BMonopolyGame referanceToGetPlayers;
     private DPlayer tempDPlayer;
+
+    public BLuckCardFifteen() {
+        setCARD_INFO("You have been elected Chairman of the Board. Pay each player $50. ");
+        setCardID(15);
+    }
 
     @Override
     public void performForCard(DPlayer dPlayer) {
-        playerArray = new BMonopolyGame();
-        otherPlayer = playerArray.getPlayers();
+        if(dPlayer.getBalance() < 350){
+            // mülk satıcak...
+            return;
+        }
+        referanceToGetPlayers = new BMonopolyGame();
+        otherPlayer = referanceToGetPlayers.getPlayers();
         int counter = (int) DInstruction.getInstance().countOfPlayers;
         while (counter != 0){
             tempDPlayer = otherPlayer.get(counter).getDPlayer();
@@ -27,10 +35,5 @@ public class BLuckCardFifteen extends BLuckCards {
             counter--;
         }
 
-    }
-
-    @Override
-    public String getCARD_INFO() {
-        return this.CARD_INFO;
     }
 }
