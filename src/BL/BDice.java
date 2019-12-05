@@ -16,7 +16,19 @@ public class BDice {
         diceArray[0] = (int) randomDouble;
         randomDouble = (Math.random() * 6) + 1;
         diceArray[1] = (int) randomDouble;
+        //Checking if the dices are same or different
+        if (checkIfDicesAreSame(diceArray) == true){
+            return rollDice();
+        }
         return diceArray;
+    }
+
+    public boolean checkIfDicesAreSame(int[] diceArray){
+        if(diceArray[0] == diceArray[1]){
+            return true;
+        }else{
+            return false;
+        }
     }
 
 }

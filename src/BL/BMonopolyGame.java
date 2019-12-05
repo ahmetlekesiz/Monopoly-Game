@@ -22,7 +22,7 @@ public class BMonopolyGame implements BGameObserver {
     private BTerminal bTerminal = new BTerminal();
     private ArrayList<Integer> diceSumOfPlayers = new ArrayList<>();
 
-    private BMonopolyGame() {
+    public BMonopolyGame() {
         currentPlayers = new ArrayList<>();
         boardInstance = BBoard.getInstance();
         eliminatedPlayers = new ArrayList<>();
@@ -149,4 +149,9 @@ public class BMonopolyGame implements BGameObserver {
             }
         }
     }
+
+    public ArrayList<BPlayer> getPlayers(){
+        return this.currentPlayers;
+    }
+
 }

@@ -51,7 +51,12 @@ public class BBoard {
         for(int i = 0; i < countOfTaxSquares; i++) {
             squares[taxSquareLocations.get(i)] = new BTaxSquare(PropertyType.BLUE);
         }
+<<<<<<< HEAD
         squares[0] = new BGoSquare(PropertyType.BROWN);
+=======
+        squares[0] = new BGoSquare();
+        squares[1] = new BLuckSquare();
+>>>>>>> feature/f15
     }
 
     public BSquare[] getSquares() {
