@@ -1,10 +1,8 @@
 package UI;
 
 import BL.BPlayer;
-import BL.squares.BLuckSquare;
 import BL.squares.BPropertySquare;
 import BL.squares.BSquare;
-import BL.squares.luckcards.BLuckCards;
 import Controller.CInstruction;
 
 import java.util.ArrayList;
@@ -22,10 +20,18 @@ import java.util.Iterator;
 
 public class UITerminal {
 
-    private String UInameOfCard;
+    private String UINameOfCard;
+    private static UITerminal instance;
 
-    public UITerminal(){
-        UInameOfCard = null;
+    private UITerminal() {
+
+    }
+
+    public static UITerminal getInstance() {
+        if (instance == null) {
+            instance = new UITerminal();
+        }
+        return instance;
     }
 
     /**
@@ -71,8 +77,7 @@ public class UITerminal {
     }
 
     public void printLuckCard(String nameOfCard){
-        this.UInameOfCard = nameOfCard;
-        System.out.println("Property Of Card : " + UInameOfCard);
+        this.UINameOfCard = nameOfCard;
     }
 
     /**
@@ -94,7 +99,7 @@ public class UITerminal {
                 System.out.println("Rent Of Location : " + bSquare.rent);
                 break;
             case "LUCK_SQUARE":
-                System.out.println("Property Of Card : " + UInameOfCard);
+                System.out.println("Property Of Card : " + UINameOfCard);
                 break;
             default:
                 break;

@@ -18,7 +18,7 @@ import java.util.ArrayList;
  */
 public class CTerminal {
 
-    private UITerminal uiTerminal = new UITerminal();
+    private UITerminal uiTerminal = UITerminal.getInstance();
 
     public void printBeforeRollDice(BPlayer bPlayer) {
         uiTerminal.printBeforeRollDice(bPlayer);

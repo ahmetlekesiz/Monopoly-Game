@@ -175,4 +175,7 @@ public class BMonopolyGame implements BGameObserver {
         return this.currentPlayers;
     }
 
+    public BTerminal getBTerminal() {
+        return bTerminal;
+    }
 }

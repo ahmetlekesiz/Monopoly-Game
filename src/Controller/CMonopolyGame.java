@@ -22,7 +22,7 @@ public class CMonopolyGame {
     private CMonopolyGame(String JSONInstructionFileName) {
         DJSONReader objDJSONReader = new DJSONReader(JSONInstructionFileName);
         objDJSONReader.initInstructionObject();
-        UITerminal = new UITerminal();
+        UITerminal = UI.UITerminal.getInstance();
         UITerminal.printCurrentJSONFile();
     }
 

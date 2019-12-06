@@ -3,6 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="65242711-3e21-4f1c-9534-4bfb791e86bb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/BL/BMonopolyGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Monopoly/BL/BMonopolyGame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/BL/BPlayer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Monopoly/BL/BPlayer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/BL/squares/BPropertySquare.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Monopoly/BL/squares/BPropertySquare.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/UI/UITerminal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Monopoly/UI/UITerminal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BL/BMonopolyGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BL/BMonopolyGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/UITerminal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/UITerminal.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,24 +54,24 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
       <recent name="BL" />
       <recent name="DAL" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/documents" />
       <recent name="$PROJECT_DIR$/models" />
       <recent name="$PROJECT_DIR$/libs" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -473,16 +479,5 @@
     <MESSAGE value="Javadoc created for DAL." />
     <MESSAGE value="JDoc and RAD added." />
     <option name="LAST_COMMIT_MESSAGE" value="JDoc and RAD added." />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/BL/BMonopolyGame.java</url>
-          <line>152</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
