@@ -11,7 +11,6 @@ import DAL.DInstruction;
  * @since 11.
  */
 public class BGoSquare extends BSquare {
-    private final String SQUARE_TYPE = "GO_SQUARE";
     private final DInstruction DInstructionInstance = DInstruction.getInstance();
     public BGoSquare(PropertyType type){this.pType=type;}
     /**
@@ -32,6 +31,6 @@ public class BGoSquare extends BSquare {
      */
     @Override
     public String getSQUARE_TYPE() {
-        return this.SQUARE_TYPE;
+        return "GO_SQUARE";
     }
 }

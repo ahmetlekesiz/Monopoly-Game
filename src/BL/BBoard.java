@@ -20,10 +20,9 @@ public class BBoard {
     private static final int SQUARE_NUMBER = 40;
     private BSquare[] squares;
     private static BBoard boardInstance;
-    private DInstruction instructionInstance;
 
     private BBoard() {
-        instructionInstance = DInstruction.getInstance();
+        DInstruction instructionInstance = DInstruction.getInstance();
         squares = new BSquare[SQUARE_NUMBER];
         initSquares();
     }

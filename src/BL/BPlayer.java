@@ -53,7 +53,7 @@ public class BPlayer implements BPlayerObserver {
         }
     }
 
-    boolean tryToSellProperty(BSquare currentSquare) {
+    private boolean tryToSellProperty(BSquare currentSquare) {
         if (!dPlayer.getPropertySquares().isEmpty()) {
             int debt = currentSquare.getRent();
             int currentPrice = this.getDPlayer().getBalance();
@@ -76,7 +76,7 @@ public class BPlayer implements BPlayerObserver {
      * Rolls a dice. Faces cannot be the same.
      * @return int
      */
-    public int rollDice(){
+    int rollDice(){
         int[] diceValues;
         diceValues = this.getDPlayer().getPlayerDice().rollDice();
         this.getDPlayer().setCurrentDiceVal(diceValues[0] + diceValues[1]);
@@ -100,24 +100,22 @@ public class BPlayer implements BPlayerObserver {
         return dPlayer.getBalance() < 0;
     }
 
-    public boolean buy(BPropertySquare currentSquare){
+    void buy(BPropertySquare currentSquare){
             int price = currentSquare.getPrice();
             this.getDPlayer().setBalance(this.getDPlayer().getBalance() - price);
             this.getDPlayer().addPropertySquares(currentSquare);
             this.sortSquares();
-            return true;
     }
 
-    public boolean isAbleToBuy(BPropertySquare currentSquare){
+    boolean isAbleToBuy(BPropertySquare currentSquare){
         int price = currentSquare.getPrice();
         if(this.getDPlayer().getBalance() < 2*price){
             return false;
-        }else{
-            return true;
         }
+            return true;
     }
 
-    public void sortSquares(){
+    private void sortSquares(){
         this.getDPlayer().getPropertySquares().sort((firstSquare, secondSquare) -> {
             if (firstSquare.getPrice() == secondSquare.getPrice())
                 return 0;
