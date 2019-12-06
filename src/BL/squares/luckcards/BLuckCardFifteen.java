@@ -19,10 +19,6 @@ public class BLuckCardFifteen extends BLuckCards {
 
     @Override
     public void performForCard(DPlayer dPlayer) {
-        if(dPlayer.getBalance() < 350){
-            // mülk satıcak...
-            return;
-        }
         referanceToGetPlayers = new BMonopolyGame();
         otherPlayer = referanceToGetPlayers.getPlayers();
         int counter = referanceToGetPlayers.getPlayers().size();

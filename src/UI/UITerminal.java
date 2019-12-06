@@ -4,6 +4,7 @@ import BL.BPlayer;
 import BL.squares.BPropertySquare;
 import BL.squares.BSquare;
 import Controller.CInstruction;
+import DAL.DPlayer;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -39,13 +40,18 @@ public class UITerminal {
      * @return void
      */
     public void printCurrentJSONFile() {
-        System.out.println("---------------------------------------------------------------------");
+        System.out.println("\033[31m  -----|||    |||-------||||||---|||   ||---||||||---||||||----||||||---||------||  ||- \033[0m");
+        System.out.println("\033[31m  ----|| ||  || ||-----||    ||--||||  ||--||    ||--||   ||--||    ||--||-------||||-- \033[0m");
+        System.out.println("\033[31m  ---||   ||||   ||----||    ||--|| || ||--||    ||--||||||---||    ||--||--------||--- \033[0m");
+        System.out.println("\033[31m  --||     ||     ||---||    ||--||  ||||--||    ||--||-------||    ||--||--------||--- \033[0m");
+        System.out.println("\033[31m  -||              ||---||||||---||   |||---||||||---||--------||||||---|||||||---||--- \033[0m");
+        System.out.println("---------------------------------------------------------------------------------------");
         System.out.println("PROPERTIES OF THE GAME");
-        System.out.println("---------------------------------------------------------------------");
+        System.out.println("---------------------------------------------------------------------------------------");
         System.out.println(CInstruction.getDInstruction());
-        System.out.println("---------------------------------------------------------------------");
+        System.out.println("---------------------------------------------------------------------------------------");
         System.out.println("MONOPOLY GAME");
-        System.out.println("---------------------------------------------------------------------");
+        System.out.println("---------------------------------------------------------------------------------------");
     }
 
     /**
@@ -55,14 +61,14 @@ public class UITerminal {
      * @return void
      */
     public void printBeforeRollDice(BPlayer bPlayer) {
-        System.out.println("---------------------------------------------------------------------");
+        System.out.println("---------------------------------------------------------------------------------------");
         System.out.println("Total Rounds: " + bPlayer.getDPlayer().getTotalRounds());
         System.out.println("Player Type :" + bPlayer.getDPlayer().getPieceType());
         System.out.println("Player Turn Counter :" + bPlayer.getDPlayer().getRoundValue());
         System.out.println("Player Cycle Counter :" + bPlayer.getDPlayer().getCycleCounter());
         System.out.println("Location Square :" + bPlayer.getDPlayer().getLocation());
         System.out.println("Player Current Balance :" + bPlayer.getDPlayer().getBalance());
-        System.out.println("---------------------------------------------------------------------");
+        System.out.println("---------------------------------------------------------------------------------------");
     }
 
     /**
@@ -87,7 +93,7 @@ public class UITerminal {
      * @return void
      */
     public void printAfterRollDice(BPlayer bPlayer, BSquare bSquare){
-        System.out.println("---------------------------------------------------------------------");
+        System.out.println("---------------------------------------------------------------------------------------");
         System.out.println("Square Type : " + bSquare.getSQUARE_TYPE());
         System.out.println("Player Location : " + bPlayer.getDPlayer().getLocation());
         System.out.println("Color Of Location : " + bSquare.pType);
@@ -105,9 +111,18 @@ public class UITerminal {
                 break;
         }
         System.out.println("Player Balance After Rolling Dice : " + bPlayer.getDPlayer().getBalance());
-        System.out.println("---------------------------------------------------------------------");
+        System.out.println("---------------------------------------------------------------------------------------");
     }
 
+    public void printRentProcess(DPlayer dPlayer, BSquare bSquare){
+        System.out.println("---------------------------------------------------------------------------------------");
+        System.out.println("\033[31m"+ dPlayer.getPieceType() + " is paying " + bSquare.getRent() + "$ to " + bSquare.getOwnerOfSquare().getDPlayer().getPieceType() + " on " + ((BPropertySquare) bSquare).getName() +". \033[0m");
+    }
+
+    public void printBuyProcess(BPlayer bPlayer, BSquare bSquare){
+        System.out.println("---------------------------------------------------------------------------------------");
+        System.out.println("\033[31m" + bPlayer.getDPlayer().getPieceType() + " is buying " + ((BPropertySquare) bSquare).getName() + ". \033[0m");
+    }
 
     /**
      * <p>The method prints data of winner player.</p>

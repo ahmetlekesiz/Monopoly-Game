@@ -6,7 +6,7 @@ public class BLuckCardEigth extends BLuckCards {
     private DPlayer cardOwner;
 
     public BLuckCardEigth() {
-        setCARD_INFO("Get out of Jail Free. This card may be kept until needed, or traded/sold.");
+        setCARD_INFO("Get out of Jail Free. This card may be kept until needed. ");
         setCardID(8);
     }
 

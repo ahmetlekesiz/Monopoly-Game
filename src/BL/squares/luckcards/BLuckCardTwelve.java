@@ -11,10 +11,6 @@ public class BLuckCardTwelve extends BLuckCards {
 
     @Override
     public void performForCard(DPlayer dPlayer) {
-        if(dPlayer.getBalance() < 15){
-            // mülk satıcak...
-            return;
-        }
         dPlayer.setBalance(dPlayer.getBalance() - 15);
     }
 }

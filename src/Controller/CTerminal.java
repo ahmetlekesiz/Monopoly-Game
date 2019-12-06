@@ -4,6 +4,7 @@ package Controller;
 import BL.BPlayer;
 import BL.squares.BPropertySquare;
 import BL.squares.BSquare;
+import DAL.DPlayer;
 import UI.UITerminal;
 
 import java.util.ArrayList;
@@ -34,6 +35,14 @@ public class CTerminal {
 
     public void printAfterRollDice(BPlayer bPlayer, BSquare bSquare){
         uiTerminal.printAfterRollDice(bPlayer, bSquare);
+    }
+
+    public void printRentProcess(DPlayer dPlayer, BSquare bSquare){
+        uiTerminal.printRentProcess(dPlayer,bSquare);
+    }
+
+    public void printBuyProcess(BPlayer bPlayer, BSquare bSquare){
+        uiTerminal.printBuyProcess(bPlayer,bSquare);
     }
 
     public void printWinnerPlayer(BPlayer bPlayer){
