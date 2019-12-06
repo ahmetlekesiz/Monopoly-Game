@@ -138,33 +138,35 @@ public class BMonopolyGame implements BGameObserver {
             if (!currentPlayer.getDPlayer().isBankrupted()) {
                 BL.squares.BSquare currentSquare = boardInstance.getSquares()[currentPlayer.getDPlayer().getLocation()];
                 bTerminal.printBeforeRollDice(currentPlayer);
-                if (boardInstance.getJailSquares().get(0).getJailRecords().containsKey(currentPlayer.getDPlayer())) {
-
-                } else if (boardInstance.getJailSquares().get(1).getJailRecords().containsKey(currentPlayer.getDPlayer())) {
-
-                } else {
-
+                if (currentPlayer.getDPlayer().isArrested()) {
+                    if (boardInstance.getJailSquares().get(0).getJailRecords().containsKey(currentPlayer.getDPlayer())) {
+                        boardInstance.getJailSquares().get(0).scanPlayerRecord(currentPlayer.getDPlayer());
+                    } else if (boardInstance.getJailSquares().get(1).getJailRecords().containsKey(currentPlayer.getDPlayer())) {
+                        boardInstance.getJailSquares().get(1).scanPlayerRecord(currentPlayer.getDPlayer());
+                    }
                 }
-                currentPlayer.rollDice();
-                currentPlayer.getDPlayer().setTotalDiceValue(currentPlayer.getDPlayer().getTotalDiceValue() +
-                        currentPlayer.getDPlayer().getCurrentDiceVal());
-                currentPlayer.checkAndUpdatePlayer(currentPlayer.getDPlayer().getCurrentDiceVal(),
-                        currentSquare);
-                //Calling buying function.
-                if(currentSquare.getOwnerOfSquare() == null &&
-                        currentSquare.getSQUARE_TYPE().equals("PROPERTY_SQUARE") &&
-                        currentPlayer.isAbleToBuy((BPropertySquare) currentSquare))
-                {
-                    currentPlayer.buy((BPropertySquare) currentSquare);
-                    currentSquare.setOwnerOfSquare(currentPlayer);
-                }
+                if (!currentPlayer.getDPlayer().isArrested()) {
+                    currentPlayer.rollDice();
+                    currentPlayer.getDPlayer().setTotalDiceValue(currentPlayer.getDPlayer().getTotalDiceValue() +
+                            currentPlayer.getDPlayer().getCurrentDiceVal());
+                    currentPlayer.checkAndUpdatePlayer(currentPlayer.getDPlayer().getCurrentDiceVal(),
+                            currentSquare);
+                    //Calling buying function.
+                    if(currentSquare.getOwnerOfSquare() == null &&
+                            currentSquare.getSQUARE_TYPE().equals("PROPERTY_SQUARE") &&
+                            currentPlayer.isAbleToBuy((BPropertySquare) currentSquare))
+                    {
+                        currentPlayer.buy((BPropertySquare) currentSquare);
+                        currentSquare.setOwnerOfSquare(currentPlayer);
+                    }
 
-                bTerminal.printLocationType(currentSquare.getSQUARE_TYPE());
-                bTerminal.printAfterRollDice(currentPlayer);
+                    bTerminal.printLocationType(currentSquare.getSQUARE_TYPE());
+                    bTerminal.printAfterRollDice(currentPlayer);
 
-                if (currentPlayer.getDPlayer().isBankrupted()) {
-                    eliminatedPlayers.add(currentPlayer);
-                    iterator.remove();
+                    if (currentPlayer.getDPlayer().isBankrupted()) {
+                        eliminatedPlayers.add(currentPlayer);
+                        iterator.remove();
+                    }
                 }
             }
         }
