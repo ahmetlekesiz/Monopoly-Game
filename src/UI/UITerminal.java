@@ -1,6 +1,10 @@
 package UI;
 
 import BL.BPlayer;
+import BL.squares.BLuckSquare;
+import BL.squares.BPropertySquare;
+import BL.squares.BSquare;
+import BL.squares.luckcards.BLuckCards;
 import Controller.CInstruction;
 
 import java.util.ArrayList;
@@ -17,6 +21,12 @@ import java.util.Iterator;
  */
 
 public class UITerminal {
+
+    private String UInameOfCard;
+
+    public UITerminal(){
+        UInameOfCard = null;
+    }
 
     /**
      * <p>The method prints json file that we decide all properties of Monopoly Game. </p>
@@ -55,19 +65,14 @@ public class UITerminal {
      * @param diceValues The parameter contains dice values.
      * @return void
      */
-    public void printDicesFaces(int[] diceValues){
+    //TODO Name of player will be added.
+    public void printDicesFaces(int[] diceValues, BPlayer bPlayer){
         System.out.println("Rolling Dice : " + diceValues[0] + "+" + diceValues[1] + "=" + (diceValues[0] + diceValues[1]));
     }
 
-    /**
-     * <p>The method prints location where current player is in</p>
-     *
-     * @param squareLocation The parameter contains square type name such as TAX, GO or REGULAR.
-     * @return void
-     */
-    public void printLocationType(String squareLocation){
-        System.out.println("---------------------------------------------------------------------");
-        System.out.println("Square Type :" + squareLocation);
+    public void printLuckCard(String nameOfCard){
+        this.UInameOfCard = nameOfCard;
+        System.out.println("Property Of Card : " + UInameOfCard);
     }
 
     /**
@@ -76,9 +81,25 @@ public class UITerminal {
      * @param bPlayer We use the parameter to reach data of players.
      * @return void
      */
-    public void printAfterRollDice(BPlayer bPlayer){
-        System.out.println("Player Location :" + bPlayer.getDPlayer().getLocation());
-        System.out.println("Player Balance After Rolling Dice :" + bPlayer.getDPlayer().getBalance());
+    public void printAfterRollDice(BPlayer bPlayer, BSquare bSquare){
+        System.out.println("---------------------------------------------------------------------");
+        System.out.println("Square Type : " + bSquare.getSQUARE_TYPE());
+        System.out.println("Player Location : " + bPlayer.getDPlayer().getLocation());
+        System.out.println("Color Of Location : " + bSquare.pType);
+        switch (bSquare.getSQUARE_TYPE()){
+            case "PROPERTY_SQUARE":
+                System.out.println("Name Of Location : " + ((BPropertySquare) bSquare).getName());
+                System.out.print("Owner Of Location : ");
+                System.out.println(bSquare.getOwnerOfSquare() != null ? bSquare.getOwnerOfSquare().getDPlayer().getPieceType() : "None");
+                System.out.println("Rent Of Location : " + bSquare.rent);
+                break;
+            case "LUCK_SQUARE":
+                System.out.println("Property Of Card : " + UInameOfCard);
+                break;
+            default:
+                break;
+        }
+        System.out.println("Player Balance After Rolling Dice : " + bPlayer.getDPlayer().getBalance());
         System.out.println("---------------------------------------------------------------------");
     }
 

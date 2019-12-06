@@ -1,5 +1,6 @@
 package BL.squares;
 
+import BL.BTerminal;
 import BL.squares.luckcards.*;
 import DAL.DPlayer;
 
@@ -9,6 +10,7 @@ public class BLuckSquare extends BSquare {
     private final String SQUARE_TYPE = "LUCK_SQUARE";
     private ArrayList<BLuckCards> luckCards = new ArrayList<>();
     private int totalNumberCard = 16;
+    private BTerminal bTerminal = new BTerminal();
 
     public BLuckSquare(PropertyType propertyType) {
         this.pType = propertyType;
@@ -37,7 +39,7 @@ public class BLuckSquare extends BSquare {
     @Override
     public void performOnLand(DPlayer player) {
         int temp = (int) (Math.random() * totalNumberCard);
-        System.out.println(luckCards.get(temp).setCARD_INFO());
+        bTerminal.printLuckCard(luckCards.get(temp).setCARD_INFO());
         luckCards.get(temp).performForCard(player);
     }
 

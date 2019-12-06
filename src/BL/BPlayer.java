@@ -79,7 +79,7 @@ public class BPlayer implements BPlayerObserver {
         int[] diceValues;
         diceValues = this.getDPlayer().getPlayerDice().rollDice();
         this.getDPlayer().setCurrentDiceVal(diceValues[0] + diceValues[1]);
-        bTerminal.printDicesFaces(diceValues);
+        bTerminal.printDicesFaces(diceValues, this);
         return diceValues[0] + diceValues[1];
     }
 

@@ -159,12 +159,8 @@ public class BMonopolyGame implements BGameObserver {
                     {
                         currentPlayer.buy((BPropertySquare) currentSquare);
                         currentSquare.setOwnerOfSquare(currentPlayer);
-                        System.err.println("Current Player: " + currentPlayer.getDPlayer().getPieceType() +
-                                " is buying...\n" + "Current square: " + ((BPropertySquare) currentSquare).getName() +
-                                "\nPrice: " + currentSquare.getPrice() + "\nLocation: " + currentPlayer.getDPlayer().getLocation());
                     }
-                    bTerminal.printLocationType(currentSquare.getSQUARE_TYPE());
-                    bTerminal.printAfterRollDice(currentPlayer);
+                    bTerminal.printAfterRollDice(currentPlayer, currentSquare);
 
                     if (currentPlayer.getDPlayer().isBankrupted()) {
                         eliminatedPlayers.add(currentPlayer);

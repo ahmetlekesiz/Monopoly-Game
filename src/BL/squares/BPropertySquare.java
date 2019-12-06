@@ -24,8 +24,6 @@ public class BPropertySquare extends BSquare {
     public void getRent(DPlayer owner, DPlayer renter){
         renter.setBalance(renter.getBalance() - this.rent);
         owner.setBalance(owner.getBalance() + this.rent);
-        System.err.println("\nPlayer " + renter.getPieceType() + " is paying " + this.rent + "$ to Player " +
-                owner.getPieceType() + " in " + this.getName() + " as a rent.\n");
     }
 
     public String getName() {
