@@ -3,6 +3,7 @@ package BL;
 import BL.squares.BPropertySquare;
 import BL.squares.BSquare;
 import Controller.CTerminal;
+import DAL.DPlayer;
 
 import java.util.ArrayList;
 
@@ -32,6 +33,14 @@ public class BTerminal {
 
     public void printAfterRollDice(BPlayer bPlayer, BSquare bSquare){
         cTerminal.printAfterRollDice(bPlayer, bSquare);
+    }
+
+    public void printRentProcess(DPlayer dPlayer, BSquare bSquare){
+        cTerminal.printRentProcess(dPlayer,bSquare);
+    }
+
+    public void printBuyProcess(BPlayer bPlayer, BSquare bSquare){
+        cTerminal.printBuyProcess(bPlayer,bSquare);
     }
 
     public void printWinnerPlayer(BPlayer bPlayer){ cTerminal.printWinnerPlayer(bPlayer); }

@@ -1,11 +1,13 @@
 package BL.squares;
 
 import BL.BPlayer;
+import BL.BTerminal;
 import DAL.DPlayer;
 
 public class BPropertySquare extends BSquare {
     private String name;
     private final String SQUARE_TYPE = "PROPERTY_SQUARE";
+    private BTerminal bTerminal = new BTerminal();
 
     public BPropertySquare(String name, PropertyType type, int rent, int price){
         this.pType = type;
@@ -23,6 +25,7 @@ public class BPropertySquare extends BSquare {
 
     public void getRent(DPlayer owner, DPlayer renter){
         if (renter == owner) return;
+        bTerminal.printRentProcess(renter , this);
         renter.setBalance(renter.getBalance() - this.rent);
         owner.setBalance(owner.getBalance() + this.rent);
     }

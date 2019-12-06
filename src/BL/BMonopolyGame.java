@@ -157,6 +157,7 @@ public class BMonopolyGame implements BGameObserver {
                             currentSquare.getSQUARE_TYPE().equals("PROPERTY_SQUARE") &&
                             currentPlayer.isAbleToBuy((BPropertySquare) currentSquare))
                     {
+                        bTerminal.printBuyProcess(currentPlayer,currentSquare);
                         currentPlayer.buy((BPropertySquare) currentSquare);
                         currentSquare.setOwnerOfSquare(currentPlayer);
                     }
