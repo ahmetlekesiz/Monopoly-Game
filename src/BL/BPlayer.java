@@ -1,5 +1,9 @@
 package BL;
 
+import BL.squares.BGoSquare;
+import BL.squares.BPropertySquare;
+import BL.squares.BSquare;
+import BL.squares.PropertyType;
 import DAL.DPlayer;
 
 /***
@@ -16,10 +20,6 @@ public class BPlayer implements BPlayerObserver {
     private DPlayer dPlayer;
     private BTerminal bTerminal = new BTerminal();
 
-    public BPlayer() {
-
-    }
-
     public BPlayer(DPlayer dPlayer) {
         this.dPlayer = dPlayer;
     }
@@ -35,35 +35,64 @@ public class BPlayer implements BPlayerObserver {
      */
     @Override
     public void checkAndUpdatePlayer(int currentDiceValue, BSquare currentSquare) {
+        getDPlayer().setRoundValue(getDPlayer().getRoundValue() + 1);
+        getDPlayer().setTotalRounds(getDPlayer().getTotalRounds() + 1);
+        if (getDPlayer().getCycleCounter() == 0 && currentSquare instanceof BGoSquare) return;
         if (isPlayerCrossTheGoSquare()) {
-            dPlayer.setRoundValue(dPlayer.getRoundValue() + 1);
-            new BGoSquare().performOnLand(dPlayer);
-            return;
+            dPlayer.setCycleCounter(dPlayer.getCycleCounter() + 1);
+            new BGoSquare(PropertyType.NOCOLOR).performOnLand(getDPlayer());
+            if (currentSquare instanceof BGoSquare) return;
         }
-        currentSquare.performOnLand(dPlayer);
+        currentSquare.performOnLand(getDPlayer());
+
         if (isPlayerBankrupted()) {
-            dPlayer.setBankruptFlag(true);
+            if(!tryToSellProperty(currentSquare)){
+                dPlayer.setBankruptFlag(true);
+            }
         }
     }
 
+    public void updateDataset(int turn, int money) {
+        dPlayer.getPlayerDataset().add(turn, money);
+    }
+
+    boolean tryToSellProperty(BSquare currentSquare) {
+        if (!dPlayer.getPropertySquares().isEmpty()) {
+            int debt = currentSquare.rent;
+            int currentPrice = this.getDPlayer().getBalance();
+            for (int i = 0; i < dPlayer.getPropertySquares().size() && currentPrice < debt; ++i) {
+                currentPrice += dPlayer.getPropertySquares().get(i).price;
+                sellSquare(dPlayer.getPropertySquares().get(i));
+            }
+            return currentPrice >= debt;
+        } else {
+            return false;
+        }
+    }
+
+    private void sellSquare(BSquare square) {
+        square.setOwnerOfSquare(null);
+        this.getDPlayer().setBalance(this.getDPlayer().getBalance() + square.price);
+    }
+
     /**
-     *
+     * Rolls a dice. Faces cannot be the same.
      * @return int
      */
     public int rollDice(){
         int[] diceValues;
         diceValues = this.getDPlayer().getPlayerDice().rollDice();
         this.getDPlayer().setCurrentDiceVal(diceValues[0] + diceValues[1]);
-
-        bTerminal.printDicesFaces(diceValues);
+        bTerminal.printDicesFaces(diceValues, this);
         return diceValues[0] + diceValues[1];
     }
+
     /**
      *<p>Checks whether player pass the start square.</p>
      * @return boolean
      */
     private boolean isPlayerCrossTheGoSquare() {
-        return (int) Math.floor(dPlayer.getTotalDiceValue() / 40f) != dPlayer.getRoundValue();
+        return (int) Math.floor(dPlayer.getTotalDiceValue() / 40f) != dPlayer.getCycleCounter();
     }
 
     /**
@@ -72,6 +101,27 @@ public class BPlayer implements BPlayerObserver {
      */
     private boolean isPlayerBankrupted() {
         return dPlayer.getBalance() < 0;
+    }
+
+    public boolean buy(BPropertySquare currentSquare){
+            int price = currentSquare.getPrice();
+            this.getDPlayer().setBalance(this.getDPlayer().getBalance() - price);
+            this.getDPlayer().addPropertySquares(currentSquare);
+            this.sortSquares();
+            return true;
+    }
+
+    public boolean isAbleToBuy(BPropertySquare currentSquare){
+        int price = currentSquare.getPrice();
+        return this.getDPlayer().getBalance() >= price;
+    }
+
+    public void sortSquares(){
+        this.getDPlayer().getPropertySquares().sort((firstSquare, secondSquare) -> {
+            if (firstSquare.getPrice() == secondSquare.getPrice())
+                return 0;
+            return firstSquare.getPrice() > secondSquare.getPrice() ? -1 : 1;
+        });
     }
 
     public DPlayer getDPlayer() {

@@ -1,6 +1,9 @@
 package BL;
 
+import BL.squares.BPropertySquare;
+import BL.squares.BSquare;
 import Controller.CTerminal;
+import DAL.DPlayer;
 
 import java.util.ArrayList;
 
@@ -20,16 +23,24 @@ public class BTerminal {
         cTerminal.printBeforeRollDice(bPlayer);
     }
 
-    public void printDicesFaces(int[] diceValues){
-        cTerminal.printDicesFaces(diceValues);
+    public void printDicesFaces(int[] diceValues, BPlayer bPlayer){
+        cTerminal.printDicesFaces(diceValues, bPlayer);
     }
 
-    public void printLocationType(String squareLocation){
-        cTerminal.printLocationType(squareLocation);
+    public void printLuckCard(String nameOfCard){
+        cTerminal.printLuckCard(nameOfCard);
     }
 
-    public void printAfterRollDice(BPlayer bPlayer){
-        cTerminal.printAfterRollDice(bPlayer);
+    public void printAfterRollDice(BPlayer bPlayer, BSquare bSquare){
+        cTerminal.printAfterRollDice(bPlayer, bSquare);
+    }
+
+    public void printRentProcess(DPlayer dPlayer, BSquare bSquare){
+        cTerminal.printRentProcess(dPlayer,bSquare);
+    }
+
+    public void printBuyProcess(BPlayer bPlayer, BSquare bSquare){
+        cTerminal.printBuyProcess(bPlayer,bSquare);
     }
 
     public void printWinnerPlayer(BPlayer bPlayer){ cTerminal.printWinnerPlayer(bPlayer); }
