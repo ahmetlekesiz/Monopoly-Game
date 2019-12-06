@@ -12,10 +12,10 @@ import DAL.DPlayer;
  * @version 1.0
  */
 public abstract class BSquare {
-    public  PropertyType pType;
-    public BPlayer ownerOfSquare = null;
-    public int rent;
-    public int price;
+    PropertyType pType;
+    private BPlayer ownerOfSquare = null;
+    private int rent;
+    private int price;
 
     public  abstract void performOnLand(DPlayer player);
 

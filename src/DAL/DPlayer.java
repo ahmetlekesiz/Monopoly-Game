@@ -28,7 +28,7 @@ public class DPlayer {
         this.currentDiceVal = 0;
     }
 
-        public int getCurrentDiceVal() {
+    public int getCurrentDiceVal() {
         return currentDiceVal;
     }
 

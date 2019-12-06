@@ -1,6 +1,5 @@
 package BL.squares;
 
-import BL.BPlayer;
 import DAL.DPlayer;
 
 public class BPropertySquare extends BSquare {
@@ -10,8 +9,8 @@ public class BPropertySquare extends BSquare {
     public BPropertySquare(String name, PropertyType type, int rent, int price){
         this.pType = type;
         this.name = name;
-        this.rent = rent;
-        this.price = price;
+        this.setRent(rent);
+        this.setPrice(price);
     }
 
     @Override
@@ -22,8 +21,8 @@ public class BPropertySquare extends BSquare {
     }
 
     public void getRent(DPlayer owner, DPlayer renter){
-        renter.setBalance(renter.getBalance() - this.rent);
-        owner.setBalance(owner.getBalance() + this.rent);
+        renter.setBalance(renter.getBalance() - this.getRent());
+        owner.setBalance(owner.getBalance() + this.getRent());
     }
 
     public String getName() {

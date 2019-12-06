@@ -55,10 +55,10 @@ public class BPlayer implements BPlayerObserver {
 
     boolean tryToSellProperty(BSquare currentSquare) {
         if (!dPlayer.getPropertySquares().isEmpty()) {
-            int debt = currentSquare.rent;
+            int debt = currentSquare.getRent();
             int currentPrice = this.getDPlayer().getBalance();
             for (int i = 0; i < dPlayer.getPropertySquares().size() && currentPrice < debt; ++i) {
-                currentPrice += dPlayer.getPropertySquares().get(i).price;
+                currentPrice += dPlayer.getPropertySquares().get(i).getPrice();
                 sellSquare(dPlayer.getPropertySquares().get(i));
             }
             return currentPrice >= debt;
@@ -69,7 +69,7 @@ public class BPlayer implements BPlayerObserver {
 
     private void sellSquare(BSquare square) {
         square.setOwnerOfSquare(null);
-        this.getDPlayer().setBalance(this.getDPlayer().getBalance() + square.price);
+        this.getDPlayer().setBalance(this.getDPlayer().getBalance() + square.getPrice());
     }
 
     /**

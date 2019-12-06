@@ -27,7 +27,7 @@ public class BJailSquare extends BSquare {
      * <p>When player reaches the Jail square this method will be triggered. It adds player to jailRecords
      * and marks player as arrested.</p>
      *
-     * @param player
+     * @param player is a parameter
      * @return void
      */
     @Override
