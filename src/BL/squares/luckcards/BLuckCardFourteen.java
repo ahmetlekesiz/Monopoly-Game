@@ -5,17 +5,16 @@ import DAL.DPlayer;
 public class BLuckCardFourteen extends BLuckCards {
 
     public BLuckCardFourteen() {
-        setCARD_INFO("Take a walk on the Boardwalk. ");
+        setCARD_INFO("Take a walk on the Ginza. ");
         setCardID(14);
     }
 
     @Override
     public void performForCard(DPlayer dPlayer) {
-        // Boardwalk. square ye göre location ayarlanacak
-        if(dPlayer.getLocation() > 13){
-            dPlayer.setTotalDiceValue(dPlayer.getTotalDiceValue() - (dPlayer.getLocation() - 13));
+        if(dPlayer.getLocation() > 8){
+            dPlayer.setTotalDiceValue(dPlayer.getTotalDiceValue() - (dPlayer.getLocation() - 8));
         }else {
-            dPlayer.setTotalDiceValue(13 - dPlayer.getLocation() + dPlayer.getTotalDiceValue());
+            dPlayer.setTotalDiceValue(8 - dPlayer.getLocation() + dPlayer.getTotalDiceValue());
         }
     }
 }
