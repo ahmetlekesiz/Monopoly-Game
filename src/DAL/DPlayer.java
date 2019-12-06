@@ -2,6 +2,7 @@ package DAL;
 
 import BL.BDice;
 import BL.squares.BPropertySquare;
+import org.jfree.data.xy.XYSeries;
 
 import java.util.ArrayList;
 
@@ -19,6 +20,7 @@ public class DPlayer {
     private BDice playerDice;
     private DPiece.PieceType pieceType;
     private ArrayList<BPropertySquare> propertySquares = new ArrayList<>();
+    private XYSeries playerDataset;
 
     public DPlayer(DPiece.PieceType pieceType, int balance) {
         playerDice = new BDice();
@@ -119,4 +121,11 @@ public class DPlayer {
         getPropertySquares().add(square);
     }
 
+    public XYSeries getPlayerDataset() {
+        return playerDataset;
+    }
+
+    public void setPlayerDataset(DPiece.PieceType pieceType) {
+        this.playerDataset = new XYSeries(pieceType);
+    }
 }

@@ -52,6 +52,10 @@ public class BPlayer implements BPlayerObserver {
         }
     }
 
+    public void updateDataset(int turn, int money) {
+        dPlayer.getPlayerDataset().add(turn, money);
+    }
+
     boolean tryToSellProperty(BSquare currentSquare) {
         if (!dPlayer.getPropertySquares().isEmpty()) {
             int debt = currentSquare.rent;

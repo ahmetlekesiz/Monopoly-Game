@@ -13,6 +13,7 @@ public class Main {
 
     public static final String INSTRUCTION_FILENAME = "game.json";
     public static final Integer PLACE_NUMBER = 40;
+    public static final Integer ROUND_LIMIT = 100;
 
     public static void main(String[] args) {
         CMonopolyGame monopolyGame = CMonopolyGame.getInstance(INSTRUCTION_FILENAME);

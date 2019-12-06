@@ -1,13 +1,24 @@
 package BL;
 
+import java.awt.*;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
 
 import BL.squares.BPropertySquare;
+import Controller.Main;
 import DAL.DPlayer;
 import DAL.DInstruction;
 import DAL.DPiece;
+import org.jfree.chart.ChartFactory;
+import org.jfree.chart.ChartPanel;
+import org.jfree.chart.JFreeChart;
+import org.jfree.chart.plot.PlotOrientation;
+import org.jfree.chart.ui.ApplicationFrame;
+import org.jfree.data.category.DefaultCategoryDataset;
+import org.jfree.data.xy.XYDataset;
+import org.jfree.data.xy.XYSeries;
+import org.jfree.data.xy.XYSeriesCollection;
 
 /**
  * <p>BMonopolyGame is MonopolyGame class in Business Layer. Main rules
@@ -23,6 +34,7 @@ public class BMonopolyGame implements BGameObserver {
     private BBoard boardInstance;
     private BTerminal bTerminal = new BTerminal();
     private ArrayList<Integer> diceSumOfPlayers = new ArrayList<>();
+    private XYSeriesCollection moneyDataset = new XYSeriesCollection();
 
     public BMonopolyGame() {
         currentPlayers = new ArrayList<>();
@@ -85,6 +97,7 @@ public class BMonopolyGame implements BGameObserver {
         //After sorting players the piece types are setting.
         for(int i = 0; i < currentPlayers.size(); i++){
             currentPlayers.get(i).getDPlayer().setPieceType(DPiece.PieceType.values()[i]);
+            currentPlayers.get(i).getDPlayer().setPlayerDataset(DPiece.PieceType.values()[i]);
         }
     }
 
@@ -104,6 +117,7 @@ public class BMonopolyGame implements BGameObserver {
         }
         return false;
     }
+
     /**
      *<p>Starts game turn and if a player eliminated ,stores them.</p>
      * <p>Listen method runs to watch the player.
@@ -112,9 +126,22 @@ public class BMonopolyGame implements BGameObserver {
      */
     @Override
     public void listen() {
+
         while (currentPlayers.size() != 1) {
-            startTurn();
+            for (int i = 0; i < Main.ROUND_LIMIT; ++i) {
+                startTurn();
+            }
+            break;
         }
+        ArrayList<BPlayer> playersGroup = new ArrayList<>(currentPlayers);
+        playersGroup.addAll(eliminatedPlayers);
+        for (BPlayer player: playersGroup) {
+            moneyDataset.addSeries(player.getDPlayer().getPlayerDataset());
+        }
+        PlayersChart playersChart = new PlayersChart("Monopoly", "Players/Money Line Chart");
+        playersChart.pack();
+        playersChart.setVisible(true);
+        System.out.println("Finished");
         eliminatedPlayers.sort((firstPlayer, secondPlayer) -> {
             if(firstPlayer.getDPlayer().getBalance() == secondPlayer.getDPlayer().getBalance()) return 0;
             return firstPlayer.getDPlayer().getBalance() > secondPlayer.getDPlayer().getBalance() ? -1 : 1;
@@ -131,11 +158,6 @@ public class BMonopolyGame implements BGameObserver {
     private void startTurn() {
         for (Iterator<BL.BPlayer> iterator = currentPlayers.iterator(); iterator.hasNext();) {
             BL.BPlayer currentPlayer = iterator.next();
-            try {
-                Thread.sleep(0);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
             if (!currentPlayer.getDPlayer().isBankrupted()) {
                 bTerminal.printBeforeRollDice(currentPlayer);
                 if (currentPlayer.getDPlayer().isArrested()) {
@@ -160,8 +182,8 @@ public class BMonopolyGame implements BGameObserver {
                         currentPlayer.buy((BPropertySquare) currentSquare);
                         currentSquare.setOwnerOfSquare(currentPlayer);
                     }
+                    currentPlayer.updateDataset(currentPlayer.getDPlayer().getRoundValue(), currentPlayer.getDPlayer().getBalance());
                     bTerminal.printAfterRollDice(currentPlayer, currentSquare);
-
                     if (currentPlayer.getDPlayer().isBankrupted()) {
                         eliminatedPlayers.add(currentPlayer);
                         iterator.remove();
@@ -177,5 +199,22 @@ public class BMonopolyGame implements BGameObserver {
 
     public BTerminal getBTerminal() {
         return bTerminal;
+    }
+
+    private class PlayersChart extends ApplicationFrame {
+
+        public PlayersChart(String applicationTitle , String chartTitle ) {
+            super(applicationTitle);
+            JFreeChart lineChart = ChartFactory.createXYLineChart(
+                    chartTitle,
+                    "Time","Money",
+                    moneyDataset,
+                    PlotOrientation.VERTICAL,
+                    true,true,false);
+
+            ChartPanel chartPanel = new ChartPanel( lineChart );
+            chartPanel.setPreferredSize( new java.awt.Dimension( 720 , 480 ) );
+            setContentPane( chartPanel );
+        }
     }
 }
