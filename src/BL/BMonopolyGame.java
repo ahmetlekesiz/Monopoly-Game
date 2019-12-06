@@ -138,8 +138,11 @@ public class BMonopolyGame implements BGameObserver {
             if (!currentPlayer.getDPlayer().isBankrupted()) {
                 BL.squares.BSquare currentSquare = boardInstance.getSquares()[currentPlayer.getDPlayer().getLocation()];
                 bTerminal.printBeforeRollDice(currentPlayer);
-                if (boardInstance.getJailSquares().get(0).getJailRecords().containsKey(currentPlayer.getDPlayer()) ||
-                    boardInstance.getJailSquares().get(1).getJailRecords().containsKey(currentPlayer.getDPlayer())) {
+                if (boardInstance.getJailSquares().get(0).getJailRecords().containsKey(currentPlayer.getDPlayer())) {
+
+                } else if (boardInstance.getJailSquares().get(1).getJailRecords().containsKey(currentPlayer.getDPlayer())) {
+
+                } else {
 
                 }
                 currentPlayer.rollDice();

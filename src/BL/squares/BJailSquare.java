@@ -42,25 +42,23 @@ public class BJailSquare extends BSquare {
     /**
      * <p>In each tour scans the jail records to conduct appropriate actions for those who are arrested.</p>
      */
-    public void scanJailRecords() {
-        for (DPlayer currentPlayer: jailRecords.keySet()) {
-            int stayCount = jailRecords.get(currentPlayer);
-            if (stayCount < 3) {
-                int[] currentDiceValues = currentPlayer.getPlayerDice().rollDiceWithoutConstraint();
-                System.out.println(Arrays.toString(currentDiceValues));
-                if (currentDiceValues[0] == currentDiceValues[1]) {
-                    currentPlayer.setArrested(false);
-                    jailRecords.remove(currentPlayer);
-                    System.out.println("You are lucky!");
-                    return;
-                }
-                jailRecords.put(currentPlayer, ++stayCount);
-            } else {
-                currentPlayer.setBalance(currentPlayer.getBalance() - (int) DInstruction.getInstance().priceOfJailSquare);
+    public void scanJailRecords(DPlayer currentPlayer) {
+        int stayCount = jailRecords.get(currentPlayer);
+        if (stayCount < 3) {
+            int[] currentDiceValues = currentPlayer.getPlayerDice().rollDiceWithoutConstraint();
+            System.out.println(Arrays.toString(currentDiceValues));
+            if (currentDiceValues[0] == currentDiceValues[1]) {
                 currentPlayer.setArrested(false);
                 jailRecords.remove(currentPlayer);
-                System.out.println("Unlucky player!");
+                System.out.println("You are lucky!");
+                return;
             }
+            jailRecords.put(currentPlayer, ++stayCount);
+        } else {
+            currentPlayer.setBalance(currentPlayer.getBalance() - (int) DInstruction.getInstance().priceOfJailSquare);
+            currentPlayer.setArrested(false);
+            jailRecords.remove(currentPlayer);
+            System.out.println("Unlucky player!");
         }
     }
 
