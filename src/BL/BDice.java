@@ -17,9 +17,18 @@ public class BDice {
         randomDouble = (Math.random() * 6) + 1;
         diceArray[1] = (int) randomDouble;
         //Checking if the dices are same or different
-        if (checkIfDicesAreSame(diceArray) == true){
+        if (checkIfDicesAreSame(diceArray)){
             return rollDice();
         }
+        return diceArray;
+    }
+
+    public int[] rollDiceWithoutConstraint() {
+        int[] diceArray = new int[2];
+        int randomInt = (int) (Math.random() * 6) + 1;
+        diceArray[0] = randomInt;
+        randomInt = (int) (Math.random() * 6) + 1;
+        diceArray[1] = randomInt;
         return diceArray;
     }
 

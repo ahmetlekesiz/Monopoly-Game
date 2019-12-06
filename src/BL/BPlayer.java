@@ -20,10 +20,6 @@ public class BPlayer implements BPlayerObserver {
     private DPlayer dPlayer;
     private BTerminal bTerminal = new BTerminal();
 
-    public BPlayer() {
-
-    }
-
     public BPlayer(DPlayer dPlayer) {
         this.dPlayer = dPlayer;
     }
