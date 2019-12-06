@@ -36,6 +36,8 @@ public class BPlayer implements BPlayerObserver {
     @Override
     public void checkAndUpdatePlayer(int currentDiceValue, BSquare currentSquare) {
         getDPlayer().setRoundValue(getDPlayer().getRoundValue() + 1);
+        getDPlayer().setTotalRounds(getDPlayer().getTotalRounds() + 1);
+        if (getDPlayer().getCycleCounter() == 0 && currentSquare instanceof BGoSquare) return;
         if (isPlayerCrossTheGoSquare()) {
             dPlayer.setCycleCounter(dPlayer.getCycleCounter() + 1);
             new BGoSquare(PropertyType.NOCOLOR).performOnLand(getDPlayer());
@@ -86,7 +88,7 @@ public class BPlayer implements BPlayerObserver {
      * @return boolean
      */
     private boolean isPlayerCrossTheGoSquare() {
-        return (int) Math.floor(dPlayer.getTotalDiceValue() / 40f) != dPlayer.getRoundValue();
+        return (int) Math.floor(dPlayer.getTotalDiceValue() / 40f) != dPlayer.getCycleCounter();
     }
 
     /**
@@ -107,11 +109,7 @@ public class BPlayer implements BPlayerObserver {
 
     public boolean isAbleToBuy(BPropertySquare currentSquare){
         int price = currentSquare.getPrice();
-        if(this.getDPlayer().getBalance() < 2*price){
-            return false;
-        }else{
-            return true;
-        }
+        return this.getDPlayer().getBalance() >= price;
     }
 
     public void sortSquares(){

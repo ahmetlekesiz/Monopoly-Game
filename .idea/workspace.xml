@@ -2,11 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dfd4cd54-fa73-4f3b-abf8-245eae6a795f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game.json" beforeDir="false" afterPath="$PROJECT_DIR$/game.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/BL/BMonopolyGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Monopoly/BL/BMonopolyGame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/BL/BPlayer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Monopoly/BL/BPlayer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/BL/squares/BPropertySquare.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Monopoly/BL/squares/BPropertySquare.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/DAL/DPlayer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Monopoly/DAL/DPlayer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/UI/UITerminal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Monopoly/UI/UITerminal.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BL/BMonopolyGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BL/BMonopolyGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BL/squares/BJailSquare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BL/squares/BJailSquare.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BL/BPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BL/BPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BL/squares/BPropertySquare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BL/squares/BPropertySquare.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DAL/DPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAL/DPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/UITerminal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/UITerminal.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -477,5 +484,16 @@
     <MESSAGE value="Javadoc created for DAL." />
     <MESSAGE value="JDoc and RAD added." />
     <option name="LAST_COMMIT_MESSAGE" value="JDoc and RAD added." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/BL/BMonopolyGame.java</url>
+          <line>152</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

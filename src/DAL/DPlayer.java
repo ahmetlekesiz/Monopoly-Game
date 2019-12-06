@@ -13,8 +13,8 @@ import java.util.ArrayList;
  */
 public class DPlayer {
 
-    private static int roundValue;
-    private int balance, cycleCounter, totalDiceValue, currentDiceVal;
+    private static int totalRounds;
+    private int balance, cycleCounter, totalDiceValue, roundValue, currentDiceVal;
     private boolean bankruptFlag, isArrested;
     private BDice playerDice;
     private DPiece.PieceType pieceType;
@@ -88,7 +88,7 @@ public class DPlayer {
     }
 
     public void setRoundValue(int roundValue) {
-        DPlayer.roundValue = roundValue;
+        this.roundValue = roundValue;
     }
 
     public boolean isArrested() {
@@ -105,6 +105,14 @@ public class DPlayer {
 
     public void setPropertySquares(ArrayList<BPropertySquare> propertySquares) {
         this.propertySquares = propertySquares;
+    }
+
+    public int getTotalRounds() {
+        return totalRounds;
+    }
+
+    public void setTotalRounds(int totalRounds) {
+        DPlayer.totalRounds = totalRounds;
     }
 
     public void addPropertySquares(BPropertySquare square){

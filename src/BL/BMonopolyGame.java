@@ -1,5 +1,6 @@
 package BL;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
 
@@ -131,12 +132,11 @@ public class BMonopolyGame implements BGameObserver {
         for (Iterator<BL.BPlayer> iterator = currentPlayers.iterator(); iterator.hasNext();) {
             BL.BPlayer currentPlayer = iterator.next();
             try {
-                Thread.sleep(1000);
+                Thread.sleep(0);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
             if (!currentPlayer.getDPlayer().isBankrupted()) {
-                BL.squares.BSquare currentSquare = boardInstance.getSquares()[currentPlayer.getDPlayer().getLocation()];
                 bTerminal.printBeforeRollDice(currentPlayer);
                 if (currentPlayer.getDPlayer().isArrested()) {
                     if (boardInstance.getJailSquares().get(0).getJailRecords().containsKey(currentPlayer.getDPlayer())) {
@@ -149,6 +149,7 @@ public class BMonopolyGame implements BGameObserver {
                     currentPlayer.rollDice();
                     currentPlayer.getDPlayer().setTotalDiceValue(currentPlayer.getDPlayer().getTotalDiceValue() +
                             currentPlayer.getDPlayer().getCurrentDiceVal());
+                    BL.squares.BSquare currentSquare = boardInstance.getSquares()[currentPlayer.getDPlayer().getLocation()];
                     currentPlayer.checkAndUpdatePlayer(currentPlayer.getDPlayer().getCurrentDiceVal(),
                             currentSquare);
                     //Calling buying function.
@@ -158,8 +159,10 @@ public class BMonopolyGame implements BGameObserver {
                     {
                         currentPlayer.buy((BPropertySquare) currentSquare);
                         currentSquare.setOwnerOfSquare(currentPlayer);
+                        System.err.println("Current Player: " + currentPlayer.getDPlayer().getPieceType() +
+                                " is buying...\n" + "Current square: " + ((BPropertySquare) currentSquare).getName() +
+                                "\nPrice: " + currentSquare.getPrice() + "\nLocation: " + currentPlayer.getDPlayer().getLocation());
                     }
-
                     bTerminal.printLocationType(currentSquare.getSQUARE_TYPE());
                     bTerminal.printAfterRollDice(currentPlayer);
 

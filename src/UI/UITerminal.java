@@ -40,6 +40,7 @@ public class UITerminal {
      */
     public void printBeforeRollDice(BPlayer bPlayer) {
         System.out.println("---------------------------------------------------------------------");
+        System.out.println("Total Rounds: " + bPlayer.getDPlayer().getTotalRounds());
         System.out.println("Player Type :" + bPlayer.getDPlayer().getPieceType());
         System.out.println("Player Turn Counter :" + bPlayer.getDPlayer().getRoundValue());
         System.out.println("Player Cycle Counter :" + bPlayer.getDPlayer().getCycleCounter());
