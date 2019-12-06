@@ -35,8 +35,9 @@ public class BPlayer implements BPlayerObserver {
      */
     @Override
     public void checkAndUpdatePlayer(int currentDiceValue, BSquare currentSquare) {
+        getDPlayer().setRoundValue(getDPlayer().getRoundValue() + 1);
         if (isPlayerCrossTheGoSquare()) {
-            dPlayer.setRoundValue(dPlayer.getRoundValue() + 1);
+            dPlayer.setCycleCounter(dPlayer.getCycleCounter() + 1);
             new BGoSquare(PropertyType.NOCOLOR).performOnLand(getDPlayer());
             if (currentSquare instanceof BGoSquare) return;
         }

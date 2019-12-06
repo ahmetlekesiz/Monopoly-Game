@@ -32,12 +32,6 @@ class DPlayerTest {
     }
 
     @Test
-    void getCycleCounter() {
-        dPlayer.setCycleCounter(7);
-        assertEquals(7, dPlayer.getCycleCounter());
-    }
-
-    @Test
     void getTotalDiceValue() {
         dPlayer.setTotalDiceValue(5214);
         assertEquals(5214, dPlayer.getTotalDiceValue());

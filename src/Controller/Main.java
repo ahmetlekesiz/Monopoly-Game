@@ -17,5 +17,14 @@ public class Main {
     public static void main(String[] args) {
         CMonopolyGame monopolyGame = CMonopolyGame.getInstance(INSTRUCTION_FILENAME);
         monopolyGame.start();
+        /*BJailSquare bJailSquare = new BJailSquare(PropertyType.NOCOLOR);
+        BPlayer bPlayer = new BPlayer(new DPlayer(DPiece.PieceType.CAT, 1000));
+        bJailSquare.performOnLand(bPlayer.getDPlayer());
+        bJailSquare.scanJailRecords();
+        bJailSquare.scanJailRecords();
+        bJailSquare.scanJailRecords();
+        bJailSquare.scanJailRecords();
+        bJailSquare.scanJailRecords();
+        System.out.println(bPlayer.getDPlayer().getBalance());*/
     }
 }

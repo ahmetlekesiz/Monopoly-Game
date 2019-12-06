@@ -13,7 +13,8 @@ import java.util.ArrayList;
  */
 public class DPlayer {
 
-    private int balance, cycleCounter, totalDiceValue, roundValue, currentDiceVal;
+    private static int roundValue;
+    private int balance, cycleCounter, totalDiceValue, currentDiceVal;
     private boolean bankruptFlag, isArrested;
     private BDice playerDice;
     private DPiece.PieceType pieceType;
@@ -24,11 +25,11 @@ public class DPlayer {
         this.pieceType = pieceType;
         this.balance = balance;
         this.cycleCounter=0;
-        this.roundValue = 0;
+        roundValue = 0;
         this.currentDiceVal = 0;
     }
 
-        public int getCurrentDiceVal() {
+    public int getCurrentDiceVal() {
         return currentDiceVal;
     }
 
@@ -87,7 +88,7 @@ public class DPlayer {
     }
 
     public void setRoundValue(int roundValue) {
-        this.roundValue = roundValue;
+        DPlayer.roundValue = roundValue;
     }
 
     public boolean isArrested() {

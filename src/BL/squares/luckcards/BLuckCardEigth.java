@@ -15,8 +15,8 @@ public class BLuckCardEigth extends BLuckCards {
         setCardOwner(dPlayer);
     }
 
-    public DPlayer getCardOwner(DPlayer dPlayer) {
-        return dPlayer;
+    public DPlayer getCardOwner() {
+        return cardOwner;
     }
 
     public void setCardOwner(DPlayer dPlayer) {

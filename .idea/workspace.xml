@@ -3,9 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="dfd4cd54-fa73-4f3b-abf8-245eae6a795f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BL/BDice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BL/BDice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/BL/squares/BJailSquare.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Monopoly/BL/squares/BJailSquare.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Monopoly/Controller/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Monopoly/Controller/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BL/BBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BL/BBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BL/BMonopolyGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BL/BMonopolyGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BL/BPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BL/BPlayer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BL/squares/BJailSquare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BL/squares/BJailSquare.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BL/squares/luckcards/BLuckCardEigth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BL/squares/luckcards/BLuckCardEigth.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DAL/DPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAL/DPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/UITerminal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/UITerminal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/DAL/DPlayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/DAL/DPlayerTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -200,7 +208,7 @@
       <workItem from="1575478957888" duration="3316000" />
       <workItem from="1575491678320" duration="7248000" />
       <workItem from="1575581342560" duration="154000" />
-      <workItem from="1575626184397" duration="1463000" />
+      <workItem from="1575626184397" duration="3842000" />
     </task>
     <task id="LOCAL-00001" summary="model, view, controller packages created.&#10;MonopolyGame class created.&#10;MonopolyGame class constructor template created using static factory methods design pattern.">
       <created>1572975097652</created>

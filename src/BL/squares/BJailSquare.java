@@ -1,5 +1,6 @@
 package BL.squares;
 
+import BL.squares.luckcards.BLuckCardEigth;
 import DAL.DInstruction;
 import DAL.DPlayer;
 
@@ -33,6 +34,7 @@ public class BJailSquare extends BSquare {
      */
     @Override
     public void performOnLand(DPlayer player) {
+        if (player == new BLuckCardEigth().getCardOwner()) return;
         jailRecords.put(player, 0);
         player.setArrested(true);
     }

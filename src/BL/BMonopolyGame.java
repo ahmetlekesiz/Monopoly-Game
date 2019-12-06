@@ -130,20 +130,27 @@ public class BMonopolyGame implements BGameObserver {
     private void startTurn() {
         for (Iterator<BL.BPlayer> iterator = currentPlayers.iterator(); iterator.hasNext();) {
             BL.BPlayer currentPlayer = iterator.next();
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
             if (!currentPlayer.getDPlayer().isBankrupted()) {
                 BL.squares.BSquare currentSquare = boardInstance.getSquares()[currentPlayer.getDPlayer().getLocation()];
                 bTerminal.printBeforeRollDice(currentPlayer);
-                currentPlayer.rollDice();
+                if (boardInstance.getJailSquares().get(0).getJailRecords().containsKey(currentPlayer.getDPlayer()) ||
+                    boardInstance.getJailSquares().get(1).getJailRecords().containsKey(currentPlayer.getDPlayer())) {
 
+                }
+                currentPlayer.rollDice();
                 currentPlayer.getDPlayer().setTotalDiceValue(currentPlayer.getDPlayer().getTotalDiceValue() +
                         currentPlayer.getDPlayer().getCurrentDiceVal());
-
                 currentPlayer.checkAndUpdatePlayer(currentPlayer.getDPlayer().getCurrentDiceVal(),
                         currentSquare);
                 //Calling buying function.
                 if(currentSquare.getOwnerOfSquare() == null &&
                         currentSquare.getSQUARE_TYPE().equals("PROPERTY_SQUARE") &&
-                        currentPlayer.isAbleToBuy((BPropertySquare) currentSquare) == true)
+                        currentPlayer.isAbleToBuy((BPropertySquare) currentSquare))
                 {
                     currentPlayer.buy((BPropertySquare) currentSquare);
                     currentSquare.setOwnerOfSquare(currentPlayer);

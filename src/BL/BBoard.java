@@ -21,10 +21,12 @@ public class BBoard {
     private BSquare[] squares;
     private static BBoard boardInstance;
     private DInstruction instructionInstance;
+    private ArrayList<BJailSquare> jailSquares;
 
     private BBoard() {
         instructionInstance = DInstruction.getInstance();
         squares = new BSquare[SQUARE_NUMBER];
+        jailSquares = new ArrayList<>();
         initSquares();
     }
     /**
@@ -48,6 +50,7 @@ public class BBoard {
                     }
                     case "Jail": {
                         squares[i] = new BJailSquare(PropertyType.values()[Integer.parseInt(map[i].get(1))]);
+                        jailSquares.add((BJailSquare) squares[i]);
                         break;
                     }
                     case "Tax": {
@@ -80,4 +83,7 @@ public class BBoard {
         return boardInstance;
     }
 
+    public ArrayList<BJailSquare> getJailSquares() {
+        return jailSquares;
+    }
 }
