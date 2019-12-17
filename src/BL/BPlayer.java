@@ -47,15 +47,29 @@ public class BPlayer implements BPlayerObserver {
 
         if (isPlayerBankrupted()) {
             if(!tryToSellProperty(currentSquare)){
+                dPlayer.setBalance(0);
                 dPlayer.setBankruptFlag(true);
             }
         }
     }
-
+    /**
+     *<p>This method get calls after player makes move It hold players money for each turn to draw its money progress in time.</p>
+     *
+     * @param turn An int value hold players turn.
+     * @param money An int value holds players current money.
+     * @return void
+     */
     public void updateDataset(int turn, int money) {
         dPlayer.getPlayerDataset().add(turn, money);
     }
-
+    /**
+     *<p>This method get calls after player has to pay something but does not have enough money to progress.</p>
+     * <p>Checks player has properties to sell if does then sells them till it has enough money to progress, if not player get bankrupt.</p>
+     *
+     * @param currentSquare A BSquare object which is player going to move.
+     *
+     * @return boolean A boolean value indicates player bankrupted or not.
+     */
     boolean tryToSellProperty(BSquare currentSquare) {
         if (!dPlayer.getPropertySquares().isEmpty()) {
             int debt = currentSquare.rent;
@@ -64,12 +78,20 @@ public class BPlayer implements BPlayerObserver {
                 currentPrice += dPlayer.getPropertySquares().get(i).price;
                 sellSquare(dPlayer.getPropertySquares().get(i));
             }
+            dPlayer.setBalance(currentPrice);
             return currentPrice >= debt;
         } else {
             return false;
         }
     }
-
+    /**
+     *<p>This method get calls after player has to sell its properties.</p>
+     * <p>Checks squares price and add it to player balance and sets owner of square null.</p>
+     *
+     * @param square A BSquare object which player bought before.
+     *
+     * @return void
+     */
     private void sellSquare(BSquare square) {
         square.setOwnerOfSquare(null);
         this.getDPlayer().setBalance(this.getDPlayer().getBalance() + square.price);
@@ -110,12 +132,18 @@ public class BPlayer implements BPlayerObserver {
             this.sortSquares();
             return true;
     }
-
+    /**
+     * <p>Checks whether player can satisfy squares price.</p>
+     * @return boolean
+     */
     public boolean isAbleToBuy(BPropertySquare currentSquare){
         int price = currentSquare.getPrice();
         return this.getDPlayer().getBalance() >= price;
     }
-
+    /**
+     * <p>Sorts players properties by their price.</p>
+     * @return void
+     */
     public void sortSquares(){
         this.getDPlayer().getPropertySquares().sort((firstSquare, secondSquare) -> {
             if (firstSquare.getPrice() == secondSquare.getPrice())

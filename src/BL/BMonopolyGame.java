@@ -98,6 +98,7 @@ public class BMonopolyGame implements BGameObserver {
         for(int i = 0; i < currentPlayers.size(); i++){
             currentPlayers.get(i).getDPlayer().setPieceType(DPiece.PieceType.values()[i]);
             currentPlayers.get(i).getDPlayer().setPlayerDataset(DPiece.PieceType.values()[i]);
+            currentPlayers.get(i).updateDataset(0,(int)gameInstructions.startMoney);
         }
     }
 
@@ -160,6 +161,7 @@ public class BMonopolyGame implements BGameObserver {
             BL.BPlayer currentPlayer = iterator.next();
             if (!currentPlayer.getDPlayer().isBankrupted()) {
                 bTerminal.printBeforeRollDice(currentPlayer);
+
                 if (currentPlayer.getDPlayer().isArrested()) {
                     if (boardInstance.getJailSquares().get(0).getJailRecords().containsKey(currentPlayer.getDPlayer())) {
                         boardInstance.getJailSquares().get(0).scanPlayerRecord(currentPlayer.getDPlayer());
@@ -167,6 +169,7 @@ public class BMonopolyGame implements BGameObserver {
                         boardInstance.getJailSquares().get(1).scanPlayerRecord(currentPlayer.getDPlayer());
                     }
                 }
+
                 if (!currentPlayer.getDPlayer().isArrested()) {
                     currentPlayer.rollDice();
                     currentPlayer.getDPlayer().setTotalDiceValue(currentPlayer.getDPlayer().getTotalDiceValue() +
@@ -183,7 +186,7 @@ public class BMonopolyGame implements BGameObserver {
                         currentPlayer.buy((BPropertySquare) currentSquare);
                         currentSquare.setOwnerOfSquare(currentPlayer);
                     }
-                    currentPlayer.updateDataset(currentPlayer.getDPlayer().getRoundValue(), currentPlayer.getDPlayer().getBalance());
+                    currentPlayer.updateDataset(currentPlayer.getDPlayer().roundCounter++, currentPlayer.getDPlayer().getBalance());
                     bTerminal.printAfterRollDice(currentPlayer, currentSquare);
                     if (currentPlayer.getDPlayer().isBankrupted()) {
                         eliminatedPlayers.add(currentPlayer);

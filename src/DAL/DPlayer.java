@@ -21,7 +21,7 @@ public class DPlayer {
     private DPiece.PieceType pieceType;
     private ArrayList<BPropertySquare> propertySquares = new ArrayList<>();
     private XYSeries playerDataset;
-
+    public int roundCounter = 1;
     public DPlayer(DPiece.PieceType pieceType, int balance) {
         playerDice = new BDice();
         this.pieceType = pieceType;
