@@ -48,6 +48,10 @@ public class BBoard {
                         squares[i] = new BLuckSquare(PropertyType.values()[Integer.parseInt(map[i].get(1))]);
                         break;
                     }
+                    case "CommunityChest": {
+                        squares[i] = new BCommunityChestSquare(PropertyType.values()[Integer.parseInt(map[i].get(1))]);
+                        break;
+                    }
                     case "Jail": {
                         squares[i] = new BJailSquare(PropertyType.values()[Integer.parseInt(map[i].get(1))]);
                         jailSquares.add((BJailSquare) squares[i]);

@@ -39,7 +39,7 @@ public class BLuckSquare extends BSquare {
     @Override
     public void performOnLand(DPlayer player) {
         int temp = (int) (Math.random() * totalNumberCard);
-        bTerminal.printLuckCard(luckCards.get(temp).setCARD_INFO());
+        bTerminal.printCard(luckCards.get(temp).setCARD_INFO());
         luckCards.get(temp).performForCard(player);
     }
 
