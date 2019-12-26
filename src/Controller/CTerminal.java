@@ -29,8 +29,8 @@ public class CTerminal {
         uiTerminal.printDicesFaces(diceValues, bPlayer);
     }
 
-    public void printLuckCard(String nameOfCard){
-        uiTerminal.printLuckCard(nameOfCard);
+    public void printCard(String nameOfCard){
+        uiTerminal.printCard(nameOfCard);
     }
 
     public void printAfterRollDice(BPlayer bPlayer, BSquare bSquare){
