@@ -157,8 +157,9 @@ public class BMonopolyGame implements BGameObserver {
      *@return void
      */
     private void startTurn() {
+        BL.BPlayer currentPlayer;
         for (Iterator<BL.BPlayer> iterator = currentPlayers.iterator(); iterator.hasNext();) {
-            BL.BPlayer currentPlayer = iterator.next();
+            currentPlayer = iterator.next();
             if (!currentPlayer.getDPlayer().isBankrupted()) {
                 bTerminal.printBeforeRollDice(currentPlayer);
 
@@ -189,12 +190,14 @@ public class BMonopolyGame implements BGameObserver {
                     currentPlayer.updateDataset(currentPlayer.getDPlayer().roundCounter++, currentPlayer.getDPlayer().getBalance());
                     bTerminal.printAfterRollDice(currentPlayer, currentSquare);
                     if (currentPlayer.getDPlayer().isBankrupted()) {
+                        System.out.println("EPlayer:"+currentPlayer.getDPlayer().getPieceType()+" is elimantig"+" Money: "+ currentPlayer.getDPlayer().getBalance()+ " Round val:"+ currentPlayer.getDPlayer().roundCounter);
                         eliminatedPlayers.add(currentPlayer);
                         iterator.remove();
                     }
                 }
             }
         }
+
     }
 
     public ArrayList<BPlayer> getPlayers(){

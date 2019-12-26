@@ -49,6 +49,7 @@ public class BPlayer implements BPlayerObserver {
             if(!tryToSellProperty(currentSquare)){
                 dPlayer.setBalance(0);
                 dPlayer.setBankruptFlag(true);
+                dPlayer.setBalance(0);
             }
         }
     }
@@ -77,6 +78,7 @@ public class BPlayer implements BPlayerObserver {
             for (int i = 0; i < dPlayer.getPropertySquares().size() && currentPrice < debt; ++i) {
                 currentPrice += dPlayer.getPropertySquares().get(i).price;
                 sellSquare(dPlayer.getPropertySquares().get(i));
+                this.getDPlayer().setBalance(currentPrice);
             }
             dPlayer.setBalance(currentPrice);
             return currentPrice >= debt;

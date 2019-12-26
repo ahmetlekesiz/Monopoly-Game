@@ -96,6 +96,8 @@ public class UITerminal {
         System.out.println("---------------------------------------------------------------------------------------");
         System.out.println("Square Type : " + bSquare.getSQUARE_TYPE());
         System.out.println("Player Location : " + bPlayer.getDPlayer().getLocation());
+        System.out.println("Oyuncu:"+bPlayer.getDPlayer().getPieceType());
+        System.out.println("Oyuncunun yeri:"+bPlayer.getDPlayer().roundCounter);
         System.out.println("Color Of Location : " + bSquare.pType);
         switch (bSquare.getSQUARE_TYPE()){
             case "PROPERTY_SQUARE":
