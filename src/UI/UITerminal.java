@@ -82,7 +82,7 @@ public class UITerminal {
         System.out.println("Rolling Dice : " + diceValues[0] + "+" + diceValues[1] + "=" + (diceValues[0] + diceValues[1]));
     }
 
-    public void printLuckCard(String nameOfCard){
+    public void printCard(String nameOfCard){
         this.UINameOfCard = nameOfCard;
     }
 
