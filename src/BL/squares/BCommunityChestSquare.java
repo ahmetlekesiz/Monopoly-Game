@@ -7,7 +7,7 @@ import DAL.DPlayer;
 import java.util.ArrayList;
 
 public class BCommunityChestSquare extends BSquare {
-    private final String SQUARE_TYPE = "LUCK_SQUARE";
+    private final String SQUARE_TYPE = "COMMUNITY_SQUARE";
     private ArrayList<BCommunityCards> communityChestCards = new ArrayList<>();
     private int totalNumberCard = 17;
     private BTerminal bTerminal = new BTerminal();

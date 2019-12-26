@@ -107,7 +107,10 @@ public class UITerminal {
                 System.out.println("Rent Of Location : " + bSquare.rent);
                 break;
             case "LUCK_SQUARE":
-                System.out.println("Property Of Card : " + UINameOfCard);
+                System.out.println("Property Of Luck Card : " + UINameOfCard);
+                break;
+            case "COMMUNITY_SQUARE":
+                System.out.println("Property Of Community Card : " + UINameOfCard);
                 break;
             default:
                 break;
