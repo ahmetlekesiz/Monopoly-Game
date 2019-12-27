@@ -53,4 +53,12 @@ public class CTerminal {
         uiTerminal.printGameOver(eliminatedList);
     }
 
+    public void printHouseInfo(BPlayer bPlayer, BSquare bSquare){
+        uiTerminal.printHouseInfo(bPlayer,bSquare);
+    }
+
+    public void printHotelInfo(BPlayer bPlayer, BSquare bSquare){
+        uiTerminal.printHotelInfo(bPlayer,bSquare);
+    }
+
 }

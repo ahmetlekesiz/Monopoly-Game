@@ -182,13 +182,13 @@ public class BMonopolyGame implements BGameObserver {
                         {
                             ((BPropertySquare)currentSquare).buildHouse();
                             currentPlayer.getDPlayer().setBalance(currentPlayer.getDPlayer().getBalance() - ((BPropertySquare)currentSquare).getHousePrice());
-                            System.out.println("\033[31m  asd House yapıldı. \033[0m");
+                            bTerminal.printHouseInfo(currentPlayer,currentSquare);
                         } else if(!((BPropertySquare)currentSquare).getHasHotel() &&
                                 currentPlayer.isAbleToBuilt((BPropertySquare)currentSquare))
                         {
                             ((BPropertySquare)currentSquare).buildHotel();
                             currentPlayer.getDPlayer().setBalance(currentPlayer.getDPlayer().getBalance() - ((BPropertySquare)currentSquare).getHotelPrice());
-                            System.out.println("\033[31m  qwe Hotel yapıldı. \033[0m");
+                            bTerminal.printHotelInfo(currentPlayer,currentSquare);
                         }
                     }
                     //Calling buying function.
@@ -203,7 +203,6 @@ public class BMonopolyGame implements BGameObserver {
 
                     bTerminal.printAfterRollDice(currentPlayer, currentSquare);
                     if (currentPlayer.getDPlayer().isBankrupted()) {
-                        System.out.println("EPlayer:"+currentPlayer.getDPlayer().getPieceType()+" is elimantig"+" Money: "+ currentPlayer.getDPlayer().getBalance()+ " Round val:"+ currentPlayer.getDPlayer().roundCounter);
                         eliminatedPlayers.add(currentPlayer);
                         iterator.remove();
                     }

@@ -48,6 +48,14 @@ public class BTerminal {
     public void printGameOver(ArrayList eliminatedList){
         cTerminal.printGameOver(eliminatedList);
     }
+
+    public void printHouseInfo(BPlayer bPlayer, BSquare bSquare){
+        cTerminal.printHouseInfo(bPlayer,bSquare);
+    }
+
+    public void printHotelInfo(BPlayer bPlayer, BSquare bSquare){
+        cTerminal.printHotelInfo(bPlayer,bSquare);
+    }
 }
 
 
