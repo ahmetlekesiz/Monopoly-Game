@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="65242711-3e21-4f1c-9534-4bfb791e86bb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/spring/consumer/SquareConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/consumer/SquareConsumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/spring/log/Logger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/log/Logger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/spring/log/MessageFormatter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/log/MessageFormatter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/spring/config/squares/PropertySquareConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/config/squares/PropertySquareConfiguration.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -213,7 +211,7 @@
       <workItem from="1577458362024" duration="2814000" />
       <workItem from="1577461471141" duration="5690000" />
       <workItem from="1577468904075" duration="492000" />
-      <workItem from="1577469412259" duration="4614000" />
+      <workItem from="1577469412259" duration="4863000" />
     </task>
     <task id="LOCAL-00001" summary="model, view, controller packages created.&#10;MonopolyGame class created.&#10;MonopolyGame class constructor template created using static factory methods design pattern.">
       <created>1572975097652</created>
@@ -453,7 +451,21 @@
       <option name="project" value="LOCAL" />
       <updated>1577471700644</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="BeanCreator JavaDoc added.">
+      <created>1577474137566</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1577474137566</updated>
+    </task>
+    <task id="LOCAL-00036" summary="JavaDoc added for spring package.">
+      <created>1577474159908</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1577474159908</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -484,7 +496,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="JSON file data transferred into Instruction object." />
     <MESSAGE value="JSONReader constructor modified." />
     <MESSAGE value="Piece class enum added." />
     <MESSAGE value="JSONReader init made public." />
@@ -509,37 +520,38 @@
     <MESSAGE value="Spring and Logging added." />
     <MESSAGE value="PropertySquareConfiguration added." />
     <MESSAGE value="BeanCreator JavaDoc added." />
-    <option name="LAST_COMMIT_MESSAGE" value="BeanCreator JavaDoc added." />
+    <MESSAGE value="JavaDoc added for spring package." />
+    <option name="LAST_COMMIT_MESSAGE" value="JavaDoc added for spring package." />
   </component>
   <component name="WindowStateProjectService">
     <state x="696" y="361" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1577468306513">
       <screen x="0" y="36" width="1920" height="1044" />
     </state>
     <state x="696" y="361" key="#com.intellij.fileTypes.FileTypeChooser/0.36.1920.1044@0.36.1920.1044" timestamp="1577468306513" />
-    <state x="487" y="152" key="CommitChangelistDialog2" timestamp="1577474137488">
+    <state x="487" y="152" key="CommitChangelistDialog2" timestamp="1577474159852">
       <screen x="0" y="36" width="1920" height="1044" />
     </state>
-    <state x="487" y="152" key="CommitChangelistDialog2/0.36.1920.1044@0.36.1920.1044" timestamp="1577474137488" />
+    <state x="487" y="152" key="CommitChangelistDialog2/0.36.1920.1044@0.36.1920.1044" timestamp="1577474159852" />
     <state x="747" y="318" key="FileChooserDialogImpl" timestamp="1577458842680">
       <screen x="0" y="36" width="1920" height="1044" />
     </state>
     <state x="747" y="318" key="FileChooserDialogImpl/0.36.1920.1044@0.36.1920.1044" timestamp="1577458842680" />
-    <state width="1874" height="276" key="GridCell.Tab.0.bottom" timestamp="1577470526650">
+    <state width="1874" height="276" key="GridCell.Tab.0.bottom" timestamp="1577474243903">
       <screen x="0" y="36" width="1920" height="1044" />
     </state>
-    <state width="1874" height="276" key="GridCell.Tab.0.bottom/0.36.1920.1044@0.36.1920.1044" timestamp="1577470526650" />
-    <state width="1874" height="276" key="GridCell.Tab.0.center" timestamp="1577470526649">
+    <state width="1874" height="276" key="GridCell.Tab.0.bottom/0.36.1920.1044@0.36.1920.1044" timestamp="1577474243903" />
+    <state width="1874" height="276" key="GridCell.Tab.0.center" timestamp="1577474243902">
       <screen x="0" y="36" width="1920" height="1044" />
     </state>
-    <state width="1874" height="276" key="GridCell.Tab.0.center/0.36.1920.1044@0.36.1920.1044" timestamp="1577470526649" />
-    <state width="1874" height="276" key="GridCell.Tab.0.left" timestamp="1577470526649">
+    <state width="1874" height="276" key="GridCell.Tab.0.center/0.36.1920.1044@0.36.1920.1044" timestamp="1577474243902" />
+    <state width="1874" height="276" key="GridCell.Tab.0.left" timestamp="1577474243901">
       <screen x="0" y="36" width="1920" height="1044" />
     </state>
-    <state width="1874" height="276" key="GridCell.Tab.0.left/0.36.1920.1044@0.36.1920.1044" timestamp="1577470526649" />
-    <state width="1874" height="276" key="GridCell.Tab.0.right" timestamp="1577470526649">
+    <state width="1874" height="276" key="GridCell.Tab.0.left/0.36.1920.1044@0.36.1920.1044" timestamp="1577474243901" />
+    <state width="1874" height="276" key="GridCell.Tab.0.right" timestamp="1577474243902">
       <screen x="0" y="36" width="1920" height="1044" />
     </state>
-    <state width="1874" height="276" key="GridCell.Tab.0.right/0.36.1920.1044@0.36.1920.1044" timestamp="1577470526649" />
+    <state width="1874" height="276" key="GridCell.Tab.0.right/0.36.1920.1044@0.36.1920.1044" timestamp="1577474243902" />
     <state x="547" y="297" key="IDE.errors.dialog" timestamp="1577469385430">
       <screen x="0" y="36" width="1920" height="1044" />
     </state>
@@ -560,10 +572,10 @@
       <screen x="0" y="36" width="1920" height="1044" />
     </state>
     <state x="645" y="387" key="com.intellij.ide.util.TipDialog/0.36.1920.1044@0.36.1920.1044" timestamp="1577469418861" />
-    <state x="750" y="480" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1577474112893">
+    <state x="750" y="480" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1577474231776">
       <screen x="0" y="36" width="1920" height="1044" />
     </state>
-    <state x="750" y="480" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.36.1920.1044@0.36.1920.1044" timestamp="1577474112893" />
+    <state x="750" y="480" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.36.1920.1044@0.36.1920.1044" timestamp="1577474231776" />
     <state x="673" y="274" key="git4idea.branch.GitSmartOperationDialog" timestamp="1577458387030">
       <screen x="0" y="36" width="1920" height="1044" />
     </state>

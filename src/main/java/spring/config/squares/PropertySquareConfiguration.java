@@ -15,10 +15,10 @@ public class PropertySquareConfiguration {
 
     @Bean
     public BSquare getSquare() {
-        return this.square;
+        return square;
     }
 
     public void setSquare(BSquare square) {
-        this.square = square;
+        PropertySquareConfiguration.square = square;
     }
 }
