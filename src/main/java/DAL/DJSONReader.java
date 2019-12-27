@@ -1,4 +1,4 @@
-package main.java.DAL;
+package DAL;
 
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;

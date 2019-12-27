@@ -1,6 +1,7 @@
-package main.java.BL.squares.communitychestcards;
+package BL.squares.communitychestcards;
 
-import main.java.DAL.DPlayer;
+import DAL.DInstruction;
+import DAL.DPlayer;
 
 public class BCommunityCardTwo extends BCommunityCards {
 

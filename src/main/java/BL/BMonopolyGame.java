@@ -1,18 +1,23 @@
-package main.java.BL;
+package BL;
 
+import java.awt.*;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-import main.java.BL.squares.BPropertySquare;
-import main.java.Controller.Main;
-import main.java.DAL.DPlayer;
-import main.java.DAL.DInstruction;
-import main.java.DAL.DPiece;
+import BL.squares.BPropertySquare;
+import Controller.Main;
+import DAL.DPlayer;
+import DAL.DInstruction;
+import DAL.DPiece;
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartPanel;
 import org.jfree.chart.JFreeChart;
 import org.jfree.chart.plot.PlotOrientation;
 import org.jfree.chart.ui.ApplicationFrame;
+import org.jfree.data.category.DefaultCategoryDataset;
+import org.jfree.data.xy.XYDataset;
+import org.jfree.data.xy.XYSeries;
 import org.jfree.data.xy.XYSeriesCollection;
 
 /**
@@ -25,7 +30,7 @@ import org.jfree.data.xy.XYSeriesCollection;
 public class BMonopolyGame implements BGameObserver {
 
     private static BMonopolyGame monopolyGameInstance = new BMonopolyGame();
-    private ArrayList<main.java.BL.BPlayer> currentPlayers, eliminatedPlayers;
+    private ArrayList<BL.BPlayer> currentPlayers, eliminatedPlayers;
     private BBoard boardInstance;
     private BTerminal bTerminal = new BTerminal();
     private ArrayList<Integer> diceSumOfPlayers = new ArrayList<>();
@@ -69,12 +74,12 @@ public class BMonopolyGame implements BGameObserver {
         int diceSum;
 
         while(counter != 0){
-            currentPlayers.add(new main.java.BL.BPlayer(new DPlayer(DPiece.PieceType.BATTLESHIP, (int) gameInstructions.startMoney)));
+            currentPlayers.add(new BL.BPlayer(new DPlayer(DPiece.PieceType.BATTLESHIP, (int) gameInstructions.startMoney)));
             counter--;
         }
 
         //Rolling dice for each players.
-        for (main.java.BL.BPlayer player : currentPlayers) {
+        for (BL.BPlayer player : currentPlayers) {
             diceSum = player.rollDice();
             //Checking if the diceSum same with other players.
             while(checkIfDiceSumExist(diceSumOfPlayers, diceSum)){
@@ -106,8 +111,8 @@ public class BMonopolyGame implements BGameObserver {
      * @return boolean
      */
     private boolean checkIfDiceSumExist(ArrayList<Integer> diceSumOfPlayers, int diceSum){
-        for (int i = 0; i < diceSumOfPlayers.size() ; i++) {
-            if(diceSumOfPlayers.get(i).equals(diceSum)){
+        for (Integer diceSumOfPlayer : diceSumOfPlayers) {
+            if (diceSumOfPlayer.equals(diceSum)) {
                 return true;
             }
         }
@@ -122,12 +127,8 @@ public class BMonopolyGame implements BGameObserver {
      */
     @Override
     public void listen() {
-int cd=0;
-        while (currentPlayers.size() != 1 && cd++<Main.ROUND_LIMIT) {
-            /*for (int i = 0; i < Main.ROUND_LIMIT; ++i) {
-                startTurn();
-            }
-            break;*/
+        int currentRoundIndex = 0;
+        while (currentPlayers.size() != 1 && currentRoundIndex++ < Main.ROUND_LIMIT) {
             startTurn();
         }
         ArrayList<BPlayer> playersGroup = new ArrayList<>(currentPlayers);
@@ -153,12 +154,11 @@ int cd=0;
      *@return void
      */
     private void startTurn() {
-        main.java.BL.BPlayer currentPlayer;
-        for (Iterator<main.java.BL.BPlayer> iterator = currentPlayers.iterator(); iterator.hasNext();) {
+        BL.BPlayer currentPlayer;
+        for (Iterator<BL.BPlayer> iterator = currentPlayers.iterator(); iterator.hasNext();) {
             currentPlayer = iterator.next();
             if (!currentPlayer.getDPlayer().isBankrupted()) {
                 bTerminal.printBeforeRollDice(currentPlayer);
-
                 if (currentPlayer.getDPlayer().isArrested()) {
                     if (boardInstance.getJailSquares().get(0).getJailRecords().containsKey(currentPlayer.getDPlayer())) {
                         boardInstance.getJailSquares().get(0).scanPlayerRecord(currentPlayer.getDPlayer());
@@ -170,15 +170,35 @@ int cd=0;
                     currentPlayer.rollDice();
                     currentPlayer.getDPlayer().setTotalDiceValue(currentPlayer.getDPlayer().getTotalDiceValue() +
                             currentPlayer.getDPlayer().getCurrentDiceVal());
-                    main.java.BL.squares.BSquare currentSquare = boardInstance.getSquares()[currentPlayer.getDPlayer().getLocation()];
+                    BL.squares.BSquare currentSquare = boardInstance.getSquares()[currentPlayer.getDPlayer().getLocation()];
                     currentPlayer.checkAndUpdatePlayer(currentPlayer.getDPlayer().getCurrentDiceVal(),
                             currentSquare);
-
+                    System.out.println("\033[31m  Helehele" + currentSquare.pType + " \033[0m");
+                    //Check house or hotel can built
+                    switch (currentSquare.pType){
+                        case BROWN:
+                            break;
+                        case TURQUOISE:
+                            break;
+                        case PURPLE:
+                            break;
+                        case ORANGE:
+                            break;
+                        case RED:
+                            break;
+                        case YELLOW:
+                            break;
+                        case GREEN:
+                            break;
+                        case BLUE:
+                            break;
+                    }
                     //Building house or hotel
                     if (currentSquare.getOwnerOfSquare() == currentPlayer){
                         if(!((BPropertySquare)currentSquare).getHasHouse() &&
                                 currentPlayer.isAbleToBuilt((BPropertySquare)currentSquare))
                         {
+                            System.out.println("\033[31m  Helehele" + currentPlayer.getDPlayer().getPieceType() + " \033[0m");
                             ((BPropertySquare)currentSquare).buildHouse();
                             currentPlayer.getDPlayer().setBalance(currentPlayer.getDPlayer().getBalance() - ((BPropertySquare)currentSquare).getHousePrice());
                         } else if(!((BPropertySquare)currentSquare).getHasHotel() &&
@@ -188,7 +208,6 @@ int cd=0;
                             currentPlayer.getDPlayer().setBalance(currentPlayer.getDPlayer().getBalance() - ((BPropertySquare)currentSquare).getHotelPrice());
                         }
                     }
-
                     //Calling buying function.
                     if(currentSquare.getOwnerOfSquare() == null &&
                             currentSquare.getSQUARE_TYPE().equals("PROPERTY_SQUARE") &&
@@ -198,6 +217,7 @@ int cd=0;
                         currentPlayer.buy((BPropertySquare) currentSquare);
                         currentSquare.setOwnerOfSquare(currentPlayer);
                     }
+
                     bTerminal.printAfterRollDice(currentPlayer, currentSquare);
                     if (currentPlayer.getDPlayer().isBankrupted()) {
                         System.out.println("EPlayer:"+currentPlayer.getDPlayer().getPieceType()+" is elimantig"+" Money: "+ currentPlayer.getDPlayer().getBalance()+ " Round val:"+ currentPlayer.getDPlayer().roundCounter);

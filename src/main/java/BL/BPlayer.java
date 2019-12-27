@@ -1,10 +1,10 @@
-package main.java.BL;
+package BL;
 
-import main.java.BL.squares.BGoSquare;
-import main.java.BL.squares.BPropertySquare;
-import main.java.BL.squares.BSquare;
-import main.java.BL.squares.PropertyType;
-import main.java.DAL.DPlayer;
+import BL.squares.BGoSquare;
+import BL.squares.BPropertySquare;
+import BL.squares.BSquare;
+import BL.squares.PropertyType;
+import DAL.DPlayer;
 
 /***
  *BPlayer is player class in Business Layer.

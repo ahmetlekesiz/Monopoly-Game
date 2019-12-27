@@ -1,7 +1,7 @@
-package main.java.DAL;
+package DAL;
 
-import main.java.BL.BDice;
-import main.java.BL.squares.BPropertySquare;
+import BL.BDice;
+import BL.squares.BPropertySquare;
 import org.jfree.data.xy.XYSeries;
 
 import java.util.ArrayList;

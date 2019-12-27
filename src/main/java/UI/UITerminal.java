@@ -1,10 +1,10 @@
-package main.java.UI;
+package UI;
 
-import main.java.BL.BPlayer;
-import main.java.BL.squares.BPropertySquare;
-import main.java.BL.squares.BSquare;
-import main.java.Controller.CInstruction;
-import main.java.DAL.DPlayer;
+import BL.BPlayer;
+import BL.squares.BPropertySquare;
+import BL.squares.BSquare;
+import Controller.CInstruction;
+import DAL.DPlayer;
 
 import java.util.ArrayList;
 import java.util.Iterator;

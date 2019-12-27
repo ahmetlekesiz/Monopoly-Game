@@ -1,11 +1,13 @@
-package main.java.Controller;
+package Controller;
 
-import main.java.DAL.DInstruction;
+import DAL.DInstruction;
+
+import javax.print.attribute.HashDocAttributeSet;
 
 /**
  * <h>CInstruction</h>
  *
- * <p>main.java.Controller for Instruction class which is used during getting data from Data Layer in User Interface.</p>
+ * <p>Controller for Instruction class which is used during getting data from Data Layer in User Interface.</p>
  *
  * @author Ahmet LEKESİZ
  * @version 1.0

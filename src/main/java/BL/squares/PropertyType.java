@@ -1,4 +1,4 @@
-package main.java.BL.squares;
+package BL.squares;
 public enum PropertyType {
     BROWN(0),
     TURQUOISE(1),

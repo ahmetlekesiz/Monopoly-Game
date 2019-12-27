@@ -1,4 +1,4 @@
-/*! jQuery main.java.UI - v1.12.1 - 2018-12-06
+/*! jQuery UI - v1.12.1 - 2018-12-06
 * http://jqueryui.com
 * Includes: widget.js, position.js, keycode.js, unique-id.js, widgets/autocomplete.js, widgets/menu.js
 * Copyright jQuery Foundation and other contributors; Licensed MIT */
@@ -21,7 +21,7 @@ var version = $.ui.version = "1.12.1";
 
 
 /*!
- * jQuery main.java.UI Widget 1.12.1
+ * jQuery UI Widget 1.12.1
  * http://jqueryui.com
  *
  * Copyright jQuery Foundation and other contributors
@@ -744,7 +744,7 @@ var widget = $.widget;
 
 
 /*!
- * jQuery main.java.UI Position 1.12.1
+ * jQuery UI Position 1.12.1
  * http://jqueryui.com
  *
  * Copyright jQuery Foundation and other contributors
@@ -1232,7 +1232,7 @@ var position = $.ui.position;
 
 
 /*!
- * jQuery main.java.UI Keycode 1.12.1
+ * jQuery UI Keycode 1.12.1
  * http://jqueryui.com
  *
  * Copyright jQuery Foundation and other contributors
@@ -1267,7 +1267,7 @@ var keycode = $.ui.keyCode = {
 
 
 /*!
- * jQuery main.java.UI Unique ID 1.12.1
+ * jQuery UI Unique ID 1.12.1
  * http://jqueryui.com
  *
  * Copyright jQuery Foundation and other contributors
@@ -1336,7 +1336,7 @@ var safeActiveElement = $.ui.safeActiveElement = function( document ) {
 
 
 /*!
- * jQuery main.java.UI Menu 1.12.1
+ * jQuery UI Menu 1.12.1
  * http://jqueryui.com
  *
  * Copyright jQuery Foundation and other contributors
@@ -1991,7 +1991,7 @@ var widgetsMenu = $.widget( "ui.menu", {
 
 
 /*!
- * jQuery main.java.UI Autocomplete 1.12.1
+ * jQuery UI Autocomplete 1.12.1
  * http://jqueryui.com
  *
  * Copyright jQuery Foundation and other contributors

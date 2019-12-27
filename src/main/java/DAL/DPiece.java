@@ -1,4 +1,4 @@
-package main.java.DAL;
+package DAL;
 
 /**
  * DPiece class contains PieceType enum to use it in DPlayer Class.

@@ -1,8 +1,8 @@
-package main.java.BL;
+package BL;
 
-import main.java.BL.squares.*;
-import main.java.Controller.Main;
-import main.java.DAL.DInstruction;
+import BL.squares.*;
+import Controller.Main;
+import DAL.DInstruction;
 
 import java.util.ArrayList;
 

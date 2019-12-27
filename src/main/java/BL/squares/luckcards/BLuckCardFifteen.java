@@ -1,8 +1,9 @@
-package main.java.BL.squares.luckcards;
+package BL.squares.luckcards;
 
-import main.java.BL.BMonopolyGame;
-import main.java.BL.BPlayer;
-import main.java.DAL.DPlayer;
+import BL.BMonopolyGame;
+import BL.BPlayer;
+import DAL.DInstruction;
+import DAL.DPlayer;
 
 import java.util.ArrayList;
 

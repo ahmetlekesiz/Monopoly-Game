@@ -1,8 +1,8 @@
-package main.java.BL.squares;
+package BL.squares;
 
-import main.java.BL.BTerminal;
-import main.java.BL.squares.luckcards.*;
-import main.java.DAL.DPlayer;
+import BL.BTerminal;
+import BL.squares.luckcards.*;
+import DAL.DPlayer;
 
 import java.util.ArrayList;
 

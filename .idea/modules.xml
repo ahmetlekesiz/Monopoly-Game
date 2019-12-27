@@ -3,8 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Monopoly.iml" filepath="$PROJECT_DIR$/Monopoly.iml" />
-      <module fileurl="file://$PROJECT_DIR$/main/java.iml" filepath="$PROJECT_DIR$/main/java.iml" />
-      <module fileurl="file://$PROJECT_DIR$/main/main.iml" filepath="$PROJECT_DIR$/main/main.iml" />
     </modules>
   </component>
 </project>

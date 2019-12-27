@@ -1,6 +1,6 @@
-package main.java.BL.squares.communitychestcards;
+package BL.squares.communitychestcards;
 
-import main.java.DAL.DPlayer;
+import DAL.DPlayer;
 
 public abstract class BCommunityCards {
     private String CARD_INFO;

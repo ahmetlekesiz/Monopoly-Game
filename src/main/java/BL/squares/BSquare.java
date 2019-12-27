@@ -1,7 +1,7 @@
-package main.java.BL.squares;
+package BL.squares;
 
-import main.java.BL.BPlayer;
-import main.java.DAL.DPlayer;
+import BL.BPlayer;
+import DAL.DPlayer;
 
 /**
  * <h>BSquare</h>

@@ -1,6 +1,6 @@
-package main.java.DAL;
+package DAL;
 
-import main.java.Controller.Main;
+import Controller.Main;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;

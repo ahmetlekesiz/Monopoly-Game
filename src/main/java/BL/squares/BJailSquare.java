@@ -1,9 +1,10 @@
-package main.java.BL.squares;
+package BL.squares;
 
-import main.java.BL.squares.luckcards.BLuckCardEigth;
-import main.java.DAL.DInstruction;
-import main.java.DAL.DPlayer;
+import BL.squares.luckcards.BLuckCardEigth;
+import DAL.DInstruction;
+import DAL.DPlayer;
 
+import java.util.Arrays;
 import java.util.HashMap;
 
 /**

@@ -1,7 +1,7 @@
-package main.java.BL.squares;
+package BL.squares;
 
-import main.java.DAL.DPlayer;
-import main.java.DAL.DInstruction;
+import DAL.DPlayer;
+import DAL.DInstruction;
 /***
  *BGoSquare is class that represents starting point of game in Business Layer.
  * It changes balance.

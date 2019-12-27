@@ -1,6 +1,6 @@
-package main.java.BL.squares.luckcards;
+package BL.squares.luckcards;
 
-import main.java.DAL.DPlayer;
+import DAL.DPlayer;
 
 public abstract class BLuckCards {
     private String CARD_INFO;

@@ -1,8 +1,8 @@
-package main.java.BL.squares;
+package BL.squares;
 
-import main.java.BL.BTerminal;
-import main.java.BL.squares.communitychestcards.*;
-import main.java.DAL.DPlayer;
+import BL.BTerminal;
+import BL.squares.communitychestcards.*;
+import DAL.DPlayer;
 
 import java.util.ArrayList;
 

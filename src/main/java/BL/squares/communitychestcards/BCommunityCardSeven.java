@@ -1,8 +1,8 @@
-package main.java.BL.squares.communitychestcards;
+package BL.squares.communitychestcards;
 
-import main.java.BL.BMonopolyGame;
-import main.java.BL.BPlayer;
-import main.java.DAL.DPlayer;
+import BL.BMonopolyGame;
+import BL.BPlayer;
+import DAL.DPlayer;
 
 import java.util.ArrayList;
 

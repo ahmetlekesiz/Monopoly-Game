@@ -1,14 +1,14 @@
-package main.java.Controller;
+package Controller;
 
-import main.java.BL.BMonopolyGame;
-import main.java.DAL.DInstruction;
-import main.java.DAL.DJSONReader;
-import main.java.UI.UITerminal;
+import BL.BMonopolyGame;
+import DAL.DInstruction;
+import DAL.DJSONReader;
+import UI.UITerminal;
 
 /**
  * <h>CMonopolyGame</h>
  *
- * <p>main.java.Controller for MonopolyGame class which is used during getting data from Data Layer in User Interface and
+ * <p>Controller for MonopolyGame class which is used during getting data from Data Layer in User Interface and
  * starting game on Main class.</p>
  *
  * @author Ahmet LEKESİZ
@@ -22,7 +22,7 @@ public class CMonopolyGame {
     private CMonopolyGame(String JSONInstructionFileName) {
         DJSONReader objDJSONReader = new DJSONReader(JSONInstructionFileName);
         objDJSONReader.initInstructionObject();
-        UITerminal = main.java.UI.UITerminal.getInstance();
+        UITerminal = UI.UITerminal.getInstance();
         UITerminal.printCurrentJSONFile();
     }
 

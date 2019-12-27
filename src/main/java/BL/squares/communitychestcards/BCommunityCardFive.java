@@ -1,6 +1,6 @@
-package main.java.BL.squares.communitychestcards;
+package BL.squares.communitychestcards;
 
-import main.java.DAL.DPlayer;
+import DAL.DPlayer;
 
 public class BCommunityCardFive extends BCommunityCards {
     private DPlayer cardOwner;
