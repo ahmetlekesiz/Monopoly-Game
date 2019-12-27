@@ -9,7 +9,7 @@ public class BLuckCardEleven extends BLuckCards {
         setCardID(11);
     }
 
-    @Override //TODO Oyuncuların sahiplik durumuna göre değişiklik gösterecek
+    @Override
     public void performForCard(DPlayer dPlayer) {
 
     }

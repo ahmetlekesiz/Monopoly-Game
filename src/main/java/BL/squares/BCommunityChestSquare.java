@@ -6,18 +6,34 @@ import DAL.DPlayer;
 
 import java.util.ArrayList;
 
+/**
+ *  <h>BCommunityChestSquare</h>
+ *
+ *  <p>This class contain property player must makes when player comes to community chest property square.</p>
+ *
+ * @author Salih ÖZYURT
+ * @version 1.0
+ */
+
 public class BCommunityChestSquare extends BSquare {
     private final String SQUARE_TYPE = "COMMUNITY_SQUARE";
     private ArrayList<BCommunityCards> communityChestCards = new ArrayList<>();
     private int totalNumberCard = 17;
     private BTerminal bTerminal = new BTerminal();
 
-
+    /**
+     * <p>Constructor make initialize the card and property type. </p>
+     */
     public BCommunityChestSquare(PropertyType propertyType) {
         this.pType = propertyType;
         initCommunityCards();
     }
 
+    /**
+     * <p>This method add community card deck arraylist. </p>
+     *
+     * @return void
+     */
     private void initCommunityCards(){
         communityChestCards.add(new BCommunityCardOne());
         communityChestCards.add(new BCommunityCardTwo());

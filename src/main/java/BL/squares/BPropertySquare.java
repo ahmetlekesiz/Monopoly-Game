@@ -4,6 +4,15 @@ import BL.BPlayer;
 import BL.BTerminal;
 import DAL.DPlayer;
 
+/**
+ *  <h>BPropertySquare</h>
+ *
+ *  <p>This class contain property player must makes when player comes to community chest property square.</p>
+ *
+ * @author Salih ÖZYURT
+ * @version 1.0
+ */
+
 public class BPropertySquare extends BSquare {
     private String name;
     private final String SQUARE_TYPE = "PROPERTY_SQUARE";

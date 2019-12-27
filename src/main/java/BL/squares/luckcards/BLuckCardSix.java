@@ -10,7 +10,7 @@ public class BLuckCardSix extends BLuckCards {
         setCardID(6);
     }
 
-    @Override //TODO Utility square ye ve sahibi var veya yoksa ya göre ayarlanacak
+    @Override
     public void performForCard(DPlayer dPlayer) {
 
     }
