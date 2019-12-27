@@ -37,8 +37,8 @@ public class CTerminal {
         uiTerminal.printAfterRollDice(bPlayer, bSquare);
     }
 
-    public void printRentProcess(DPlayer dPlayer, BSquare bSquare){
-        uiTerminal.printRentProcess(dPlayer,bSquare);
+    public void printRentProcess(String pieceType, BSquare bSquare){
+        uiTerminal.printRentProcess(pieceType,bSquare);
     }
 
     public void printBuyProcess(BPlayer bPlayer, BSquare bSquare){

@@ -133,14 +133,14 @@ public class UITerminal {
     /**
      * <p>The method prints data of player and square where player rent.</p>
      *
-     * @param dPlayer We use the parameter to reach data of player.
+     * @param pieceType We use the parameter to reach data of player.
      * @param bSquare We use the parameter to reach data of square.
      *
      * @return void
      */
-    public void printRentProcess(DPlayer dPlayer, BSquare bSquare){
+    public void printRentProcess(String pieceType, BSquare bSquare){
         System.out.println("---------------------------------------------------------------------------------------");
-        System.out.println("\033[31m"+ dPlayer.getPieceType() + " is paying " + bSquare.getRent() + "$ to " + bSquare.getOwnerOfSquare().getDPlayer().getPieceType() + " on " + ((BPropertySquare) bSquare).getName() +". \033[0m");
+        System.out.println("\033[31m"+ pieceType + " is paying " + bSquare.getRent() + "$ to " + bSquare.getOwnerOfSquare().getDPlayer().getPieceType() + " on " + ((BPropertySquare) bSquare).getName() +". \033[0m");
     }
 
     /**

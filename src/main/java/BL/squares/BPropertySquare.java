@@ -46,7 +46,8 @@ public class BPropertySquare extends BSquare {
 
     public void getRent(DPlayer owner, DPlayer renter){
         if (renter == owner) return;
-        bTerminal.printRentProcess(renter , this);
+        String pieceType = renter.getPieceType().toString();
+        bTerminal.printRentProcess(pieceType , this);
         renter.setBalance(renter.getBalance() - this.rent);
         owner.setBalance(owner.getBalance() + this.rent);
     }
