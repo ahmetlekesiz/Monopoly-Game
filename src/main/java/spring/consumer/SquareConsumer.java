@@ -49,12 +49,12 @@ public class SquareConsumer {
     public void conductAction(DPlayer dPlayer) {
         Logger.instance.LOGGER.log(Logger.DEFAULT_LEVEL, String.format(
                 "Before: Name: [%s], Balance: [%d], Turn: [%d], Square: [%s], Square Name: [%s]", dPlayer.getPieceType(),
-                dPlayer.getBalance(), dPlayer.getRoundValue(), square.getSQUARE_TYPE() ,square.name
+                dPlayer.getBalance(), dPlayer.roundCounter, square.getSQUARE_TYPE() ,square.name
         ));
         square.performOnLand(dPlayer);
         Logger.instance.LOGGER.log(Logger.DEFAULT_LEVEL, String.format(
                 "After: Name: [%s], Balance: [%d], Turn: [%d]", dPlayer.getPieceType(), dPlayer.getBalance(),
-                dPlayer.getRoundValue()
+                dPlayer.roundCounter
         ));
     }
 }
