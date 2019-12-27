@@ -191,4 +191,8 @@ public class UITerminal {
             System.out.println("*************************************************************************");
         }
     }
+
+    public void printHouseInfo(){
+        System.out.println("\033[31m  qwe Hotel yapıldı. \033[0m");
+    }
 }

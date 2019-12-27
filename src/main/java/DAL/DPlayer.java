@@ -139,6 +139,14 @@ public class DPlayer {
         this.hasFullColor[color][player] = value;
     }
 
+    /**
+     * <p>We look player has all square for a color to decide build house of hotel.</p>
+     *
+     * @param color it's ID of color of square.
+     * @param player it's ID of player.
+     * @return boolean
+     */
+
     public boolean controlHasFullColor(int color, int player) {
         switch (color){
             case 0:
