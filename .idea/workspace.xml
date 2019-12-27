@@ -2,11 +2,69 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65242711-3e21-4f1c-9534-4bfb791e86bb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game.json" beforeDir="false" afterPath="$PROJECT_DIR$/game.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BL/BMonopolyGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BL/BMonopolyGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BL/squares/BTaxSquare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BL/squares/BTaxSquare.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BL/BBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/BBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BL/BDice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/BDice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BL/BGameObserver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/BGameObserver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BL/BMonopolyGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/BMonopolyGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BL/BPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/BPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BL/BPlayerObserver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/BPlayerObserver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BL/BTerminal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/BTerminal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BL/squares/BCommunityChestSquare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/BCommunityChestSquare.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BL/squares/BGoSquare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/BGoSquare.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BL/squares/BJailSquare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/BJailSquare.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BL/squares/BLuckSquare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/BLuckSquare.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BL/squares/BPropertySquare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/BPropertySquare.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BL/squares/BRegularSquare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/BRegularSquare.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BL/squares/BSquare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/BSquare.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BL/squares/BTaxSquare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/BTaxSquare.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BL/squares/PropertyType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/PropertyType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BL/squares/communitychestcards/BCommunityCardEigth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/communitychestcards/BCommunityCardEigth.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BL/squares/communitychestcards/BCommunityCardEleven.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/communitychestcards/BCommunityCardEleven.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BL/squares/communitychestcards/BCommunityCardFifteen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/communitychestcards/BCommunityCardFifteen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BL/squares/communitychestcards/BCommunityCardFive.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/communitychestcards/BCommunityCardFive.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BL/squares/communitychestcards/BCommunityCardFour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/communitychestcards/BCommunityCardFour.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BL/squares/communitychestcards/BCommunityCardFourteen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/communitychestcards/BCommunityCardFourteen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BL/squares/communitychestcards/BCommunityCardNine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/communitychestcards/BCommunityCardNine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BL/squares/communitychestcards/BCommunityCardOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/communitychestcards/BCommunityCardOne.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BL/squares/communitychestcards/BCommunityCardSeven.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/communitychestcards/BCommunityCardSeven.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BL/squares/communitychestcards/BCommunityCardSeventeen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/communitychestcards/BCommunityCardSeventeen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BL/squares/communitychestcards/BCommunityCardSix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/communitychestcards/BCommunityCardSix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BL/squares/communitychestcards/BCommunityCardSixteen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/communitychestcards/BCommunityCardSixteen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BL/squares/communitychestcards/BCommunityCardTen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/communitychestcards/BCommunityCardTen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BL/squares/communitychestcards/BCommunityCardThirteen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/communitychestcards/BCommunityCardThirteen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BL/squares/communitychestcards/BCommunityCardThree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/communitychestcards/BCommunityCardThree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BL/squares/communitychestcards/BCommunityCardTwelve.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/communitychestcards/BCommunityCardTwelve.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BL/squares/communitychestcards/BCommunityCardTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/communitychestcards/BCommunityCardTwo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BL/squares/communitychestcards/BCommunityCards.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/communitychestcards/BCommunityCards.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BL/squares/luckcards/BLuckCardEigth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/luckcards/BLuckCardEigth.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BL/squares/luckcards/BLuckCardEleven.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/luckcards/BLuckCardEleven.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BL/squares/luckcards/BLuckCardFifteen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/luckcards/BLuckCardFifteen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BL/squares/luckcards/BLuckCardFive.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/luckcards/BLuckCardFive.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BL/squares/luckcards/BLuckCardFour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/luckcards/BLuckCardFour.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BL/squares/luckcards/BLuckCardFourteen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/luckcards/BLuckCardFourteen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BL/squares/luckcards/BLuckCardNine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/luckcards/BLuckCardNine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BL/squares/luckcards/BLuckCardOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/luckcards/BLuckCardOne.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BL/squares/luckcards/BLuckCardSeven.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/luckcards/BLuckCardSeven.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BL/squares/luckcards/BLuckCardSix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/luckcards/BLuckCardSix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BL/squares/luckcards/BLuckCardSixteen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/luckcards/BLuckCardSixteen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BL/squares/luckcards/BLuckCardTen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/luckcards/BLuckCardTen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BL/squares/luckcards/BLuckCardThirteen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/luckcards/BLuckCardThirteen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BL/squares/luckcards/BLuckCardThree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/luckcards/BLuckCardThree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BL/squares/luckcards/BLuckCardTwelve.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/luckcards/BLuckCardTwelve.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BL/squares/luckcards/BLuckCardTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/luckcards/BLuckCardTwo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BL/squares/luckcards/BLuckCards.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/luckcards/BLuckCards.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/CInstruction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/CInstruction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/CMonopolyGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/CMonopolyGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/CTerminal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/CTerminal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DAL/DInstruction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAL/DInstruction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DAL/DJSONReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAL/DJSONReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DAL/DPiece.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAL/DPiece.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DAL/DPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAL/DPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/UITerminal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UI/UITerminal.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +74,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -214,7 +272,7 @@
       <workItem from="1575626184397" duration="3842000" />
       <workItem from="1575657915691" duration="896000" />
       <workItem from="1575659531051" duration="2971000" />
-      <workItem from="1577442171874" duration="1764000" />
+      <workItem from="1577442171874" duration="4682000" />
     </task>
     <task id="LOCAL-00001" summary="model, view, controller packages created.&#10;MonopolyGame class created.&#10;MonopolyGame class constructor template created using static factory methods design pattern.">
       <created>1572975097652</created>
@@ -433,7 +491,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573232528707</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Tax Square optimised.">
+      <created>1577444096987</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1577444096987</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -464,7 +529,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Instruction class method name changed." />
     <MESSAGE value="json-simple library added." />
     <MESSAGE value="TerminalOutput class created." />
     <MESSAGE value="JSON file data transferred into Instruction object." />
@@ -489,29 +553,34 @@
     <MESSAGE value="Uml and sequence diagram added." />
     <MESSAGE value="Javadoc created for DAL." />
     <MESSAGE value="JDoc and RAD added." />
-    <option name="LAST_COMMIT_MESSAGE" value="JDoc and RAD added." />
+    <MESSAGE value="Tax Square optimised." />
+    <option name="LAST_COMMIT_MESSAGE" value="Tax Square optimised." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="497" y="155" key="CommitChangelistDialog2" timestamp="1577444056078">
+    <state x="583" y="229" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1577446353175">
       <screen x="0" y="36" width="1920" height="1044" />
     </state>
-    <state x="497" y="155" key="CommitChangelistDialog2/0.36.1920.1044@0.36.1920.1044" timestamp="1577444056078" />
-    <state width="1874" height="276" key="GridCell.Tab.0.bottom" timestamp="1577444056132">
+    <state x="583" y="229" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.36.1920.1044@0.36.1920.1044" timestamp="1577446353175" />
+    <state x="497" y="155" key="CommitChangelistDialog2" timestamp="1577448021433">
       <screen x="0" y="36" width="1920" height="1044" />
     </state>
-    <state width="1874" height="276" key="GridCell.Tab.0.bottom/0.36.1920.1044@0.36.1920.1044" timestamp="1577444056132" />
-    <state width="1874" height="276" key="GridCell.Tab.0.center" timestamp="1577444056131">
+    <state x="497" y="155" key="CommitChangelistDialog2/0.36.1920.1044@0.36.1920.1044" timestamp="1577448021433" />
+    <state width="1874" height="276" key="GridCell.Tab.0.bottom" timestamp="1577446737138">
       <screen x="0" y="36" width="1920" height="1044" />
     </state>
-    <state width="1874" height="276" key="GridCell.Tab.0.center/0.36.1920.1044@0.36.1920.1044" timestamp="1577444056131" />
-    <state width="1874" height="276" key="GridCell.Tab.0.left" timestamp="1577444056131">
+    <state width="1874" height="276" key="GridCell.Tab.0.bottom/0.36.1920.1044@0.36.1920.1044" timestamp="1577446737138" />
+    <state width="1874" height="276" key="GridCell.Tab.0.center" timestamp="1577446737132">
       <screen x="0" y="36" width="1920" height="1044" />
     </state>
-    <state width="1874" height="276" key="GridCell.Tab.0.left/0.36.1920.1044@0.36.1920.1044" timestamp="1577444056131" />
-    <state width="1874" height="276" key="GridCell.Tab.0.right" timestamp="1577444056131">
+    <state width="1874" height="276" key="GridCell.Tab.0.center/0.36.1920.1044@0.36.1920.1044" timestamp="1577446737132" />
+    <state width="1874" height="276" key="GridCell.Tab.0.left" timestamp="1577446737131">
       <screen x="0" y="36" width="1920" height="1044" />
     </state>
-    <state width="1874" height="276" key="GridCell.Tab.0.right/0.36.1920.1044@0.36.1920.1044" timestamp="1577444056131" />
+    <state width="1874" height="276" key="GridCell.Tab.0.left/0.36.1920.1044@0.36.1920.1044" timestamp="1577446737131" />
+    <state width="1874" height="276" key="GridCell.Tab.0.right" timestamp="1577446737132">
+      <screen x="0" y="36" width="1920" height="1044" />
+    </state>
+    <state width="1874" height="276" key="GridCell.Tab.0.right/0.36.1920.1044@0.36.1920.1044" timestamp="1577446737132" />
     <state x="191" y="128" key="MergeDialog" timestamp="1577442832987">
       <screen x="0" y="36" width="1920" height="1044" />
     </state>
@@ -520,17 +589,25 @@
       <screen x="0" y="36" width="1920" height="1044" />
     </state>
     <state x="675" y="276" key="MultipleFileMergeDialog/0.36.1920.1044@0.36.1920.1044" timestamp="1577442835539" />
+    <state x="559" y="296" key="Vcs.Push.Dialog.v2" timestamp="1577444115445">
+      <screen x="0" y="36" width="1920" height="1044" />
+    </state>
+    <state x="559" y="296" key="Vcs.Push.Dialog.v2/0.36.1920.1044@0.36.1920.1044" timestamp="1577444115445" />
     <state x="667" y="455" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1577385704110">
       <screen x="0" y="36" width="1920" height="1044" />
     </state>
     <state x="667" y="455" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.36.1920.1044@0.36.1920.1044" timestamp="1577385704110" />
-    <state x="750" y="480" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1577442791931">
+    <state x="750" y="480" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1577446341016">
       <screen x="0" y="36" width="1920" height="1044" />
     </state>
-    <state x="750" y="480" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.36.1920.1044@0.36.1920.1044" timestamp="1577442791931" />
+    <state x="750" y="480" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.36.1920.1044@0.36.1920.1044" timestamp="1577446341016" />
     <state x="670" y="274" key="git4idea.branch.GitSmartOperationDialog" timestamp="1577389561481">
       <screen x="0" y="36" width="1920" height="1044" />
     </state>
     <state x="670" y="274" key="git4idea.branch.GitSmartOperationDialog/0.36.1920.1044@0.36.1920.1044" timestamp="1577389561481" />
+    <state x="623" y="257" key="run.anything.popup" timestamp="1577446839359">
+      <screen x="0" y="36" width="1920" height="1044" />
+    </state>
+    <state x="623" y="257" key="run.anything.popup/0.36.1920.1044@0.36.1920.1044" timestamp="1577446839359" />
   </component>
 </project>
