@@ -6,17 +6,34 @@ import DAL.DPlayer;
 
 import java.util.ArrayList;
 
+/**
+ *  <h>BLuckSquare</h>
+ *
+ *  <p>This class contain property player must makes when player comes to luck property square.</p>
+ *
+ * @author Salih ÖZYURT
+ * @version 1.0
+ */
+
 public class BLuckSquare extends BSquare {
     private final String SQUARE_TYPE = "LUCK_SQUARE";
     private ArrayList<BLuckCards> luckCards = new ArrayList<>();
     private int totalNumberCard = 16;
     private BTerminal bTerminal = new BTerminal();
 
+    /**
+     * <p>Constructor make initialize the card and property type. </p>
+     */
     public BLuckSquare(PropertyType propertyType) {
         this.pType = propertyType;
         initLuckCards();
     }
 
+    /**
+     * <p>This method add luck card deck in arraylist. </p>
+     *
+     * @return void
+     */
     private void initLuckCards(){
         luckCards.add(new BLuckCardOne());
         luckCards.add(new BLuckCardTwo());

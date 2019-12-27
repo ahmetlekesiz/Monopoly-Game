@@ -28,6 +28,11 @@ public class UITerminal {
 
     }
 
+    /**
+     * <p>This class is made singleton </p>
+     *
+     * @return void
+     */
     public static UITerminal getInstance() {
         if (instance == null) {
             instance = new UITerminal();
@@ -82,6 +87,12 @@ public class UITerminal {
         System.out.println("Rolling Dice : " + diceValues[0] + "+" + diceValues[1] + "=" + (diceValues[0] + diceValues[1]));
     }
 
+    /**
+     * <p>The method prints data of community and luck cards after roll dice.</p>
+     *
+     * @param nameOfCard We use the parameter to reach data of community and luck cards.
+     * @return void
+     */
     public void printCard(String nameOfCard){
         this.UINameOfCard = nameOfCard;
     }
@@ -119,11 +130,27 @@ public class UITerminal {
         System.out.println("---------------------------------------------------------------------------------------");
     }
 
-    public void printRentProcess(DPlayer dPlayer, BSquare bSquare){
+    /**
+     * <p>The method prints data of player and square where player rent.</p>
+     *
+     * @param pieceType We use the parameter to reach data of player.
+     * @param bSquare We use the parameter to reach data of square.
+     *
+     * @return void
+     */
+    public void printRentProcess(String pieceType, BSquare bSquare){
         System.out.println("---------------------------------------------------------------------------------------");
-        System.out.println("\033[31m"+ dPlayer.getPieceType() + " is paying " + bSquare.getRent() + "$ to " + bSquare.getOwnerOfSquare().getDPlayer().getPieceType() + " on " + ((BPropertySquare) bSquare).getName() +". \033[0m");
+        System.out.println("\033[31m"+ pieceType + " is paying " + bSquare.getRent() + "$ to " + bSquare.getOwnerOfSquare().getDPlayer().getPieceType() + " on " + ((BPropertySquare) bSquare).getName() +". \033[0m");
     }
 
+    /**
+     * <p>The method prints data of player and square where player buy.</p>
+     *
+     * @param bPlayer We use the parameter to reach data of player.
+     * @param bSquare We use the parameter to reach data of square.
+     *
+     * @return void
+     */
     public void printBuyProcess(BPlayer bPlayer, BSquare bSquare){
         System.out.println("---------------------------------------------------------------------------------------");
         System.out.println("\033[31m" + bPlayer.getDPlayer().getPieceType() + " is buying " + ((BPropertySquare) bSquare).getName() + ". \033[0m");
@@ -163,5 +190,13 @@ public class UITerminal {
             System.out.println("Player Balance :" + eliminatedPlayer.getDPlayer().getBalance());
             System.out.println("*************************************************************************");
         }
+    }
+
+    public void printHouseInfo(BPlayer bPlayer, BSquare bSquare){
+        System.out.println("\033[31m  "+ bPlayer.getDPlayer().getPieceType() +" make house on "+ ((BPropertySquare) bSquare).getName() +" \033[0m");
+    }
+
+    public void printHotelInfo(BPlayer bPlayer, BSquare bSquare){
+        System.out.println("\033[31m  "+ bPlayer.getDPlayer().getPieceType() +" make hotel on "+ ((BPropertySquare) bSquare).getName() +" \033[0m");
     }
 }

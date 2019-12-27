@@ -9,7 +9,7 @@ public class BCommunityCardFourteen extends BCommunityCards{
         setCardID(14);
     }
 
-    @Override //TODO Oyuncuların sahiplik durumuna göre değişiklik gösterecek
+    @Override
     public void performForCard(DPlayer dPlayer) {
 
     }

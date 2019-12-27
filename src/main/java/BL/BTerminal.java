@@ -35,8 +35,8 @@ public class BTerminal {
         cTerminal.printAfterRollDice(bPlayer, bSquare);
     }
 
-    public void printRentProcess(DPlayer dPlayer, BSquare bSquare){
-        cTerminal.printRentProcess(dPlayer,bSquare);
+    public void printRentProcess(String pieceType, BSquare bSquare){
+        cTerminal.printRentProcess(pieceType,bSquare);
     }
 
     public void printBuyProcess(BPlayer bPlayer, BSquare bSquare){
@@ -47,6 +47,14 @@ public class BTerminal {
 
     public void printGameOver(ArrayList eliminatedList){
         cTerminal.printGameOver(eliminatedList);
+    }
+
+    public void printHouseInfo(BPlayer bPlayer, BSquare bSquare){
+        cTerminal.printHouseInfo(bPlayer,bSquare);
+    }
+
+    public void printHotelInfo(BPlayer bPlayer, BSquare bSquare){
+        cTerminal.printHotelInfo(bPlayer,bSquare);
     }
 }
 

@@ -4,6 +4,15 @@ import BL.BPlayer;
 import BL.BTerminal;
 import DAL.DPlayer;
 
+/**
+ * <h>BPropertySquare</h>
+ *
+ * <p>We extend the class from BSquare to decide square type.</p>
+ *
+ * @author Salih ÖZYURT
+ * @version 1.0
+ */
+
 public class BPropertySquare extends BSquare {
 
     private final String SQUARE_TYPE = "PROPERTY_SQUARE";
@@ -11,6 +20,14 @@ public class BPropertySquare extends BSquare {
     private boolean hasHouse;
     private boolean hasHotel;
 
+    /**
+     * <p>Constructor takes number of arguments and assigns it to the object.</p>
+     *
+     * @param name
+     * @param type
+     * @param rent
+     * @param price
+     */
     public BPropertySquare(String name, PropertyType type, int rent, int price){
         this.pType = type;
         this.name = name;
@@ -29,7 +46,8 @@ public class BPropertySquare extends BSquare {
 
     public void getRent(DPlayer owner, DPlayer renter){
         if (renter == owner) return;
-        bTerminal.printRentProcess(renter , this);
+        String pieceType = renter.getPieceType().toString();
+        bTerminal.printRentProcess(pieceType , this);
         renter.setBalance(renter.getBalance() - this.rent);
         owner.setBalance(owner.getBalance() + this.rent);
     }
@@ -59,12 +77,22 @@ public class BPropertySquare extends BSquare {
         this.hasHotel = hasHotel;
     }
 
+    /**
+     * <p>We decide to build hotel if  player has the square already.</p>
+     *
+     * @return boolean
+     */
     public void buildHouse(){
         setHasHouse(true);
         this.price = getHousePrice() + this.price;
         this.rent*=2;
     }
 
+    /**
+     * <p>We decide to build hotel if  player has a house in same square already.</p>
+     *
+     * @return boolean
+     */
     public boolean buildHotel(){
         if (getHasHouse()){
             setHasHotel(true);

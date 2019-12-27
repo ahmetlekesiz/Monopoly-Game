@@ -96,6 +96,8 @@ public class BPlayer implements BPlayerObserver {
      */
     private void sellSquare(BSquare square) {
         square.setOwnerOfSquare(null);
+        this.getDPlayer().setHasFullColor(((BPropertySquare) square).pType.getValue(), this.getDPlayer().getPieceType().getValue(),
+                this.getDPlayer().getHasFullColor(((BPropertySquare) square).pType.getValue(),this.getDPlayer().getPieceType().getValue()) - 1);
         this.getDPlayer().setBalance(this.getDPlayer().getBalance() + square.price);
         if ( ((BPropertySquare) square).getHasHotel()){
             square.setPrice(square.getPrice() / 7);
@@ -140,6 +142,8 @@ public class BPlayer implements BPlayerObserver {
             this.getDPlayer().setBalance(this.getDPlayer().getBalance() - price);
             this.getDPlayer().addPropertySquares(currentSquare);
             this.sortSquares();
+            this.getDPlayer().setHasFullColor(currentSquare.pType.getValue(),this.getDPlayer().getPieceType().getValue(),
+                    this.getDPlayer().getHasFullColor(currentSquare.pType.getValue(),this.getDPlayer().getPieceType().getValue()) + 1);
             return true;
     }
     /**

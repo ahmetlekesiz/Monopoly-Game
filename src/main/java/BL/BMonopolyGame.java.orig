@@ -208,8 +208,11 @@ public class BMonopolyGame implements BGameObserver {
                     bTerminal.printAfterRollDice(currentPlayer, currentSquare);
                     currentPlayer.updateDataset(currentPlayer.getDPlayer().roundCounter++, currentPlayer.getDPlayer().getBalance());
                     if (currentPlayer.getDPlayer().isBankrupted()) {
+<<<<<<< HEAD
+=======
                         Logger.instance.LOGGER.log(Logger.DEFAULT_LEVEL, "Player: " + currentPlayer +
                                 " is eliminated Round Value: " + (currentPlayer.getDPlayer().roundCounter - 1));
+>>>>>>> origin/spring-dev
                         eliminatedPlayers.add(currentPlayer);
                         iterator.remove();
                     }
