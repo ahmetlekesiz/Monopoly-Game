@@ -2,24 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65242711-3e21-4f1c-9534-4bfb791e86bb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring/config/squares/CommunityChestSquareConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring/config/squares/GoSquareConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring/config/squares/JailSquareConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring/config/squares/LuckSquareConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring/config/squares/RegularSquareConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring/config/squares/TaxSquareConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring/consumer/SquareConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring/factory/BeanCreator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring/log/Logger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring/log/MessageFormatter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/spring/config/squares/PropertySquareConfiguration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Monopoly.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Monopoly.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/app.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game.json" beforeDir="false" afterPath="$PROJECT_DIR$/game.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/java.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/jfreechart-1.5.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/json-simple-1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BL/BPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/BPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/spring/consumer/SquareConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/consumer/SquareConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/spring/factory/BeanCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring/factory/BeanCreator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -224,7 +215,8 @@
       <workItem from="1575657915691" duration="896000" />
       <workItem from="1575659531051" duration="2971000" />
       <workItem from="1577458362024" duration="2814000" />
-      <workItem from="1577461471141" duration="3951000" />
+      <workItem from="1577461471141" duration="5690000" />
+      <workItem from="1577468904075" duration="492000" />
     </task>
     <task id="LOCAL-00001" summary="model, view, controller packages created.&#10;MonopolyGame class created.&#10;MonopolyGame class constructor template created using static factory methods design pattern.">
       <created>1572975097652</created>
@@ -443,7 +435,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573232528707</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Spring and Logging added.">
+      <created>1577467174356</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1577467174356</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -474,7 +473,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Instruction class method name changed." />
     <MESSAGE value="json-simple library added." />
     <MESSAGE value="TerminalOutput class created." />
     <MESSAGE value="JSON file data transferred into Instruction object." />
@@ -499,44 +497,65 @@
     <MESSAGE value="Uml and sequence diagram added." />
     <MESSAGE value="Javadoc created for DAL." />
     <MESSAGE value="JDoc and RAD added." />
-    <option name="LAST_COMMIT_MESSAGE" value="JDoc and RAD added." />
+    <MESSAGE value="Spring and Logging added." />
+    <option name="LAST_COMMIT_MESSAGE" value="Spring and Logging added." />
   </component>
   <component name="WindowStateProjectService">
+    <state x="696" y="361" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1577468306513">
+      <screen x="0" y="36" width="1920" height="1044" />
+    </state>
+    <state x="696" y="361" key="#com.intellij.fileTypes.FileTypeChooser/0.36.1920.1044@0.36.1920.1044" timestamp="1577468306513" />
+    <state x="487" y="152" key="CommitChangelistDialog2" timestamp="1577467174172">
+      <screen x="0" y="36" width="1920" height="1044" />
+    </state>
+    <state x="487" y="152" key="CommitChangelistDialog2/0.36.1920.1044@0.36.1920.1044" timestamp="1577467174172" />
     <state x="747" y="318" key="FileChooserDialogImpl" timestamp="1577458842680">
       <screen x="0" y="36" width="1920" height="1044" />
     </state>
     <state x="747" y="318" key="FileChooserDialogImpl/0.36.1920.1044@0.36.1920.1044" timestamp="1577458842680" />
-    <state width="1874" height="276" key="GridCell.Tab.0.bottom" timestamp="1577466872662">
+    <state width="1874" height="276" key="GridCell.Tab.0.bottom" timestamp="1577468754022">
       <screen x="0" y="36" width="1920" height="1044" />
     </state>
-    <state width="1874" height="276" key="GridCell.Tab.0.bottom/0.36.1920.1044@0.36.1920.1044" timestamp="1577466872662" />
-    <state width="1874" height="276" key="GridCell.Tab.0.center" timestamp="1577466872662">
+    <state width="1874" height="276" key="GridCell.Tab.0.bottom/0.36.1920.1044@0.36.1920.1044" timestamp="1577468754022" />
+    <state width="1874" height="276" key="GridCell.Tab.0.center" timestamp="1577468754021">
       <screen x="0" y="36" width="1920" height="1044" />
     </state>
-    <state width="1874" height="276" key="GridCell.Tab.0.center/0.36.1920.1044@0.36.1920.1044" timestamp="1577466872662" />
-    <state width="1874" height="276" key="GridCell.Tab.0.left" timestamp="1577466872661">
+    <state width="1874" height="276" key="GridCell.Tab.0.center/0.36.1920.1044@0.36.1920.1044" timestamp="1577468754021" />
+    <state width="1874" height="276" key="GridCell.Tab.0.left" timestamp="1577468754021">
       <screen x="0" y="36" width="1920" height="1044" />
     </state>
-    <state width="1874" height="276" key="GridCell.Tab.0.left/0.36.1920.1044@0.36.1920.1044" timestamp="1577466872661" />
-    <state width="1874" height="276" key="GridCell.Tab.0.right" timestamp="1577466872662">
+    <state width="1874" height="276" key="GridCell.Tab.0.left/0.36.1920.1044@0.36.1920.1044" timestamp="1577468754021" />
+    <state width="1874" height="276" key="GridCell.Tab.0.right" timestamp="1577468754022">
       <screen x="0" y="36" width="1920" height="1044" />
     </state>
-    <state width="1874" height="276" key="GridCell.Tab.0.right/0.36.1920.1044@0.36.1920.1044" timestamp="1577466872662" />
+    <state width="1874" height="276" key="GridCell.Tab.0.right/0.36.1920.1044@0.36.1920.1044" timestamp="1577468754022" />
+    <state x="547" y="297" key="IDE.errors.dialog" timestamp="1577469385430">
+      <screen x="0" y="36" width="1920" height="1044" />
+    </state>
+    <state x="547" y="297" key="IDE.errors.dialog/0.36.1920.1044@0.36.1920.1044" timestamp="1577469385430" />
     <state x="675" y="276" key="MultipleFileMergeDialog" timestamp="1577458390883">
       <screen x="0" y="36" width="1920" height="1044" />
     </state>
     <state x="675" y="276" key="MultipleFileMergeDialog/0.36.1920.1044@0.36.1920.1044" timestamp="1577458390883" />
-    <state x="447" y="137" key="SettingsEditor" timestamp="1577467039741">
+    <state x="447" y="137" key="SettingsEditor" timestamp="1577469396403">
       <screen x="0" y="36" width="1920" height="1044" />
     </state>
-    <state x="447" y="137" key="SettingsEditor/0.36.1920.1044@0.36.1920.1044" timestamp="1577467039741" />
-    <state x="645" y="387" key="com.intellij.ide.util.TipDialog" timestamp="1577458361960">
+    <state x="447" y="137" key="SettingsEditor/0.36.1920.1044@0.36.1920.1044" timestamp="1577469396403" />
+    <state x="559" y="292" key="Vcs.Push.Dialog.v2" timestamp="1577467189442">
       <screen x="0" y="36" width="1920" height="1044" />
     </state>
-    <state x="645" y="387" key="com.intellij.ide.util.TipDialog/0.36.1920.1044@0.36.1920.1044" timestamp="1577458361960" />
+    <state x="559" y="292" key="Vcs.Push.Dialog.v2/0.36.1920.1044@0.36.1920.1044" timestamp="1577467189442" />
+    <state x="645" y="387" key="com.intellij.ide.util.TipDialog" timestamp="1577469418861">
+      <screen x="0" y="36" width="1920" height="1044" />
+    </state>
+    <state x="645" y="387" key="com.intellij.ide.util.TipDialog/0.36.1920.1044@0.36.1920.1044" timestamp="1577469418861" />
     <state x="673" y="274" key="git4idea.branch.GitSmartOperationDialog" timestamp="1577458387030">
       <screen x="0" y="36" width="1920" height="1044" />
     </state>
     <state x="673" y="274" key="git4idea.branch.GitSmartOperationDialog/0.36.1920.1044@0.36.1920.1044" timestamp="1577458387030" />
+    <state x="623" y="267" width="672" height="678" key="search.everywhere.popup" timestamp="1577468941012">
+      <screen x="0" y="36" width="1920" height="1044" />
+    </state>
+    <state x="623" y="267" width="672" height="678" key="search.everywhere.popup/0.36.1920.1044@0.36.1920.1044" timestamp="1577468941012" />
   </component>
 </project>

@@ -8,6 +8,14 @@ public class BeanCreator {
 
     private BeanCreator() {}
 
+
+    /**
+     *
+     * @param configClass
+     * @param consumerClass
+     * @param <T>
+     * @return
+     */
     public <T> T createBean(Class<?> configClass, Class<T> consumerClass) {
         AnnotationConfigApplicationContext applicationContext =
                 new AnnotationConfigApplicationContext(configClass);

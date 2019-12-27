@@ -23,7 +23,7 @@ public class SquareConsumer {
         ));
         square.performOnLand(dPlayer);
         Logger.instance.LOGGER.log(Logger.DEFAULT_LEVEL, String.format(
-                "Before: Name: [%s], Balance: [%d], Turn: [%d]", dPlayer.getPieceType(), dPlayer.getBalance(),
+                "After: Name: [%s], Balance: [%d], Turn: [%d]", dPlayer.getPieceType(), dPlayer.getBalance(),
                 dPlayer.getRoundValue()
         ));
     }
