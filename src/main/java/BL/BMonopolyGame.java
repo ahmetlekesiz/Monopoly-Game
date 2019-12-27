@@ -223,14 +223,18 @@ public class BMonopolyGame implements BGameObserver {
                     }
 
                     bTerminal.printAfterRollDice(currentPlayer, currentSquare);
-                    if (currentPlayer.getDPlayer().isBankrupted()) {
-                        System.out.println("EPlayer:"+currentPlayer.getDPlayer().getPieceType()+" is elimantig"+" Money: "+ currentPlayer.getDPlayer().getBalance()+ " Round val:"+ currentPlayer.getDPlayer().roundCounter);
-                        eliminatedPlayers.add(currentPlayer);
-                        iterator.remove();
-                    }
+
                 }
+                if (currentPlayer.getDPlayer().isBankrupted()) {
+                    System.out.println("EPlayer:"+currentPlayer.getDPlayer().getPieceType()+" is elimantig"+" Money: "+ currentPlayer.getDPlayer().getBalance()+ " Round val:"+ currentPlayer.getDPlayer().roundCounter);
+                    eliminatedPlayers.add(currentPlayer);
+                    iterator.remove();
+                }
+
                 //TODO player elenirse dataseti güncelleyemez.
                 currentPlayer.updateDataset(currentPlayer.getDPlayer().roundCounter++, currentPlayer.getDPlayer().getBalance());
+                if(currentPlayers.size()==1)
+                    return;
             }
         }
 
