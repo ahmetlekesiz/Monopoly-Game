@@ -3,8 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="65242711-3e21-4f1c-9534-4bfb791e86bb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game.json" beforeDir="false" afterPath="$PROJECT_DIR$/game.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BL/BMonopolyGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BL/BMonopolyGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BL/squares/BTaxSquare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BL/squares/BTaxSquare.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Main.java" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,23 +27,34 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="f002" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="ProjectId" id="1TCjmQt7DHPINjXu3YQ0g6XfuV4" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/documents" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
@@ -67,18 +81,6 @@
       <recent name="$PROJECT_DIR$/libs" />
       <recent name="$PROJECT_DIR$/models" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -174,6 +176,18 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -200,6 +214,7 @@
       <workItem from="1575626184397" duration="3842000" />
       <workItem from="1575657915691" duration="896000" />
       <workItem from="1575659531051" duration="2971000" />
+      <workItem from="1577442171874" duration="1764000" />
     </task>
     <task id="LOCAL-00001" summary="model, view, controller packages created.&#10;MonopolyGame class created.&#10;MonopolyGame class constructor template created using static factory methods design pattern.">
       <created>1572975097652</created>
@@ -475,5 +490,47 @@
     <MESSAGE value="Javadoc created for DAL." />
     <MESSAGE value="JDoc and RAD added." />
     <option name="LAST_COMMIT_MESSAGE" value="JDoc and RAD added." />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="497" y="155" key="CommitChangelistDialog2" timestamp="1577444056078">
+      <screen x="0" y="36" width="1920" height="1044" />
+    </state>
+    <state x="497" y="155" key="CommitChangelistDialog2/0.36.1920.1044@0.36.1920.1044" timestamp="1577444056078" />
+    <state width="1874" height="276" key="GridCell.Tab.0.bottom" timestamp="1577444056132">
+      <screen x="0" y="36" width="1920" height="1044" />
+    </state>
+    <state width="1874" height="276" key="GridCell.Tab.0.bottom/0.36.1920.1044@0.36.1920.1044" timestamp="1577444056132" />
+    <state width="1874" height="276" key="GridCell.Tab.0.center" timestamp="1577444056131">
+      <screen x="0" y="36" width="1920" height="1044" />
+    </state>
+    <state width="1874" height="276" key="GridCell.Tab.0.center/0.36.1920.1044@0.36.1920.1044" timestamp="1577444056131" />
+    <state width="1874" height="276" key="GridCell.Tab.0.left" timestamp="1577444056131">
+      <screen x="0" y="36" width="1920" height="1044" />
+    </state>
+    <state width="1874" height="276" key="GridCell.Tab.0.left/0.36.1920.1044@0.36.1920.1044" timestamp="1577444056131" />
+    <state width="1874" height="276" key="GridCell.Tab.0.right" timestamp="1577444056131">
+      <screen x="0" y="36" width="1920" height="1044" />
+    </state>
+    <state width="1874" height="276" key="GridCell.Tab.0.right/0.36.1920.1044@0.36.1920.1044" timestamp="1577444056131" />
+    <state x="191" y="128" key="MergeDialog" timestamp="1577442832987">
+      <screen x="0" y="36" width="1920" height="1044" />
+    </state>
+    <state x="191" y="128" key="MergeDialog/0.36.1920.1044@0.36.1920.1044" timestamp="1577442832987" />
+    <state x="675" y="276" key="MultipleFileMergeDialog" timestamp="1577442835539">
+      <screen x="0" y="36" width="1920" height="1044" />
+    </state>
+    <state x="675" y="276" key="MultipleFileMergeDialog/0.36.1920.1044@0.36.1920.1044" timestamp="1577442835539" />
+    <state x="667" y="455" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1577385704110">
+      <screen x="0" y="36" width="1920" height="1044" />
+    </state>
+    <state x="667" y="455" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.36.1920.1044@0.36.1920.1044" timestamp="1577385704110" />
+    <state x="750" y="480" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1577442791931">
+      <screen x="0" y="36" width="1920" height="1044" />
+    </state>
+    <state x="750" y="480" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.36.1920.1044@0.36.1920.1044" timestamp="1577442791931" />
+    <state x="670" y="274" key="git4idea.branch.GitSmartOperationDialog" timestamp="1577389561481">
+      <screen x="0" y="36" width="1920" height="1044" />
+    </state>
+    <state x="670" y="274" key="git4idea.branch.GitSmartOperationDialog/0.36.1920.1044@0.36.1920.1044" timestamp="1577389561481" />
   </component>
 </project>

@@ -28,7 +28,8 @@ public class BTaxSquare extends BSquare {
      */
     @Override
     public void performOnLand(DPlayer player) {
-        player.setBalance(player.getBalance() - (int) DInstructionInstance.priceOfTaxSquares);
+        if (player.getBalance() > 1000) player.setBalance((int) (player.getBalance() * 0.7));
+        else player.setBalance(player.getBalance() - (int) DInstructionInstance.priceOfTaxSquares);
     }
 
     /**

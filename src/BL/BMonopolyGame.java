@@ -111,8 +111,8 @@ public class BMonopolyGame implements BGameObserver {
      * @return boolean
      */
     private boolean checkIfDiceSumExist(ArrayList<Integer> diceSumOfPlayers, int diceSum){
-        for (int i = 0; i < diceSumOfPlayers.size() ; i++) {
-            if(diceSumOfPlayers.get(i).equals(diceSum)){
+        for (Integer diceSumOfPlayer : diceSumOfPlayers) {
+            if (diceSumOfPlayer.equals(diceSum)) {
                 return true;
             }
         }
@@ -127,12 +127,9 @@ public class BMonopolyGame implements BGameObserver {
      */
     @Override
     public void listen() {
-
-        while (currentPlayers.size() != 1) {
-            for (int i = 0; i < Main.ROUND_LIMIT; ++i) {
-                startTurn();
-            }
-            break;
+        int currentRoundIndex = 0;
+        while (currentPlayers.size() != 1 && currentRoundIndex++ < Main.ROUND_LIMIT) {
+            startTurn();
         }
         ArrayList<BPlayer> playersGroup = new ArrayList<>(currentPlayers);
         playersGroup.addAll(eliminatedPlayers);
@@ -177,15 +174,6 @@ public class BMonopolyGame implements BGameObserver {
                     BL.squares.BSquare currentSquare = boardInstance.getSquares()[currentPlayer.getDPlayer().getLocation()];
                     currentPlayer.checkAndUpdatePlayer(currentPlayer.getDPlayer().getCurrentDiceVal(),
                             currentSquare);
-                    //Calling buying function.
-                    if(currentSquare.getOwnerOfSquare() == null &&
-                            currentSquare.getSQUARE_TYPE().equals("PROPERTY_SQUARE") &&
-                            currentPlayer.isAbleToBuy((BPropertySquare) currentSquare))
-                    {
-                        bTerminal.printBuyProcess(currentPlayer,currentSquare);
-                        currentPlayer.buy((BPropertySquare) currentSquare);
-                        currentSquare.setOwnerOfSquare(currentPlayer);
-                    }
                     //Building house or hotel
                     if (currentSquare.getOwnerOfSquare() == currentPlayer){
                         if(!((BPropertySquare)currentSquare).getHasHouse() &&
@@ -199,6 +187,15 @@ public class BMonopolyGame implements BGameObserver {
                             ((BPropertySquare)currentSquare).buildHotel();
                             currentPlayer.getDPlayer().setBalance(currentPlayer.getDPlayer().getBalance() - ((BPropertySquare)currentSquare).getHotelPrice());
                         }
+                    }
+                    //Calling buying function.
+                    if(currentSquare.getOwnerOfSquare() == null &&
+                            currentSquare.getSQUARE_TYPE().equals("PROPERTY_SQUARE") &&
+                            currentPlayer.isAbleToBuy((BPropertySquare) currentSquare))
+                    {
+                        bTerminal.printBuyProcess(currentPlayer,currentSquare);
+                        currentPlayer.buy((BPropertySquare) currentSquare);
+                        currentSquare.setOwnerOfSquare(currentPlayer);
                     }
 
                     bTerminal.printAfterRollDice(currentPlayer, currentSquare);

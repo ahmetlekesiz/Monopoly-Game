@@ -1,9 +1,9 @@
 {
   "countOfPlayers": 8,
-  "startMoney": 100,
-  "priceOfTaxSquare": 20,
-  "priceOfGoSquare": 50,
-  "priceOfJailSquare": 30,
+  "startMoney": 1000,
+  "priceOfTaxSquare": 500,
+  "priceOfGoSquare": 20,
+  "priceOfJailSquare": 300,
   "mapFilename": "map.json"
 }
 
