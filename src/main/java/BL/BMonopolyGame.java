@@ -206,14 +206,17 @@ public class BMonopolyGame implements BGameObserver {
                     }
 
                     bTerminal.printAfterRollDice(currentPlayer, currentSquare);
-                    currentPlayer.updateDataset(currentPlayer.getDPlayer().roundCounter++, currentPlayer.getDPlayer().getBalance());
-                    if (currentPlayer.getDPlayer().isBankrupted()) {
-                        Logger.instance.LOGGER.log(Logger.DEFAULT_LEVEL, "Player: " + currentPlayer +
-                                " is eliminated Round Value: " + (currentPlayer.getDPlayer().roundCounter - 1));
-                        eliminatedPlayers.add(currentPlayer);
-                        iterator.remove();
-                    }
+
                 }
+                currentPlayer.updateDataset(currentPlayer.getDPlayer().roundCounter++, currentPlayer.getDPlayer().getBalance());
+                if (currentPlayer.getDPlayer().isBankrupted()) {
+                    Logger.instance.LOGGER.log(Logger.DEFAULT_LEVEL, "Player: " + currentPlayer +
+                            " is eliminated Round Value: " + (currentPlayer.getDPlayer().roundCounter - 1));
+                    eliminatedPlayers.add(currentPlayer);
+                    iterator.remove();
+                }
+                if(currentPlayers.size() ==1)
+                    return;
             }
         }
 
