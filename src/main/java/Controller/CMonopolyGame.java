@@ -4,6 +4,7 @@ import BL.BMonopolyGame;
 import DAL.DInstruction;
 import DAL.DJSONReader;
 import UI.UITerminal;
+import spring.log.Logger;
 
 /**
  * <h>CMonopolyGame</h>
@@ -42,6 +43,7 @@ public class CMonopolyGame {
      * @return void
      */
     void start() {
+        Logger.instance.LOGGER.log(Logger.DEFAULT_LEVEL, "Game is started.");
         BMonopolyGame.getInstance().startGame(DInstruction.getInstance());
     }
 

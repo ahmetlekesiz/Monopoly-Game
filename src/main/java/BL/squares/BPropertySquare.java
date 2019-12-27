@@ -14,7 +14,7 @@ import DAL.DPlayer;
  */
 
 public class BPropertySquare extends BSquare {
-    private String name;
+
     private final String SQUARE_TYPE = "PROPERTY_SQUARE";
     private BTerminal bTerminal = new BTerminal();
     private boolean hasHouse;

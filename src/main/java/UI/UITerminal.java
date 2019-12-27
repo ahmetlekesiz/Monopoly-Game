@@ -192,7 +192,11 @@ public class UITerminal {
         }
     }
 
-    public void printHouseInfo(){
-        System.out.println("\033[31m  qwe Hotel yapıldı. \033[0m");
+    public void printHouseInfo(BPlayer bPlayer, BSquare bSquare){
+        System.out.println("\033[31m  "+ bPlayer.getDPlayer().getPieceType() +" make house on "+ ((BPropertySquare) bSquare).getName() +" \033[0m");
+    }
+
+    public void printHotelInfo(BPlayer bPlayer, BSquare bSquare){
+        System.out.println("\033[31m  "+ bPlayer.getDPlayer().getPieceType() +" make hotel on "+ ((BPropertySquare) bSquare).getName() +" \033[0m");
     }
 }

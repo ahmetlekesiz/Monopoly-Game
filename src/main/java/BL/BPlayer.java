@@ -1,10 +1,10 @@
 package BL;
 
-import BL.squares.BGoSquare;
-import BL.squares.BPropertySquare;
-import BL.squares.BSquare;
-import BL.squares.PropertyType;
+import BL.squares.*;
 import DAL.DPlayer;
+import spring.config.squares.*;
+import spring.consumer.SquareConsumer;
+import spring.factory.BeanCreator;
 
 /***
  *BPlayer is player class in Business Layer.
@@ -40,10 +40,12 @@ public class BPlayer implements BPlayerObserver {
         if (getDPlayer().getCycleCounter() == 0 && currentSquare instanceof BGoSquare) return;
         if (isPlayerCrossTheGoSquare()) {
             dPlayer.setCycleCounter(dPlayer.getCycleCounter() + 1);
-            new BGoSquare(PropertyType.NOCOLOR).performOnLand(getDPlayer());
+            new BGoSquare(PropertyType.NOCOLOR).performOnLand(dPlayer);
             if (currentSquare instanceof BGoSquare) return;
         }
-        currentSquare.performOnLand(getDPlayer());
+            new SquareConfiguration().setSquare(currentSquare);
+            BeanCreator.instance.createBean(SquareConfiguration.class, SquareConsumer.class)
+                    .conductAction(dPlayer);
 
         if (isPlayerBankrupted()) {
             if(!tryToSellProperty(currentSquare)){
