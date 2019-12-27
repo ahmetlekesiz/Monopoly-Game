@@ -159,7 +159,6 @@ public class BMonopolyGame implements BGameObserver {
             currentPlayer = iterator.next();
             if (!currentPlayer.getDPlayer().isBankrupted()) {
                 bTerminal.printBeforeRollDice(currentPlayer);
-
                 if (currentPlayer.getDPlayer().isArrested()) {
                     if (boardInstance.getJailSquares().get(0).getJailRecords().containsKey(currentPlayer.getDPlayer())) {
                         boardInstance.getJailSquares().get(0).scanPlayerRecord(currentPlayer.getDPlayer());
@@ -174,11 +173,32 @@ public class BMonopolyGame implements BGameObserver {
                     BL.squares.BSquare currentSquare = boardInstance.getSquares()[currentPlayer.getDPlayer().getLocation()];
                     currentPlayer.checkAndUpdatePlayer(currentPlayer.getDPlayer().getCurrentDiceVal(),
                             currentSquare);
+                    System.out.println("\033[31m  Helehele" + currentSquare.pType + " \033[0m");
+                    //Check house or hotel can built
+                    switch (currentSquare.pType){
+                        case BROWN:
+                            break;
+                        case TURQUOISE:
+                            break;
+                        case PURPLE:
+                            break;
+                        case ORANGE:
+                            break;
+                        case RED:
+                            break;
+                        case YELLOW:
+                            break;
+                        case GREEN:
+                            break;
+                        case BLUE:
+                            break;
+                    }
                     //Building house or hotel
                     if (currentSquare.getOwnerOfSquare() == currentPlayer){
                         if(!((BPropertySquare)currentSquare).getHasHouse() &&
                                 currentPlayer.isAbleToBuilt((BPropertySquare)currentSquare))
                         {
+                            System.out.println("\033[31m  Helehele" + currentPlayer.getDPlayer().getPieceType() + " \033[0m");
                             ((BPropertySquare)currentSquare).buildHouse();
                             currentPlayer.getDPlayer().setBalance(currentPlayer.getDPlayer().getBalance() - ((BPropertySquare)currentSquare).getHousePrice());
                         } else if(!((BPropertySquare)currentSquare).getHasHotel() &&
