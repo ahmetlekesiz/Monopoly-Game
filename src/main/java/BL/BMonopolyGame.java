@@ -173,39 +173,22 @@ public class BMonopolyGame implements BGameObserver {
                     BL.squares.BSquare currentSquare = boardInstance.getSquares()[currentPlayer.getDPlayer().getLocation()];
                     currentPlayer.checkAndUpdatePlayer(currentPlayer.getDPlayer().getCurrentDiceVal(),
                             currentSquare);
-                    System.out.println("\033[31m  Helehele" + currentSquare.pType + " \033[0m");
                     //Check house or hotel can built
-                    switch (currentSquare.pType){
-                        case BROWN:
-                            break;
-                        case TURQUOISE:
-                            break;
-                        case PURPLE:
-                            break;
-                        case ORANGE:
-                            break;
-                        case RED:
-                            break;
-                        case YELLOW:
-                            break;
-                        case GREEN:
-                            break;
-                        case BLUE:
-                            break;
-                    }
                     //Building house or hotel
                     if (currentSquare.getOwnerOfSquare() == currentPlayer){
                         if(!((BPropertySquare)currentSquare).getHasHouse() &&
-                                currentPlayer.isAbleToBuilt((BPropertySquare)currentSquare))
+                                currentPlayer.isAbleToBuilt((BPropertySquare)currentSquare) &&
+                                !currentPlayer.getDPlayer().controlHasFullColor(currentSquare.pType.getValue(),currentPlayer.getDPlayer().getPieceType().getValue()))
                         {
-                            System.out.println("\033[31m  Helehele" + currentPlayer.getDPlayer().getPieceType() + " \033[0m");
                             ((BPropertySquare)currentSquare).buildHouse();
                             currentPlayer.getDPlayer().setBalance(currentPlayer.getDPlayer().getBalance() - ((BPropertySquare)currentSquare).getHousePrice());
+                            System.out.println("\033[31m  asd House yapıldı. \033[0m");
                         } else if(!((BPropertySquare)currentSquare).getHasHotel() &&
                                 currentPlayer.isAbleToBuilt((BPropertySquare)currentSquare))
                         {
                             ((BPropertySquare)currentSquare).buildHotel();
                             currentPlayer.getDPlayer().setBalance(currentPlayer.getDPlayer().getBalance() - ((BPropertySquare)currentSquare).getHotelPrice());
+                            System.out.println("\033[31m  qwe Hotel yapıldı. \033[0m");
                         }
                     }
                     //Calling buying function.

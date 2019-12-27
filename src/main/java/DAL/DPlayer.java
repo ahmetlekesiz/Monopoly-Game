@@ -22,6 +22,7 @@ public class DPlayer {
     private ArrayList<BPropertySquare> propertySquares = new ArrayList<>();
     private XYSeries playerDataset;
     public int roundCounter = 1;
+    private int[][] hasFullColor;
     public DPlayer(DPiece.PieceType pieceType, int balance) {
         playerDice = new BDice();
         this.pieceType = pieceType;
@@ -29,6 +30,7 @@ public class DPlayer {
         this.cycleCounter=0;
         roundValue = 0;
         this.currentDiceVal = 0;
+        this.hasFullColor = new int[8][8];
     }
 
     public int getCurrentDiceVal() {
@@ -127,5 +129,30 @@ public class DPlayer {
 
     public void setPlayerDataset(DPiece.PieceType pieceType) {
         this.playerDataset = new XYSeries(pieceType);
+    }
+
+    public int getHasFullColor(int color, int player) {
+        return hasFullColor[color][player];
+    }
+
+    public void setHasFullColor(int color, int player, int value) {
+        this.hasFullColor[color][player] = value;
+    }
+
+    public boolean controlHasFullColor(int color, int player) {
+        switch (color){
+            case 0:
+            case 7:
+                return getHasFullColor(color, player) == 2;
+            case 1:
+            case 2:
+            case 3:
+            case 4:
+            case 5:
+            case 6:
+                return getHasFullColor(color, player) == 3;
+            default:
+                return false;
+        }
     }
 }
