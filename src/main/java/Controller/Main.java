@@ -1,11 +1,5 @@
 package Controller;
 
-import DAL.DPiece;
-import DAL.DPlayer;
-import spring.config.squares.GoSquareConfiguration;
-import spring.consumer.SquareConsumer;
-import spring.factory.BeanCreator;
-
 /**
  * <h>Main</h>
  *
