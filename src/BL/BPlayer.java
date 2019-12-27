@@ -78,9 +78,7 @@ public class BPlayer implements BPlayerObserver {
             for (int i = 0; i < dPlayer.getPropertySquares().size() && currentPrice < debt; ++i) {
                 currentPrice += dPlayer.getPropertySquares().get(i).price;
                 sellSquare(dPlayer.getPropertySquares().get(i));
-                this.getDPlayer().setBalance(currentPrice);
             }
-            dPlayer.setBalance(currentPrice);
             return currentPrice >= debt;
         } else {
             return false;
@@ -97,6 +95,14 @@ public class BPlayer implements BPlayerObserver {
     private void sellSquare(BSquare square) {
         square.setOwnerOfSquare(null);
         this.getDPlayer().setBalance(this.getDPlayer().getBalance() + square.price);
+        if ( ((BPropertySquare) square).getHasHotel()){
+            square.setPrice(square.getPrice() / 7);
+            square.setRent(square.getRent() / 4);
+        }
+        else if ( ((BPropertySquare) square).getHasHouse()){
+            square.setPrice(square.getPrice() / 3);
+            square.setRent(square.getRent() / 2);
+        }
     }
 
     /**
@@ -157,4 +163,10 @@ public class BPlayer implements BPlayerObserver {
     public DPlayer getDPlayer() {
         return dPlayer;
     }
+
+    public boolean isAbleToBuilt(BPropertySquare currentSquare){
+        int price = currentSquare.getPrice();
+        return this.getDPlayer().getBalance() >= 2*price;
+    }
+
 }

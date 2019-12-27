@@ -170,7 +170,6 @@ public class BMonopolyGame implements BGameObserver {
                         boardInstance.getJailSquares().get(1).scanPlayerRecord(currentPlayer.getDPlayer());
                     }
                 }
-
                 if (!currentPlayer.getDPlayer().isArrested()) {
                     currentPlayer.rollDice();
                     currentPlayer.getDPlayer().setTotalDiceValue(currentPlayer.getDPlayer().getTotalDiceValue() +
@@ -187,7 +186,21 @@ public class BMonopolyGame implements BGameObserver {
                         currentPlayer.buy((BPropertySquare) currentSquare);
                         currentSquare.setOwnerOfSquare(currentPlayer);
                     }
-                    currentPlayer.updateDataset(currentPlayer.getDPlayer().roundCounter++, currentPlayer.getDPlayer().getBalance());
+                    //Building house or hotel
+                    if (currentSquare.getOwnerOfSquare() == currentPlayer){
+                        if(!((BPropertySquare)currentSquare).getHasHouse() &&
+                                currentPlayer.isAbleToBuilt((BPropertySquare)currentSquare))
+                        {
+                            ((BPropertySquare)currentSquare).buildHouse();
+                            currentPlayer.getDPlayer().setBalance(currentPlayer.getDPlayer().getBalance() - ((BPropertySquare)currentSquare).getHousePrice());
+                        } else if(!((BPropertySquare)currentSquare).getHasHotel() &&
+                                currentPlayer.isAbleToBuilt((BPropertySquare)currentSquare))
+                        {
+                            ((BPropertySquare)currentSquare).buildHotel();
+                            currentPlayer.getDPlayer().setBalance(currentPlayer.getDPlayer().getBalance() - ((BPropertySquare)currentSquare).getHotelPrice());
+                        }
+                    }
+
                     bTerminal.printAfterRollDice(currentPlayer, currentSquare);
                     if (currentPlayer.getDPlayer().isBankrupted()) {
                         System.out.println("EPlayer:"+currentPlayer.getDPlayer().getPieceType()+" is elimantig"+" Money: "+ currentPlayer.getDPlayer().getBalance()+ " Round val:"+ currentPlayer.getDPlayer().roundCounter);
@@ -195,6 +208,8 @@ public class BMonopolyGame implements BGameObserver {
                         iterator.remove();
                     }
                 }
+                //TODO player elenirse dataseti güncelleyemez.
+                currentPlayer.updateDataset(currentPlayer.getDPlayer().roundCounter++, currentPlayer.getDPlayer().getBalance());
             }
         }
 
