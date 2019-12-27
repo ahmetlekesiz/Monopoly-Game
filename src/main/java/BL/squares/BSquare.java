@@ -13,6 +13,7 @@ import DAL.DPlayer;
  */
 public abstract class BSquare {
     public  PropertyType pType;
+    public String name="Default";
     public BPlayer ownerOfSquare = null;
     public int rent;
     public int price;
