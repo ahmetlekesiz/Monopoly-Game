@@ -210,7 +210,7 @@ public class BMonopolyGame implements BGameObserver {
                 }
                 currentPlayer.updateDataset(currentPlayer.getDPlayer().roundCounter++, currentPlayer.getDPlayer().getBalance());
                 if (currentPlayer.getDPlayer().isBankrupted()) {
-                    Logger.instance.LOGGER.log(Logger.DEFAULT_LEVEL, "Player: " + currentPlayer +
+                    Logger.instance.LOGGER.log(Logger.DEFAULT_LEVEL, "Player: " + currentPlayer.getDPlayer().getPieceType() +
                             " is eliminated Round Value: " + (currentPlayer.getDPlayer().roundCounter - 1));
                     eliminatedPlayers.add(currentPlayer);
                     iterator.remove();
