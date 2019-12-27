@@ -24,9 +24,6 @@ public class Main {
 
     public static void main(String[] args) {
         CMonopolyGame monopolyGame = CMonopolyGame.getInstance(INSTRUCTION_FILENAME);
-        /*BeanCreator.instance.createBean(GoSquareConfiguration.class, SquareConsumer.class).conductAction(
-                new DPlayer(DPiece.PieceType.BATTLESHIP, 1000)
-        );*/
         monopolyGame.start();
     }
 }

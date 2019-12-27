@@ -6,6 +6,14 @@ import org.springframework.stereotype.Component;
 import BL.squares.BSquare;
 import spring.log.Logger;
 
+/**
+ * A common Consumer class for objects in type of BSquare.
+ * BSquare is an abstract method and it has numerous
+ * offspring designed for various functionality.
+ *
+ * @author Muhammed Bera KOÇ
+ * @since 1.3
+ */
 @Component
 public class SquareConsumer {
 

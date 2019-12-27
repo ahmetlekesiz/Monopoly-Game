@@ -19,6 +19,7 @@ import org.jfree.data.category.DefaultCategoryDataset;
 import org.jfree.data.xy.XYDataset;
 import org.jfree.data.xy.XYSeries;
 import org.jfree.data.xy.XYSeriesCollection;
+import spring.log.Logger;
 
 /**
  * <p>BMonopolyGame is MonopolyGame class in Business Layer. Main rules
@@ -144,6 +145,9 @@ public class BMonopolyGame implements BGameObserver {
             if(firstPlayer.getDPlayer().getBalance() == secondPlayer.getDPlayer().getBalance()) return 0;
             return firstPlayer.getDPlayer().getBalance() > secondPlayer.getDPlayer().getBalance() ? -1 : 1;
         });
+        Logger.instance.LOGGER.log(Logger.DEFAULT_LEVEL, "Game is finished.");
+        Logger.instance.LOGGER.log(Logger.DEFAULT_LEVEL, String.format("Winner: [%s]",
+                currentPlayers.get(0).getDPlayer().getPieceType()));
         bTerminal.printWinnerPlayer(currentPlayers.get(0));
         bTerminal.printGameOver(eliminatedPlayers);
     }

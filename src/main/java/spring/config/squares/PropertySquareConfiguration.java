@@ -13,6 +13,6 @@ public class PropertySquareConfiguration {
 
     @Bean
     public BSquare getSquare() {
-        return new BPropertySquare("Property", PropertyType.BLUE, 50, 400);
+        return new BPropertySquare("Property", PropertyType.BLUE, 100, 450);
     }
 }

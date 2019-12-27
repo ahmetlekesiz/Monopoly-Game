@@ -43,7 +43,7 @@ public class BPlayer implements BPlayerObserver {
             new BGoSquare(PropertyType.NOCOLOR).performOnLand(dPlayer);
             if (currentSquare instanceof BGoSquare) return;
         }
-        currentSquare.performOnLand(getDPlayer());
+        currentSquare.performOnLand(dPlayer);
         if (isPlayerBankrupted()) {
             if(!tryToSellProperty(currentSquare)){
                 dPlayer.setBalance(0);
