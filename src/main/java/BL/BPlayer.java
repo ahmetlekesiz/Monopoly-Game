@@ -43,10 +43,8 @@ public class BPlayer implements BPlayerObserver {
             new BGoSquare(PropertyType.NOCOLOR).performOnLand(dPlayer);
             if (currentSquare instanceof BGoSquare) return;
         }
-        //currentSquare.performOnLand(dPlayer);
-
-            new PropertySquareConfiguration().setSquare(currentSquare);
-            BeanCreator.instance.createBean(PropertySquareConfiguration.class, SquareConsumer.class)
+            new SquareConfiguration().setSquare(currentSquare);
+            BeanCreator.instance.createBean(SquareConfiguration.class, SquareConsumer.class)
                     .conductAction(dPlayer);
 
         if (isPlayerBankrupted()) {
