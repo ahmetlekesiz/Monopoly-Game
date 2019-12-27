@@ -1,5 +1,6 @@
 package spring.consumer;
 
+import BL.squares.BPropertySquare;
 import DAL.DPlayer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -26,8 +27,8 @@ public class SquareConsumer {
 
     public void conductAction(DPlayer dPlayer) {
         Logger.instance.LOGGER.log(Logger.DEFAULT_LEVEL, String.format(
-                "Before: Name: [%s], Balance: [%d], Turn: [%d], Square: [%s]", dPlayer.getPieceType(),
-                dPlayer.getBalance(), dPlayer.getRoundValue(), square.getSQUARE_TYPE()
+                "Before: Name: [%s], Balance: [%d], Turn: [%d], Square: [%s], Square Name: [%s]", dPlayer.getPieceType(),
+                dPlayer.getBalance(), dPlayer.getRoundValue(), square.getSQUARE_TYPE() ,square.name
         ));
         square.performOnLand(dPlayer);
         Logger.instance.LOGGER.log(Logger.DEFAULT_LEVEL, String.format(

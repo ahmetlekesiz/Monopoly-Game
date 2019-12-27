@@ -11,8 +11,14 @@ import org.springframework.context.annotation.Configuration;
 @ComponentScan(value = "spring.consumer")
 public class PropertySquareConfiguration {
 
+    private static BSquare square;
+
     @Bean
     public BSquare getSquare() {
-        return new BPropertySquare("Property", PropertyType.BLUE, 100, 450);
+        return this.square;
+    }
+
+    public void setSquare(BSquare square) {
+        this.square = square;
     }
 }
