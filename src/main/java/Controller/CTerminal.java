@@ -1,18 +1,17 @@
-package Controller;
+package main.java.Controller;
 
 
-import BL.BPlayer;
-import BL.squares.BPropertySquare;
-import BL.squares.BSquare;
-import DAL.DPlayer;
-import UI.UITerminal;
+import main.java.BL.BPlayer;
+import main.java.BL.squares.BSquare;
+import main.java.DAL.DPlayer;
+import main.java.UI.UITerminal;
 
 import java.util.ArrayList;
 
 /**
  * <h>CTerminal</h>
  *
- * <p>Controller for Terminal class which is used for during process of getting player data and printing them.</p>
+ * <p>main.java.Controller for Terminal class which is used for during process of getting player data and printing them.</p>
  *
  * @author Ahmet LEKESİZ
  * @version 1.0

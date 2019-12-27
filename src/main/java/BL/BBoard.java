@@ -1,15 +1,8 @@
 package main.java.BL;
 
-import BL.squares.*;
-import BL.squares.BCommunityChestSquare;
-import BL.squares.BGoSquare;
-import BL.squares.BPropertySquare;
-import BL.squares.BRegularSquare;
-import BL.squares.BSquare;
-import BL.squares.PropertyType;
-import main.java.DAL.DInstruction;
-import main.java.BL.squares.BJailSquare;
+import main.java.BL.squares.*;
 import main.java.Controller.Main;
+import main.java.DAL.DInstruction;
 
 import java.util.ArrayList;
 
@@ -52,7 +45,7 @@ public class BBoard {
                         break;
                     }
                     case "Luck": {
-                        squares[i] = new BL.squares.BLuckSquare(PropertyType.values()[Integer.parseInt(map[i].get(1))]);
+                        squares[i] = new BLuckSquare(PropertyType.values()[Integer.parseInt(map[i].get(1))]);
                         break;
                     }
                     case "CommunityChest": {
@@ -65,7 +58,7 @@ public class BBoard {
                         break;
                     }
                     case "Tax": {
-                        squares[i] = new BL.squares.BTaxSquare(PropertyType.values()[Integer.parseInt(map[i].get(1))]);
+                        squares[i] = new BTaxSquare(PropertyType.values()[Integer.parseInt(map[i].get(1))]);
                         break;
                     }
                     case "Regular":

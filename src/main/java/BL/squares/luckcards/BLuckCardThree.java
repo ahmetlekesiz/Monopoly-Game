@@ -1,9 +1,9 @@
 package main.java.BL.squares.luckcards;
 
 import main.java.DAL.DInstruction;
-import DAL.DPlayer;
+import main.java.DAL.DPlayer;
 
-public class BLuckCardThree extends BL.squares.luckcards.BLuckCards {
+public class BLuckCardThree extends BLuckCards{
 
     public BLuckCardThree() {
         setCARD_INFO("Advance to Fairmont. If you pass Go, collect $200. ");

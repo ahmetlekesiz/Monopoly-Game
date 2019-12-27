@@ -1,8 +1,8 @@
 package main.java.BL.squares.communitychestcards;
 
-import DAL.DPlayer;
+import main.java.DAL.DPlayer;
 
-public class BCommunityCardFifteen extends BL.squares.communitychestcards.BCommunityCards {
+public class BCommunityCardFifteen extends BCommunityCards{
 
     public BCommunityCardFifteen(){
         setCARD_INFO("You have won second prize in a beauty contest. Collect $10.");

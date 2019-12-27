@@ -1,6 +1,6 @@
-package BL;
+package main.java.BL;
 
-import BL.squares.BSquare;
+import main.java.BL.squares.BSquare;
 
 /***
  *BPlayerObserver interface to make actions on players.

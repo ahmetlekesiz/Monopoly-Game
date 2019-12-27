@@ -1,6 +1,6 @@
-package BL.squares.luckcards;
+package main.java.BL.squares.luckcards;
 
-import DAL.DPlayer;
+import main.java.DAL.DPlayer;
 
 public class BLuckCardOne extends BLuckCards{
 

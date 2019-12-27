@@ -1,8 +1,7 @@
-package BL.squares;
+package main.java.BL.squares;
 
-import BL.BPlayer;
-import BL.BTerminal;
-import DAL.DPlayer;
+import main.java.BL.BTerminal;
+import main.java.DAL.DPlayer;
 
 public class BPropertySquare extends BSquare {
     private String name;

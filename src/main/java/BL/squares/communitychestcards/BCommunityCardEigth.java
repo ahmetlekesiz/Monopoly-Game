@@ -1,8 +1,8 @@
 package main.java.BL.squares.communitychestcards;
 
-import DAL.DPlayer;
+import main.java.DAL.DPlayer;
 
-public class BCommunityCardEigth extends BL.squares.communitychestcards.BCommunityCards {
+public class BCommunityCardEigth extends BCommunityCards{
 
     public BCommunityCardEigth(){
         setCARD_INFO("Holiday Fund matures. Collect $100.");

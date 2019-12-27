@@ -1,9 +1,8 @@
-package BL;
+package main.java.BL;
 
-import BL.squares.BPropertySquare;
-import BL.squares.BSquare;
-import Controller.CTerminal;
-import DAL.DPlayer;
+import main.java.BL.squares.BSquare;
+import main.java.Controller.CTerminal;
+import main.java.DAL.DPlayer;
 
 import java.util.ArrayList;
 

@@ -1,7 +1,7 @@
-package BL;
+package main.java.BL;
 
-import BL.squares.BRegularSquare;
-import BL.squares.PropertyType;
+import main.java.BL.squares.BRegularSquare;
+import main.java.BL.squares.PropertyType;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

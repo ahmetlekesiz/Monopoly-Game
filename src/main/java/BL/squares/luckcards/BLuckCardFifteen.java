@@ -1,13 +1,12 @@
 package main.java.BL.squares.luckcards;
 
 import main.java.BL.BMonopolyGame;
-import BL.BPlayer;
-import main.java.DAL.DInstruction;
-import DAL.DPlayer;
+import main.java.BL.BPlayer;
+import main.java.DAL.DPlayer;
 
 import java.util.ArrayList;
 
-public class BLuckCardFifteen extends BL.squares.luckcards.BLuckCards {
+public class BLuckCardFifteen extends BLuckCards {
     private ArrayList<BPlayer> otherPlayer;
     private BMonopolyGame referanceToGetPlayers;
     private DPlayer tempDPlayer;

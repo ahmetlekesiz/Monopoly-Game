@@ -1,6 +1,6 @@
-package BL.squares;
+package main.java.BL.squares;
 
-import DAL.DPlayer;
+import main.java.DAL.DPlayer;
 
 /**
  * <h>BRegularSquare</h>

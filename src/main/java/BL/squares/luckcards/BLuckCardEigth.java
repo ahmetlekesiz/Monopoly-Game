@@ -1,8 +1,8 @@
 package main.java.BL.squares.luckcards;
 
-import DAL.DPlayer;
+import main.java.DAL.DPlayer;
 
-public class BLuckCardEigth extends BL.squares.luckcards.BLuckCards {
+public class BLuckCardEigth extends BLuckCards {
     private DPlayer cardOwner;
 
     public BLuckCardEigth() {

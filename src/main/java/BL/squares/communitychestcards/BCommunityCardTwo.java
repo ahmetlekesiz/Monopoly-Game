@@ -1,8 +1,8 @@
 package main.java.BL.squares.communitychestcards;
 
-import DAL.DPlayer;
+import main.java.DAL.DPlayer;
 
-public class BCommunityCardTwo extends BL.squares.communitychestcards.BCommunityCards {
+public class BCommunityCardTwo extends BCommunityCards {
 
     public BCommunityCardTwo(){
         setCARD_INFO("Bank error in your favor. Collect $200.");

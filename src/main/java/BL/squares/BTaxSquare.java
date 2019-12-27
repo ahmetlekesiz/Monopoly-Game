@@ -1,8 +1,6 @@
 package main.java.BL.squares;
 
-import BL.squares.BSquare;
-import BL.squares.PropertyType;
-import DAL.DPlayer;
+import main.java.DAL.DPlayer;
 import main.java.DAL.DInstruction;
 
 /**
@@ -30,8 +28,7 @@ public class BTaxSquare extends BSquare {
      */
     @Override
     public void performOnLand(DPlayer player) {
-        if (player.getBalance() > 1000) player.setBalance((int) (player.getBalance() * 0.7));
-        else player.setBalance(player.getBalance() - (int) DInstructionInstance.priceOfTaxSquares);
+        player.setBalance(player.getBalance() - (int) DInstructionInstance.priceOfTaxSquares);
     }
 
     /**

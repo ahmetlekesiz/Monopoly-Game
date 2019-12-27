@@ -1,16 +1,14 @@
 package main.java.BL.squares;
 
-import BL.BTerminal;
-import BL.squares.BSquare;
-import BL.squares.PropertyType;
+import main.java.BL.BTerminal;
 import main.java.BL.squares.communitychestcards.*;
-import DAL.DPlayer;
+import main.java.DAL.DPlayer;
 
 import java.util.ArrayList;
 
 public class BCommunityChestSquare extends BSquare {
     private final String SQUARE_TYPE = "COMMUNITY_SQUARE";
-    private ArrayList<BL.squares.communitychestcards.BCommunityCards> communityChestCards = new ArrayList<>();
+    private ArrayList<BCommunityCards> communityChestCards = new ArrayList<>();
     private int totalNumberCard = 17;
     private BTerminal bTerminal = new BTerminal();
 

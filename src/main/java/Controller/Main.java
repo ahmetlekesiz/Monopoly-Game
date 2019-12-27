@@ -14,10 +14,10 @@ public class Main {
     public static final String INSTRUCTION_FILENAME = "game.json";
     public static final Integer PLACE_NUMBER = 40;
     // User can change this value.
-    public static final Integer ROUND_LIMIT = 10000;
+    public static final Integer ROUND_LIMIT = 100;
 
     public static void main(String[] args) {
-        Controller.CMonopolyGame monopolyGame = Controller.CMonopolyGame.getInstance(INSTRUCTION_FILENAME);
+        CMonopolyGame monopolyGame = CMonopolyGame.getInstance(INSTRUCTION_FILENAME);
         monopolyGame.start();
     }
 }

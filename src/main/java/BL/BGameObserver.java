@@ -1,4 +1,4 @@
-package BL;
+package main.java.BL;
 
 /**
  * <h>BGameObserver</h>

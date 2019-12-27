@@ -1,12 +1,12 @@
-package BL;
+package main.java.BL;
 
-import BL.squares.BTaxSquare;
-import BL.squares.PropertyType;
-import Controller.Main;
-import DAL.DInstruction;
-import DAL.DJSONReader;
-import DAL.DPiece;
-import DAL.DPlayer;
+import main.java.BL.squares.BTaxSquare;
+import main.java.BL.squares.PropertyType;
+import main.java.Controller.Main;
+import main.java.DAL.DInstruction;
+import main.java.DAL.DJSONReader;
+import main.java.DAL.DPiece;
+import main.java.DAL.DPlayer;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 

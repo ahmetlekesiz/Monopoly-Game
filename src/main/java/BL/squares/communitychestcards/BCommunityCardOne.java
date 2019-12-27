@@ -1,9 +1,9 @@
 package main.java.BL.squares.communitychestcards;
 
-import DAL.DPlayer;
 import main.java.DAL.DInstruction;
+import main.java.DAL.DPlayer;
 
-public class BCommunityCardOne extends BL.squares.communitychestcards.BCommunityCards {
+public class BCommunityCardOne extends BCommunityCards {
 
     public BCommunityCardOne(){
         setCARD_INFO("Advance to Go Square.");

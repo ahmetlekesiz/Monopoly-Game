@@ -1,9 +1,9 @@
 package main.java.BL.squares.luckcards;
 
 import main.java.DAL.DInstruction;
-import DAL.DPlayer;
+import main.java.DAL.DPlayer;
 
-public class BLuckCardThirteen extends BL.squares.luckcards.BLuckCards {
+public class BLuckCardThirteen extends BLuckCards {
 
     public BLuckCardThirteen() {
         setCARD_INFO("Take a trip to Embassy Suites. If you pass Go, collect $200. ");

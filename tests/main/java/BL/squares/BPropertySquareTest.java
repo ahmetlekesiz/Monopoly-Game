@@ -1,11 +1,9 @@
-package BL.squares;
+package main.java.BL.squares;
 
-import DAL.DPiece;
-import DAL.DPlayer;
+import main.java.DAL.DPiece;
+import main.java.DAL.DPlayer;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class BPropertySquareTest {
 

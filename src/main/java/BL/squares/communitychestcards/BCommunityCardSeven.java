@@ -1,12 +1,12 @@
 package main.java.BL.squares.communitychestcards;
 
 import main.java.BL.BMonopolyGame;
-import BL.BPlayer;
-import DAL.DPlayer;
+import main.java.BL.BPlayer;
+import main.java.DAL.DPlayer;
 
 import java.util.ArrayList;
 
-public class BCommunityCardSeven extends BL.squares.communitychestcards.BCommunityCards {
+public class BCommunityCardSeven extends BCommunityCards{
     private ArrayList<BPlayer> otherPlayer;
     private BMonopolyGame referanceToGetPlayers;
     private DPlayer tempDPlayer;

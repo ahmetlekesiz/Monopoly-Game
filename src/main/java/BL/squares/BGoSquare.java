@@ -1,6 +1,6 @@
-package BL.squares;
+package main.java.BL.squares;
 
-import DAL.DPlayer;
+import main.java.DAL.DPlayer;
 import main.java.DAL.DInstruction;
 /***
  *BGoSquare is class that represents starting point of game in Business Layer.
@@ -10,10 +10,10 @@ import main.java.DAL.DInstruction;
  * @version 1.0
  * @since 11.
  */
-public class BGoSquare extends BL.squares.BSquare {
+public class BGoSquare extends BSquare {
     private final String SQUARE_TYPE = "GO_SQUARE";
     private final DInstruction DInstructionInstance = DInstruction.getInstance();
-    public BGoSquare(BL.squares.PropertyType type){this.pType=type;}
+    public BGoSquare(PropertyType type){this.pType=type;}
     /**
      *<p>Perform on land function inherited from BSquare which is generic type for squares.
      * For Go square its add amount of priceOfGoSquare to players balance </p>

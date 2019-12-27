@@ -1,12 +1,9 @@
-package BL;
+package main.java.BL;
 
-import Controller.Main;
-import DAL.DInstruction;
-import DAL.DJSONReader;
+import main.java.Controller.Main;
+import main.java.DAL.DJSONReader;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-
-import java.util.ArrayList;
 
 import static org.junit.jupiter.api.Assertions.*;
 

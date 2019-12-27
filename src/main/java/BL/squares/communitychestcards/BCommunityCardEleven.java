@@ -1,8 +1,8 @@
 package main.java.BL.squares.communitychestcards;
 
-import DAL.DPlayer;
+import main.java.DAL.DPlayer;
 
-public class BCommunityCardEleven extends BL.squares.communitychestcards.BCommunityCards {
+public class BCommunityCardEleven extends BCommunityCards{
 
     public BCommunityCardEleven(){
         setCARD_INFO("Hospital Fees. Pay $50. ");
