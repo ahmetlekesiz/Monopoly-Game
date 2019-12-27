@@ -230,6 +230,9 @@ public class BMonopolyGame implements BGameObserver {
                         eliminatedPlayers.add(currentPlayer);
                         iterator.remove();
                     }
+                    if (currentPlayers.size() == 1) {
+                        return;
+                    }
                 }
             }
         }
