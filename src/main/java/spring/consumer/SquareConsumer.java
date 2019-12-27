@@ -11,6 +11,14 @@ import spring.log.Logger;
  * BSquare is an abstract method and it has numerous
  * offspring designed for various functionality.
  *
+ * <p>
+ *     It has one wrapped method which invokes logger and
+ *     trigger performOnLand method.
+ *
+ * <p>
+ *     The class is a component and it is method-autowired.
+ *     It has only one variable which is square.
+ *
  * @author Muhammed Bera KOÇ
  * @since 1.3
  */
@@ -19,11 +27,24 @@ public class SquareConsumer {
 
     private BSquare square;
 
+    /**
+     * Autowired setter method for Spring framework
+     *
+     * @param square A square which is polymorphic for BSquare
+     */
     @Autowired
     public void setSquare(BSquare square) {
         this.square = square;
     }
 
+    /**
+     * A encapsulated method for performOnLand method in BSquare.
+     * It cooperates with Logger class to save the current statistics
+     * to app.log file. It has two logging attempt one for the start
+     * and one for the end.
+     *
+     * @param dPlayer Current player which has trodden upon a Square
+     */
     public void conductAction(DPlayer dPlayer) {
         Logger.instance.LOGGER.log(Logger.DEFAULT_LEVEL, String.format(
                 "Before: Name: [%s], Balance: [%d], Turn: [%d], Square: [%s]", dPlayer.getPieceType(),
