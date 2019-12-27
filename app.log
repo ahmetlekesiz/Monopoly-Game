@@ -1,0 +1,2 @@
+spring.consumer.SquareConsumer::conductAction::Fri Dec 27 19:24:28 EET 2019::Before: Name: [BATTLESHIP], Balance: [1000], Turn: [0], Square: [GO_SQUARE]
+spring.consumer.SquareConsumer::conductAction::Fri Dec 27 19:24:28 EET 2019::Before: Name: [BATTLESHIP], Balance: [1100], Turn: [0]

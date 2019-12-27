@@ -2,160 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65242711-3e21-4f1c-9534-4bfb791e86bb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/json_simple_1_1__2_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/json_simple_1_1__2_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/json_simple_1_1__3_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/json_simple_1_1__3_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/spring/config/squares/CommunityChestSquareConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/spring/config/squares/GoSquareConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/spring/config/squares/JailSquareConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/spring/config/squares/LuckSquareConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/spring/config/squares/RegularSquareConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/spring/config/squares/TaxSquareConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/spring/consumer/SquareConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/spring/factory/BeanCreator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/spring/log/Logger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/spring/log/MessageFormatter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Monopoly.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Monopoly.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Prototype.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Prototype.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/JDocs/BL/BBoard.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents/JDocs/BL/BBoard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/JDocs/BL/BDice.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents/JDocs/BL/BDice.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/JDocs/BL/BGameObserver.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents/JDocs/BL/BGameObserver.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/JDocs/BL/BGoSquare.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents/JDocs/BL/BGoSquare.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/JDocs/BL/BMonopolyGame.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents/JDocs/BL/BMonopolyGame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/JDocs/BL/BPlayer.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents/JDocs/BL/BPlayer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/JDocs/BL/BPlayerObserver.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents/JDocs/BL/BPlayerObserver.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/JDocs/BL/BRegularSquare.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents/JDocs/BL/BRegularSquare.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/JDocs/BL/BSquare.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents/JDocs/BL/BSquare.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/JDocs/BL/BTaxSquare.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents/JDocs/BL/BTaxSquare.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/JDocs/BL/BTerminal.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents/JDocs/BL/BTerminal.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/JDocs/BL/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents/JDocs/BL/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/JDocs/BL/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents/JDocs/BL/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/JDocs/Controller/CInstruction.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents/JDocs/Controller/CInstruction.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/JDocs/Controller/CMonopolyGame.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents/JDocs/Controller/CMonopolyGame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/JDocs/Controller/CTerminal.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents/JDocs/Controller/CTerminal.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/JDocs/Controller/Main.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents/JDocs/Controller/Main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/JDocs/Controller/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents/JDocs/Controller/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/JDocs/Controller/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents/JDocs/Controller/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/JDocs/DAL/DInstruction.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents/JDocs/DAL/DInstruction.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/JDocs/DAL/DJSONReader.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents/JDocs/DAL/DJSONReader.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/JDocs/DAL/DPiece.PieceType.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents/JDocs/DAL/DPiece.PieceType.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/JDocs/DAL/DPiece.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents/JDocs/DAL/DPiece.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/JDocs/DAL/DPlayer.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents/JDocs/DAL/DPlayer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/JDocs/DAL/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents/JDocs/DAL/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/JDocs/DAL/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents/JDocs/DAL/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/JDocs/UI/UITerminal.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents/JDocs/UI/UITerminal.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/JDocs/UI/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents/JDocs/UI/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/JDocs/UI/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents/JDocs/UI/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/JDocs/allclasses-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents/JDocs/allclasses-index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/JDocs/allclasses.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents/JDocs/allclasses.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/JDocs/allpackages-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents/JDocs/allpackages-index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/JDocs/constant-values.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents/JDocs/constant-values.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/JDocs/deprecated-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents/JDocs/deprecated-list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/JDocs/element-list" beforeDir="false" afterPath="$PROJECT_DIR$/documents/JDocs/element-list" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/JDocs/help-doc.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents/JDocs/help-doc.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/JDocs/index-files/index-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents/JDocs/index-files/index-1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/JDocs/index-files/index-10.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents/JDocs/index-files/index-10.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/JDocs/index-files/index-11.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents/JDocs/index-files/index-11.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/JDocs/index-files/index-12.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents/JDocs/index-files/index-12.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/JDocs/index-files/index-13.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents/JDocs/index-files/index-13.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/JDocs/index-files/index-14.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents/JDocs/index-files/index-14.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/JDocs/index-files/index-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents/JDocs/index-files/index-2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/JDocs/index-files/index-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents/JDocs/index-files/index-3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/JDocs/index-files/index-4.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents/JDocs/index-files/index-4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/JDocs/index-files/index-5.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents/JDocs/index-files/index-5.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/JDocs/index-files/index-6.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents/JDocs/index-files/index-6.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/JDocs/index-files/index-7.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents/JDocs/index-files/index-7.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/JDocs/index-files/index-8.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents/JDocs/index-files/index-8.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/JDocs/index-files/index-9.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents/JDocs/index-files/index-9.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/JDocs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents/JDocs/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/JDocs/jquery/external/jquery/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/documents/JDocs/jquery/external/jquery/jquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/JDocs/jquery/jquery-3.3.1.js" beforeDir="false" afterPath="$PROJECT_DIR$/documents/JDocs/jquery/jquery-3.3.1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/JDocs/jquery/jquery-migrate-3.0.1.js" beforeDir="false" afterPath="$PROJECT_DIR$/documents/JDocs/jquery/jquery-migrate-3.0.1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/JDocs/jquery/jquery-ui.css" beforeDir="false" afterPath="$PROJECT_DIR$/documents/JDocs/jquery/jquery-ui.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/JDocs/jquery/jquery-ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/documents/JDocs/jquery/jquery-ui.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/JDocs/jquery/jquery-ui.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/documents/JDocs/jquery/jquery-ui.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/JDocs/jquery/jquery-ui.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/documents/JDocs/jquery/jquery-ui.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/JDocs/jquery/jquery-ui.structure.css" beforeDir="false" afterPath="$PROJECT_DIR$/documents/JDocs/jquery/jquery-ui.structure.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/JDocs/jquery/jquery-ui.structure.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/documents/JDocs/jquery/jquery-ui.structure.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/JDocs/jquery/jszip-utils/dist/jszip-utils-ie.js" beforeDir="false" afterPath="$PROJECT_DIR$/documents/JDocs/jquery/jszip-utils/dist/jszip-utils-ie.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/JDocs/jquery/jszip-utils/dist/jszip-utils-ie.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/documents/JDocs/jquery/jszip-utils/dist/jszip-utils-ie.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/JDocs/jquery/jszip-utils/dist/jszip-utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/documents/JDocs/jquery/jszip-utils/dist/jszip-utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/JDocs/jquery/jszip-utils/dist/jszip-utils.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/documents/JDocs/jquery/jszip-utils/dist/jszip-utils.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/JDocs/jquery/jszip/dist/jszip.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/documents/JDocs/jquery/jszip/dist/jszip.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/JDocs/member-search-index.js" beforeDir="false" afterPath="$PROJECT_DIR$/documents/JDocs/member-search-index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/JDocs/overview-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents/JDocs/overview-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/JDocs/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/documents/JDocs/overview-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/JDocs/package-search-index.js" beforeDir="false" afterPath="$PROJECT_DIR$/documents/JDocs/package-search-index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/JDocs/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/documents/JDocs/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/JDocs/search.js" beforeDir="false" afterPath="$PROJECT_DIR$/documents/JDocs/search.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/JDocs/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/documents/JDocs/stylesheet.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/JDocs/type-search-index.js" beforeDir="false" afterPath="$PROJECT_DIR$/documents/JDocs/type-search-index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game.json" beforeDir="false" afterPath="$PROJECT_DIR$/game.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/map.json" beforeDir="false" afterPath="$PROJECT_DIR$/map.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BL/BBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/BBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BL/BDice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/BDice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BL/BGameObserver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/BGameObserver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BL/BMonopolyGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/BMonopolyGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BL/BPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/BPlayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BL/BPlayerObserver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/BPlayerObserver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BL/BTerminal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/BTerminal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BL/squares/BCommunityChestSquare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/BCommunityChestSquare.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BL/squares/BGoSquare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/BGoSquare.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BL/squares/BJailSquare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/BJailSquare.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BL/squares/BLuckSquare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/BLuckSquare.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BL/squares/BPropertySquare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/BPropertySquare.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BL/squares/BRegularSquare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/BRegularSquare.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BL/squares/BSquare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/BSquare.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BL/squares/BTaxSquare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/BTaxSquare.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BL/squares/PropertyType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/PropertyType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BL/squares/communitychestcards/BCommunityCardEigth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/communitychestcards/BCommunityCardEigth.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BL/squares/communitychestcards/BCommunityCardEleven.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/communitychestcards/BCommunityCardEleven.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BL/squares/communitychestcards/BCommunityCardFifteen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/communitychestcards/BCommunityCardFifteen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BL/squares/communitychestcards/BCommunityCardFive.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/communitychestcards/BCommunityCardFive.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BL/squares/communitychestcards/BCommunityCardFour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/communitychestcards/BCommunityCardFour.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BL/squares/communitychestcards/BCommunityCardFourteen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/communitychestcards/BCommunityCardFourteen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BL/squares/communitychestcards/BCommunityCardNine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/communitychestcards/BCommunityCardNine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BL/squares/communitychestcards/BCommunityCardOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/communitychestcards/BCommunityCardOne.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BL/squares/communitychestcards/BCommunityCardSeven.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/communitychestcards/BCommunityCardSeven.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BL/squares/communitychestcards/BCommunityCardSeventeen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/communitychestcards/BCommunityCardSeventeen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BL/squares/communitychestcards/BCommunityCardSix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/communitychestcards/BCommunityCardSix.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BL/squares/communitychestcards/BCommunityCardSixteen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/communitychestcards/BCommunityCardSixteen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BL/squares/communitychestcards/BCommunityCardTen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/communitychestcards/BCommunityCardTen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BL/squares/communitychestcards/BCommunityCardThirteen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/communitychestcards/BCommunityCardThirteen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BL/squares/communitychestcards/BCommunityCardThree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/communitychestcards/BCommunityCardThree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BL/squares/communitychestcards/BCommunityCardTwelve.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/communitychestcards/BCommunityCardTwelve.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BL/squares/communitychestcards/BCommunityCardTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/communitychestcards/BCommunityCardTwo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BL/squares/communitychestcards/BCommunityCards.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/communitychestcards/BCommunityCards.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BL/squares/luckcards/BLuckCardEigth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/luckcards/BLuckCardEigth.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BL/squares/luckcards/BLuckCardEleven.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/luckcards/BLuckCardEleven.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BL/squares/luckcards/BLuckCardFifteen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/luckcards/BLuckCardFifteen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BL/squares/luckcards/BLuckCardFive.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/luckcards/BLuckCardFive.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BL/squares/luckcards/BLuckCardFour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/luckcards/BLuckCardFour.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BL/squares/luckcards/BLuckCardFourteen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/luckcards/BLuckCardFourteen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BL/squares/luckcards/BLuckCardNine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/luckcards/BLuckCardNine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BL/squares/luckcards/BLuckCardOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/luckcards/BLuckCardOne.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BL/squares/luckcards/BLuckCardSeven.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/luckcards/BLuckCardSeven.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BL/squares/luckcards/BLuckCardSix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/luckcards/BLuckCardSix.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BL/squares/luckcards/BLuckCardSixteen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/luckcards/BLuckCardSixteen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BL/squares/luckcards/BLuckCardTen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/luckcards/BLuckCardTen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BL/squares/luckcards/BLuckCardThirteen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/luckcards/BLuckCardThirteen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BL/squares/luckcards/BLuckCardThree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/luckcards/BLuckCardThree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BL/squares/luckcards/BLuckCardTwelve.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/luckcards/BLuckCardTwelve.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BL/squares/luckcards/BLuckCardTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/luckcards/BLuckCardTwo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BL/squares/luckcards/BLuckCards.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BL/squares/luckcards/BLuckCards.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/CInstruction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/CInstruction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/CMonopolyGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/CMonopolyGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/CTerminal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/CTerminal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/java.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/main.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Controller/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DAL/DInstruction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAL/DInstruction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DAL/DJSONReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAL/DJSONReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DAL/DPiece.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAL/DPiece.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DAL/DPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAL/DPlayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UI/UITerminal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UI/UITerminal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.json" beforeDir="false" afterPath="$PROJECT_DIR$/test.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/main/java/BL/BBoardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/main/java/BL/BBoardTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,8 +29,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -176,18 +40,10 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="dev" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="MERGE" />
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
   </component>
   <component name="ProjectId" id="1TCjmQt7DHPINjXu3YQ0g6XfuV4" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -200,42 +56,39 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
-    <property name="Repository.Attach.Annotations" value="false" />
-    <property name="Repository.Attach.JavaDocs" value="false" />
-    <property name="Repository.Attach.Sources" value="false" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/spring/log" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
       <recent name="BL" />
       <recent name="DAL" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/spring/log" />
+      <recent name="$PROJECT_DIR$/documents" />
+      <recent name="$PROJECT_DIR$/libs" />
+      <recent name="$PROJECT_DIR$/models" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/documents" />
-      <recent name="$PROJECT_DIR$/libs" />
-      <recent name="$PROJECT_DIR$/models" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Main">
@@ -370,9 +223,8 @@
       <workItem from="1575626184397" duration="3842000" />
       <workItem from="1575657915691" duration="896000" />
       <workItem from="1575659531051" duration="2971000" />
-      <workItem from="1577442171874" duration="1764000" />
-      <workItem from="1577451949565" duration="627000" />
-      <workItem from="1577453317698" duration="284000" />
+      <workItem from="1577458362024" duration="2814000" />
+      <workItem from="1577461471141" duration="3951000" />
     </task>
     <task id="LOCAL-00001" summary="model, view, controller packages created.&#10;MonopolyGame class created.&#10;MonopolyGame class constructor template created using static factory methods design pattern.">
       <created>1572975097652</created>
@@ -650,65 +502,41 @@
     <option name="LAST_COMMIT_MESSAGE" value="JDoc and RAD added." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="284" y="24" key="#Project_Structure" timestamp="1577453465306">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="284" y="24" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1577453465306" />
-    <state x="583" y="229" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1577451985651">
+    <state x="747" y="318" key="FileChooserDialogImpl" timestamp="1577458842680">
       <screen x="0" y="36" width="1920" height="1044" />
     </state>
-    <state x="583" y="229" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.36.1920.1044@0.36.1920.1044" timestamp="1577451985651" />
-    <state x="543" y="255" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1577452825518">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="543" y="255" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1366.728@0.0.1366.728" timestamp="1577452825518" />
-    <state x="497" y="155" key="CommitChangelistDialog2" timestamp="1577444056078">
+    <state x="747" y="318" key="FileChooserDialogImpl/0.36.1920.1044@0.36.1920.1044" timestamp="1577458842680" />
+    <state width="1874" height="276" key="GridCell.Tab.0.bottom" timestamp="1577466872662">
       <screen x="0" y="36" width="1920" height="1044" />
     </state>
-    <state x="497" y="155" key="CommitChangelistDialog2/0.36.1920.1044@0.36.1920.1044" timestamp="1577444056078" />
-    <state width="1874" height="276" key="GridCell.Tab.0.bottom" timestamp="1577452361138">
+    <state width="1874" height="276" key="GridCell.Tab.0.bottom/0.36.1920.1044@0.36.1920.1044" timestamp="1577466872662" />
+    <state width="1874" height="276" key="GridCell.Tab.0.center" timestamp="1577466872662">
       <screen x="0" y="36" width="1920" height="1044" />
     </state>
-    <state width="1874" height="276" key="GridCell.Tab.0.bottom/0.36.1920.1044@0.36.1920.1044" timestamp="1577452361138" />
-    <state width="1874" height="276" key="GridCell.Tab.0.center" timestamp="1577452361137">
+    <state width="1874" height="276" key="GridCell.Tab.0.center/0.36.1920.1044@0.36.1920.1044" timestamp="1577466872662" />
+    <state width="1874" height="276" key="GridCell.Tab.0.left" timestamp="1577466872661">
       <screen x="0" y="36" width="1920" height="1044" />
     </state>
-    <state width="1874" height="276" key="GridCell.Tab.0.center/0.36.1920.1044@0.36.1920.1044" timestamp="1577452361137" />
-    <state width="1874" height="276" key="GridCell.Tab.0.left" timestamp="1577452361136">
+    <state width="1874" height="276" key="GridCell.Tab.0.left/0.36.1920.1044@0.36.1920.1044" timestamp="1577466872661" />
+    <state width="1874" height="276" key="GridCell.Tab.0.right" timestamp="1577466872662">
       <screen x="0" y="36" width="1920" height="1044" />
     </state>
-    <state width="1874" height="276" key="GridCell.Tab.0.left/0.36.1920.1044@0.36.1920.1044" timestamp="1577452361136" />
-    <state width="1874" height="276" key="GridCell.Tab.0.right" timestamp="1577452361138">
+    <state width="1874" height="276" key="GridCell.Tab.0.right/0.36.1920.1044@0.36.1920.1044" timestamp="1577466872662" />
+    <state x="675" y="276" key="MultipleFileMergeDialog" timestamp="1577458390883">
       <screen x="0" y="36" width="1920" height="1044" />
     </state>
-    <state width="1874" height="276" key="GridCell.Tab.0.right/0.36.1920.1044@0.36.1920.1044" timestamp="1577452361138" />
-    <state x="191" y="128" key="MergeDialog" timestamp="1577442832987">
+    <state x="675" y="276" key="MultipleFileMergeDialog/0.36.1920.1044@0.36.1920.1044" timestamp="1577458390883" />
+    <state x="447" y="137" key="SettingsEditor" timestamp="1577467039741">
       <screen x="0" y="36" width="1920" height="1044" />
     </state>
-    <state x="191" y="128" key="MergeDialog/0.36.1920.1044@0.36.1920.1044" timestamp="1577442832987" />
-    <state x="675" y="276" key="MultipleFileMergeDialog" timestamp="1577442835539">
+    <state x="447" y="137" key="SettingsEditor/0.36.1920.1044@0.36.1920.1044" timestamp="1577467039741" />
+    <state x="645" y="387" key="com.intellij.ide.util.TipDialog" timestamp="1577458361960">
       <screen x="0" y="36" width="1920" height="1044" />
     </state>
-    <state x="675" y="276" key="MultipleFileMergeDialog/0.36.1920.1044@0.36.1920.1044" timestamp="1577442835539" />
-    <state x="447" y="137" key="SettingsEditor" timestamp="1577452069163">
+    <state x="645" y="387" key="com.intellij.ide.util.TipDialog/0.36.1920.1044@0.36.1920.1044" timestamp="1577458361960" />
+    <state x="673" y="274" key="git4idea.branch.GitSmartOperationDialog" timestamp="1577458387030">
       <screen x="0" y="36" width="1920" height="1044" />
     </state>
-    <state x="447" y="137" key="SettingsEditor/0.36.1920.1044@0.36.1920.1044" timestamp="1577452069163" />
-    <state x="400" y="190" key="com.intellij.ide.util.TipDialog" timestamp="1577453644985">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="400" y="190" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1577453644985" />
-    <state x="667" y="455" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1577385704110">
-      <screen x="0" y="36" width="1920" height="1044" />
-    </state>
-    <state x="667" y="455" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.36.1920.1044@0.36.1920.1044" timestamp="1577385704110" />
-    <state x="750" y="480" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1577442791931">
-      <screen x="0" y="36" width="1920" height="1044" />
-    </state>
-    <state x="750" y="480" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.36.1920.1044@0.36.1920.1044" timestamp="1577442791931" />
-    <state x="670" y="274" key="git4idea.branch.GitSmartOperationDialog" timestamp="1577389561481">
-      <screen x="0" y="36" width="1920" height="1044" />
-    </state>
-    <state x="670" y="274" key="git4idea.branch.GitSmartOperationDialog/0.36.1920.1044@0.36.1920.1044" timestamp="1577389561481" />
+    <state x="673" y="274" key="git4idea.branch.GitSmartOperationDialog/0.36.1920.1044@0.36.1920.1044" timestamp="1577458387030" />
   </component>
 </project>
